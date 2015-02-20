@@ -1,0 +1,44 @@
+---
+layout: default
+title: Research
+category: research
+---
+
+{% assign categoryPosts = site.posts | where:'category','research' %}
+
+{% assign categorySubcategories = categoryPosts | group_by:'subcategory' %}
+
+{% for catsub in categorySubcategories %}
+
+  <h2>{{ catsub.name }}</h2>
+
+  {% assign subcatPosts = categoryPosts | where:'subcategory',catsub.name %}
+
+  {% for post in subcatPosts %}
+  <div class="post">
+    <h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <p class="meta">Sponsor: {{ post.sponsor }}</p>
+    <p class="meta">Dates: {{ post.dates }}&nbsp; Role: {{ post.role }}&nbsp; Award: {{ post.award }}</p>
+    <div class="entry">
+      <p>{{ post.content | strip_html | truncatewords: 100 }}</p>
+    </div>
+    {% if post.website != '' %}
+      <p>Website: <a href="{{ post.website }}">{{ post.website }}</a></p>
+    {% endif %}
+    {% if post.report != '' %}
+      <p>Report: <a href="/downloads/{{ post.report }}">{{ post.report }}</a></p>
+    {% endif %}
+    {% if post.media1 != '' %}
+      <p>Media: <a href="/downloads/{{ post.media1 }}">{{ post.media1title }}</a></p>
+    {% endif %}
+    {% if post.media2 != '' %}
+      <p>Media: <a href="/downloads/{{ post.media2 }}">{{ post.media2title }}</a></p>
+    {% endif %}
+    {% if post.media3 != '' %}
+      <p>Media: <a href="/downloads/{{ post.media3 }}">{{ post.media3title }}</a></p>
+    {% endif %}
+  </div>
+  {% endfor %}
+
+
+{% endfor %}
