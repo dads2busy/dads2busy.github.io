@@ -1,0 +1,19 @@
+---
+layout: default
+title: Speaking
+category: speaking
+---
+
+{% for post in site.posts %}
+  {% if post.categories contains 'speaking' %}
+  <div class="post">
+    <h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <div class="entry">
+      {{ post.date | date: "%Y-%m-%-d" }}. {{ post.content | strip_html | truncatewords: 100 }}
+    </div>
+    {% if post.report != '' %}
+      <p>Presentation: <a href="/downloads/{{ post.report }}">{{ post.report }}</a></p>
+    {% endif %}
+  </div>
+  {% endif %}
+{% endfor %}
