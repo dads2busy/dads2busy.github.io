@@ -19,7 +19,8 @@ category: guitar
     <td style="vertical-align: top">
       <h5>Songs I Can Kinda Play-n-Sing - I'm Available For Any And All Tiki Hut Jam Sessions!</h5>
       <table style="width:100%">
-          {% for post in site.posts %}
+        {% assign sorted_posts = (site.posts | sort: 'artist') %}
+          {% for post in sorted_posts %}
             {% if post.categories contains 'guitar' %}
             <tr>
             <div class="post" style="width: 300px">
