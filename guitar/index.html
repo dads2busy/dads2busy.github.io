@@ -1,0 +1,53 @@
+---
+layout: default
+title: Guitar
+category: guitar
+---
+
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  <ul class="nav navbar-nav">
+      <li class="active visible-xs-block"><a href="{{ site.baseurl }}/links.html">Links</a></li>
+      <li class="active"><a href="{{ site.baseurl }}/guitar">Guitar</a></li>
+      <li class="active"><a href="{{ site.baseurl }}/hovercraft">Hovercraft</a></li>
+      <li class="active"><a href="{{ site.baseurl }}/sailing">Sailing</a></li>
+      <li class="active"><a href="{{ site.baseurl }}/photography">Photography</a></li>
+  </ul>
+</div>
+
+<table>
+  <tr>
+    <td style="vertical-align: top">
+      <table style="width:100%">
+          {% for post in site.posts %}
+            {% if post.categories contains 'guitar' %}
+            <tr>
+            <div class="post" style="width: 300px">
+              <div class="entry">
+                <td>{% if post.file != '' %}<a href="/downloads/chords/{{ post.file }}">{% endif %}
+                    {{ post.title }}{% if post.file != '' %}</a>{% endif %}&nbsp;</td><td>{{ post.artist }}</td>
+              </div>
+            </div>
+            </tr>
+            {% endif %}
+          {% endfor %}
+      </table>
+    </td>
+    <td style="vertical-align: top">
+      <table width="250px">
+        <tr>
+          <td align="center">
+            <img src="/images/TikiHutGuitar.jpg" align="center" width="230px">
+          </td>
+        </tr>
+        <tr>
+          <td style="padding-left: 12px">
+            <h5>Some Self-Teaching Tools I've Created</h5>
+            <li><a href="/downloads/Open and Neck Chords in a Key - 6th String Root.pdf">Open and Neck Chords in a Key - 6th String Root</a>
+            <li><a href="/downloads/Open and Neck Chords in a Key - 5th String Root.pdf">Open and Neck Chords in a Key - 5th String Root</a>
+            <li><a href="/downloads/Music_Theory_101.pdf">Music_Theory_101</a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
