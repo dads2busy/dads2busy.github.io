@@ -10,13 +10,13 @@ category: research
 
 {% for catsub in categorySubcategories %}
 
-  <h2>{{ catsub.name }}</h2>
+  <h3>{{ catsub.name }}</h3>
 
   {% assign subcatPosts = categoryPosts | where:'subcategory',catsub.name %}
 
   {% for post in subcatPosts %}
   <div class="post">
-    <h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <h4 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h4>
     <p class="meta">Sponsor: {{ post.sponsor }}</p>
     <p class="meta">Dates: {{ post.dates }}&nbsp; Role: {{ post.role }}&nbsp; Award: {{ post.award }}</p>
     <div class="entry">
