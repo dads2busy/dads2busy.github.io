@@ -3,6 +3,27 @@ layout: default
 title: Writing
 category: writing
 ---
+<div class="col-md-3 hidden-xs">
+    <div class="sidebar well" style="padding: 3px">
+      <img style="width: 205px" src="/images/TikiHutGuitar.jpg">
+    </div>
+
+    <div class="sidebar well">
+      <table>
+        <tr>
+          <td style="padding-left: 12px">
+            <h5>Some Self-Teaching Tools I've Created</h5>
+            <li><a href="/downloads/Open and Neck Chords in a Key - 6th String Root.pdf">Open and Neck Chords in a Key - 6th String Root</a>
+            <li><a href="/downloads/Open and Neck Chords in a Key - 5th String Root.pdf">Open and Neck Chords in a Key - 5th String Root</a>
+            <li><a href="/downloads/Music_Theory_101.pdf">Music_Theory_101</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!--{% include sidebar.html %}-->
+</div>
+
+<div class="col-md-9">
 
 {% for post in site.posts %}
   {% if post.categories contains 'writing' %}
@@ -15,3 +36,5 @@ category: writing
   </div>
   {% endif %}
 {% endfor %}
+
+</div>

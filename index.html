@@ -1,6 +1,18 @@
 ---
 layout: default
 ---
+<div class="col-md-3 hidden-xs">
+    <div class="sidebar well">
+      <i>{{ site.description }}</i>
+    </div>
+
+    <div class="sidebar well">
+      {% include links-list.html %}
+    </div>
+    <!--{% include sidebar.html %}-->
+</div>
+
+<div class="col-md-9">
 
 <div class="well">
   <table>
@@ -53,5 +65,7 @@ layout: default
       </td>
     </tr>
   </table>
+
+</div>
 
 </div>
