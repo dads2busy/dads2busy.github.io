@@ -25,16 +25,34 @@ category: writing
 
 <div class="col-md-9">
 
-{% for post in site.posts %}
-  {% if post.categories contains 'writing' %}
+{% assign categoryPosts = site.posts | where:'category','writing' %}
+
+{% assign categorySubcategories = categoryPosts | group_by:'subcategory' %}
+
+{% for catsub in categorySubcategories %}
+
+  <h3>{{ catsub.name }}</h3>
+
+  {% assign subcatPosts = categoryPosts | where:'subcategory',catsub.name %}
+
+  {% for post in subcatPosts %}
   <div class="post">
-    <h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
-    <p class="meta">Date: {{ post.date }}</p>
-    <div class="entry">
-      {{ post.content | strip_html | truncatewords: 100 }}
-    </div>
+    <h4 class="title">{{ post.authors }} ({{ post.dates }}). <a href="{{ post.url }}">{{ post.title }}</a>.
+      {{ post.sponsor }}.
+      {% if post.pages != '' %}
+        {{ post.pages }}.
+      {% endif %}
+      {% if post.DOI != '' %}
+        DOI={{ post.DOI }}.
+      {% endif %}
+      {% if post.editors != '' %}
+        {{ post.editors }}.
+      {% endif %}
+    </h4>
   </div>
-  {% endif %}
+  {% endfor %}
+
+
 {% endfor %}
 
 </div>
