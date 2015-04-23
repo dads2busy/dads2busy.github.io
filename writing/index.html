@@ -31,7 +31,7 @@ category: writing
 
 {% for catsub in categorySubcategories %}
 
-  <h3>{{ catsub.name }}</h3>
+  <h3 style="border-bottom:solid 1px black">{{ catsub.name }}</h3>
 
   {% assign subcatPosts = categoryPosts | where:'subcategory',catsub.name %}
 
