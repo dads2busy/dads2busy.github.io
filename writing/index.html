@@ -37,7 +37,7 @@ category: writing
 
   {% for post in subcatPosts %}
   <div class="post">
-    <h4 class="title">{{ post.authors }} ({{ post.dates }}). <a href="{{ post.url }}">{{ post.title }}</a>.
+    <h5 class="title">{{ post.authors }} ({{ post.dates }}). <a href="{{ post.url }}">{{ post.title }}</a>.
       {{ post.sponsor }}.
       {% if post.pages != '' %}
         {{ post.pages }}.
@@ -48,7 +48,7 @@ category: writing
       {% if post.editors != '' %}
         {{ post.editors }}.
       {% endif %}
-    </h4>
+    </h5>
   </div>
   {% endfor %}
 
