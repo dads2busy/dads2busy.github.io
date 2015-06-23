@@ -9,6 +9,7 @@
           <div class="article">
             <div class="well">
                 <h1><a href="{{ site.baseurl}}{{ page.url }}">{{ page.title }}</a></h1>
+                <div><a href="{{page.website}}">Download</a><div>
             {% if site.comments == true and page.comments == true and site.disqus != '' %}
                 <p class="author"><a href="#disqus_thread">Comments</a></p>
             {% endif %}
