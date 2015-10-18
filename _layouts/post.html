@@ -3,21 +3,28 @@
 <div class="container container-left">
     <div class="row">
         <div class="col-md-3 hidden-xs">
-            {% include sidebar.html %}
+          <div class="sidebar well">
+            {% case page.category %}
+              {% when 'dataprofiling' %}
+                {% include sidebars/datascience.html %}
+              {% else %}
+                {% include sidebars/sidebar.html %}
+            {% endcase %}
+          </div>
         </div>
         <div class="col-md-9">
           <div class="article">
             <div class="well">
-                <h1><a href="{{ site.baseurl}}{{ page.url }}">{{ page.title }}</a></h1>
-                <div><a href="{{page.website}}">Download</a><div>
+                <h2>{{ page.title }}</h2>
+                <!--<div><a href="{{page.website}}">Download</a><div>-->
             {% if site.comments == true and page.comments == true and site.disqus != '' %}
                 <p class="author"><a href="#disqus_thread">Comments</a></p>
             {% endif %}
             <div class="post-content">
             {{ content }}
-            posted: {{ page.date | date: "%b %-d, %Y" }}
+            <!--posted: {{ page.date | date: "%b %-d, %Y" }}-->
             </div>
-            {% if page.comments %}
+            <!--{% if page.comments %}
             <div id="disqus_thread">
                 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
@@ -32,11 +39,10 @@
               {% if page.previous %}
                 <a class="btn btn-default" href="{{ site.baseurl}}{{ page.previous.url }}" class="previous">Older Post</a>
               {% endif %}
-</div>
-
+          </div>-->
         </div>
     </div>
 </div>
 
-{% include disqus-comments.html %}
-{% include footer.html %}
+<!--{% include disqus-comments.html %}
+{% include footer.html %}-->
