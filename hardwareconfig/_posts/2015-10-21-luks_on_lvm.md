@@ -4,7 +4,7 @@ category: "serverconfig"
 subcategory: "Hardware Configuration"
 title: "LUKS on LVM"
 ordinal: 1
-date: 2012-05-22 16:25:06 -0700
+date: 2015-10-21 16:25:06 -0700
 comments: true
 ---
 <!--break-->
