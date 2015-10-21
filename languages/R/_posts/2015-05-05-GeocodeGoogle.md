@@ -1,9 +1,9 @@
 ---
 layout: post
 category: r
-subcategory: "Geocoding"
+subcategory: "GIS"
 title: "Geocoding with R and Google"
-ordinal: 1
+ordinal: 2
 date: 2012-05-22 16:25:06 -0700
 comments: true
 ---
