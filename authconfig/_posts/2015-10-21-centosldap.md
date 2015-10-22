@@ -1,7 +1,7 @@
 ---
 layout: post
 category: "serverconfig"
-subcategory: "LXC Configuration"
+subcategory: "Authentication"
 title: "LDAP Authentication (Centos 7)"
 ordinal: 3
 date: 2015-10-22 16:25:06 -0700
