@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Base Server Configuration
+title: Encrypted Storage
 category: serverconfig
 description: ""
 ---
@@ -14,7 +14,7 @@ description: ""
 
 {% assign categoryPosts = site.posts | where:'category','serverconfig' %}
 
-{% assign subcategoryPosts = categoryPosts | where:'subcategory', 'Hardware Configuration' | sort: 'ordinal' %}
+{% assign subcategoryPosts = categoryPosts | where:'subcategory', 'Encrypted Storage' | sort: 'ordinal' %}
 <h2>{{ page.title }}</h2>
 <h4>{{ page.description }}</h4>
   {% for post in subcategoryPosts %}
