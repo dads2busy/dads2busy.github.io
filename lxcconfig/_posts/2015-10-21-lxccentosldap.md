@@ -9,13 +9,15 @@ comments: true
 ---
 <!--break-->
 
-### install sssd
+### Install sssd
     yum install -y sssd
 
-### install authconfig
+### Install authconfig
     yum install -y authconfig
 
-### configure sssd (copy and paste this whole section)
+### Configure sssd (copy and paste this whole section)
+*Before using you will need to enter your organization's domain components and your ldap uri*
+
     cat >/etc/sssd/sssd.conf<<EOF
     [sssd]
     config_file_version = 2
@@ -40,10 +42,10 @@ comments: true
     auth_provider = ldap
     debug_level = 0
     enumerate = True
-    ldap_search_base = dc=vbi,dc=vt,dc=edu
+    ldap_search_base = [your domain components]
     chpass_provider = ldap
     id_provider = ldap
-    ldap_uri = ldap://ldap2.vbi.vt.edu
+    ldap_uri = [your ldap uri]
     ldap_tls_cacertdir = /etc/openldap/cacerts
     ldap_schema = rfc2307
     access_provider=ldap
@@ -51,24 +53,26 @@ comments: true
     ldap_account_expire_policy = shadow
     EOF
 
-### set proper perms
+### Set proper permissions
     chmod 600 /etc/sssd/sssd.conf
 
-### nasty hack #1
+### Create the directory for cacerts
     mkdir -p /etc/openldap/cacerts
 
-### configure the rest of auth mechanisms, including the download of our CA cert
-    authconfig --nostart --enablesssd --enablesssdauth --enablelocauthorize --update --ldaploadcacert=http://cert.vbi.vt.edu/vbi-cacert.pem
+### Configure the rest of auth mechanisms, including the download of your CA cert
+*Before using you willl need to enter the uri to your organization's pem certificate*
 
-### nasty hack #2, not sure why manual authconfig doesn't create it
+    authconfig --nostart --enablesssd --enablesssdauth --enablelocauthorize --update --ldaploadcacert=[the uri to your pem certificate]
+
+### Create a necessary link
     ln -sf /etc/openldap/cacerts/authconfig_downloaded.pem /etc/openldap/cacerts/3a5608b0.0
 
-### finally, update and restart. we also enable creation of home dirs for new users
+### Enable creation of home dirs for new users and update the config
     authconfig --enablemkhomedir --update
 
-### for some reason on newer centos systems, --enablesssd does not work as it used to, so we have to manually start sssd
-    chkconfig sssd on
-    service sssd start
+### Set sssd to start at boot and the start sssd
+    systemctl enable sssd
+    systemctl start sssd
 
-### check if it's working
+### Check if it's working
     # getent passwd

@@ -2,7 +2,7 @@
 layout: post
 category: "serverconfig"
 subcategory: "Hardware Configuration"
-title: "LUKS on LVM"
+title: "Encrypted Storage - LUKS on LVM"
 ordinal: 1
 date: 2015-10-21 16:25:06 -0700
 comments: true
