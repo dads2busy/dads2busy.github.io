@@ -24,7 +24,7 @@ comments: true
     # yum install nano -y
 
 ### Install SSHFS
-    # yum install SSHFS -y
+    # yum install sshfs -y
 
 #### You won't be able to use SSHFS initially. The LXC container does not automatically created all needed device nodes, like the fuse device node needed by SSHFS. Therefore, we need to create both a script to create the node and a systemd unit file that will run the script on boot.
 
