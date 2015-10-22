@@ -47,21 +47,21 @@ comments: true
     # mount /dev/mapper/myLogVol1_Encrypted /home/auser/myEncryptedVolume
 
 ## 2. Automount the Encrypted Volume on Boot
-### Create a random keyfile
-    # dd if=/dev/urandom of=/etc/luks-keys bs=1 count=256
-
-### Make the keyfile read-only to root
+### Create a directory to store your keys and make it read-only to root
+    # mkdir -p /etc/luks-keys
     # chmod 0400 /etc/luks-keys
 
-### Add the keyfile to LUKS
+### Create a random keyfile for each volume to be encrypted and mounted at boot
+    # dd if=/dev/urandom of=/etc/luks-keys/<keyfile name> bs=1 count=256
+    example
+    # dd if=/dev/urandom of=/etc/luks-keys/myLogVol1 bs=1 count=256
+
+### Add the keyfile to each volume to be encrypted and mounted at boot
     # cryptsetup luksAddKey /dev/[volume group name]/[new logical volume name] /etc/luks-keys/[new logical volume name]
     example
     # cryptsetup luksAddKey /dev/myVolGroup/myLogVol1 /etc/luks-keys/myLogVol1
 
-You'll be prompted to enter an (existing) password to unlock the drive. If everything works well, you should get an output like this:
-    Enter any LUKS passphrase:
-    key slot 0 unlocked.
-    Command successful.
+You'll be prompted to enter the (existing) password to unlock the drive.
 
 ### Open /etc/crypttab to create a mapper that can then be referenced in the fstab
     # nano /etc/crypttab
