@@ -1,0 +1,52 @@
+---
+layout: default
+title: Working
+category: working
+---
+<div class="col-md-3 hidden-xs">
+    <div class="sidebar well">
+      <i>{{ site.description }}</i>
+    </div>
+
+    <div class="sidebar well">
+      <table>
+        <tr>
+          <td style="padding-left: 12px">
+            Workin' 9 to 5,<br />
+            What a way to make a livin'<br />
+            Barely gettin' by<br />
+            It's all takin' and no givin'<br />
+            They just use your mind<br />
+            And they never give you credit<br />
+            It's enough to drive you crazy<br />
+            If you let it<br />
+            9 to 5, for service and devotion<br />
+            You would think that I<br />
+            Would deserve a fat promotion<br />
+            Want to move ahead<br />
+            But the boss won't seem to let me<br />
+            I swear sometimes that man is<br />
+            out to get me!
+          </td>
+        </tr>
+      </table>
+    </div>
+</div>
+
+<div class="col-md-9">
+
+{% assign categoryPosts = site.posts | where:'category','working' | sort: 'ordinal' %}
+
+{% for post in categoryPosts %}
+  {% if post.categories contains 'working' %}
+  <div class="post">
+    <h3 class="title">{{ post.title }}</h3>
+    <h4 class="title">{{ post.subtitle }}</h4>
+    <div class="entry">
+      <b>{{ post.dates }}.</b> {{ post.content | strip_html }}
+    </div>
+  </div>
+  {% endif %}
+{% endfor %}
+
+</div>
