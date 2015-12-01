@@ -1,0 +1,35 @@
+---
+layout: default
+title: Data Transformation
+category: datapreparation
+description: ""
+---
+<div class="col-md-3 hidden-xs">
+    <div class="sidebar well">
+      {% include sidebars/datascience.html %}
+    </div>
+</div>
+
+<div class="col-md-9">
+
+{% assign categoryPosts = site.posts | where:'category','datapreparation' %}
+
+{% assign subcategoryPosts = categoryPosts | where:'subcategory', 'datatransformation' | sort: 'ordinal' %}
+<h2>{{ page.title }}</h2>
+<h4>{{ page.description }}</h4>
+
+Data transformation refers to the mapping of dataset field values from a provided format into
+an expected or more useful format.
+
+  {% for post in subcategoryPosts %}
+  <div class="post">
+    <h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <div class="entry">
+      {{ post.content | split:'<!--break-->' | first }}
+      {% if post.content contains '<!--break-->' %}
+        <a href="{{ post.url }}">more</a>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>

@@ -15,11 +15,6 @@ description: "Does the data correctly represent the real-world construct to whic
 {% assign categoryPosts = site.posts | where:'category','dataprofiling' %}
 {% assign subcategoryPosts = categoryPosts | where:'subcategory', 'Data Quality' | sort: 'ordinal' %}
 
-<h2>Data Profiling</h2>
-Data profiling starts with a determination of both the quality of the data and its utility to the project at hand. There are numerous rubrics available, but a useful initial assessment of data quality can be achieved through statistical analysis of data field completeness, data field value correctness, and logical consistency between fields and between records {\color{green}{(Redman,  Wang, DOD, others)}}. In addition, it is useful to   ascertain the spread of unique values within a field, as well as the rate of duplication at the record level. For an assessment of dataset utility,  the dataset's structure should be analyzed. This is to determine how well the dataset has been structured for the purposes of the intended analyses. The the state of the dataset's metadata should also be analyzed to determine how well observational units and their attributes are defined.
-
-An important feature of the data profiling process is that  discovered issues are only described and not actually “fixed”. The appropriate fix will depend upon the specific needs of the research. If the prescribed "fix" is not appropriate or even possible there would be no need for any action and attempting a fix at this stage could result in wasted time and effort. For example, it may be appropriate to simply normalize city zoning entries into  Residential or non-residential versus painfully re-categorizing every missing entry into the 38 zoning classfication.
-
 <h2>{{ page.title }}</h2>
 <h4>{{ page.description }}</h4>
 A considerable amount of data quality research involves investigating and describing various categories

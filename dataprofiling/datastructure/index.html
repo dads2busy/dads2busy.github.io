@@ -17,6 +17,17 @@ description: "Is the data appropriately structured for purposes of analysis?"
 {% assign subcategoryPosts = categoryPosts | where:'subcategory', 'Data Structure' | sort: 'ordinal' %}
 <h2>{{ page.title }}</h2>
 <h4>{{ page.description }}</h4>
+
+Because datasets are often created for reasons of administration and reporting, and further that there are generally few constraints on their organization, administrative datasets are often constructed in manners not conducive to statistical analyses. During the data profiling step, issues about data structure are identified. During the data transformation step decisions on how to restructure data are made and executed.
+
+An example from the housing case study is given in Figure \ref{MLScombine}. The dataset provided was comprised of single records with 128 fields. All fields in the record were keyed to the variable``List Number.'' Structured this way, it is not possible to analyze property changes over time, even though the data does in fact exist within the dataset. That is, a restructuring is necessary that pulls out and re-relates the property information to a different key (here, Parcel ID). This situation occurs often as a result of the structural issue 'combined observational unit types' discussed below.
+
+\begin{figure}[h!]
+\centerline{\includegraphics[scale=.6]{CombinedTypes.pdf}}
+\caption{Combined data types of \textit{List Number} and \textbf{Parcel ID} from MLS data table.}
+\label{MLScombine}
+\end{figure}
+
   {% for post in subcategoryPosts %}
   <div class="post">
     <h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>

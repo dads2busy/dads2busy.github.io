@@ -7,17 +7,7 @@ ordinal: 5
 date: 2012-05-22 16:25:06 -0700
 comments: true
 ---
-Divided Observation Unit Type – an observation unit type is split among multiple tables
+Within administrative data systems, it is also not uncommon to find that a single observation unit type has been split among multiple datasets.This is similar to the consistency discussion of multiple observations with overlapping demographic information. The difference here is that you may have information split among several datasets. For example, there may be, as was the case with one state's educational records, separate tables that duplicate the collection of student demographics. Figure \ref{dividedtype} captures gender mismatches across two tables from the same education record information system, linked on the Unique Id of the student. Decisions on whether and how to transform inconsistent data as a result of divided observation unit type need to factor in the magnitude of the issue as well as the ability to accurately correct the data in a timely enough fashion given the project at hand.  
 
-e.g. individual demographic information split among several datasets; for example, separate tables for gender, ethnicity, and surname.
-
-<!--break-->
-###Structure Example – Divided Type
-#####An observation unit type is split among multiple tables
-####NC Student Data – Demographics Recorded in Multiple Tables
-
-<img src="/images/screen_shot_2015-09-08_at_11.16.12_am (1).png" />
-
-* Actual 2011 data from different tables linked via unique ID
-* Many more tables with apparently separately collected demographics
-* Derivation of Demographic Truth is now Probabilistic
+<img src="/images/divided_type.png" style="border-width:0px;" />
+Example of divided observational units for gender mismatched in multiple tables.

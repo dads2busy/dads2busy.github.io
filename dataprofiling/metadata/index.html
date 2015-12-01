@@ -17,6 +17,24 @@ description: "Are datasets, observation units, and their attributes consistently
 {% assign subcategoryPosts = categoryPosts | where:'subcategory', 'Metadata' | sort: 'ordinal' %}
 <h2>{{ page.title }}</h2>
 <h4>{{ page.description }}</h4>
+
+Metadata is generally defined "data that provides information about other data".
+[http://www.merriam-webster.com/dictionary/metadata].
+The main purpose of metadata is the facilitation of the discovery relevant information pertaining
+to a particular object/resource. It does this by "allowing resources to be found by relevant criteria,
+identifying resources, bringing similar resources together, distinguishing dissimilar resources,
+and giving location information."[National Information Standards Organization; Rebecca Guenther; Jaqueline Radebaugh (2004).
+Understanding Metadata. Bethesda, MD: NISO Press. ISBN 1-880124-62-9. Retrieved 2 April 2014.]
+Therefore, generally speaking, a lack of metadata for a dataset can present significant impediments to the use of
+said dataset.
+
+Being more specific, when dealing with data that is to be used for research purposes, it is of vital
+importance to discover if the datasets (tables), their observational observation units (records/rows),
+and their attributes (fields/columns) are consistently named, sufficiently described, and appropriately
+formatted for analysis and for combination with other project datasets. Additionally, does information
+exist regrading any transformations that have occurred to original data sources in the creation of said
+dataset, as well as who did the transforming?
+
   {% for post in subcategoryPosts %}
   <div class="post">
     <h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
