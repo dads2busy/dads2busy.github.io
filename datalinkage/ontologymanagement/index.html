@@ -1,0 +1,58 @@
+---
+layout: default
+title: Data Quality
+category: dataprofiling
+description: "Does the data correctly represent the real-world construct to which it refers?"
+---
+<div class="col-md-3 hidden-xs">
+    <div class="sidebar well">
+      {% include sidebars/datascience.html %}
+    </div>
+</div>
+
+<div class="col-md-9">
+
+{% assign categoryPosts = site.posts | where:'category','dataprofiling' %}
+{% assign subcategoryPosts = categoryPosts | where:'subcategory', 'Data Quality' | sort: 'ordinal' %}
+
+<h2>{{ page.title }}</h2>
+<h4>{{ page.description }}</h4>
+A considerable amount of data quality research involves investigating and describing various categories
+of desirable attributes (or dimensions) of data. These lists commonly include accuracy, correctness,
+currency, completeness and relevance, as described in Chapter 2. Nearly 200 such terms have been
+identified and there is little agreement in their nature (are these concepts, goals or criteria?),
+their definitions or measures (Wang et al., 1993). Here we have let a typology
+emerge form the project data work. This typology consists of five data quality areas: completeness,
+value validity, consistency, uniqueness, and duplication. Regardless the typology chosen,
+the final judgment of data quality is measured by adherence of a dataset to a set of data quality rules.
+Like data quality attributes, these rules can take one of several forms.
+Here we choose a typology consisting of three rule-types employed by the DoD in its data quality management
+efforts. These are: null constraint rules, domain validation rules,
+and relationship validation rules. Code is developed to enforce these rules. For our study,
+examples are given in psuedo-code:
+
+<br /><br />
+<table border="1" align="center" width = "90%">
+  <tr>
+    <td align="center">Null Constraints</td><td align="center">select sqft from housing where sqft = 0 or sqft = '' or sqrt = NULL</td>
+  </tr>
+  <tr>
+    <td align="center">Domain Validation</td><td align="center"> select yearbuilt from housing where yearbuilt is between 1920 and 2015</td>
+  </tr>
+  <tr>
+    <td align="center">Relationship Validation</td><td align="center">select all from housing where type = multifamily and numunits greater than 1</td>
+  </tr>
+</table>
+
+  {% for post in subcategoryPosts %}
+  <div class="post">
+    <h3 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <div class="entry">
+      {{ post.content | split:'<!--break-->' | first }}
+      {% if post.content contains '<!--break-->' %}
+        <a href="{{ post.url }}">more</a>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
