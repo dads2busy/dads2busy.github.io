@@ -36,7 +36,8 @@ In the script file, enter the following:
     #!/usr/bin/env bash
 
     # creates a node for fuse devices
-    mknod -m 666 /dev/fuse c 10 229
+    mknod /dev/fuse c 10 229
+    chmod 777 /dev/fuse
 
 ### Make the script executable
     # chmod +x fuse-mknod.sh
