@@ -17,14 +17,14 @@ comments: true
     # lvcreate -L 100G myVolGroup -n myLogVol1
 
 ### Format the new logical volume
-    # mkfs.ext4 /dev/mapper/[volume group name]_[new logical volume name]
+    # mkfs.ext4 /dev/mapper/[volume group name]-[new logical volume name]
     example
     # mkfs.ext4 /dev/mapper/myVolGroup_myLogVol1
 
 ### Fill formatted logical volume with random Data
-    # dd if = /dev/urandom of=/dev/[volume group name]/[new logical volume name]
+    # dd if=/dev/urandom of=/dev/[volume group name]/[new logical volume name]
     example
-    # dd if = /dev/urandom of=/dev/myVolGroup/myLogVol1
+    # dd if=/dev/urandom of=/dev/myVolGroup/myLogVol1
 
 ### Create encrypted layer for the new logical volume
     # cryptsetup luksformat -c -aes-xts-plain64 -s 512 /dev/[volume group name]/[new logical volume name]
