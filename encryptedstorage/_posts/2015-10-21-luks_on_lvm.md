@@ -27,9 +27,9 @@ comments: true
     # dd if=/dev/urandom of=/dev/myVolGroup/myLogVol1
 
 ### Create encrypted layer for the new logical volume
-    # cryptsetup luksformat -c -aes-xts-plain64 -s 512 /dev/[volume group name]/[new logical volume name]
+    # cryptsetup luksFormat -c aes-xts-plain64 -s 512 /dev/[volume group name]/[new logical volume name]
     example
-    cryptsetup luksformat -c -aes-xts-plain64 -s 512 /dev/myVolGroup/myLogVol1
+    cryptsetup luksFormat -c aes-xts-plain64 -s 512 /dev/myVolGroup/myLogVol1
 
 ### Create a combined logical volume + encrypted layer
     # cryptsetup open --type luks /dev/[volume group name]/[new logical volume name] [new combined logical volume + encryption layer name]
