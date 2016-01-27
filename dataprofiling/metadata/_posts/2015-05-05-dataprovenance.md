@@ -6,6 +6,7 @@ title: "Data Provenance"
 ordinal: 7
 date: 2012-05-22 16:25:06 -0700
 comments: true
+website: ""
 ---
 The concept of Provenance is very broad and has different meanings within different fields of inquiry. For the purposes of Data Profiling, we find it useful to apply the definition provided by the World Wide Web Consortium (W3C)
 

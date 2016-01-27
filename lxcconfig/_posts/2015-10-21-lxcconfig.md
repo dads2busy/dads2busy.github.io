@@ -6,6 +6,7 @@ title: "LXC Container Configuration"
 ordinal: 3
 date: 2015-10-22 16:25:06 -0700
 comments: true
+website: ""
 ---
 <!--break-->
     # Template used to create this container: /usr/share/lxc/templates/lxc-centos

@@ -6,6 +6,7 @@ title: "Restructuring"
 ordinal: 6
 date: 2012-05-22 16:25:06 -0700
 comments: true
+website: ""
 ---
 To address issues of structure discovered during Data Profiling, it often necessary to restructure the provided dataset into multiple new datasets that are more easily analyzed. This activity can be thought of as being akin to the process of database normalization, the process of organizing the columns (attributes) and tables (relations) of a relational database to minimize data redundancy (thus achieving Codd's 3rd Normal Form - [Codd, E. F. "Recent Investigations into Relational Data Base Systems". IBM Research Report RJ1385 (April 23, 1974). Republished in Proc. 1974 Congress (Stockholm, Sweden, 1974). , N.Y.: North-Holland (1974).]
 

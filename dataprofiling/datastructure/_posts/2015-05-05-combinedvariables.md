@@ -6,6 +6,7 @@ title: "Combined Variables"
 ordinal: 2
 date: 2012-05-22 16:25:06 -0700
 comments: true
+website: ""
 ---
 Combined variables refers to the condition where more than one variable is represented in a record field. Sometimes, especially, after some form of correction to the previous problem of missing variables has been address,
 we end up with column variable names comprised of a combination of multiple underlying

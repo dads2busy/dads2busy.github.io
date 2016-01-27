@@ -6,6 +6,7 @@ title: "Inconsistent Attribute Formats"
 ordinal: 5
 date: 2012-05-22 16:25:06 -0700
 comments: true
+website: ""
 ---
 Attributes of the same type that are formatted differently
 

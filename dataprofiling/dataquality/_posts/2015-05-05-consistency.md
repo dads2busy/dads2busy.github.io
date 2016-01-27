@@ -6,6 +6,7 @@ title: "Consistency"
 ordinal: 3
 date: 2012-05-22 16:25:06 -0700
 comments: true
+website: ""
 ---
 The concept of consistency is best understood as the degree of logical agreement "between" record field values in either a single dataset or between two or more datasets. When there is an expected logical relationship between two or more entities, we can refer to the rule specificying this logic as a type of relationship validation called a dependency constraint. Therefore, consistency becomes the degree to which these attributes satisfy said dependency constraint. An example of a logical requirement is that fields A and B must sum to field C. Logical requirements may be quite involved. For example, 'A has two children', 'A is B's father', 'A is C's father', and 'A is D's father' are inconsistent.
 

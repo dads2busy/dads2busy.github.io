@@ -6,6 +6,7 @@ title: "Combined Observational Unit Types"
 ordinal: 4
 date: 2012-05-22 16:25:06 -0700
 comments: true
+website: ""
 ---
 Within administrative records, multiple types of data are often combined for expediency. By multiple types we mean different sets of data fields, each set representing a different type of observational unit (e.g. property information and listing agent information in the same record). The observational unit types necessary to the project at hand need to be separated out into individual observations or individual datasets in the restructuring phase.
 

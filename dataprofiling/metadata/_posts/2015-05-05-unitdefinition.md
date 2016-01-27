@@ -6,6 +6,7 @@ title: "Observation Unit Definition"
 ordinal: 1
 date: 2012-05-22 16:25:06 -0700
 comments: true
+website: ""
 ---
 When a dataset is provided without definition of the purpose of that dataset, we have an issue with the Observation Unit Definition. Why was this data collected? When dealing with datasets not orignally collected for research purposes (e.g administrative data), there is often no easy answer to this question. To correct issues of observational unit definition, it is often necessary to first generate separate new datasets from the dataset provided, each representing only a single observational unit type. At this point a new observational unit definition can be created.
 

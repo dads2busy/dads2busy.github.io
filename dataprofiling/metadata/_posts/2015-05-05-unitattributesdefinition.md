@@ -6,6 +6,7 @@ title: "Observation Unit Attributes Definition"
 ordinal: 2
 date: 2012-05-22 16:25:06 -0700
 comments: true
+website: ""
 ---
 Attributes (columns) without definition and/or non-meaningful/confusing naming
 

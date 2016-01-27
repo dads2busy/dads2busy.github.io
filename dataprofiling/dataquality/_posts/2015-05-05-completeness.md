@@ -6,6 +6,7 @@ title: "Completeness"
 ordinal: 1
 date: 2012-05-22 16:25:06 -0700
 comments: true
+website: ""
 ---
 The concept of data completeness can be generalized as the proportion of data provided versus the proportion of data required. Data that is missing may additionally be categorized as record fields not containing data, records not containing necessary fields, or datasets not containing the requisite records. The most common conceptualization of completeness is the first, record field not containing data. This conceptualization of data completeness can be thought of as *the proportion of the data that has values to the proportion of data that ’should’ have values*. That is, a set of data is complete with respect to a given purpose if the set contains all the relevant data for that purpose. Completeness is application specific. It would be incorrect to simply measure the number of missing field values in a record without first considering which of the fields are actually necessary for completion of the task at hand.
 

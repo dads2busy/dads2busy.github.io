@@ -6,6 +6,7 @@ title: "Value Validity"
 ordinal: 2
 date: 2012-05-22 16:25:06 -0700
 comments: true
+website: ""
 ---
 The concept of value validity can be conceptualized as the percentage of elements whose attributes possess expected values. The actualization of this concept generally comes in the form of straight-forward domain constraint rules. For example, to ascertain how many entries contain non-valid values for a non-empty text field representing gender, an example pseudo-code domain \textit{comparison-constraint rule} would look something like:
 
