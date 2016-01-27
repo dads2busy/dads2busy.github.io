@@ -16,7 +16,6 @@
           <div class="article">
             <div>
                 <h2>{{ page.title }}</h2>
-                <!--<div><a href="{{page.website}}">Download</a><div>-->
             {% if site.comments == true and page.comments == true and site.disqus != '' %}
                 <p class="author"><a href="#disqus_thread">Comments</a></p>
             {% endif %}
@@ -24,6 +23,9 @@
             {{ content }}
             <!--posted: {{ page.date | date: "%b %-d, %Y" }}-->
             </div>
+            {% if page.website != '' %}
+              <div><a href="{{page.website}}">Download</a><div>
+            {% endif %}
             <!--{% if page.comments %}
             <div id="disqus_thread">
                 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
