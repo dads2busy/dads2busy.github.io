@@ -5,7 +5,7 @@ subcategory: "Journal Publications (refereed)"
 title: "Pad and Chaff: Secure Approximate String Matching in Private Record Linkage"
 sponsor: "Proceedings of the 14th International Conference on Information Integration and Web-based Applications and Services (iiWAS '12)"
 dates: 2012
-website: ""
+website: "/downloads/Pad & Chaff-schroeder.pdf"
 authors: "Schroeder, A.D."
 editors: "ACM, New York, NY, USA"
 pages: "pp. 121-125"
