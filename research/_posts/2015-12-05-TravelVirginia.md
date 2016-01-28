@@ -17,6 +17,7 @@ media1title: ""
 media2title: ""
 media3title: ""
 comments: true
+ordinal: 1
 ---
 
 Co-directed a planning and design effort to replicate the success of Travel Shenandoah across the Commonwealth of Virginia.

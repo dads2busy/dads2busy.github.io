@@ -17,6 +17,7 @@ media1title: ""
 media2title: ""
 media3title: ""
 comments: true
+ordinal: 3
 ---
 
 Working with Generations United (GU) and Dr. Shannon Jarrott of the Virginia Tech Department of Human Development, tested the hypothesis that operational costs of day care facilities with intergenerational components are the same or less than the operational costs of day care facilities without intergenerational components.

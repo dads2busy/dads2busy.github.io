@@ -1,7 +1,53 @@
-<h1>Links</h1>
-<ul>
-  <li><a href="#">VBI - Social Decision Analytics Lab</a></li>
-  <li><a href="#">Institute for Policy & Governance</a></li>
-  <li><a href="#">Transportation Institute</a></li>
-  <li><a href="#">Center for Public Administration</a></li>
-</ul>
+
+{% case page.category %}
+  {% when 'writing' %}
+  <h5>Featured Writing</h5>
+  <ul>
+    <li><a href="/2012/08/privacy_landscape">Does Big Data Change the Privacy Landscape? A Review of the Issues</a></li>
+    <li><a href="/2012/05/pad_and_chaff">Pad and Chaff: Secure Approximate String Matching in Private Record Linkage</a></li>
+    <li><a href="/2012/07/em_evolution">The Evolution of Emergency Management in America: From a Painful Past to a Promising but Uncertain Future</a></li>
+  </ul>
+  {% when 'teaching' %}
+    <img src="/images/lecture_icon.png" width="100px" align="right" />
+  {% when 'research' %}
+    <img src="/images/data_researcher.jpg" width="160px" />
+  {% when 'speaking' %}
+    <img src="/images/lecture_icon.png" width="100px" align="right" />
+  {% when 'working' %}
+  <table>
+    <tr>
+      <td style="padding-left: 12px">
+        Workin' 9 to 5,<br />
+        What a way to make a livin'<br />
+        Barely gettin' by<br />
+        It's all takin' and no givin'<br />
+        They just use your mind<br />
+        And they never give you credit<br />
+        It's enough to drive you crazy<br />
+        If you let it<br />
+        9 to 5, for service and devotion<br />
+        You would think that I<br />
+        Would deserve a fat promotion<br />
+        Want to move ahead<br />
+        But the boss won't seem to let me<br />
+        I swear sometimes that man is<br />
+        out to get me!
+      </td>
+    </tr>
+  </table>
+  {% when 'coaching' %}
+  <h5>Featured Youth Sports Organizations</h5>
+  <ul>
+    <li>Basketball: <a href="http://eastcoastfusion.com/">East Coast Fusion - Youth Development Program</a></li>
+    <li>Soccer: <a href="http://www.newriverunited.com/">New River United Soccer Association</a></li>
+    <li>Baseball: <a href="http://www.blacksburgbaseball.com/">Blacksburg Baseball Association</a></li>
+  </ul>
+  {% else %}
+  <h5>Links</h5>
+  <ul>
+    <li><a href="#">VBI - Social Decision Analytics Lab</a></li>
+    <li><a href="#">Institute for Policy & Governance</a></li>
+    <li><a href="#">Transportation Institute</a></li>
+    <li><a href="#">Center for Public Administration</a></li>
+  </ul>
+{% endcase %}

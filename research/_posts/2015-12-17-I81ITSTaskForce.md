@@ -17,6 +17,7 @@ media1title: ""
 media2title: ""
 media3title: ""
 comments: true
+ordinal: 4
 ---
 
 Directed an effort to plan for Intelligent Transportation Systems deployment in the I-81 corridor in Virginia. This includes overseeing and participating in 6 technical working groups, including: Corridor Concept of Operation; Public Information & Marketing; Incident Response and Clearance; ITS Design Guidelines; Data Requirements; and, Traveler Information Services. This task force has the standing responsibility of recommending to VDOT the ITS projects that should be funded for each coming fiscal year.

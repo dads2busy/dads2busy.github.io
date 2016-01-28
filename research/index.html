@@ -3,62 +3,54 @@ layout: default
 title: Research
 category: research
 ---
+
 <div class="col-md-3 hidden-xs">
     <div class="sidebar well">
-      <i>{{ site.description }}</i>
-    </div>
-
-    <div class="sidebar well">
-      <table>
-        <tr>
-          <td style="padding-left: 12px">
-            <h5>Featured Research</h5>
-            <li></li>
-          </td>
-        </tr>
-      </table>
-    </div>
+      {% include sidebars/sidebar.html %}
+  </div>
 </div>
 
 <div class="col-md-9">
+  {% assign categoryPosts = site.posts | where:'category','research' %}
+  {% assign subcatNames = "Data Integration & Management,Web-Enabled Public Services" | split: "," %}
 
-{% assign categoryPosts = site.posts | where:'category','research' %}
-
-{% assign categorySubcategories = categoryPosts | group_by:'subcategory' %}
-
-{% for catsub in categorySubcategories %}
-
-  <h3 style="border-bottom:solid 1px black">{{ catsub.name }}</h3>
-
-  {% assign subcatPosts = categoryPosts | where:'subcategory',catsub.name %}
-
+  {% assign subcatPosts = categoryPosts | where:'subcategory', 'Data Integration & Management') | sort: 'ordinal' %}
+  <h3 style="border-bottom:solid 1px black">Data Integration & Management</h3>
   {% for post in subcatPosts %}
-  <div class="post">
-    <h4 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h4>
-    <p class="meta">Sponsor: {{ post.sponsor }}</p>
-    <p class="meta">Dates: {{ post.dates }}&nbsp; Role: {{ post.role }}&nbsp; Award: {{ post.award }}</p>
-    <div class="entry">
-      <p>{{ post.content | strip_html | truncatewords: 100 }}</p>
-    </div>
-    {% if post.website != '' %}
-      <p>Website: <a href="{{ post.website }}">{{ post.website }}</a></p>
-    {% endif %}
-    {% if post.report != '' %}
-      <p>Report: <a href="/downloads/{{ post.report }}">{{ post.report }}</a></p>
-    {% endif %}
-    {% if post.media1 != '' %}
-      <p>Media: <a href="/downloads/{{ post.media1 }}">{{ post.media1title }}</a></p>
-    {% endif %}
-    {% if post.media2 != '' %}
-      <p>Media: <a href="/downloads/{{ post.media2 }}">{{ post.media2title }}</a></p>
-    {% endif %}
-    {% if post.media3 != '' %}
-      <p>Media: <a href="/downloads/{{ post.media3 }}">{{ post.media3title }}</a></p>
-    {% endif %}
-  </div>
+    {% include research.html %}
+  {% endfor %}
+
+  {% assign subcatPosts = categoryPosts | where:'subcategory', 'Program Evaluation/Policy Analysis') | sort: 'ordinal' %}
+  <h3 style="border-bottom:solid 1px black">Program Evaluation/Policy Analysis</h3>
+  {% for post in subcatPosts %}
+    {% include research.html %}
+  {% endfor %}
+
+  {% assign subcatPosts = categoryPosts | where:'subcategory', 'Policy Implementation Networks') | sort: 'ordinal' %}
+  <h3 style="border-bottom:solid 1px black">Policy Implementation Networks</h3>
+  {% for post in subcatPosts %}
+    {% include research.html %}
+  {% endfor %}
+
+  {% assign subcatPosts = categoryPosts | where:'subcategory', 'Web-Enabled Public Services') | sort: 'ordinal' %}
+  <h3 style="border-bottom:solid 1px black">Web-Enabled Public Services</h3>
+  {% for post in subcatPosts %}
+    {% include research.html %}
+  {% endfor %}
+
+  {% assign subcatPosts = categoryPosts | where:'subcategory', 'Wireless Technologies') | sort: 'ordinal' %}
+  <h3 style="border-bottom:solid 1px black">Wireless Technologies</h3>
+  {% for post in subcatPosts %}
+    {% include research.html %}
+  {% endfor %}
+
+  {% assign subcatPosts = categoryPosts | where:'subcategory', 'Activity Measurement') | sort: 'ordinal' %}
+  <h3 style="border-bottom:solid 1px black">Activity Measurement</h3>
+  {% for post in subcatPosts %}
+    {% include research.html %}
   {% endfor %}
 
 
-{% endfor %}
+
 
 </div>

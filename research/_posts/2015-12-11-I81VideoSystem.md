@@ -17,6 +17,7 @@ media1title: ""
 media2title: ""
 media3title: ""
 comments: true
+ordinal: 2
 ---
 
 The goal of this project was to install several Internet-based traffic monitoring cameras along the Interstate corridor in the Northern Shenandoah Valley to provide video images to the Virginia Department of Transportation (VDOT) and to the traveling public via the 511 web page. One objective was to develop partnerships with public institutions along the I-81 Corridor in order to utilize existing Network Virginia Internet Connections. Cameras would be located as closely to the Interstate as possible, and wireless Internet communications would be used to transmit the camera image from the roadside to the Network Virginia Internet backdrop.

@@ -2,11 +2,11 @@
 layout: post
 category: research
 subcategory: "Program Evaluation/Policy Analysis"
-title: "Staunton District ITS Concept of Operations"
+title: "Corridor Concept of Operations"
 date: 2012-05-22 16:25:06 -0700
 sponsor: Virginia Department of Transportion (VDOT)
-award: $125,000
-dates: 2000
+award: $50,000
+dates: 2001
 role: PI
 website: ""
 report: ""
@@ -19,5 +19,3 @@ media3title: ""
 comments: true
 ordinal: 5
 ---
-
-Conducted analysis and created report outlining the functions of the integrated regional ITS, the agencies involved in operating and managing the ITS, and each agency's roles and responsibilities.

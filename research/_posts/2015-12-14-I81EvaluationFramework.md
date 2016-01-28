@@ -17,6 +17,7 @@ media1title: ""
 media2title: ""
 media3title: ""
 comments: true
+ordinal: 2
 ---
 
 The I-81 ITS Program is a framework for on-going coordination, planning, design, and implementation of ITS investments along the I-81 Corridor in Virginia. Numerous stakeholders are involved in the Program including the Virginia Department of Transportation (VDOT), who sponsors the Program, the Virginia State Police (VSP), the Department of Motor Vehicles (DMV), the Virginia Tech Transportation Institute (VTTI), and ITS Consultants working in the Corridor. The Program began in June of 2000, and VTTI managed the Program from June 2000 through June 2001. VTTI also evaluated the Program from September 2001 through March 2002, and through 2004 developed an Evaluation Framework for the on-going evaluation of ITS projects funded through the Program.

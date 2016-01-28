@@ -17,6 +17,7 @@ media1title: "ScienceBlog.com, Feb 23, 1999"
 media2title: "Richmond Times-Dispatch, July 27, 2000"
 media3title: "Public Roads, Nov 2000"
 comments: true
+ordinal: 6
 ---
 
 Directed the conceptual and technical design, development, and deployment of a Traveler Information System in Virginia’s Shenandoah Valley: Travel Shenandoah (www.travelshenandoah.com). The system integrated current traffic & travel conditions, food and lodging information, traveler services information, tourism information, emergency services information, and trip routing capabilities.

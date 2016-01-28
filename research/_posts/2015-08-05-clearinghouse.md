@@ -17,6 +17,7 @@ media2title: ""
 media3title: ""
 report: dataclearinghouse.pdf
 comments: true
+ordinal: 4
 ---
 
 Co-directed a $12 million / 6-year program to facilitate ITS deployment in the Commonwealth of Virginia. The Center for Technology Deployment was responsible for directly administering $1.8 million over the 6-year period and focused on the design , development and production of the “Virginia Traveler Information Clearinghouse”.

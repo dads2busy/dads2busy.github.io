@@ -3,23 +3,11 @@ layout: default
 title: Coaching
 category: coaching
 ---
+
 <div class="col-md-3 hidden-xs">
     <div class="sidebar well">
-      <i>{{ site.description }}</i>
-    </div>
-
-    <div class="sidebar well">
-      <table>
-        <tr>
-          <td style="padding-left: 12px">
-            <h5>Featured Youth Sports Organizations</h5>
-            <li>Basketball: <a href="http://eastcoastfusion.com/">East Coast Fusion - Youth Development Program</a></li>
-            <li>Soccer: <a href="http://www.newriverunited.com/">New River United Soccer Association</a></li>
-            <li>Baseball: <a href="http://www.blacksburgbaseball.com/">Blacksburg Baseball Association</a></li>
-          </td>
-        </tr>
-      </table>
-    </div>
+      {% include sidebars/sidebar.html %}
+  </div>
 </div>
 
 <div class="col-md-9">
@@ -34,5 +22,4 @@ category: coaching
     </div>
   </div>
 {% endfor %}
-
 </div>

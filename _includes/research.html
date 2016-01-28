@@ -1,0 +1,27 @@
+<div class="post">
+  <h4 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h4>
+  <strong>Award:</strong> {{ post.award }}&nbsp;<strong>Role:</strong> {{ post.role }}<br />
+  <strong>Sponsor:</strong> {{ post.sponsor }}&nbsp;<strong>Dates:</strong> {{ post.dates }}
+
+
+
+  <!-- <div class="entry">
+    <p>{{ post.content | strip_html | truncatewords: 100 }}</p>
+  </div> -->
+  {% if post.website != '' %}
+    <p>Website: <a href="{{ post.website }}">{{ post.website }}</a></p>
+  {% endif %}
+  {% if post.report != '' %}
+    <p>Report: <a href="/downloads/{{ post.report }}">{{ post.report }}</a></p>
+  {% endif %}
+  {% if post.media1 != '' %}
+    <p>Media: <a href="/downloads/{{ post.media1 }}">{{ post.media1title }}</a></p>
+  {% endif %}
+  {% if post.media2 != '' %}
+    <p>Media: <a href="/downloads/{{ post.media2 }}">{{ post.media2title }}</a></p>
+  {% endif %}
+  {% if post.media3 != '' %}
+    <p>Media: <a href="/downloads/{{ post.media3 }}">{{ post.media3title }}</a></p>
+  {% endif %}
+
+</div>
