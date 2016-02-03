@@ -18,7 +18,7 @@ website: ""
     # lvcreate -L 100G myVolGroup -n myLogVol1
 
 ### Format the new logical volume
-    # mkfs.ext4 /dev/mapper/[volume group name]-[new logical volume name]
+    # mkfs.ext4 /dev/mapper/[volume group name]_[new logical volume name]
     example
     # mkfs.ext4 /dev/mapper/myVolGroup_myLogVol1
 

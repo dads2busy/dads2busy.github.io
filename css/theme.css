@@ -61,3 +61,18 @@ ul {
   margin-left: 10px;
   padding-left: 10px;
 }
+
+.collapsibleList li{
+  list-style-image:url('/images/button.png');
+  cursor:auto;
+}
+
+li.collapsibleListOpen{
+  list-style-image:url('/images/button-open.jpg');
+  cursor:pointer;
+}
+
+li.collapsibleListClosed{
+  list-style-image:url('/images/button-closed.jpg');
+  cursor:pointer;
+}

@@ -5,10 +5,45 @@
     <meta charset="UTF-8">
     <title>{{ site.name }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="{{ site.baseurl }}/js/jquery.min.js"></script>
     <script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
     <link href="{{ site.baseurl }}/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ site.baseurl }}/css/theme.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <script>
+    $(function(){
+      $(".accordion").accordion({
+        heightStyle: 'content',
+        animate: 10,
+        active: 3,
+        activate: function(event, ui) {
+          localStorage.setItem("accIndex", $(this).accordion("option", "active"));
+        },
+        active: parseInt(localStorage.getItem("accIndex"))
+      });
+    });
+    </script>
+    <style>
+      /* unvisited link */
+      a:link {
+        color: green;
+      }
+      /* visited link */
+      a:visited {
+        color: green;
+      }
+      /* mouse over link */
+      a:hover {
+        color: hotpink;
+      }
+      /* selected link */
+      a:active {
+        color: blue;
+      }
+    </style>
 </head>
 
 <body>
