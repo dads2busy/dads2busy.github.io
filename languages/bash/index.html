@@ -1,6 +1,6 @@
 ---
 layout: "default"
-title: "Bash Scripts"
+title: "Bash Code"
 category: "tools"
 description: ""
 ---
@@ -14,7 +14,7 @@ description: ""
 
 {% assign categoryPosts = site.posts | where:'category','tools' %}
 
-{% assign subcategoryPosts = categoryPosts | where:'subcategory', 'Bash Scripts' | sort: 'ordinal' %}
+{% assign subcategoryPosts = categoryPosts | where:'subcategory', 'Bash Code' | sort: 'ordinal' %}
 <h2>{{ page.title }}</h2>
 <h4>{{ page.description }}</h4>
   {% for post in subcategoryPosts %}
