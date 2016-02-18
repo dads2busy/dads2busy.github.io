@@ -10,8 +10,8 @@ website: ""
 ---
 <!--break-->
 
-###To recursively give directories read&execute privileges:
+### To recursively give directories read&execute privileges:
     find /path/to/base/dir -type d -exec chmod 770 {} +
 
-###To recursively give files read privileges:
+### To recursively give files read privileges:
     find /path/to/base/dir -type f -exec chmod 660 {} +
