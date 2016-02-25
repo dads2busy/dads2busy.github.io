@@ -10,12 +10,12 @@ website: ""
 ---
 <!--break-->
 
-###Make all new child folders be owned by same group
+### Make all new child folders be owned by same group
     chmod g+s <directory>  //set gid
 
-###Set default permissions for new folders
+### Set default permissions for new folders
     setfacl -d -m g::rwx /<directory>  //set group to rwx default
     setfacl -d -m o::rx /<directory>   //set other
 
-###Verify Settings
+### Verify Settings
     getfacl /<directory>
