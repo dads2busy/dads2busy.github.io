@@ -20,9 +20,9 @@ website: ""
     # lvcreate -L 100G myVolGroup -n myLogVol1
 
 ### Format the new logical volume
-    # mkfs.ext4 /dev/mapper/[volume group name]_[new logical volume name]
+    # mkfs.ext4 /dev/mapper/[volume group name]-[new logical volume name]
     example
-    # mkfs.ext4 /dev/mapper/myVolGroup_myLogVol1
+    # mkfs.ext4 /dev/mapper/myVolGroup-myLogVol1
 
 ### Fill formatted logical volume with random Data
     # dd if=/dev/urandom of=/dev/[volume group name]/[new logical volume name]
