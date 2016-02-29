@@ -11,7 +11,9 @@ website: ""
 <!--break-->
 
 ## 1. Create a LUKS Encrypted Logical Volume
-(assuming you already have a volume group set up)
+
+### assuming you already have a volume group set up
+
 ### Create Logical Volume
     # lvcreate -L [new logical volume size] [volume group name] -n [new logical volume name]
     example
