@@ -84,15 +84,13 @@ client organization</li>
   <ul>
       <li><a href="/downloads/Policy Inquiry - Lecture 3 - Descriptive Statistics - Textual and Graphical.pptx">
           Descriptive Statistics: Textual &amp; Graphical</a></li>
-      <li><a href="/downloads/Descriptive%20Textual%20Graphical/Constructing%20Contingency%20Tables%20Exercises.pdf">
+      <li><a href="//downloads/Contingency Table Exercises.docx">
           Constructing Contingency Tables Exercises (pdf)</a></li>
-      <li><a href="/downloads/Descriptive%20Textual%20Graphical/Contingency%20Table%20Example%20-%20Automobile%20Maintence%20Data.pdf">
-          Contingency Table Example - Automobile Maintence Data (pdf)</a></li>
-      <li><a href="/downloads/Descriptive%20Textual%20Graphical/Larger%20Contingency%20Table%20Example%20-%20Income%20and%20Job%20Satisfaction.pdf">
+      <li><a href="/downloads/Lecture 5, Contingency Table Example - Automobile Maintence Data.doc">
+          Contingency Table Example - Automobile Maintence Data</a></li>
+      <li><a href="/downloads/Lecture 5, Contingency Table Example (Larger) - Income and Job Satisfaction.doc">
           Larger Contingency Table Example - Income and Job
-          Satisfaction (pdf)</a></li>
-      <li><a href="/downloads/Descriptive%20Textual%20Graphical/Exercises%205-1,%205-2%20&%205-4.pdf">
-          Exercises 5-1, 5-2 & 5-4 (pdf)</a></li>
+          Satisfaction</a></li>
   </ul>
 
 ### Descriptive Statistics - Numerical Representations
@@ -102,8 +100,8 @@ client organization</li>
       Data</p>
   <ul>
       <li><a href="/downloads/Policy Inquiry - Lecture 4 - Descriptive Statistics - Numerical.pptx">
-          Descriptive Statistics: Numerical (pdf)</a></li>
-      <li><a href="/downloads/Descriptive%20Numerical/Medians%20from%20Grouped%20Data.pdf">
+          Descriptive Statistics: Numerical</a></li>
+      <li><a href="/downloads/Lecture 4, Medians from Grouped Data Example.pdf">
           Medians from Grouped Data (pdf)</a></li>
   </ul>
 
@@ -114,9 +112,9 @@ client organization</li>
       Construction and Analysis of Contingency Tables, Statistical Aids for
       Interpretation, Control Table Analysis</p>
   <ul>
-      <li><a href="/downloads/Analysis%20Nominal%20Ordinal/Analysis%20of%20Nominal%20and%20Ordinal%20Data.pdf">
-          Analysis of Nominal and Ordinal Data (pdf)</a></li>
-      <li><a href="/downloads/Analysis%20Nominal%20Ordinal/Calculating%20Chi-Square.pdf">Analysis Nominal
+      <li><a href="/downloads/Policy Inquiry - Lecture 5 - Analysis of Nominal and Ordinal Data.pptx">
+          Analysis of Nominal and Ordinal Data</a></li>
+      <li><a href="/downloads/Calculating%20Chi-Square.pdf">Analysis Nominal
           Calculating Chi-Square (pdf)</a></li>
   </ul>
 
@@ -140,7 +138,7 @@ client organization</li>
   <ul>
       <li><a href="/downloads/Policy Inquiry - Lecture 7 - Hypothesis Testing and the t-Test.pptx">Hypothesis Testing and the t-Test</a></li>
       <li><a href="downloads/Policy Inquiry - Lecture 7 - Hypothesis Testing and z, t and chi.pptx">Hypothesis Testing and z, t and chi</a></li>
-      <li><a href="/downloads/Validity%20Inference/Alcoholism%20Third%20Variable.pdf">Alcoholism and Controlling for a Third Variable(pdf)</a></li>
+      <li><a href="/downloads/Lecture 5, Alcoholism Third Variable.doc">Alcoholism and Controlling for a Third Variable(pdf)</a></li>
   </ul>
 
 ### Linear Regression
@@ -151,12 +149,16 @@ client organization</li>
 
   <ul>
       <li><a href="/downloads/Policy Inquiry - Lecture 8 - Linear Regression.pptx">Linear Regression</a></li>
+      <li><a href="/downloads/Regression Example - Beer Revenue.pdf">Linear Regression Example - Beer Revenue</a></li>
   </ul>
 
 ### Research Design
 
   <p>
-      Research Designs for Description, Research Designs for Explanation</p>           
+      Research Designs for Description, Research Designs for Explanation</p>
+      <ul>
+        <li><a href="/downloads/Research Designs for Explanation.ppt">Research Designs for Explanation</a></li>
+      </ul>      
 
 ### Draft Instrument Design
 
