@@ -156,9 +156,10 @@ client organization</li>
 
   <p>
       Research Designs for Description, Research Designs for Explanation</p>
-      <ul>
-        <li><a href="/downloads/Research Designs for Explanation.ppt">Research Designs for Explanation</a></li>
-      </ul>      
+
+  <ul>
+    <li><a href="/downloads/Research Designs for Explanation.ppt">Research Designs for Explanation</a></li>
+  </ul>      
 
 ### Draft Instrument Design
 
