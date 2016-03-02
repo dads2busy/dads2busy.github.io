@@ -4,9 +4,10 @@ category: teaching
 title: "Research Design & Statistics"
 date: 2013-05-22 16:25:06 -0700
 comments: false
+website: ""
 ---
 
-###Course Description
+### Course Description
 <p>
     PA and Policy Inquiry serves as the &quot;methods&quot; course for the MPA curriculum.
     However, unlike traditional methods course, this course is aimed at those who
@@ -17,9 +18,9 @@ comments: false
     to design and understand research set up to provide causal explanation, this
     will not be the main focus.
 </p>
-<p>
-</p>
-###Learning Objectives
+
+### Learning Objectives
+
 <ul>
     <li>Attain a good conceptual understanding of &quot;statistical&quot; thinking.</li>
     <li>Understand the tools of analytic decision making.</li>
@@ -27,7 +28,7 @@ comments: false
     <li>Be able to use Microsoft Excel for basic statistical operations and analysis</li>
 </ul>
 
-###Assignments:
+### Assignments:
 <ol>
     <li>Statistical Forms of Logic Assignment</li>
     <li>Indicators of Excellence and Satisfaction Assignment</li>
@@ -42,7 +43,7 @@ comments: false
 client organization</li>
 </ol>
 
-###Grading
+### Grading
 <ul>
     <li>60% assignments</li>
     <li>20% final paper</li>
@@ -50,61 +51,62 @@ client organization</li>
     <li>10% class participation</li>
 </ul>      
 
-###Required Materials
+### Required Materials
 * (Later in Semester) Statistical Analysis with Excel for Dummies by Joseph
     Schmuller
 
-###Course Sessions
-####Introduction to Inquiry and the Forms of Statistical Reasoning
+### Course Sessions
+
+#### Introduction to Inquiry and the Forms of Statistical Reasoning
 
   <p>
       Introduction of teacher and students. Introduction to the purpose&nbsp;and focus of
       the course. Introduction to Nine Major Statistical Ideas.</p>
   <ul>
-      <li><a href="/downloads/Forms%20of%20Statistical%20Logic.pdf">Forms
-          of Statistical Logic (pdf)</a></li>
+      <li><a href="/downloads/Policy Inquiry - Lecture 1 - Forms of Statistical Logic.pptx">Forms
+          of Statistical Logic</a></li>
   </ul>
 
 #### Categories, Classification, Measurements, and Scales
-#####Nominal, Ordinal, Interval, Ratio
+
+##### Nominal, Ordinal, Interval, Ratio
 
   <ul>
-      <li><a href="/downloads/Categories,%20Classification,%20Measurement%20and%20Scales.pdf">
-          Categories, Classification, Measurement &amp; Scales (pdf)</a></li>
+      <li><a href="/downloads/Policy Inquiry - Lecture 2 - Categorization, Indexes & Scales.pptx">
+          Categories, Classification, Measurement &amp; Scales</a></li>
   </ul>
 
-###Descriptive Statistics - Textual and Graphical Representations
+### Descriptive Statistics - Textual and Graphical Representations
 
   <p>
       Tables, Frequency Distributions, Percentage Frequency Distributions, Cummulative
       Frequency Distributions, Bar Graphs, Histographs, Line Graphs, Pie Charts</p>
   <ul>
-      <li><a href="Descriptive%20Textual%20Graphical/Schroeder_Descriptive_Statistics_Textual_and_Graphical.pdf">
-          Descriptive Statistics: Textual &amp; Graphical (pdf)</a></li>
-      <li><a href="Descriptive%20Textual%20Graphical/Constructing%20Contingency%20Tables%20Exercises.pdf">
+      <li><a href="/downloads/Policy Inquiry - Lecture 3 - Descriptive Statistics - Textual and Graphical.pptx">
+          Descriptive Statistics: Textual &amp; Graphical</a></li>
+      <li><a href="/downloads/Descriptive%20Textual%20Graphical/Constructing%20Contingency%20Tables%20Exercises.pdf">
           Constructing Contingency Tables Exercises (pdf)</a></li>
-      <li><a href="Descriptive%20Textual%20Graphical/Contingency%20Table%20Example%20-%20Automobile%20Maintence%20Data.pdf">
+      <li><a href="/downloads/Descriptive%20Textual%20Graphical/Contingency%20Table%20Example%20-%20Automobile%20Maintence%20Data.pdf">
           Contingency Table Example - Automobile Maintence Data (pdf)</a></li>
-      <li><a href="Descriptive%20Textual%20Graphical/Larger%20Contingency%20Table%20Example%20-%20Income%20and%20Job%20Satisfaction.pdf">
+      <li><a href="/downloads/Descriptive%20Textual%20Graphical/Larger%20Contingency%20Table%20Example%20-%20Income%20and%20Job%20Satisfaction.pdf">
           Larger Contingency Table Example - Income and Job
           Satisfaction (pdf)</a></li>
-      <li><a href="Descriptive%20Textual%20Graphical/Exercises%205-1,%205-2%20&%205-4.pdf">
+      <li><a href="/downloads/Descriptive%20Textual%20Graphical/Exercises%205-1,%205-2%20&%205-4.pdf">
           Exercises 5-1, 5-2 & 5-4 (pdf)</a></li>
   </ul>
 
-###Descriptive Statistics - Numerical Representations
+### Descriptive Statistics - Numerical Representations
 
   <p>
       Mode, Median, Arithmetic Mean, Weighted Average, Means and Medians from Grouped
       Data</p>
   <ul>
-      <li><a href="Descriptive%20Numerical/Descriptive%20Statistics%20-%20Numerical.pdf">
+      <li><a href="/downloads/Policy Inquiry - Lecture 4 - Descriptive Statistics - Numerical.pptx">
           Descriptive Statistics: Numerical (pdf)</a></li>
-      <li><a href="Descriptive%20Numerical/Medians%20from%20Grouped%20Data.pdf">
+      <li><a href="/downloads/Descriptive%20Numerical/Medians%20from%20Grouped%20Data.pdf">
           Medians from Grouped Data (pdf)</a></li>
   </ul>
 
-  </div>
   <div>
       <span class="title2">Analysis of Nominal and Ordinal Data</span>
   </div>
@@ -112,20 +114,21 @@ client organization</li>
       Construction and Analysis of Contingency Tables, Statistical Aids for
       Interpretation, Control Table Analysis</p>
   <ul>
-      <li><a href="Analysis%20Nominal%20Ordinal/Analysis%20of%20Nominal%20and%20Ordinal%20Data.pdf">
+      <li><a href="/downloads/Analysis%20Nominal%20Ordinal/Analysis%20of%20Nominal%20and%20Ordinal%20Data.pdf">
           Analysis of Nominal and Ordinal Data (pdf)</a></li>
-      <li><a href="Analysis%20Nominal%20Ordinal/Calculating%20Chi-Square.pdf">Analysis Nominal
+      <li><a href="/downloads/Analysis%20Nominal%20Ordinal/Calculating%20Chi-Square.pdf">Analysis Nominal
           Calculating Chi-Square (pdf)</a></li>
   </ul>
 
-###Validity and Sampling
+### Validity and Sampling
 
   <p>
       Conclusion Validity, Internal Validity, Construct Validity, External Validity,
       Sampling Error, Sampling Distribution, Probability Sampling, Non-Probability
       Sampling</p>
   <ul>
-      <li><a href="Validity%20Inference/Validity_Inference_and_Sampling.pdf">Validity Inference &amp; Sampling (pdf)</a></li>
+      <li><a href="/downloads/Policy Inquiry - Lecture 6 - Validity, Inference and Sampling - Instructor.pptx">Validity Inference &amp; Sampling</a></li>
+
   </ul>
 
   <div>
@@ -135,26 +138,27 @@ client organization</li>
       Hypotheses and Statistical Decision Making, Testing Hypotheses with Populations,
       Testing Populations with Samples</p>
   <ul>
-      <li><a href="Hypotheses/Schroeder_Hypothesis_Testing_and_the_t-Test.pdf">Hypothesis Testing, Chi-Square and the t-Test (pdf)</a></li>
-      <li><a href="Validity%20Inference/Alcoholism%20Third%20Variable.pdf">Alcoholism and Controlling for a Third Variable(pdf)</a></li>
+      <li><a href="/downloads/Policy Inquiry - Lecture 7 - Hypothesis Testing and the t-Test.pptx">Hypothesis Testing and the t-Test</a></li>
+      <li><a href="downloads/Policy Inquiry - Lecture 7 - Hypothesis Testing and z, t and chi.pptx">Hypothesis Testing and z, t and chi</a></li>
+      <li><a href="/downloads/Validity%20Inference/Alcoholism%20Third%20Variable.pdf">Alcoholism and Controlling for a Third Variable(pdf)</a></li>
   </ul>
 
-###Linear Regression
+### Linear Regression
 
   <p>
       Linear Statistical Relationships, Standard Error of the Estimate, The
       Coefficient of Determination, The Standard Error of the Slope</p>
 
   <ul>
-      <li><a href="Linear%20Regression/Schroeder_SimpleLinearRegression.pdf">Linear Regression (pdf)</a></li>
+      <li><a href="/downloads/Policy Inquiry - Lecture 8 - Linear Regression.pptx">Linear Regression</a></li>
   </ul>
 
-###Research Design
+### Research Design
 
   <p>
       Research Designs for Description, Research Designs for Explanation</p>           
 
-###Draft Instrument Design
+### Draft Instrument Design
 
   <p>Project Team Meetings</p>
 
@@ -163,7 +167,7 @@ client organization</li>
   </div>
   <p>Project Team Meetings</p>
 
-###Statistics in Excel
+### Statistics in Excel
 
   <p>Computer Lab - Data Collection</p>
 
@@ -172,6 +176,6 @@ client organization</li>
   </div>
   <p>Whole Class Meets - Report &amp; Presentation</p>
 
-###Presentation to Client
-    <p>Final Analysis Due</p>
-</div>
+### Presentation to Client
+
+<p>Final Analysis Due</p>
