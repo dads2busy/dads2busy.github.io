@@ -50,6 +50,7 @@ website: ""
     # mount /dev/mapper/myLogVol1_Encrypted /home/auser/myEncryptedVolume
 
 ## 2. Automount the Encrypted Volume on Boot
+
 ### Create a directory to store your keys and make it read-only to root
     # mkdir -p /etc/luks-keys
     # chmod 0400 /etc/luks-keys
