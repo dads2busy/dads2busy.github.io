@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Entity Resolution
-category: datalinkage
+title: Data Exploration
+category: dataexploration
 description: ""
 ---
 <div class="col-md-3">
@@ -12,9 +12,9 @@ description: ""
 
 <div class="col-md-9">
 
-{% assign categoryPosts = site.posts | where:'category','datalinkage' %}
+{% assign categoryPosts = site.posts | where:'category','dataexploration' %}
 
-{% assign subcategoryPosts = categoryPosts | where:'subcategory', 'recordlinkage' | sort: 'ordinal' %}
+{% assign subcategoryPosts = categoryPosts | where:'subcategory', 'characterization' | sort: 'ordinal' %}
 <h2>{{ page.title }}</h2>
 <h4>{{ page.description }}</h4>
 

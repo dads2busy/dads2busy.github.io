@@ -3,7 +3,7 @@ layout: post
 category: datapreparation
 subcategory: datarestructuring
 title: "Restructuring"
-ordinal: 6
+ordinal: 1
 date: 2012-05-22 16:25:06 -0700
 comments: true
 website: ""
@@ -14,9 +14,11 @@ An example of restructuring in the education case study was the necessary sub-se
 
 Another example of necessary restructuring occurred when dealing with 3rd-party provided MLS data (as discussed in a few examples above). In this case, it was necessary to divide the provided dataset into multiple separate datasets, Property ID \& Location, Property Characteristics, Property Sales Information, and Property Tax Information. Each of these new datasets represents a distinct unit of analysis. All of the new datasets are then associated via a new identifier, in this case, Parcel Id (see Figure \ref{MLSRestructure}). However, "Parcel ID" in this case has been left blank in over 7% of the entries. Therefore, extra work was required employing the use of a geocoding API to locate a property within county parcel maps that already include a Parcel ID. In addition, an additional complication is the fact that no standardized address format was used in the creation of the MLS record. Therefore, a small amount of direct interaction and decision making by an analyst was also necessary to finalize the geographic matching.
 
+Restructuring single MLS dataset into multiple associated datasets.
 
-\begin{figure}[h!]
-\centerline{\includegraphics[scale=.4]{MLSRestructure.pdf}}
-\caption{Restructuring single MLS dataset into multiple associated datasets}
-\label{MLSRestructure}
-\end{figure}
+Starting with:
+<img src="/images/CombinedObservationalUnitTypes.png" style="border-width:0px;" />
+
+Restructuring to:
+
+<img src="/images/RestructuringData.png" style="border-width:0px;" />

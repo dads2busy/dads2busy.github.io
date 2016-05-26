@@ -1,9 +1,9 @@
 ---
 layout: post
 category: datapreparation
-subcategory: datatransformation
-title: "Feature Construction"
-ordinal: 5
+subcategory: datarestructuring
+title: "Feature Extraction & Construction"
+ordinal: 2
 date: 2012-05-22 16:25:06 -0700
 comments: true
 website: ""

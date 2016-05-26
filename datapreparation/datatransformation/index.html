@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Data Transformation
+title: Data Cleaning & Transformation
 category: datapreparation
 description: ""
 ---
@@ -20,6 +20,17 @@ description: ""
 
 Data transformation refers to the mapping of dataset field values from a provided format into
 an expected or more useful format.
+
+Data cleaning refers to the process of either fixing or removing data in a data source thatis incorrect, incomplete, improperly formatted, or duplicated.
+Data transformation refers to the mapping of dataset field values from a provided format into an expected or more useful format. In practice, these two
+activities often occur together and include assessing the following:
+<ul>
+  <li>Missing values</li>
+  <li>Date and time formats</li>
+  <li>De-duplication</li>
+  <li>Outliers</li>
+  <li>Normalization</li>
+</ul>
 
   {% for post in subcategoryPosts %}
   <div class="post">
