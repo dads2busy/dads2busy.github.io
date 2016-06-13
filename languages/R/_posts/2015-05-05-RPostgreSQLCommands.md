@@ -50,25 +50,34 @@ dbExistsTable(con,&quot;newTable&quot;)</pre>
 <p>23. dbDisconnect(con, ...) closes the connection.  Eg. </p><pre class="prettyprint">dbDisconnect(con)</pre>
 <p>24. dbUnloadDriver(drv,...) frees all the resources used by the driver. Eg. </p><pre class="prettyprint">dbUnloadDriver(drv)</pre><h2><a name="Example"></a>Example<a href="#Example" class="section_anchor"></a></h2>
 
+
+</HTML>
+
 #### loads the PostgreSQL driver
+
     library(RPostgreSQL)
-    drv <- dbDriver(&quot;PostgreSQL&quot;)
+    drv <- dbDriver("PostgreSQL")
 
 #### Open a connection
-    con <- dbConnect(drv, dbname=&quot;R_Project&quot;)
+
+    con <- dbConnect(drv, dbname="R_Project")
 
 #### Submits a statement
-    rs <- dbSendQuery(con, &quot;select * from R_Users&quot;)
+
+    rs <- dbSendQuery(con, "select * from R_Users")
 
 #### fetch all elements from the result set
+
     fetch(rs,n=-1)
 
 #### Submit and execute the query
-    dbGetQuery(con, &quot;select * from R_packages&quot;)
+
+    dbGetQuery(con, "select * from R_packages")
 
 #### Closes the connection
+
     dbDisconnect(con)
 
 #### Frees all the resources on the driver
+
     dbUnloadDriver(drv)
-</HTML>
