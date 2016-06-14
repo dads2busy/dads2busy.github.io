@@ -9,8 +9,11 @@ comments: true
 website: ""
 ---
 <!--break-->
+
 ### A Remote Volume Mounting Script for Linux and Mac
+
 #### This script reads from the ssh shortcuts in your ~/.ssh/config file. rmount will automatically create the mount folder and mount the remote filesystem to the folder. rumount will unmount the remote filesystem.
+
 #### Add this code or a link to the script file in your .bashrc file
 
     #!/bin/bash -ex
