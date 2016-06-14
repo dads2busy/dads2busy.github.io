@@ -10,11 +10,11 @@ website: ""
 ---
 <!--break-->
 
-####Workshop designed by Emily Molfe
+#### Workshop designed by Emily Molfe
 
-#####Good Cheat Sheet: http://www.maths.lancs.ac.uk/~rowlings/Teaching/UseR2012/cheatsheet.html
+##### Good Cheat Sheet: http://www.maths.lancs.ac.uk/~rowlings/Teaching/UseR2012/cheatsheet.html
 
-#####Source for some exercises: https://rpubs.com/cengel248/59418
+##### Source for some exercises: https://rpubs.com/cengel248/59418
 
 ## Load Libraries
 
@@ -122,13 +122,13 @@ myacs@acs.colnames
 ```
 
 ```
-[1] "HD01_VD01.Estimate; Total:"                                                                                                                 
-[2] "HD01_VD02.Estimate; Household received Food Stamps/SNAP in the past 12 months:"                                                             
-[3] "HD01_VD03.Estimate; Household received Food Stamps/SNAP in the past 12 months: - Households with 1 or more persons with a disability"       
-[4] "HD01_VD04.Estimate; Household received Food Stamps/SNAP in the past 12 months: - Households with no persons with a disability"              
-[5] "HD01_VD05.Estimate; Household did not receive Food Stamps/SNAP in the past 12 months:"                                                      
+[1] "HD01_VD01.Estimate; Total:"
+[2] "HD01_VD02.Estimate; Household received Food Stamps/SNAP in the past 12 months:"
+[3] "HD01_VD03.Estimate; Household received Food Stamps/SNAP in the past 12 months: - Households with 1 or more persons with a disability"
+[4] "HD01_VD04.Estimate; Household received Food Stamps/SNAP in the past 12 months: - Households with no persons with a disability"
+[5] "HD01_VD05.Estimate; Household did not receive Food Stamps/SNAP in the past 12 months:"
 [6] "HD01_VD06.Estimate; Household did not receive Food Stamps/SNAP in the past 12 months: - Households with 1 or more persons with a disability"
-[7] "HD01_VD07.Estimate; Household did not receive Food Stamps/SNAP in the past 12 months: - Households with no persons with a disability"       
+[7] "HD01_VD07.Estimate; Household did not receive Food Stamps/SNAP in the past 12 months: - Households with no persons with a disability"
 ```
 
 ```r
@@ -256,7 +256,7 @@ geodat.df$qt <- cut(geodat.df$snap,
 # Make VT into a data.frame
 VT<-as.data.frame(VT)
 
-# plot  
+# plot
 ggplot(geodat.df, aes(long,lat,group=group, fill=qt)) + # the data
   ggtitle("Households Recieving SNAP in Arlington") +
   geom_polygon() + # make polygons
@@ -312,7 +312,7 @@ VT <- as.data.frame(VT)
 
 
 ```r
-# plot  
+# plot
 ggplot(geodat.df, aes(long, lat, group = group, fill = qt)) +
   ggtitle("Households Recieving SNAP in Arlington") +
   geom_polygon() + # make polygons
@@ -430,7 +430,7 @@ philly.df$qt <- cut(philly.df$HOMIC_R,
                     breaks = quantile(philly.df$HOMIC_R, probs = 0:7/7, na.rm = TRUE),
                     include.lowest = TRUE)
 
-# plot  
+# plot
 ggplot(philly.df, aes(long,lat,group=group, fill=qt)) + # the data
   ggtitle("Homicide Rate in Philidelphia by Census Tract") +
   geom_polygon() + # make polygons
