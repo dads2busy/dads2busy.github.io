@@ -10,7 +10,7 @@ website: ""
 ---
 <!--break-->
 
-# Geocoding with Google Maps
+### Geocoding with Google Maps
 
 ## connect to database
     setwd("~/sdal/PRJ_201505_CENSUS/analysis/aschroed")
