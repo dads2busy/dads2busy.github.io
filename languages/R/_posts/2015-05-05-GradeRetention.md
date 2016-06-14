@@ -2,7 +2,7 @@
 layout: post
 category: r
 subcategory: "Education"
-title: "Grade Retention Algorithm"
+title: "Grade Retention Algorithm in R"
 ordinal: 1
 date: 2012-05-22 16:25:06 -0700
 comments: true

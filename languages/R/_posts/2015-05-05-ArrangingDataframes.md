@@ -2,7 +2,7 @@
 layout: post
 category: r
 subcategory: "Dataframes"
-title: "Arrange data frame columns"
+title: "Arrange R data frame columns"
 ordinal: 1
 date: 2012-05-22 16:25:06 -0700
 comments: true

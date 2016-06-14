@@ -2,7 +2,7 @@
 layout: post
 category: r
 subcategory: "Import"
-title: "Load CSV file into RStudio"
+title: "Load CSV file into R/RStudio"
 ordinal: 1
 date: 2012-05-22 16:25:06 -0700
 comments: true

@@ -2,7 +2,7 @@
 layout: post
 category: r
 subcategory: "Database"
-title: "Connect to PostgreSQL from RStudio"
+title: "Connect to PostgreSQL from R/RStudio"
 ordinal: 1
 date: 2012-05-22 16:25:06 -0700
 comments: true

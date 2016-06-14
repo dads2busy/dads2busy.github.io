@@ -2,7 +2,7 @@
 layout: post
 category: r
 subcategory: "Parallel"
-title: "Split and Parallel Example"
+title: "Split and Parallel Example in R"
 ordinal: 1
 date: 2012-05-22 16:25:06 -0700
 comments: true

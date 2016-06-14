@@ -2,7 +2,7 @@
 layout: post
 category: r
 subcategory: "Misc"
-title: "Timing Code"
+title: "Timing Code in R"
 ordinal: 1
 date: 2012-05-22 16:25:06 -0700
 comments: true
@@ -28,10 +28,10 @@ cats back a nice prompt for you.
         # return(prompt_string)
     }
 
-For example:  
+For example:
     strt <- Sys.time()
     print_difftime_prompt('add simulation dataframes to list', Sys.time() - strt)
-will return:  
+will return:
 `add simulation dataframes to list took: 36.1213629245758 secs`
 
 # Microbenchmark

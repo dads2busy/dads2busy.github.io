@@ -2,7 +2,7 @@
 layout: post
 category: r
 subcategory: "Dataframes"
-title: "Subset of data frame"
+title: "Subset of data frame in R"
 ordinal: 1
 date: 2012-05-22 16:25:06 -0700
 comments: true

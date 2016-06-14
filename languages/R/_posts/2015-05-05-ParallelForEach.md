@@ -2,7 +2,7 @@
 layout: post
 category: r
 subcategory: "Parallel"
-title: "Parallel Processing with foreach"
+title: "Parallel Processing with foreach in R"
 ordinal: 3
 date: 2012-05-22 16:25:06 -0700
 comments: true
@@ -21,7 +21,7 @@ website: ""
 
 ## 3a. Create a foreach loop
 ### It is the %dopar% piece that tells R to use the parallel cluster. If you want to just use a single processor, substitute with %do%.
-    ls <- foreach(i=1:num_rows) %dopar% {   
+    ls <- foreach(i=1:num_rows) %dopar% {
 
       <your code>
 

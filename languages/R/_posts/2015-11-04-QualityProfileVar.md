@@ -2,7 +2,7 @@
 layout: post
 category: r
 subcategory: "Quality Analysis"
-title: "Quality Profiling of a Data Field (Column)"
+title: "Quality Profiling of a Data Field (Column) in R"
 ordinal: 1
 date: 2012-05-22 16:25:06 -0700
 comments: true
