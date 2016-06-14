@@ -10,10 +10,11 @@ website: ""
 ---
 <!--break-->
 
-author: "Aaron D. Schroeder"   
+author: "Aaron D. Schroeder"
 description: Takes treatment data that is in long-format, transforms and casts the data to wide-format, then finds all consecutive-month treatment runs (spells).
 
 ## 1. Add Libraries and Import Data
+
 #### Sample data includes client id and service/treatment date.
 
 ```r
@@ -39,6 +40,7 @@ reshapeData <- read.csv("R dosage test data.csv")                     # Import c
 ```
 
 ## 2. Create New Transposed Data Frame
+
 #### Transform service date into month_year. Add a received column to be used in the cast step to show months receiving service.
 
 ```r
@@ -66,6 +68,7 @@ newDF <- data.frame(clientid, monthYear, received)                           # C
 ```
 
 ## 3. Cast to wide data frame
+
 #### Creates a single row per client id with "1" indicating service received, otherwise "0".
 
 ```r
@@ -80,6 +83,7 @@ castDF <- dcast(newDF, clientid ~ monthYear, value.var="received", fill="0") # R
 ```
 
 ## 4. Build data frame to be filled
+
 #### Include columns for spell count, spell lengths (a comma delimited string of spell lengths), max spell length, and min spell length.
 
 ```r
@@ -88,6 +92,7 @@ finalDF <- data.frame(vars)                                            # Add vec
 ```
 
 ## 5. Get all runs (dosage spells) per id
+
 #### Loops through wide data frame and uses the R Run Length Encoding (RLE) function to get runs of consecutive integers (in this case "1"). Would be faster using vectorization but looping is easier to understand and generally fast enough.
 
 ```r
