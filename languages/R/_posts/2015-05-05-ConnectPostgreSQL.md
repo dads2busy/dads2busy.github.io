@@ -32,7 +32,7 @@ website: ""
         , user="aaron", password="aaron")
 
 <hr />
-##View for all tables in the connected database
+## View for all tables in the connected database
 
 ### connect to database
     source(file="~/R/pg_connect.R")
