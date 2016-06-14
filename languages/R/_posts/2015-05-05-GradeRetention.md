@@ -10,10 +10,11 @@ website: ""
 ---
 <!--break-->
 
-author: "Aaron D. Schroeder"   
+author: "Aaron D. Schroeder"
 description: Takes yearly student record data in long-format, transforms and casts the data to wide-format, then finds number of times each grade was attended (times attended > 1 = retention).
 
 ## 1. Add Libraries and Import Data
+
 #### Sample data includes client id, grade year (e.g. KG, 1, 2), and entry date (first day of school)
 
 ```r
@@ -35,18 +36,22 @@ retentionData <- read.csv("GradeRetentionData.csv")
 ## 10  ClientB        KG  8/1/2004
 ## 11  ClientB         1  8/1/2005
 ```
+
 ## 2. Transform column data where necessary and build new data frame
+
 #### Reduce date to just year
 
 ```r
 yearattend <- format(as.Date(retentionData$entrydate, "%m/%d/%Y"), "%Y")
 ```
+
 #### Custom function gradeNum is added to convert text grade number (e.g. "KG") to numeric (e.g. "0") to help with sorting. The function is applied using mapply, a vectorized approach (as opposed to looping).
 
 ```r
 gradeNum <- function(x){ switch(x, "KG" = 0, "K"  = 0, "PK" = -1, "P"  = -1, x) }
 gradeyear <- mapply(gradeNum, x = as.character(retentionData$gradeyear))
 ```
+
 #### Construct new data frame (here we use same name to replace old data frame).
 
 ```r
@@ -67,7 +72,9 @@ retentionData <- data.frame(clientid = retentionData$clientid, gradeyear, yearat
 ## 10  ClientB         0       2004
 ## 11  ClientB         1       2005
 ```
+
 ## 3. Eliminate duplicate records
+
 #### Two records with identical clientid, gradeyear, and yearattend are duplicates, not a grade retention. Notice record 10 was eliminated as a duplicate.
 
 ```r
@@ -87,7 +94,9 @@ retentionData <- unique(retentionData[,c("clientid","gradeyear","yearattend")])
 ## 9   ClientB         0       2004
 ## 11  ClientB         1       2005
 ```
+
 ## 4. Cast to wide data frame
+
 #### Create a single row for each clientid + gradeyear combination. Order by clientid and gradeyear.
 
 ```r
@@ -106,7 +115,9 @@ castDF <- castDF[order(castDF$clientid, castDF$gradeyear),]
 ## 7  ClientC         5    0    0    0    0    1    1    0    0
 ## 8  ClientC         6    0    0    0    0    0    0    1    0
 ```
+
 ## 5. Create summary column
+
 #### Create row sums column and add to new wide data frame
 
 ```r
