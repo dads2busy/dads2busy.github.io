@@ -1,7 +1,7 @@
 ---
 layout: post
 category: teaching
-title: "Research Design & Statistics"
+title: "Public Administration & Policy Inquiry (Research Design & Statistics)"
 date: 2013-05-22 16:25:06 -0700
 comments: false
 website: ""
@@ -49,7 +49,7 @@ client organization</li>
     <li>20% final paper</li>
     <li>10% final presentation</li>
     <li>10% class participation</li>
-</ul>      
+</ul>
 
 ### Required Materials
 * (Later in Semester) Statistical Analysis with Excel for Dummies by Joseph
@@ -159,7 +159,7 @@ client organization</li>
 
   <ul>
     <li><a href="/downloads/Research Designs for Explanation.ppt">Research Designs for Explanation</a></li>
-  </ul>      
+  </ul>
 
 ### Draft Instrument Design
 
@@ -175,7 +175,7 @@ client organization</li>
   <p>Computer Lab - Data Collection</p>
 
   <div class="title2">
-      Data Collection &amp; Analysis Draft            
+      Data Collection &amp; Analysis Draft
   </div>
   <p>Whole Class Meets - Report &amp; Presentation</p>
 
