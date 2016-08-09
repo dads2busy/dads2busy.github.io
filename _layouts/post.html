@@ -26,6 +26,9 @@
             {% if page.website != '' %}
               <div><a href="{{page.website}}">Download</a><div>
             {% endif %}
+            {% if page.report != '' %}
+              <div><a href="{{page.report}}">{{page.report}}</a><div>
+            {% endif %}
             <!--{% if page.comments %}
             <div id="disqus_thread">
                 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
