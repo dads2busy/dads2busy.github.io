@@ -1,0 +1,17 @@
+---
+layout: post
+category: writing
+subcategory: "Journal Publications (refereed)"
+title: "Towards an in silico Experimental Platform for Air Quality - Houston, TX as a Case Study."
+sponsor: Computational Social Science Society of America Conference. Santa Fe, New Mexico.
+dates: 2015
+website: ""
+authors: "Pires, B., Korkmaz, G., Ensor, K., Higdon, D., Keller, S. A., Schroeder"
+editors:
+pages: ""
+DOI: ""
+comments: false
+---
+
+In this paper we couple a spatiotemporal air quality modelof ozone concentration levels with the synthetic information model of theHouston Metropolitan Area. While traditional approaches often aggre-gate the population, activities, or concentration levels of the pollutantacross  space  and/or  time,  we  utilize  high  performance  computing  andstatistical learning tools to maintain the granularity of the data, allow-ing us to attach specific exposure levels to the synthetic individuals basedon the exact time of day and geolocation of the activity. We demonstratethat maintaining the granularity of the data is critical to more accuratelyreflect the heterogeneous exposure levels of the population across timewithin the greater Houston area. We find that individuals in the samezip code, neighborhood, block, and even household have varying levelsof exposure depending on their activity patterns throughout the day.
+
