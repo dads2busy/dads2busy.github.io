@@ -4,8 +4,9 @@ title: Research
 category: research
 ---
 
+<h3 style="text-align: center">{{ site.title }}</h3>
+
 <div class="col-md-3 hidden-xs">
-    <h3 style="text-align: center">{{ site.title }}</h3>
     <div class="sidebar well">
       {% include sidebars/sidebar.html %}
   </div>

@@ -3,6 +3,9 @@ layout: default
 category: briefbio
 ---
 <div class="col-md-3 hidden-xs">
+
+    <h3 style="text-align: center">{{ site.title }}</h3>
+
     <div class="sidebar well">
       <i>{{ site.description }}</i>
     </div>
@@ -33,13 +36,18 @@ category: briefbio
         <span class="name">
           <img class="headerpic" src="/images/Aaron-Head-Shot-copy-2.png" align="left" style="border-width:0px;" />
           <h3>Aaron D. Schroeder, Ph.D.</h3>
-          <span style="font-weight: bold">Information Architect & Data Scientist</span>, <a href="http://sdal.vbi.vt.edu">Social & Decision Analytics Lab</a>, Biocomplexity Institute of Virginia Tech
+          <span style="font-weight: bold">Information Architect & Senior Data Research Scientist</span>
           <br />
-          <a href="mailto:aaron.schroeder@vt.edu">aaron.schroeder@vt.edu</a><br /><br />
+            <a href="http://sdal.vbi.vt.edu">Social & Decision Analytics Lab</a>, Biocomplexity Institute of Virginia Tech
+          <br />
+            <a href="mailto:aaron.schroeder@vt.edu">aaron.schroeder@vt.edu</a><br /><br />
         </span>
         <p class="biosketch">
+          Dr. Schroeder has extensive experience enabling Evidence-Based Policy-Making and Program Evaluation through the Secure Liberation, Integration and Analysis of Administrative Data.
+        </p>
+        <p class="biosketch">
           Dr. Schroeder has extensive experience in the technologies and related policies of information/data integration and systems analysis, policy and program development and implementation, quantitative and qualitative methodologies of evaluation, and the general application of data and web technologies to the enhancement of public and private sector services.
-
+        </p>
         <p class="biosketch">
           Dr. Schroeder currently serves as Information Architect and Data Scientist at the
           <a href="http://sdal.vbi.vt.edu">Social & Decision Analytics Lab</a> within the Biocomplexity Institute of Virginia Tech where he is responsible
@@ -47,7 +55,7 @@ category: briefbio
           methods, and theories related to the integration, storage, retrieval, sharing, and optimal use
           of policy-relevant data, information, and knowledge for the purposes of policy analysis and
           program evaluation.
-
+        </p>
         <p class="biosketch">
           A particular focus in this role has been on the integration and analysis of education, health,
           social service and non-profit administrative data streams for the purpose of conducting
