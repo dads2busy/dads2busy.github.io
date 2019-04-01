@@ -5,7 +5,7 @@ subcategory: "Journal Publications (refereed)"
 title: "Record Linkage Reconciliation of Arlington Department of Human Services Administrative Data Using Potts Models"
 sponsor: International Journal of Population Data Science, 3(5)
 dates: 2018
-website: ""
+website: "https://ijpds.org/article/view/1061"
 authors: "Pires, B.,Korkmaz, G., Ensor, K., Higdon, D., Keller, S., Lewis, B., Schroeder, A."
 editors:
 pages: ""
