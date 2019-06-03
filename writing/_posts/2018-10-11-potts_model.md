@@ -6,7 +6,7 @@ title: "Record Linkage Reconciliation of Arlington Department of Human Services 
 sponsor: International Journal of Population Data Science, 3(5)
 dates: 2018
 website: "https://ijpds.org/article/view/1061"
-authors: "Pires, B.,Korkmaz, G., Ensor, K., Higdon, D., Keller, S., Lewis, B., Schroeder, A."
+authors: "Crandell, I., Schroeder, A., Higdon, D., & Irwin, M. D."
 editors:
 pages: ""
 DOI: "10.23889/ijpds.v3i5.1061"
