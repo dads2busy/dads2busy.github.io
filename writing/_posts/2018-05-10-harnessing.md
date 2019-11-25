@@ -5,7 +5,7 @@ subcategory: "Journal Publications (refereed)"
 title: "Harnessing the power of data to support community‐based research"
 sponsor: Wiley Interdisciplinary Reviews: Computational Statistics
 dates: 2018
-website: "https://ijpds.org/article/view/1061" 10(3), e1426
+website: "https://ijpds.org/article/view/1061 10(3), e1426"
 authors: "Keller, S., Shipp, S., Korkmaz, G., Molfino, E., Goldstein, J., Lancaster, V., ... & Schroeder, A."
 editors:
 pages: ""
