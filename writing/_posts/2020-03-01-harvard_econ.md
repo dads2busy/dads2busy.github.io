@@ -9,7 +9,7 @@ website: "https://assets.pubpub.org/l534v3hn/28d7ddde-a9ab-47a6-9521-fc7105b716d
 authors: "Keller, S. A., Shipp, S. S., Schroeder, A. D., & Korkmaz, G."
 editors:
 pages: ""
-DOI: ""
+DOI: "https://doi.org/10.1162/99608f92.2d83f7f5"
 comments: false
 ---
 Today’s data revolution is not just about big data, it is about data of all sizes and types. While the issues of volume and velocity presented by the ingestion of massive amounts of data remain prevalent, it is the rapidly developing challenges being presented by the third v, variety, that necessitates more attention. The need for a comprehensive approach to discover, access, repurpose, and statistically integrate all the varieties of data is what has led us to the development of a data science framework that forms our foundation of doing data science. Unique features in this framework include problem identification, data discovery, data governance and ingestion, and ethics. A case study is used to illustrate the framework in action. We close with a discussion of the important role for data acumen.
