@@ -12,7 +12,6 @@ website: ""
 The first step in before conducting a full data inventory is to screen the data sources, identifying which sources are worthy of a deeper look and which are worthy of consideration for profiling. The screening includes five questions and a qualitative evaluation of purpose, data collection method, selectivity, accessibility, and description.
 
 Example from a recent project:
-<img src="/images/DataSourceScreening.png" style="border-width:0px;" />
 
 <h2>Screening Inventory Process</h2>
 1. Are the data collected opinion-based, (e.g., people’s attitudes, preferences, etc.)?
