@@ -25,7 +25,7 @@ Restructuring to:
 <img src="/images/comb_obs_type_1.png" width="70%" style="border-width:0px;" />
 <img src="/images/comb_obs_type_2.png" width="70%" style="border-width:0px;" />
 
-Starting with this type:
+<h3>Divided Observational Type</h3>
 <img src="/images/divided_observation_unit_type.png" width="60%" style="border-width:0px;" />
 
 And restructuring:
