@@ -24,7 +24,7 @@ Restructuring to:
 <img src="/images/RestructuringData.png" style="border-width:0px;" />
 
 Starting with this type:
-<img src="/images/divided_observation_unit_type.png" style="border-width:0px;" />
+<img src="/images/divided_observation_unit_type.png" width="60%" style="border-width:0px;" />
 
 And restructuring:
-<img src="/images/divided_observational_unit_type2.png" style="border-width:0px;" />
+<img src="/images/divided_observational_unit_type2.png" width="60%" style="border-width:0px;" />
