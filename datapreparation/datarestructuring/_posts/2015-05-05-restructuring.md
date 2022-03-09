@@ -22,11 +22,13 @@ Starting with:
 Restructuring to:
 
 <img src="/images/RestructuringData.png" style="border-width:0px;" />
-<img src="/images/comb_obs_type_1.png" width="70%" style="border-width:0px;" />
-<img src="/images/comb_obs_type_2.png" width="70%" style="border-width:0px;" />
 
 <h3>Divided Observational Type</h3>
 <img src="/images/divided_observation_unit_type.png" width="60%" style="border-width:0px;" />
 
 And restructuring:
 <img src="/images/divided_observational_unit_type2.png" width="60%" style="border-width:0px;" />
+
+<h3>Multiple Observation Directions</h3>
+<img src="/images/comb_obs_type_1.png" width="70%" style="border-width:0px;" />
+<img src="/images/comb_obs_type_2.png" width="70%" style="border-width:0px;" />
