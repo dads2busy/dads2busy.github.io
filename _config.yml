@@ -1,5 +1,8 @@
 # Jekyll configuration
 
+plugins:
+  - jekyll-feed
+
 name: Aaron Schroeder
 title: "Libération de Données!"
 description: "The entirely too-many activities of Aaron David Schroeder -- Epistemologist, Methodologist, Technologist, Musicologist, Research Scientist, Coach[ologist], Dad[ologist], Husband (amateur), Fisherman (rank amateur)"
