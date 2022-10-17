@@ -22,7 +22,7 @@ media1title: ""
 media2title: ""
 media3title: ""
 comments: true
-ordinal: 1
+ordinal: 20
 ---
 
 Led the construction and deployment of a local-government stakeholder-centered approach, Community Learning Through Data Driven Discovery (CLD3), to establishing a Social Impact Data Commons relevant to local decision-makers. He successfully constructed, deployed, and applied the pilot Social Impact Data Commons for Arlington County. Virginia.
