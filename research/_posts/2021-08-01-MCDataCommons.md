@@ -8,7 +8,7 @@ sponsor: Mastercard Center for Inclusive Growth
 award: $500,000
 dates: 2021-2022
 role: PI
-website: "https://uva-bi-sdad.github.io/capital_region"
+website: "https://uva-bi-sdad.github.io/sdc.intro/"
 report: ""
 report2: ""
 report3: ""
