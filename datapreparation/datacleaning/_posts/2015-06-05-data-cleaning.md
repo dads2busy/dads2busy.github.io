@@ -9,9 +9,7 @@ comments: true
 website: ""
 ---
 
-Data cleaning is the essential process of identifying and correcting errors, inconsistencies, and inaccuracies in datasets to ensure data is accurate, complete, and reliable for analysis. In policy analysis, clean data is critical because decisions based on flawed or incomplete information can lead to misallocated resources, ineffective programs, and diminished public trust. By removing duplicates, handling missing values, managing outliers, and standardizing data formats, data cleaning improves the quality and consistency of data, enabling policymakers to derive valid insights and make evidence-based decisions. High-quality data supports transparent, efficient governance by allowing for precise targeting of interventions, better outcome predictions, and robust evaluation of policy impacts, ultimately strengthening the effectiveness and accountability of public programs.\
-\
-<!--break-->
+Data cleaning is the essential process of identifying and correcting errors, inconsistencies, and inaccuracies in datasets to ensure data is accurate, complete, and reliable for analysis. In policy analysis, clean data is critical because decisions based on flawed or incomplete information can lead to misallocated resources, ineffective programs, and diminished public trust. By removing duplicates, handling missing values, managing outliers, and standardizing data formats, data cleaning improves the quality and consistency of data, enabling policymakers to derive valid insights and make evidence-based decisions. High-quality data supports transparent, efficient governance by allowing for precise targeting of interventions, better outcome predictions, and robust evaluation of policy impacts, ultimately strengthening the effectiveness and accountability of public programs.
 
 ## Data Cleaning Techniques
 
