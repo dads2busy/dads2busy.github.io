@@ -9,6 +9,9 @@ comments: false
 website: ""
 ---
 
+Brainstorming for data source identification is a structured group creativity technique that brings together diverse participants to generate a wide range of ideas about where and how to find relevant data for a specific analytical policy problem. Facilitated sessions encourage participants to build on each other's suggestions, explore both conventional and unconventional sources, and use visual tools like mind maps or affinity diagrams to organize and expand upon the ideas generated. By deferring judgment and fostering an open, collaborative environment, brainstorming helps uncover data sources that may otherwise be overlooked, ensuring a more comprehensive and innovative foundation for policy analysis. This process not only stimulates creative thinking but also enables teams to quickly surface, evaluate, and prioritize potential data sources, supporting evidence-based decision-making.
+
+
 ## Suggested Plan for Group Brainstorming to Identify Data Sources for Analytical Policy Analysis
 
 **Purpose:**  
