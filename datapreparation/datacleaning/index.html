@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Transformation
+title: Data Cleaning
 category: datapreparation
 description: ""
 ---
@@ -14,7 +14,7 @@ description: ""
 
   {% assign categoryPosts = site.posts | where:'category','datapreparation' %}
 
-  {% assign subcategoryPosts = categoryPosts | where:'subcategory', 'datatransformation' | sort: 'ordinal' %}
+  {% assign subcategoryPosts = categoryPosts | where:'subcategory', 'datacleaning' | sort: 'ordinal' %}
   <h2>{{ page.title }}</h2>
   <h4>{{ page.description }}</h4>
 

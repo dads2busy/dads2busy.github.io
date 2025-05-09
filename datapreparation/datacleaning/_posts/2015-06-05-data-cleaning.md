@@ -1,7 +1,7 @@
 ---
 layout: post
 category: datapreparation
-subcategory: datatransformation
+subcategory: datacleaning
 title: "Data Cleaning"
 ordinal: 1
 date: 2012-06-22 16:25:06 -0700
