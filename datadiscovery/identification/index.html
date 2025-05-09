@@ -24,7 +24,7 @@ description: ""
     <div class="entry">
       {{ post.content | split:'<!--break-->' | first }}
       {% if post.content contains '<!--break-->' %}
-      <!-- <a href="{{ post.url }}">Example Plan</a> -->
+      <a href="{{ post.url }}">Example Plan</a>
       {% endif %}
     </div>
   </div>
