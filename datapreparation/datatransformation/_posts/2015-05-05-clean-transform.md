@@ -69,11 +69,11 @@ Reshaping data between wide and long formats allows for different types of analy
 By systematically applying these data cleaning and transformation techniques-including Winsorization and Cook’s Distance for identifying and managing outliers-analysts can ensure their data is robust, reliable, and well-structured for any analytical or policy-related task. This comprehensive approach not only improves data quality but also enhances the validity and interpretability of analytical results[1][2][3][4][5].
 
 Sources
-[1] Identifying Outliers in Linear Regression - Cook's Distance https://towardsdatascience.com/identifying-outliers-in-linear-regression-cooks-distance-9e212e9136a/
-[2] Cook's distance - Wikipedia https://en.wikipedia.org/wiki/Cook's_distance
-[3] Using Cook's Distance: Advanced Outlier Detection in Statistical ... https://www.numberanalytics.com/blog/using-cooks-distance-advanced-outlier-detection
-[4] Cook's Distance - MATLAB & Simulink - MathWorks https://www.mathworks.com/help/stats/cooks-distance.html
-[5] Cook's Distance / Cook's D: Definition, Interpretation https://www.statisticshowto.com/cooks-distance/
-[6] Identifying Outliers using Cook's Distance | Regression diagnostics ... https://www.youtube.com/watch?v=FfnVbhHcdeo
+[1] Identifying Outliers in Linear Regression - Cook's Distance https://towardsdatascience.com/identifying-outliers-in-linear-regression-cooks-distance-9e212e9136a/\
+[2] Cook's distance - Wikipedia https://en.wikipedia.org/wiki/Cook's_distance\
+[3] Using Cook's Distance: Advanced Outlier Detection in Statistical ... https://www.numberanalytics.com/blog/using-cooks-distance-advanced-outlier-detection\
+[4] Cook's Distance - MATLAB & Simulink - MathWorks https://www.mathworks.com/help/stats/cooks-distance.html\
+[5] Cook's Distance / Cook's D: Definition, Interpretation https://www.statisticshowto.com/cooks-distance/\
+[6] Identifying Outliers using Cook's Distance | Regression diagnostics ... https://www.youtube.com/watch?v=FfnVbhHcdeo\
 [7] 9.5 - Identifying Influential Data Points | STAT 462 https://online.stat.psu.edu/stat462/node/173/
 
