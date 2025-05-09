@@ -55,30 +55,3 @@ Sources\
 [9] What are the Different Types of ETL Data Transformation | Rivery https://rivery.io/data-learning-center/types-of-etl-data-transformation/\
 [10] Complete Guide to Data Transformation: Basics to Advanced https://www.ascend.io/blog/complete-guide-to-data-transformation-basics-to-advanced/\
 [11] Guide to Data Transformation: What It Is, Steps, Techniques - Matillion https://www.matillion.com/learn/blog/data-transformation\
-[12] Harnessing Data Insights to Build Effective Public Policy https://www.numberanalytics.com/blog/data-insights-effective-public-policy\
-[13] Data Transformation Steps, Techniques & Tools - SolveXia https://www.solvexia.com/blog/data-transformation-steps\
-[14] Data transformations to improve the performance of health plan ... https://pmc.ncbi.nlm.nih.gov/articles/PMC7442111/\
-[15] The Ultimate Guide on How to Normalize Large Datasets https://blog.exactbuyer.com/post/how-to-normalize-large-datasets\
-[16] [PDF] Foofah: Transforming Data By Example - University of Michigan https://web.eecs.umich.edu/~michjc/papers/p683-jin.pdf\
-[17] The Future of Policy Analysis: Leveraging AI and Big Data https://policy-insider.ai/2024/05/16/the-future-of-policy-analysis-leveraging-ai-and-big-data/\
-[18] Data Transformation Techniques: Share Your Favourite Tricks and ... https://www.reddit.com/r/dataengineering/comments/1cwbpis/data_transformation_techniques_share_your/\
-[19] Data transformation – Knowledge and References - Taylor & Francis https://taylorandfrancis.com/knowledge/Engineering_and_technology/Computer_science/Data_transformation/\
-[20] 2.4 Data Cleaning and Preprocessing - Principles of Data Science https://openstax.org/books/principles-data-science/pages/2-4-data-cleaning-and-preprocessing\
-[21] Data Transformation - an overview | ScienceDirect Topics https://www.sciencedirect.com/topics/mathematics/data-transformation\
-[22] How New Data-Driven Methods Transform Public Governance Today https://www.numberanalytics.com/blog/data-driven-methods-public-governance-today\
-[23] Complete Guide to Data Transformation: Basics to Advanced https://www.ascend.io/blog/complete-guide-to-data-transformation-basics-to-advanced/\
-[24] Aggregation policies | Snowflake Documentation https://docs.snowflake.com/en/user-guide/aggregation-policies\
-[25] Join policies | Snowflake Documentation https://docs.snowflake.com/en/user-guide/join-policies\
-[26] Dataset Splitting | Dagster Glossary https://dagster.io/glossary/dataset-splitting\
-[27] Pivoting data - MicroStrategy https://www2.microstrategy.com/producthelp/Current/BasicReporting/WebHelp/Lang_1033/Content/BasicReporting/Pivoting_data.htm\
-[28] Guide to Data Transformation: Examples, Types, Benefits | Domo https://www.domo.com/learn/article/data-transformation\
-[29] 5 Data-Driven Policy Analysis Strategies in Pharma https://www.numberanalytics.com/blog/5-data-driven-policy-analysis-strategies-in-pharma\
-[30] Data Normalization Explained: Types, Examples, & Methods | Estuary https://estuary.dev/blog/data-normalization/\
-[31] Data Encoding | Dagster Glossary https://dagster.io/glossary/data-encoding\
-[32] [PDF] Using Aggregate Administrative Data in Social Policy Research https://acf.gov/sites/default/files/documents/opre/opre_brief_draft_dec2016_finaldraftjacob_clean_508.pdf\
-[33] What Are Data Joins? - The Data School https://www.thedataschool.co.uk/harry-cooney/what-are-data-joins\
-[34] Data splitting as a countermeasure against hypothesis fishing https://pmc.ncbi.nlm.nih.gov/articles/PMC2270357/\
-[35] 6 pivot table examples to increase data analysis efficiency - Brainlabs https://www.brainlabsdigital.com/blog/6-pivot-table-examples-to-increase-data-analysis-efficiency/\
-[36] [PDF] Data transformation review in deep learning - CEUR-WS.org https://ceur-ws.org/Vol-3716/paper3.pdf\
-[37] Data Transformation: A Guide To What, Why, And How https://www.rudderstack.com/learn/data-transformation/data-transformation-techniques/\
-[38] What Is Data Transformation? Process and Techniques - Teradata https://www.teradata.com/insights/cloud-data-analytics/what-is-data-transformation\

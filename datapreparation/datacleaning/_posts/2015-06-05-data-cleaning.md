@@ -49,43 +49,14 @@ Correcting spelling errors, inconsistent abbreviations, and formatting differenc
 
 By applying these enhanced data cleaning techniques, policy analysts can ensure their datasets are accurate, consistent, and suitable for robust, evidence-based decision-making.
 
-Sources
-[1] Top 10 Data Cleaning Techniques and Best Practices for 2024 https://www.ccslearningacademy.com/top-data-cleaning-techniques/
-[2] Handling Missing Values in Information Systems Research https://pubsonline.informs.org/doi/10.1287/isre.2022.1104
-[3] Why Detecting Outliers is Crucial for Accurate Data Analysis? https://www.dasca.org/world-of-data-science/article/why-detecting-outliers-is-crucial-for-accurate-data-analysis
-[4] Evidence-based literature review: De-duplication a cornerstone for ... https://pmc.ncbi.nlm.nih.gov/articles/PMC10789108/
-[5] Strategies for Handling Missing Values in Data Analysis https://www.dasca.org/world-of-data-science/article/strategies-for-handling-missing-values-in-data-analysis
-[6] The Complete Guide to Outlier Handling - SkillCamper https://www.skillcamper.com/blog/the-complete-guide-to-outlier-handling
-[7] What is Data Deduplication? Definition & Benefits - Validity https://www.validity.com/data-quality/data-deduplication/
-[8] Steady as She Goes: How Smoothing Supports Nonprofit Spending https://www.bernstein.com/our-insights/insights/2024/articles/steady-as-she-goes-how-smoothing-supports-nonprofit-spending.html
-[9] What Is Data Cleansing? | Definition, Guide & Examples - Scribbr https://www.scribbr.com/methodology/data-cleansing/
-[10] 3.7 Handling Missing Values | Principal Component Analysis for ... https://pca4ds.github.io/handling-missing-values.html
-[11] Chapter 28 Smoothing | Introduction to Data Science https://rafalab.dfci.harvard.edu/dsbook/smoothing.html
-[12] Data Type Conversion for Data Visualization and Interpretation https://www.linkedin.com/advice/1/how-do-you-use-data-type-conversion-improve-visualization
-[13] Data Standardization Guide: Types, Benefits, and Process https://dataladder.com/data-standardization-guide-types-benefits-and-process/
-[14] 10 Essential Data Cleaning Techniques for Accurate Analysis (Best ... https://numerous.ai/blog/data-cleaning-techniques
-[15] Techniques for Handling Missing Data in Secondary Analyses of ... https://pmc.ncbi.nlm.nih.gov/articles/PMC2866831/
-[16] Identifying and Managing Outliers in Data Analysis - LinkedIn https://www.linkedin.com/pulse/identifying-managing-outliers-data-analysis-nandini-verma-puxvf
-[17] Deduplication - How Businesses can control Duplicated Data https://www.hyperscience.com/knowledge-base/deduplication/
-[18] Filtering and Smoothing Data - MATLAB & Simulink - MathWorks https://www.mathworks.com/help/curvefit/smoothing-data.html
-[19] Data type conversion (Database Engine) - SQL Server https://learn.microsoft.com/en-us/sql/t-sql/data-types/data-type-conversion-database-engine?view=sql-server-ver16
-[20] Understanding Data Standardization: A Key to Consistency and ... https://blog.exactbuyer.com/post/what-is-data-standardization-key-to-consistency-accuracy
-[21] What is your data cleaning process? : r/epidemiology - Reddit https://www.reddit.com/r/epidemiology/comments/8keqn0/what_is_your_data_cleaning_process/
-[22] Strategies for Handling Missing Values in Data Analysis https://www.dasca.org/world-of-data-science/article/strategies-for-handling-missing-values-in-data-analysis
-[23] Performing Conversion Analysis: A Guide for Product Teams https://userpilot.com/blog/conversion-analysis/
-[24] [PDF] Spelling Correction and the Noisy Channel https://web.stanford.edu/~jurafsky/slp3/B.pdf
-[25] Missing Data in Public Policy Analysis: A Guide - LinkedIn https://www.linkedin.com/advice/0/what-do-you-missing-data-public-policy-analysis-skills-statistics
-[26] Best Practices for Handling Outliers in Organizational Research https://www.youtube.com/watch?v=TXLlBzRqSFE
-[27] Data Deduplication for Government Agencies: Risks and Solutions https://dataladder.com/data-deduplication-for-government-agencies-risks-and-solutions/
-[28] Data Smoothing - Definition, Methods, Benefits, Limits https://corporatefinanceinstitute.com/resources/business-intelligence/data-smoothing/
-[29] [PDF] Aquatic Resource Type Conversion Evaluation Framework https://ftp.sccwrp.org/pub/download/DOCUMENTS/TechnicalReports/1074_HabitatConversionLitReview.pdf
-[30] [PDF] Survey Report of Firms on GIPS® Standards Error Correction Policies https://www.gipsstandards.org/wp-content/uploads/2023/07/survey-report-gips-standards-firms-error-correction-policies.pdf
-[31] The prevention and handling of the missing data - PMC https://pmc.ncbi.nlm.nih.gov/articles/PMC3668100/
-[32] [PDF] Instructions for Outlier Review/Management https://idoi.illinois.gov/content/dam/soi/en/web/insurance/companies/documents/instructions-for-outlier-review.pdf
-[33] Data Deduplication: Key Concepts, Use Cases & Benefits https://hyperverge.co/blog/data-deduplication-key-concepts-use-cases-benefits/
-[34] Data Smoothing: Definition, Uses, and Methods - Investopedia https://www.investopedia.com/terms/d/data-smoothing.asp
-[35] 5 data cleaning techniques for high-impact financial analysis https://www.financealliance.io/data-cleaning-techniques/
-[36] Data Cleaning: Definition, Benefits, And How-To | Tableau https://www.tableau.com/learn/articles/what-is-data-cleaning
-[37] Cleaning Data: The Basics - CBIIT - National Cancer Institute https://datascience.cancer.gov/training/learn-data-science/clean-data-basics
-[38] Handling missing data - APH Quality Handbook https://aph-qualityhandbook.org/set-up-conduct/process-analyze-data/3-2-quantitative-research/3-2-2-data-analysis/handling-missing-data/
-[39] Handling missing data in clinical research - ScienceDirect.com https://www.sciencedirect.com/science/article/pii/S0895435622002189
+Sources\
+[1] Top 10 Data Cleaning Techniques and Best Practices for 2024 https://www.ccslearningacademy.com/top-data-cleaning-techniques/\
+[2] Handling Missing Values in Information Systems Research https://pubsonline.informs.org/doi/10.1287/isre.2022.1104\
+[3] Why Detecting Outliers is Crucial for Accurate Data Analysis? https://www.dasca.org/world-of-data-science/article/why-detecting-outliers-is-crucial-for-accurate-data-analysis\
+[4] Evidence-based literature review: De-duplication a cornerstone for ... https://pmc.ncbi.nlm.nih.gov/articles/PMC10789108/\
+[5] Strategies for Handling Missing Values in Data Analysis https://www.dasca.org/world-of-data-science/article/strategies-for-handling-missing-values-in-data-analysis\
+[6] The Complete Guide to Outlier Handling - SkillCamper https://www.skillcamper.com/blog/the-complete-guide-to-outlier-handling\
+[7] What is Data Deduplication? Definition & Benefits - Validity https://www.validity.com/data-quality/data-deduplication/\
+[8] Steady as She Goes: How Smoothing Supports Nonprofit Spending https://www.bernstein.com/our-insights/insights/2024/articles/steady-as-she-goes-how-smoothing-supports-nonprofit-spending.html\
+[9] What Is Data Cleansing? | Definition, Guide & Examples - Scribbr https://www.scribbr.com/methodology/data-cleansing/\
+[10] 3.7 Handling Missing Values | Principal Component Analysis for ... https://pca4ds.github.io/handling-missing-values.html\
