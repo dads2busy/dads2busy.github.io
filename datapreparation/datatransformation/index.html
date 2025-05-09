@@ -5,32 +5,18 @@ category: datapreparation
 description: ""
 ---
 <div class="col-md-3">
-    <div class="sidebar well">
-      {% include sidebars/datascience.html %}
-    </div>
+  <div class="sidebar well">
+    {% include sidebars/datascience.html %}
+  </div>
 </div>
 
 <div class="col-md-9">
 
-{% assign categoryPosts = site.posts | where:'category','datapreparation' %}
+  {% assign categoryPosts = site.posts | where:'category','datapreparation' %}
 
-{% assign subcategoryPosts = categoryPosts | where:'subcategory', 'datatransformation' | sort: 'ordinal' %}
-<h2>{{ page.title }}</h2>
-<h4>{{ page.description }}</h4>
-
-Data transformation refers to the mapping of dataset field values from a provided format into
-an expected or more useful format.
-
-Data cleaning refers to the process of either fixing or removing data in a data source thatis incorrect, incomplete, improperly formatted, or duplicated.
-Data transformation refers to the mapping of dataset field values from a provided format into an expected or more useful format. In practice, these two
-activities often occur together and include assessing the following:
-<ul>
-  <li>Missing values</li>
-  <li>Date and time formats</li>
-  <li>De-duplication</li>
-  <li>Outliers</li>
-  <li>Normalization</li>
-</ul>
+  {% assign subcategoryPosts = categoryPosts | where:'subcategory', 'datatransformation' | sort: 'ordinal' %}
+  <h2>{{ page.title }}</h2>
+  <h4>{{ page.description }}</h4>
 
   {% for post in subcategoryPosts %}
   <div class="post">
@@ -38,7 +24,7 @@ activities often occur together and include assessing the following:
     <div class="entry">
       {{ post.content | split:'<!--break-->' | first }}
       {% if post.content contains '<!--break-->' %}
-        <a href="{{ post.url }}">more</a>
+      <a href="{{ post.url }}">more</a>
       {% endif %}
     </div>
   </div>
