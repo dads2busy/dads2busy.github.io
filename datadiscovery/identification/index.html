@@ -5,18 +5,18 @@ category: identification
 description: ""
 ---
 <div class="col-md-3">
-    <div class="sidebar well">
-      {% include sidebars/datascience.html %}
-    </div>
+  <div class="sidebar well">
+    {% include sidebars/datascience.html %}
+  </div>
 </div>
 
 <div class="col-md-9">
 
-{% assign categoryPosts = site.posts | where:'category','datadiscovery' %}
+  {% assign categoryPosts = site.posts | where:'category','datadiscovery' %}
 
-{% assign subcategoryPosts = categoryPosts | where:'subcategory', 'identification' | sort: 'ordinal' %}
-<h2>{{ page.title }}</h2>
-<h4>{{ page.description }}</h4>
+  {% assign subcategoryPosts = categoryPosts | where:'subcategory', 'identification' | sort: 'ordinal' %}
+  <h2>{{ page.title }}</h2>
+  <h4>{{ page.description }}</h4>
 
   {% for post in subcategoryPosts %}
   <div class="post">
@@ -24,7 +24,7 @@ description: ""
     <div class="entry">
       {{ post.content | split:'<!--break-->' | first }}
       {% if post.content contains '<!--break-->' %}
-        <!-- <a href="{{ post.url }}">more</a> -->
+      <!-- <a href="{{ post.url }}">Example Plan</a> -->
       {% endif %}
     </div>
   </div>
