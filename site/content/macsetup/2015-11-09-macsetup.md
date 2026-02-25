@@ -1,0 +1,86 @@
+---
+layout: post
+category: "workstationconfig"
+subcategory: "Mac Setup"
+title: "Default Setup for all Lab Macs"
+ordinal: 1
+date: 2015-11-09 16:25:06 -0700
+comments: true
+website: ""
+---
+<!--break-->
+
+### 1. Update OS to latest version (Optional)
+
+### 2. Install Package Managers: Homebrew and Homebrew-Cask
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+<!-- brew install caskroom/cask/brew-cask -->
+
+### 3. Install the following
+    brew install Caskroom/cask/osxfuse
+    brew install homebrew/fuse/sshfs
+    brew install ssh-copy-id
+    brew install coreutils
+    brew install findutils --with-default-names
+    brew install gnu-sed --with-default-names
+    brew install gnu-tar --with-default-names
+    brew install gnu-which --with-default-names
+    brew install gnutls ---with-default-names
+    brew install homebrew/dupes/grep
+    brew install binutils
+    brew install homebrew/dupes/diffutils
+    brew install homebrew/dupes/gzip
+    brew install git
+    brew install autossh
+    brew install wget
+    brew install Caskroom/cask/iterm2
+    brew install Caskroom/cask/google-chrome
+    brew install Caskroom/cask/google-drive
+    brew install homebrew/science/r
+    brew install Caskroom/cask/rstudio
+
+### 4. Clone sdal_configs repository to local machine and run setup.sh
+    mkdir -p ~/git
+    cd ~/git
+    git clone https://github.com/dads2busy/sdal_configs.git
+    cd sdal_configs
+    bash setup.sh
+
+### 5. Restart Terminal to Load New Configs!
+
+### 6. Create SSH Key
+
+#### hit return 3x - DO NOT set a password on the key
+    ssh-keygen -t rsa
+
+### 7. Copy Public Key to Servers (need user's password)
+    ssh-copy-id lightfoot
+
+    ssh-copy-id sdal_pg
+
+    ssh-copy-id sdal_r
+
+    ssh-copy-id sdal_py
+
+    ssh-copy-id sdal_an
+
+### 8. Test ssh to sdal servers. Should require no password.
+    ssh sdal_r
+
+### 9. Test RStudio Connection (should establish tunnel and open RStudio webpage)
+    rs
+
+### 10. Test Jupyter/Python Notebook Connection (should establish tunnel and open Jupyterhub webpage)
+    jp
+
+### 11. Test PostgreSQL Connection (should establish tunnel and open Adminer [web-based db mgt] webpage)
+    pg
+
+### 12. Test remote mounting
+    rmount sdal_r
+
+### 13. Test remote unmounting
+    rumount sdal_r
+
+### 13. Go to Finder/Preferences and put a checkmark in the box for Connected Servers so that they show up on the desktop
