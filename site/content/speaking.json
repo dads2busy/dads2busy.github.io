@@ -1,12 +1,12 @@
 [
   {
     "slug": "COPAFS",
-    "date": "2023-12-04",
+    "date": "2023-12-02",
     "title": "The Social Impact Data Commons: Supporting local equity-informed decision-making in the National Capital Region",
     "subcategory": "Presentations/Workshops",
-    "sponsor": "Quarterly Meeting - Council of Professional Associations on Federal Statistics (COPAFS)",
+    "sponsor": "Council of Professional Associations on Federal Statistics (COPAFS)",
     "dates": 2023,
-    "role": "Presenter/Panelist",
+    "role": "Lecture",
     "website": "",
     "report": "",
     "media1": "",
@@ -15,7 +15,7 @@
     "media1title": "",
     "media2title": "",
     "media3title": "",
-    "content": "Schroeder, A.D. Presentation: \"The Social Impact Data Commons: Supporting local equity-informed decision-making in the National Capital Region\" (2023), 2023 Quarterly Meeting - Council of Professional Associations on Federal Statistics (COPAFS)."
+    "content": "Schroeder, A.D. Lecture: \"The Social Impact Data Commons: Supporting local equity-informed decision-making in the National Capital Region\" (2023), Council of Professional Associations on Federal Statistics (COPAFS). Contributors: Aaron Schroeder."
   },
   {
     "slug": "ACS-Users",
@@ -556,5 +556,59 @@
     "media2title": "",
     "media3title": "",
     "content": "Schroeder, A.D. Presentation: Technology in Public Administration Conference, University of LaVerne, California."
+  },
+  {
+    "slug": "hpc_day",
+    "date": "2012-04-27",
+    "title": "Data - The New Asset Class",
+    "subcategory": "Presentations/Workshops",
+    "sponsor": "April 6. HPC Day, Virginia Tech",
+    "dates": 2015,
+    "role": "Presenter",
+    "website": "",
+    "report": "",
+    "media1": "",
+    "media2": "",
+    "media3": "",
+    "media1title": "",
+    "media2title": "",
+    "media3title": "",
+    "content": ""
+  },
+  {
+    "slug": "sharing_infra",
+    "date": "2012-04-26",
+    "title": "Building Data Sharing Infrastructures: Taking Context and Stakeholders Seriously",
+    "subcategory": "Presentations/Workshops",
+    "sponsor": "November 17. Global Forum on Urban and Regional Resilience (GFURR) Resilience Workshop, Virginia Tech",
+    "dates": 2014,
+    "role": "Presenter",
+    "website": "/downloads/Workshop3-Schroeder-Building-Data-Sharing-Infrastructures.pdf",
+    "report": "Workshop3-Schroeder-Building-Data-Sharing-Infrastructures.pdf",
+    "media1": "",
+    "media2": "",
+    "media3": "",
+    "media1title": "",
+    "media2title": "",
+    "media3title": "",
+    "content": ""
+  },
+  {
+    "slug": "phys_ed",
+    "date": "2012-04-25",
+    "title": "Association between perceived university environment and physical activity in college students. 1-Nov. American Public Health Association 139th Annual Meeting and Exposition",
+    "subcategory": "Presentations/Workshops",
+    "sponsor": "November 1. American Public Health Association 139th Annual Meeting and Exposition. Washington, DC",
+    "dates": 2011,
+    "role": "Presenter",
+    "website": "",
+    "report": "",
+    "media1": "",
+    "media2": "",
+    "media3": "",
+    "media1title": "",
+    "media2title": "",
+    "media3title": "",
+    "content": ""
   }
 ]

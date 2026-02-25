@@ -2,9 +2,8 @@
 Fetch works from an ORCID record using the Public API (v3.0).
 
 Usage:
-    export ORCID_CLIENT_ID="your-client-id"
-    export ORCID_CLIENT_SECRET="your-client-secret"
-    python3 orcid_works.py <ORCID-ID>
+    # Set ORCID_CLIENT_ID, ORCID_CLIENT_SECRET, and optionally ORCID_ID in .env or environment
+    python3 orcid_works.py [ORCID-ID]
 
 Example:
     python3 orcid_works.py 0000-0003-4372-2241
@@ -20,14 +19,32 @@ API_BASE = "https://pub.orcid.org/v3.0"
 TOKEN_URL = "https://orcid.org/oauth/token"
 
 
+def load_dotenv(path: str = ".env") -> None:
+    """Load environment variables from a .env file if present."""
+    if not os.path.exists(path):
+        return
+
+    with open(path, "r") as f:
+        for line in f:
+            stripped = line.strip()
+            if not stripped or stripped.startswith("#") or "=" not in stripped:
+                continue
+            key, value = stripped.split("=", 1)
+            key = key.strip()
+            value = value.strip().strip('"').strip("'")
+            os.environ.setdefault(key, value)
+
+
 def get_access_token(client_id: str, client_secret: str) -> str:
     """Exchange client credentials for a read-public access token."""
-    data = urllib.parse.urlencode({
-        "client_id": client_id,
-        "client_secret": client_secret,
-        "grant_type": "client_credentials",
-        "scope": "/read-public",
-    }).encode()
+    data = urllib.parse.urlencode(
+        {
+            "client_id": client_id,
+            "client_secret": client_secret,
+            "grant_type": "client_credentials",
+            "scope": "/read-public",
+        }
+    ).encode()
 
     req = urllib.request.Request(TOKEN_URL, data=data)
     req.add_header("Accept", "application/json")
@@ -60,7 +77,11 @@ def print_works(data: dict) -> None:
 
         work = summaries[0]
         title_obj = work.get("title", {})
-        title = title_obj.get("title", {}).get("value", "Untitled") if title_obj else "Untitled"
+        title = (
+            title_obj.get("title", {}).get("value", "Untitled")
+            if title_obj
+            else "Untitled"
+        )
 
         work_type = work.get("type", "unknown")
         pub_date = work.get("publication-date") or {}
@@ -70,7 +91,11 @@ def print_works(data: dict) -> None:
 
         ext_ids = work.get("external-ids", {}).get("external-id", [])
         doi = next(
-            (eid["external-id-value"] for eid in ext_ids if eid["external-id-type"] == "doi"),
+            (
+                eid["external-id-value"]
+                for eid in ext_ids
+                if eid["external-id-type"] == "doi"
+            ),
             None,
         )
 
@@ -84,18 +109,24 @@ def print_works(data: dict) -> None:
 
 
 def main():
-    if len(sys.argv) < 2:
-        print("Usage: python3 orcid_works.py <ORCID-ID>")
-        print("Example: python3 orcid_works.py 0000-0003-4372-2241")
-        sys.exit(1)
+    load_dotenv()
 
-    orcid_id = sys.argv[1]
+    orcid_id = os.environ.get("ORCID_ID") or (
+        sys.argv[1] if len(sys.argv) > 1 else None
+    )
+    if not orcid_id:
+        print("Usage: python3 orcid_works.py [ORCID-ID]")
+        print("Example: python3 orcid_works.py 0000-0003-4372-2241")
+        print("Tip: Set ORCID_ID in .env to avoid passing it on the command line.")
+        sys.exit(1)
 
     client_id = os.environ.get("ORCID_CLIENT_ID")
     client_secret = os.environ.get("ORCID_CLIENT_SECRET")
 
     if not client_id or not client_secret:
-        print("Error: Set ORCID_CLIENT_ID and ORCID_CLIENT_SECRET environment variables.")
+        print(
+            "Error: Set ORCID_CLIENT_ID and ORCID_CLIENT_SECRET environment variables."
+        )
         sys.exit(1)
 
     print("Authenticating with ORCID API...")

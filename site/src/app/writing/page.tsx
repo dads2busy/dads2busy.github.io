@@ -14,9 +14,18 @@ export default function WritingPage() {
     grouped.get(sub)!.push(post);
   }
 
+  const entries = Array.from(grouped.entries());
+  const journalIndex = entries.findIndex(
+    ([subcategory]) => subcategory === "Journal Publications (refereed)",
+  );
+  if (journalIndex > 0) {
+    const [journalEntry] = entries.splice(journalIndex, 1);
+    entries.unshift(journalEntry);
+  }
+
   return (
     <CategoryLayout category="writing">
-      {Array.from(grouped.entries()).map(([subcategory, subPosts]) => (
+      {entries.map(([subcategory, subPosts]) => (
         <div key={subcategory}>
           <h3 className="text-lg font-bold border-b border-black pb-1 mb-4 mt-6">
             {subcategory}

@@ -1,0 +1,149 @@
+{
+  "likelySpeaking": [
+    {
+      "title": "Association between perceived university environment and physical activity in college students.",
+      "doi": "",
+      "workType": "conference-paper",
+      "bestSpeaking": {
+        "score": 0.04,
+        "title": "The Social Impact Data Commons: Supporting local equity-informed decision-making in the National Capital Region"
+      },
+      "bestWriting": {
+        "score": 0.55,
+        "title": "Association between perceived university environment and physical activity in college students. 1-Nov. American Public Health Association 139th Annual Meeting and Exposition"
+      }
+    },
+    {
+      "title": "SERIAL WIRELESS LANS ALONG DOT ROW",
+      "doi": "",
+      "workType": "conference-paper",
+      "bestSpeaking": {
+        "score": 0,
+        "title": ""
+      },
+      "bestWriting": {
+        "score": 0.5555555555555556,
+        "title": "Serial Wireless LANs along DOT Right of Way"
+      }
+    }
+  ],
+  "likelyWriting": [
+    {
+      "title": "Intergenerational Shared Sites: Saving Dollars While Making Sense An Analysis Comparing Operational Costs of Intergenerational Shared Site Facilities",
+      "doi": "10.18130/ybh2-dj51",
+      "workType": "journal-article",
+      "bestSpeaking": {
+        "score": 0.03333333333333333,
+        "title": "The Social Impact Data Commons: Supporting local equity-informed decision-making in the National Capital Region"
+      },
+      "bestWriting": {
+        "score": 0.9375,
+        "title": "Saving Dollars While Making Sense: An Analysis Comparing Operational Costs of Intergenerational Shared Site Facilities"
+      }
+    },
+    {
+      "title": "Wiki for Leveraging External Data Sources to Enhance Official Statistics and Products",
+      "doi": "10.18130/kn89-xm38",
+      "workType": "other",
+      "bestSpeaking": {
+        "score": 0.038461538461538464,
+        "title": "The Social Impact Data Commons: Supporting local equity-informed decision-making in the National Capital Region"
+      },
+      "bestWriting": {
+        "score": 0.8333333333333334,
+        "title": "Leveraging External Data Sources to Enhance Official Statistics and Products"
+      }
+    },
+    {
+      "title": "Leveraging External Data Sources to Enhance Official Statistics and Products. U.S. Census Bureau. Arlington, VA.",
+      "doi": "",
+      "workType": "report",
+      "bestSpeaking": {
+        "score": 0.03333333333333333,
+        "title": "The Social Impact Data Commons: Supporting local equity-informed decision-making in the National Capital Region"
+      },
+      "bestWriting": {
+        "score": 0.625,
+        "title": "Leveraging External Data Sources to Enhance Official Statistics and Products"
+      }
+    },
+    {
+      "title": "REGIONAL PEDESTRIAN ACTIVITY MEASUREMENT (PROJECT 434911)",
+      "doi": "",
+      "workType": "report",
+      "bestSpeaking": {
+        "score": 0,
+        "title": ""
+      },
+      "bestWriting": {
+        "score": 0.6666666666666666,
+        "title": "Regional pedestrian activity measurement"
+      }
+    },
+    {
+      "title": "Serial wireless IP networks for DOT applications. Proceedings.",
+      "doi": "",
+      "workType": "research-technique",
+      "bestSpeaking": {
+        "score": 0,
+        "title": ""
+      },
+      "bestWriting": {
+        "score": 0.875,
+        "title": "Serial Wireless IP Networks for DOT Applications"
+      }
+    },
+    {
+      "title": "I-81 ITS Program Evaluation Plan",
+      "doi": "",
+      "workType": "report",
+      "bestSpeaking": {
+        "score": 0,
+        "title": ""
+      },
+      "bestWriting": {
+        "score": 0.7142857142857143,
+        "title": "I-81 ITS Program Evaluation Framework"
+      }
+    },
+    {
+      "title": "Bedford Ride Strategic Plan and Operations Guide.",
+      "doi": "",
+      "workType": "research-technique",
+      "bestSpeaking": {
+        "score": 0,
+        "title": ""
+      },
+      "bestWriting": {
+        "score": 1,
+        "title": "Bedford Ride Strategic Plan and Operations Guide. Strategic Plan"
+      }
+    },
+    {
+      "title": "The Evolution of Emergency Management in America: From a Painful Past to a Promising but Uncertain Future. Handbook of Emergency Management. Ed. Ali Farazmand. Marcel-Dekker: New York. ",
+      "doi": "",
+      "workType": "book-chapter",
+      "bestSpeaking": {
+        "score": 0.05405405405405406,
+        "title": "The Social Impact Data Commons: Supporting local equity-informed decision-making in the National Capital Region"
+      },
+      "bestWriting": {
+        "score": 0.6666666666666666,
+        "title": "The Evolution of Emergency Management in America: From a Painful Past to a Promising but Uncertain Future"
+      }
+    },
+    {
+      "title": "Development of human factors guidelines for advanced traveler information systems (ATIS) and commercial vehicle operations (CVO): Investigation of user stereotypes and preferences",
+      "doi": "",
+      "workType": "report",
+      "bestSpeaking": {
+        "score": 0,
+        "title": ""
+      },
+      "bestWriting": {
+        "score": 0.6086956521739131,
+        "title": "Development of Human Factors Guidelines for Advanced Traveler Information Systems and Commercial Vehicle Operations: Advanced Traveler Information System Feature Standardization"
+      }
+    }
+  ]
+}
