@@ -1,39 +1,30 @@
-import Link from "next/link";
 import CategoryLayout from "@/components/CategoryLayout";
-import { getPostsByCategory, renderMarkdown, truncateContent } from "@/lib/content";
+import SpeakingCitation from "@/components/SpeakingCitation";
+import { getPostsByCategory } from "@/lib/content";
 import { SpeakingPost } from "@/lib/types";
 
-export default async function SpeakingPage() {
+export default function SpeakingPage() {
   const posts = getPostsByCategory("speaking") as SpeakingPost[];
   posts.sort((a, b) => b.date.localeCompare(a.date));
 
-  const postsWithHtml = await Promise.all(
-    posts.map(async (post) => ({
-      ...post,
-      htmlContent: await renderMarkdown(post.content),
-    }))
-  );
+  // Group by subcategory
+  const grouped = new Map<string, SpeakingPost[]>();
+  for (const post of posts) {
+    const sub = post.subcategory || "Other";
+    if (!grouped.has(sub)) grouped.set(sub, []);
+    grouped.get(sub)!.push(post);
+  }
 
   return (
     <CategoryLayout category="speaking">
-      {postsWithHtml.map((post) => (
-        <div key={post.slug} className="mb-6">
-          <h4 className="font-bold">
-            <Link href={`/${post.year}/${post.month}/${post.slug}`}>
-              {post.title || post.content.trim().slice(0, 80)}
-            </Link>
-          </h4>
-          <p className="text-xs text-gray-500 mb-1">{post.date}</p>
-          {post.htmlContent && (
-            <p className="text-sm">
-              {truncateContent(post.htmlContent, 100)}
-            </p>
-          )}
-          {post.report && post.report.trim() !== "" && (
-            <p className="text-sm mt-1">
-              <a href={`/downloads/${post.report}`}>Download Report</a>
-            </p>
-          )}
+      {Array.from(grouped.entries()).map(([subcategory, subPosts]) => (
+        <div key={subcategory}>
+          <h3 className="text-lg font-bold border-b border-black pb-1 mb-4 mt-6">
+            {subcategory}
+          </h3>
+          {subPosts.map((post) => (
+            <SpeakingCitation key={post.slug} post={post} />
+          ))}
         </div>
       ))}
     </CategoryLayout>

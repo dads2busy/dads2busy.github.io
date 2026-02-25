@@ -65,6 +65,40 @@ export async function renderMarkdown(raw: string): Promise<string> {
   return String(result);
 }
 
+function loadJsonPosts(filename: string, category: string): BasePost[] {
+  const filePath = path.join(CONTENT_DIR, filename);
+  if (!fs.existsSync(filePath)) return [];
+
+  const raw = fs.readFileSync(filePath, "utf-8");
+  const entries = JSON.parse(raw) as Record<string, unknown>[];
+
+  return entries.map((entry) => {
+    const dateStr = (entry.date as string) || "2000-01-01";
+    const year = dateStr.slice(0, 4);
+    const month = dateStr.slice(5, 7);
+    const dates =
+      entry.dates !== undefined && entry.dates !== ""
+        ? String(entry.dates)
+        : undefined;
+
+    return {
+      ...entry,
+      year,
+      month,
+      slug: entry.slug as string,
+      title: (entry.title as string) || "Untitled",
+      date: dateStr,
+      category,
+      subcategory: (entry.subcategory as string) || undefined,
+      ordinal: typeof entry.ordinal === "number" ? entry.ordinal : undefined,
+      content: (entry.content as string) || "",
+      htmlContent: "",
+      website: (entry.website as string) || undefined,
+      dates,
+    } as BasePost;
+  });
+}
+
 export function getAllPosts(): BasePost[] {
   if (postsCache) return postsCache;
 
@@ -79,8 +113,7 @@ export function getAllPosts(): BasePost[] {
     // Use date from front matter if available, otherwise from filename
     let dateStr = parsed.date;
     if (data.date) {
-      const d =
-        typeof data.date === "string" ? new Date(data.date) : data.date;
+      const d = typeof data.date === "string" ? new Date(data.date) : data.date;
       if (!isNaN(d.getTime())) {
         dateStr = d.toISOString().slice(0, 10);
         parsed.year = dateStr.slice(0, 4);
@@ -108,34 +141,41 @@ export function getAllPosts(): BasePost[] {
     posts.push(post);
   }
 
+  // Load JSON-based posts
+  posts.push(...loadJsonPosts("speaking.json", "speaking"));
+  posts.push(...loadJsonPosts("writing.json", "writing"));
+  posts.push(...loadJsonPosts("teaching.json", "teaching"));
+  posts.push(...loadJsonPosts("working.json", "working"));
+  posts.push(...loadJsonPosts("research.json", "research"));
+
   postsCache = posts;
   return posts;
 }
 
 export function getPostsByCategory(category: string): BasePost[] {
   return getAllPosts().filter(
-    (p) => p.category?.toLowerCase() === category.toLowerCase()
+    (p) => p.category?.toLowerCase() === category.toLowerCase(),
   );
 }
 
 export function getPostsBySubcategory(
   category: string,
-  subcategory: string
+  subcategory: string,
 ): BasePost[] {
   return getAllPosts().filter(
     (p) =>
       p.category?.toLowerCase() === category.toLowerCase() &&
-      p.subcategory === subcategory
+      p.subcategory === subcategory,
   );
 }
 
 export function getPostBySlug(
   year: string,
   month: string,
-  slug: string
+  slug: string,
 ): BasePost | undefined {
   return getAllPosts().find(
-    (p) => p.year === year && p.month === month && p.slug === slug
+    (p) => p.year === year && p.month === month && p.slug === slug,
   );
 }
 
@@ -151,9 +191,7 @@ export function getAllPostSlugs(): {
   }));
 }
 
-export function sortByOrdinal<T extends { ordinal?: number }>(
-  posts: T[]
-): T[] {
+export function sortByOrdinal<T extends { ordinal?: number }>(posts: T[]): T[] {
   return [...posts].sort((a, b) => (a.ordinal ?? 999) - (b.ordinal ?? 999));
 }
 

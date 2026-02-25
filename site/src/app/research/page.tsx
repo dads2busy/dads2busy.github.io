@@ -1,6 +1,6 @@
 import CategoryLayout from "@/components/CategoryLayout";
 import ResearchPostComponent from "@/components/ResearchPost";
-import { getPostsBySubcategory, sortByOrdinal } from "@/lib/content";
+import { getPostsBySubcategory } from "@/lib/content";
 import { RESEARCH_SUBCATEGORIES } from "@/lib/constants";
 import { ResearchPost } from "@/lib/types";
 
@@ -8,8 +8,12 @@ export default function ResearchPage() {
   return (
     <CategoryLayout category="research">
       {RESEARCH_SUBCATEGORIES.map((subcategory) => {
-        const posts = sortByOrdinal(
-          getPostsBySubcategory("research", subcategory)
+        const posts = getPostsBySubcategory("research", subcategory).sort(
+          (a, b) => {
+            const dateCompare = b.date.localeCompare(a.date);
+            if (dateCompare !== 0) return dateCompare;
+            return (a.ordinal ?? 999) - (b.ordinal ?? 999);
+          },
         ) as ResearchPost[];
         if (posts.length === 0) return null;
         return (
