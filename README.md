@@ -17,29 +17,5 @@ Personal academic portfolio website for Aaron D. Schroeder, Ph.D. -- Research As
 - `old jekyll site/` -- archived original Jekyll site
 - `orcid_works.py` -- script to fetch publications from ORCID API
 
-## Development
-
-```bash
-cd site
-npm install
-npm run dev
-```
-
-Open http://localhost:3000
-
-## Build
-
-```bash
-cd site
-npm run build
-```
-
-Static output is generated in `site/out/`.
-
-## Deployment
-
-Pushes to `master` trigger the GitHub Actions workflow (`.github/workflows/deploy.yml`) which builds and deploys to GitHub Pages automatically.
-
-## License
 
 Content is licensed under [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/legalcode).
