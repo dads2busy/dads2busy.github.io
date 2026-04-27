@@ -139,7 +139,7 @@ export default function Home() {
               </p>
               <p className="text-sm mt-1">B.A., Psychology · 1991</p>
               <p className="text-xs mt-1" style={{ color: "var(--text-muted)" }}>
-                Brain &amp; Behavior (incl. graduate-level Neuropsychology) · Minor in Statistics
+                Brain &amp; Behavior (incl. graduate-level Neuropsychology) · Minor in Political Science
               </p>
             </div>
           </div>
