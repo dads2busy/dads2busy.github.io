@@ -12,3 +12,9 @@ package.json
 
 # Git worktrees (isolated workspaces)
 .worktrees/
+scripts/__pycache__/
+scripts/tests/__pycache__/
+.venv/
+
+# RenderCV scratch output
+rendercv_output/
