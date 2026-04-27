@@ -18,3 +18,7 @@ scripts/tests/__pycache__/
 
 # RenderCV scratch output
 rendercv_output/
+
+# Sources analyzer output
+sources/_diff.md
+sources/_processed/
