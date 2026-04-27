@@ -93,3 +93,14 @@ def bold_aaron(name: str) -> str:
     if _AARON_PATTERN.match(name.strip()):
         return f"**{name.strip()}**"
     return name
+
+
+def normalize_doi(s: str | None) -> str | None:
+    """Strip URL/label prefixes from a DOI; return None if not a valid bare DOI."""
+    if not s or not s.strip():
+        return None
+    s = s.strip()
+    s = re.sub(r"^DOI:\s*", "", s, flags=re.IGNORECASE)
+    s = re.sub(r"^https?://(?:dx\.)?doi\.org/", "", s)
+    s = re.sub(r"^doi\.org/", "", s)
+    return s if s.startswith("10.") else None

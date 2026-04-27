@@ -112,3 +112,42 @@ def test_bold_does_not_match_unrelated_author():
 
 def test_bold_already_bolded_is_unchanged():
     assert bold_aaron("**Schroeder, A.D.**") == "**Schroeder, A.D.**"
+
+
+from profile_lib import normalize_doi
+
+
+def test_doi_strip_https_prefix():
+    assert normalize_doi("https://doi.org/10.18130/ce97-sp05") == "10.18130/ce97-sp05"
+
+
+def test_doi_strip_http_prefix():
+    assert normalize_doi("http://doi.org/10.1234/abcd") == "10.1234/abcd"
+
+
+def test_doi_strip_dx_prefix():
+    assert normalize_doi("https://dx.doi.org/10.1234/abcd") == "10.1234/abcd"
+
+
+def test_doi_bare_prefix():
+    assert normalize_doi("doi.org/10.1234/abcd") == "10.1234/abcd"
+
+
+def test_doi_already_bare():
+    assert normalize_doi("10.18130/ce97-sp05") == "10.18130/ce97-sp05"
+
+
+def test_doi_empty_returns_none():
+    assert normalize_doi("") is None
+
+
+def test_doi_whitespace_returns_none():
+    assert normalize_doi("   ") is None
+
+
+def test_doi_invalid_returns_none():
+    assert normalize_doi("not-a-doi") is None
+
+
+def test_doi_label_prefix():
+    assert normalize_doi("DOI: 10.1234/abcd") == "10.1234/abcd"
