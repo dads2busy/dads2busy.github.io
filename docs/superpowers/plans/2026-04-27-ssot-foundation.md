@@ -48,9 +48,11 @@
 `scripts/requirements.txt`:
 ```
 pyyaml>=6.0
-rendercv>=2.0
+rendercv[full]>=2.0
 pytest>=8.0
 ```
+
+(The `[full]` extra installs the CLI binary; bare `rendercv` is library-only.)
 
 - [ ] **Step 2: Install into a venv**
 
@@ -148,6 +150,19 @@ def test_split_full_first_name_pairs():
     assert split_authors(s) == [
         "Schroeder, Aaron D.", "Tester, Diana.", "Forry, Nicole",
     ]
+
+
+def test_split_ampersand_separator():
+    """Real writing.json uses ' & ' as final separator instead of ' and '."""
+    s = "Baker, S., Schroeder, A. D., Rakha, H. A., & Hintz, R."
+    assert split_authors(s) == [
+        "Baker, S.", "Schroeder, A. D.", "Rakha, H. A.", "Hintz, R.",
+    ]
+
+
+def test_split_ampersand_two_authors():
+    s = "Schroeder, A.D. & Bradburb, I."
+    assert split_authors(s) == ["Schroeder, A.D.", "Bradburb, I."]
 ```
 
 `scripts/profile_lib.py` (stub):
@@ -175,34 +190,55 @@ def split_authors(s: str) -> list[str]:
     """Split an author string into a list of individual author names.
 
     Handles three patterns:
-      1. 'Last F, Last F'                               (comma-only)
-      2. 'Last, First, Last, First, and Last, First'    (pairs + 'and')
-      3. 'Last, F. and Last, F. and Last, F.'           ('and'-separated pairs)
+      1. 'Last F, Last F'                               (comma-only, no internal commas per name)
+      2. 'Last, First, Last, First, and Last, First'    (Last/First pairs with 'and')
+      3. 'Last, F. and Last, F. and Last, F.'           ('and'-separated Last/First pairs)
     """
     if not s or not s.strip():
         return []
 
-    # Split on ' and ' (with optional preceding comma).
-    pieces = re.split(r",?\s+and\s+", s.strip())
-    result: list[str] = []
+    s = s.strip()
 
-    for piece in pieces:
-        piece = piece.strip().rstrip(",").strip()
-        if not piece:
-            continue
-        commas = piece.count(",")
-        if commas <= 1:
-            # Either 'Last F' (0 commas) or 'Last, First' (1 comma).
-            result.append(piece)
+    # Patterns 2 and 3: presence of ' and ' or ' & ' disambiguates Last/First pairing.
+    if re.search(r"\s+(?:and|&)\s+", s):
+        pieces = re.split(r",?\s+(?:and|&)\s+", s)
+        result: list[str] = []
+        for piece in pieces:
+            piece = piece.strip().rstrip(",").strip()
+            if not piece:
+                continue
+            commas = piece.count(",")
+            if commas <= 1:
+                result.append(piece)
+            else:
+                parts = [p.strip() for p in piece.split(",") if p.strip()]
+                for i in range(0, len(parts), 2):
+                    if i + 1 < len(parts):
+                        result.append(f"{parts[i]}, {parts[i+1]}")
+                    else:
+                        result.append(parts[i])
+        return result
+
+    # No ' and ': either Pattern 1 (single-token initials) or Pattern 2 with no final 'and'.
+    parts = [p.strip() for p in s.split(",") if p.strip()]
+    if len(parts) == 1:
+        return parts
+
+    # Pattern 1 heuristic: every part is "Surname Initial(s)" — 2 tokens, second ≤ 2 chars.
+    looks_like_pattern1 = all(
+        len(p.split()) == 2 and len(p.split()[1]) <= 2
+        for p in parts
+    )
+    if looks_like_pattern1:
+        return parts
+
+    # Otherwise pair consecutive parts as (Last, First).
+    result = []
+    for i in range(0, len(parts), 2):
+        if i + 1 < len(parts):
+            result.append(f"{parts[i]}, {parts[i+1]}")
         else:
-            # Pairs of 'Last, First, Last, First, ...'
-            parts = [p.strip() for p in piece.split(",") if p.strip()]
-            for i in range(0, len(parts), 2):
-                if i + 1 < len(parts):
-                    result.append(f"{parts[i]}, {parts[i+1]}")
-                else:
-                    result.append(parts[i])
-
+            result.append(parts[i])
     return result
 ```
 
