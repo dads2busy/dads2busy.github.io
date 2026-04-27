@@ -14,10 +14,9 @@ def split_authors(s: str) -> list[str]:
 
     s = s.strip()
 
-    # Check if ' and ' is present
-    if " and " in s:
-        # Patterns 2 and 3: split on ' and ' (with optional preceding comma)
-        pieces = re.split(r",?\s+and\s+", s)
+    # Patterns 2 and 3: ' and ' or ' & ' disambiguates Last/First pairing.
+    if re.search(r"\s+(?:and|&)\s+", s):
+        pieces = re.split(r",?\s+(?:and|&)\s+", s)
         result: list[str] = []
 
         for piece in pieces:

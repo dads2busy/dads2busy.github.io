@@ -47,3 +47,16 @@ def test_split_full_first_name_pairs():
     assert split_authors(s) == [
         "Schroeder, Aaron D.", "Tester, Diana.", "Forry, Nicole",
     ]
+
+
+def test_split_ampersand_separator():
+    """Real writing.json uses ' & ' as final separator instead of ' and '."""
+    s = "Baker, S., Schroeder, A. D., Rakha, H. A., & Hintz, R."
+    assert split_authors(s) == [
+        "Baker, S.", "Schroeder, A. D.", "Rakha, H. A.", "Hintz, R.",
+    ]
+
+
+def test_split_ampersand_two_authors():
+    s = "Schroeder, A.D. & Bradburb, I."
+    assert split_authors(s) == ["Schroeder, A.D.", "Bradburb, I."]
