@@ -14,3 +14,7 @@ package.json
 .worktrees/
 scripts/__pycache__/
 scripts/tests/__pycache__/
+.venv/
+
+# RenderCV scratch output
+rendercv_output/
