@@ -46,6 +46,14 @@ export default function Footer() {
               aaron.schroeder@virginia.edu
             </a>
           </p>
+          <p className="mt-2 text-sm">
+            <a
+              href="/vita.pdf"
+              style={{ color: "var(--nav-active)" }}
+            >
+              Curriculum Vitae (PDF)
+            </a>
+          </p>
         </div>
 
         {/* Nav links */}
