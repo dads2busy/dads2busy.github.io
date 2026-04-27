@@ -301,6 +301,7 @@ cv:
         report6: VT-VLDS Identity Resolution and Query Execution Process Overview.pdf
       - name: Virginia Early Childhood Professional Registry
         date: 2010-2016
+        award: $110,840
         summary: Virginia Department of Social Services — $110,840 (PI)
         url: http://registry.fivehokies.com/
         content:
@@ -493,7 +494,8 @@ cv:
         report: 460wireless.pdf
       - name: I-81 Video System Design & Implementation
         date: "2003"
-        summary: USDOT Center for ITS Implementation Research — $50,000 (PI)
+        award: $80,000
+        summary: USDOT Center for ITS Implementation Research — $80,000 (PI)
         content:
           The goal of this project was to install several Internet-based traffic monitoring cameras
           along the Interstate corridor in the Northern Shenandoah Valley to provide video images to the
@@ -607,7 +609,8 @@ cv:
       - name:
           Building Research Infrastructure and Community to Advance Social Scientific and Educational
           Use of Administrative Data
-        date: 2013-2016
+        date: 2013-2017
+        award: $500,004
         summary: National Science Foundation — $500,004 (Co-PI)
         slug: NSF_Resinfra
         subcategory: Data Integration & Management
@@ -673,27 +676,28 @@ cv:
         slug: AmericanSoldier
         subcategory: Data Integration & Management
         ordinal: "1"
-      - name:
-          VDH Data Commons - Building a Sustainable Data Commons to Support Department of Health Strategic
-          Plans – Phase 1
-        date: "2021"
-        summary: U.S. Centers for Disease Control (via the Virginia Department of Health) — $190,000 (PI)
+      - name: VDH Data Commons
+        date: 2021-2024
+        award: $1,150,000
+        summary: U.S. Centers for Disease Control (via the Virginia Department of Health) — $1,150,000 (PI)
         url: https://uva-bi-sdad.github.io/vdh_rural_health_site
         content:
-          Led the construction and deployment of an interactive social impact data commons to support
-          the dissemination of the Virginia Department of Health (VDH)’s Rural Health Plan.
+          Led the construction and deployment (Phases 1 & 2) of an interactive social impact data
+          commons to support the dissemination of the Virginia Department of Health (VDH)’s Rural Health Plan.
         slug: VDHDataCommons
         subcategory: Data Integration & Management
         ordinal: "1"
-      - name: Social Impact Data Commons – Arlington
-        date: 2021-2022
-        summary: Mastercard Center for Inclusive Growth — $500,000 (PI)
+      - name: Social Impact Data Commons Implementation – National Capital Region
+        date: 2021-2025
+        award: $1,100,000
+        summary: Mastercard Center for Inclusive Growth — $1,100,000 (PI)
         url: https://uva-bi-sdad.github.io/sdc.intro/
         content:
-          Led the construction and deployment of a local-government stakeholder-centered approach,
-          Community Learning Through Data Driven Discovery (CLD3), to establishing a Social Impact Data
-          Commons relevant to local decision-makers. He successfully constructed, deployed, and applied
-          the pilot Social Impact Data Commons for Arlington County. Virginia.
+          Led a phased expansion of the Social Impact Data Commons, beginning with a pilot deployment
+          for Arlington County, Virginia, and expanding to cover the full National Capital Region (including
+          Fairfax County and surrounding jurisdictions). Applied a local-government stakeholder-centered
+          approach, Community Learning Through Data Driven Discovery (CLD3), to build and deploy data
+          commons infrastructure relevant to local decision-makers across the region.
         slug: MCDataCommons
         subcategory: Data Integration & Management
         ordinal: "1"
@@ -3259,14 +3263,6 @@ cv:
           through a case study of the Federal Emergency Management Agency's evolutionary relationship with
           information technologies.
         pages: vol. 51, no. 11
-      - title: Stakeholder Analysis
-        authors:
-          - Tennert, J.R.
-          - "**Schroeder, A.D.**"
-        date: "1999-04-10"
-        journal: American Society for Public Administration
-        slug: a
-        subcategory: Journal Publications (refereed)
       - title: "Escalating in a Quagmire: The Changing Dynamics of the Emergency Management Policy Subsystem"
         authors:
           - Wamsley, G.L.
@@ -3366,6 +3362,14 @@ cv:
           November 1. American Public Health Association 139th Annual Meeting and Exposition. Washington,
           DC
         slug: phys_ed
+        subcategory: Conference Proceedings/Presentations
+      - title: Stakeholder Analysis
+        authors:
+          - Tennert, J.R.
+          - "**Schroeder, A.D.**"
+        date: "1999-04-10"
+        journal: 60th Annual Meeting of the American Society for Public Administration, Orlando, FL.
+        slug: a
         subcategory: Conference Proceedings/Presentations
     Research / Technical Reports:
       - title:
@@ -3911,16 +3915,6 @@ cv:
           - Iserman, M.
         date: '2022-08-01'
         journal: Biocomplexity Institute, University of Virginia
-      - title: 'USDA ERS Broadband: Comparison of boundary analysis methods for spatial models (2021 version)'
-        authors:
-          - Halder, A.
-          - Goldstein, J.
-          - Shipp, S.
-          - "**Schroeder, A.**"
-          - Kattampallil, N.
-        date: '2021-03-01'
-        journal: Economic Research Service, USDA
-        doi: 10.18130/v3-45d5-c130
       - title: A 20-year review of accession characteristics in the U.S. Army
         authors:
           - Ratcliff, N.
