@@ -25,7 +25,7 @@ PROFILE_PATH = REPO_ROOT / "site" / "content" / "profile.yaml"
 OUTPUT_PATH = REPO_ROOT / "sources" / "_diff.md"
 
 MODEL = "claude-sonnet-4-6"
-MAX_TOKENS = 16000
+MAX_TOKENS = 32000
 
 SYSTEM_PROMPT = """You are a careful research assistant analyzing a CV/vita against an existing structured profile.yaml file.
 
@@ -98,13 +98,21 @@ def main() -> None:
         max_tokens=MAX_TOKENS,
         system=SYSTEM_PROMPT,
         thinking={"type": "adaptive"},
-        output_config={"effort": "high"},
+        output_config={"effort": "medium"},
         messages=[{"role": "user", "content": build_user_message(profile_yaml_text, profile_titles, cv_markdown, cv_path.name)}],
     ) as stream:
         for text in stream.text_stream:
             diff_text_parts.append(text)
             print(text, end="", flush=True)
         final = stream.get_final_message()
+
+    # Defensive: if text_stream yielded nothing, recover text from final.content
+    if not diff_text_parts:
+        for block in final.content:
+            if getattr(block, "type", None) == "text":
+                diff_text_parts.append(block.text)
+        if not diff_text_parts:
+            print(f"\n\nWARNING: no text content from API. stop_reason={final.stop_reason}", file=sys.stderr)
 
     diff_text = "".join(diff_text_parts)
     header = (
@@ -114,7 +122,7 @@ def main() -> None:
         f"Model: {MODEL} | input: {final.usage.input_tokens} tokens "
         f"(cache_read: {final.usage.cache_read_input_tokens}, "
         f"cache_creation: {final.usage.cache_creation_input_tokens}) | "
-        f"output: {final.usage.output_tokens} tokens\n\n---\n\n"
+        f"output: {final.usage.output_tokens} tokens | stop: {final.stop_reason}\n\n---\n\n"
     )
     OUTPUT_PATH.write_text(header + diff_text + "\n")
     print(f"\n\nWrote {OUTPUT_PATH}", file=sys.stderr)
