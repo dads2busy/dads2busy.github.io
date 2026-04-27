@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Build artifacts: regenerated from ../site/content/profile.yaml by predev/prebuild
+content/writing.json
+content/working.json
+content/research.json
+content/speaking.json
+content/teaching.json

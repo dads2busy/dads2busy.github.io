@@ -4,7 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "predev": "cd .. && .venv/bin/python scripts/profile_to_content_jsons.py",
     "build": "next build",
+    "prebuild": "cd .. && .venv/bin/python scripts/profile_to_content_jsons.py",
+    "gen:content": "cd .. && .venv/bin/python scripts/profile_to_content_jsons.py",
     "start": "next start",
     "lint": "eslint"
   },
