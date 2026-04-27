@@ -104,3 +104,38 @@ def normalize_doi(s: str | None) -> str | None:
     s = re.sub(r"^https?://(?:dx\.)?doi\.org/", "", s)
     s = re.sub(r"^doi\.org/", "", s)
     return s if s.startswith("10.") else None
+
+
+def writing_entry_to_publication(entry: dict) -> dict:
+    """Convert one writing.json entry to a RenderCV publication_entry dict.
+
+    Preserves custom keys (slug, ordinal, subcategory, content) for the
+    site's content-JSON generator; RenderCV ignores them in default rendering.
+    """
+    out: dict = {
+        "title": entry["title"],
+        "authors": [bold_aaron(a) for a in split_authors(entry.get("authors", ""))],
+    }
+
+    if entry.get("date"):
+        out["date"] = entry["date"]
+    if entry.get("sponsor"):
+        out["journal"] = entry["sponsor"]
+
+    doi = normalize_doi(entry.get("DOI"))
+    if doi:
+        out["doi"] = doi
+    elif entry.get("website"):
+        out["url"] = entry["website"]
+
+    # Custom keys preserved verbatim — only when populated.
+    for key in ("slug", "subcategory", "content"):
+        val = entry.get(key)
+        if val:
+            out[key] = val
+    for key in ("editors", "pages", "ordinal"):
+        val = entry.get(key)
+        if val not in (None, "", 0):
+            out[key] = val
+
+    return out

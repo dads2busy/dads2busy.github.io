@@ -151,3 +151,72 @@ def test_doi_invalid_returns_none():
 
 def test_doi_label_prefix():
     assert normalize_doi("DOI: 10.1234/abcd") == "10.1234/abcd"
+
+
+from profile_lib import writing_entry_to_publication
+
+
+SAMPLE_WRITING_ENTRY = {
+    "slug": "census_curated_data_enterprise",
+    "date": "2023-01-01",
+    "title": "Census Curated Data Enterprise Use Case Demonstration",
+    "subcategory": "Research/Technical Reports",
+    "sponsor": "Proceedings of the Biocomplexity Institute, TR# 2023-53",
+    "dates": 2023,
+    "authors": "Lancaster V, Shipp S, Keller S, Schroeder A, Mortveit H, Swarup S, Xie D",
+    "editors": "",
+    "pages": "",
+    "DOI": "https://doi.org/10.18130/ce97-sp05",
+    "website": "https://doi.org/10.18130/ce97-sp05",
+    "ordinal": "",
+    "content": "The proposed Curated Data Enterprise...",
+}
+
+
+def test_writing_entry_basic_fields():
+    out = writing_entry_to_publication(SAMPLE_WRITING_ENTRY)
+    assert out["title"] == "Census Curated Data Enterprise Use Case Demonstration"
+    assert out["date"] == "2023-01-01"
+    assert out["doi"] == "10.18130/ce97-sp05"
+    assert out["journal"] == "Proceedings of the Biocomplexity Institute, TR# 2023-53"
+
+
+def test_writing_entry_authors_split_and_aaron_bolded():
+    out = writing_entry_to_publication(SAMPLE_WRITING_ENTRY)
+    assert out["authors"] == [
+        "Lancaster V", "Shipp S", "Keller S", "**Schroeder A**",
+        "Mortveit H", "Swarup S", "Xie D",
+    ]
+
+
+def test_writing_entry_custom_keys_preserved():
+    out = writing_entry_to_publication(SAMPLE_WRITING_ENTRY)
+    assert out["slug"] == "census_curated_data_enterprise"
+    assert out["subcategory"] == "Research/Technical Reports"
+    assert out["content"].startswith("The proposed Curated Data Enterprise")
+
+
+def test_writing_entry_empty_doi_omits_field():
+    entry = dict(SAMPLE_WRITING_ENTRY, DOI="")
+    out = writing_entry_to_publication(entry)
+    assert "doi" not in out
+
+
+def test_writing_entry_url_used_when_no_doi():
+    entry = dict(SAMPLE_WRITING_ENTRY, DOI="", website="http://example.com/paper.pdf")
+    out = writing_entry_to_publication(entry)
+    assert out["url"] == "http://example.com/paper.pdf"
+    assert "doi" not in out
+
+
+def test_writing_entry_url_omitted_when_doi_present():
+    """RenderCV ignores url if doi is present — don't bother emitting it."""
+    out = writing_entry_to_publication(SAMPLE_WRITING_ENTRY)
+    assert "url" not in out
+
+
+def test_writing_entry_empty_optional_strings_omitted():
+    """Don't emit empty 'editors', 'pages' as empty strings — omit entirely."""
+    out = writing_entry_to_publication(SAMPLE_WRITING_ENTRY)
+    assert "editors" not in out
+    assert "pages" not in out
