@@ -101,3 +101,46 @@ def test_extract_skips_skills_strings():
     """Skills is bare strings, not 'titled' entries."""
     out = extract_profile_titles(SAMPLE_PROFILE)
     assert ("Skills", "Python") not in out
+
+
+from analyzer_lib import docx_to_markdown
+
+
+def test_docx_to_markdown_returns_string(tmp_path):
+    """Round-trip a tiny generated DOCX and confirm we get its text back."""
+    docx_path = tmp_path / "tiny.docx"
+    _write_minimal_docx(docx_path, "Hello from DOCX")
+
+    out = docx_to_markdown(docx_path)
+    assert "Hello from DOCX" in out
+
+
+def test_docx_to_markdown_missing_file_raises(tmp_path):
+    import pytest
+    with pytest.raises(FileNotFoundError):
+        docx_to_markdown(tmp_path / "nonexistent.docx")
+
+
+def _write_minimal_docx(path, text):
+    """Write a minimal valid DOCX (a zip of the required XML parts)."""
+    import zipfile
+    document_xml = f"""<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
+  <w:body>
+    <w:p><w:r><w:t>{text}</w:t></w:r></w:p>
+  </w:body>
+</w:document>"""
+    rels_xml = """<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+  <Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/>
+</Relationships>"""
+    content_types_xml = """<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">
+  <Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/>
+  <Default Extension="xml" ContentType="application/xml"/>
+  <Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/>
+</Types>"""
+    with zipfile.ZipFile(path, "w") as z:
+        z.writestr("[Content_Types].xml", content_types_xml)
+        z.writestr("_rels/.rels", rels_xml)
+        z.writestr("word/document.xml", document_xml)

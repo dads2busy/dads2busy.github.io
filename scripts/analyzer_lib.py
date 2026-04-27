@@ -42,3 +42,16 @@ def extract_profile_titles(profile: dict) -> list[tuple[str, str]]:
             if title:
                 out.append((section_name, title))
     return out
+
+
+import mammoth
+from pathlib import Path
+
+
+def docx_to_markdown(path: Path) -> str:
+    """Convert a DOCX file to markdown text via mammoth."""
+    if not path.exists():
+        raise FileNotFoundError(f"DOCX not found: {path}")
+    with open(path, "rb") as f:
+        result = mammoth.convert_to_markdown(f)
+    return result.value
