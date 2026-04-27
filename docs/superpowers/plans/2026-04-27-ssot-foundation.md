@@ -1084,14 +1084,15 @@ If counts differ from these, investigate the source JSON before proceeding.
 
 ```bash
 head -80 site/content/profile.yaml
-grep -c '^      - title:' site/content/profile.yaml
+grep -c '^    - title:' site/content/profile.yaml
 grep -c '\*\*Schroeder' site/content/profile.yaml
 ```
 
 Expected:
 - `head` shows `cv:` then `name:` then `email:` then `sections:` then `Summary:`.
 - The first `grep` count = 61 (total publications across all 6 publication sections, matching writing.json entry count).
-- The second `grep` count > 0 (every writing.json entry includes Aaron Schroeder among the authors, so every publication should have at least one bolded variant).
+- The second `grep` count is positive (Aaron should appear bolded in most publication author lists; some malformed source entries — e.g. `"Schroeder, A.D. Amanna, A."` with a missing comma — won't bold cleanly and get manual review later).
+- Output file size is roughly 200–400 KB (long abstracts in `content` fields make this larger than a typical CV YAML).
 
 - [ ] **Step 4: Commit**
 
