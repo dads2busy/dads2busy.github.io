@@ -64,3 +64,32 @@ def split_authors(s: str) -> list[str]:
                 else:
                     result.append(parts[i])
             return result
+
+
+_AARON_PATTERN = re.compile(
+    r"""
+    ^\s*
+    (?:
+        Schroeder,?\s*
+            (?: Aaron (?:\s+D\.?)?
+              | A\.?\s*D?\.?
+            )?
+        |
+        (?: Aaron (?:\s+D\.?)?
+          | A\.?\s*D?\.?
+        )
+        \s+ Schroeder
+    )
+    \.?\s*$
+    """,
+    re.VERBOSE,
+)
+
+
+def bold_aaron(name: str) -> str:
+    """Wrap Aaron Schroeder name variants with **bold**. Pass-through otherwise."""
+    if name.startswith("**") and name.endswith("**"):
+        return name
+    if _AARON_PATTERN.match(name.strip()):
+        return f"**{name.strip()}**"
+    return name

@@ -60,3 +60,55 @@ def test_split_ampersand_separator():
 def test_split_ampersand_two_authors():
     s = "Schroeder, A.D. & Bradburb, I."
     assert split_authors(s) == ["Schroeder, A.D.", "Bradburb, I."]
+
+
+from profile_lib import bold_aaron
+
+
+def test_bold_last_initial():
+    assert bold_aaron("Schroeder A") == "**Schroeder A**"
+
+
+def test_bold_last_two_initials():
+    assert bold_aaron("Schroeder A.D.") == "**Schroeder A.D.**"
+
+
+def test_bold_last_comma_initials():
+    assert bold_aaron("Schroeder, A.D.") == "**Schroeder, A.D.**"
+
+
+def test_bold_last_comma_spaced_initials():
+    assert bold_aaron("Schroeder, A. D.") == "**Schroeder, A. D.**"
+
+
+def test_bold_last_comma_full_first():
+    assert bold_aaron("Schroeder, Aaron") == "**Schroeder, Aaron**"
+
+
+def test_bold_last_comma_full_first_middle():
+    assert bold_aaron("Schroeder, Aaron D.") == "**Schroeder, Aaron D.**"
+
+
+def test_bold_first_last():
+    assert bold_aaron("Aaron Schroeder") == "**Aaron Schroeder**"
+
+
+def test_bold_first_middle_last():
+    assert bold_aaron("Aaron D. Schroeder") == "**Aaron D. Schroeder**"
+
+
+def test_bold_initials_last():
+    assert bold_aaron("A.D. Schroeder") == "**A.D. Schroeder**"
+
+
+def test_bold_does_not_match_other_schroeder():
+    """T.T. Schroeder appears in writing.json — should NOT match Aaron."""
+    assert bold_aaron("Schroeder, T.T.") == "Schroeder, T.T."
+
+
+def test_bold_does_not_match_unrelated_author():
+    assert bold_aaron("Shipp S") == "Shipp S"
+
+
+def test_bold_already_bolded_is_unchanged():
+    assert bold_aaron("**Schroeder, A.D.**") == "**Schroeder, A.D.**"
