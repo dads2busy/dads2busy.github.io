@@ -50,7 +50,7 @@ cv:
         and qualitative methodologies of evaluation, and the general application of data and web technologies
         to the enhancement of public and private sector services.'
       slug: associate-research-professor
-      ordinal: 1
+      ordinal: '1'
     - name: Senior Data Scientist & Architect
       date: 2014-2018
       summary: "Social Decisions & Analytics\tLab, Biocomplexity Institute at Virginia Tech (BI)"
@@ -64,7 +64,7 @@ cv:
         of techniques, processes, and technologies to facilitate the transfer of Data Science capabilities
         to local government.
       slug: senior-data-scientist-architect
-      ordinal: 2
+      ordinal: '2'
     - name: "Information\tArchitect\t& Data\tScientist,\tLeader, Public\tPolicy Data\tGroup"
       date: 2010-2014
       summary: Virginia Tech Institute for Policy & Governance (VTIPG)
@@ -82,7 +82,7 @@ cv:
         social service recipients.\tClients include local, state,\tfederal and non-profit agency leaders\
         \ and\npolicymakers."
       slug: information-architect-data-scientist-leader-public-policy-data-group
-      ordinal: 3
+      ordinal: '3'
     - name: Research Scientist
       date: 2008-2010
       summary: Virginia Tech Institute for Policy & Governance (VTIPG)
@@ -98,7 +98,7 @@ cv:
         \ high-profile projects in the Commonwealth of Virginia\tare\nthe USHHS-funded Project Child HANDS\
         \ and the USED-funded Statewide Longitudinal Data\tSystem."
       slug: research-scientist
-      ordinal: 4
+      ordinal: '4'
     - name: "Research Scientist, Director,\tCenter for Technology Deployment"
       date: 2004-2006
       summary: Virginia Tech Transportation Institute (VTTI)
@@ -116,7 +116,7 @@ cv:
         \ mission involved the application\nof both managerial and technical evaluation tools to establish\
         \ the likelihood of an inventions\ndeployment into real-time environments."
       slug: research-scientist-director-center-for-technology-deployment
-      ordinal: 5
+      ordinal: '5'
     - name: Senior Research Associate, Leader, Information Applications Group
       date: 2002-2004
       summary: Virginia Tech Transportation Institute (VTTI)
@@ -132,7 +132,7 @@ cv:
         associated Virginia\tTech faculty\nmembers,\tand 11 graduate research assistants (representing\
         \ Systems Engineering, Public\nAdministration,\tComputer Science, and Marketing)."
       slug: senior-research-associate-leader-information-applications-group
-      ordinal: 6
+      ordinal: '6'
     - name: "Senior Research\tAssociate"
       date: 1998-2002
       summary: Virginia Tech Transportation Institute (VTTI)
@@ -143,7 +143,7 @@ cv:
 
         investigator, or researcher on numerous projects.'
       slug: senior-research-associate
-      ordinal: 7
+      ordinal: '7'
     - name: Research Associate
       date: 1995-1996
       summary: National Academy of Public Administration (NAPA)
@@ -152,14 +152,14 @@ cv:
         \ of the National Guard to public, non-profit, and private agencies in\nnatural disaster response\
         \ and recovery."
       slug: research-associate
-      ordinal: 8
+      ordinal: '8'
     Research Projects:
     - name: ATIS Implementation Center
       date: 2004-2005
       summary: U.S. DOT Research and Special Programs Administration (RSPA) — $543,000 (Co-PI)
       slug: atis_rce
       subcategory: Data Integration & Management
-      ordinal: 9
+      ordinal: '9'
     - name: Virginia Longitudinal Data System Expansion - Linking to Workforce and Postsecondary
       date: 2010-2013
       summary: U.S. Department of Education — $1,760,000 (PI)
@@ -174,7 +174,7 @@ cv:
         form of electronic data.'
       slug: vlds_expansion
       subcategory: Data Integration & Management
-      ordinal: 2
+      ordinal: '2'
       report: VT-VLDS Lexicon Specifications v1.pdf
       report2: VT-VLDS Lexicon Metadata Tool Design Document.pdf
       report3: VT-VLDS Shaker Specifications v2.pdf
@@ -198,7 +198,7 @@ cv:
         through a web-based interface for both administrative management and participant interaction.
       slug: registry
       subcategory: Data Integration & Management
-      ordinal: 5
+      ordinal: '5'
     - name: 'Child HANDS: Building Child and Family Policy Research Data Capacity for the Commonwealth
         of Virginia: An Integrated Model'
       date: 2008-2011
@@ -217,13 +217,13 @@ cv:
         outcomes in kindergarten. Later questions will expand into other areas of child welfare and health.'
       slug: hands
       subcategory: Data Integration & Management
-      ordinal: 3
+      ordinal: '3'
     - name: I-81 Design & Implementation of Database Management System
       date: '2002'
       summary: VA Department of Transportation (VDOT) — $180,000 (PI)
       slug: I81_db
       subcategory: Data Integration & Management
-      ordinal: 5
+      ordinal: '5'
     - name: 'Intelligent Transportation Systems Implementation: Virginia Traveler Information Clearinghouse'
       date: 1999-2006
       summary: Research and Special Programs Administration (US Department of Transportation) — $1,800,000
@@ -234,20 +234,20 @@ cv:
         Traveler Information Clearinghouse”.
       slug: clearinghouse
       subcategory: Data Integration & Management
-      ordinal: 4
+      ordinal: '4'
       report: dataclearinghouse.pdf
     - name: I-81 Interim Data Operation Center
       date: 2002-2005
       summary: VA Department of Transportation (VDOT) — $747,817 (PI)
       slug: ops_center
       subcategory: Data Integration & Management
-      ordinal: 4
+      ordinal: '4'
     - name: Advanced Travel Information Systems
       date: '1999'
       summary: Virginia Department of Transportion (VDOT) — $60,733 (PI)
       slug: ATIS
       subcategory: Data Integration & Management
-      ordinal: 6
+      ordinal: '6'
     - name: 511 Virginia
       date: 2000-2003
       summary: Virginia Department of Transportion (VDOT) — $1,207,000 (PI)
@@ -259,7 +259,7 @@ cv:
         the development and deployment of the new voice recognition technology.
       slug: Virginia511
       subcategory: Data Integration & Management
-      ordinal: 3
+      ordinal: '3'
       report: 511VirginiaEvaluation.pdf
     - name: Travel Shenandoah – An Advanced Traveler Information System for Virginia’s Shenandoah Valley
       date: 1998-2000
@@ -271,7 +271,7 @@ cv:
         services information, tourism information, emergency services information, and trip routing capabilities.'
       slug: TravelShenandoah
       subcategory: Data Integration & Management
-      ordinal: 6
+      ordinal: '6'
       media1: Travel Shenandoah Science Blog Press.pdf
       media2: InformedAtTheWheelRichmondTimes.jpg
       media3: RealTimeTrafficInformationOfferedForI-81InVirginia.JPG
@@ -288,7 +288,7 @@ cv:
         of Virginia.
       slug: TruckFleetAlert
       subcategory: Data Integration & Management
-      ordinal: 7
+      ordinal: '7'
       report: TruckFleetSupportProgramEvaluation.pdf
     - name: Travel Virginia – A Statewide System of Private-Public Partnerships
       date: 1999-2000
@@ -297,7 +297,7 @@ cv:
         across the Commonwealth of Virginia.
       slug: TravelVirginia
       subcategory: Policy Implementation Networks
-      ordinal: 1
+      ordinal: '1'
       report: TravelVirginia.pdf
     - name: Enhanced Night Visibility
       date: 1997-2002
@@ -307,7 +307,7 @@ cv:
         network for the nationwide deployment of UV-A Fluorescent headlamps and traffic control devices.
       slug: NightVis
       subcategory: Policy Implementation Networks
-      ordinal: 2
+      ordinal: '2'
       report: Enhanced Night Visibility Series.pdf
     - name: Bedford Ride
       date: 2000-2001
@@ -318,7 +318,7 @@ cv:
         County “success story.”
       slug: BedfordRide
       subcategory: Web-Enabled Public Services
-      ordinal: 1
+      ordinal: '1'
       media1: BedfordRideArticle.jpg
       media1title: Medical Transportation Program Supported By VTTI Flourishes
     - name: ACCESS to Rides – A Dynamic System for Volunteer and Transportation Resource Management
@@ -330,7 +330,7 @@ cv:
         program in Virginia’s New River Valley.
       slug: AccessToRides
       subcategory: Web-Enabled Public Services
-      ordinal: 2
+      ordinal: '2'
       report: AccessToRidesDatabaseUserGuide.pdf
     - name: Wireless Linear LAN for Interstate 81 (Salem District)
       date: 2003-2005
@@ -342,7 +342,7 @@ cv:
         DOTs procure operational IT systems (which are traditionally used for 15-30 year planning cycles).
       slug: LinearLAN
       subcategory: Wireless Technologies
-      ordinal: 1
+      ordinal: '1'
     - name: US460 Wireless Corridor
       date: 2001-2004
       summary: Virginia Department of Transportion (VDOT) — $250,000 (PI)
@@ -352,7 +352,7 @@ cv:
         VDOT assets (cameras, sensors, counters, etc.).
       slug: US460LinearLAN
       subcategory: Wireless Technologies
-      ordinal: 3
+      ordinal: '3'
       report: 460wireless.pdf
     - name: I-81 Video System Design & Implementation
       date: '2003'
@@ -366,20 +366,20 @@ cv:
         the camera image from the roadside to the Network Virginia Internet backdrop.
       slug: I81VideoSystem
       subcategory: Wireless Technologies
-      ordinal: 2
+      ordinal: '2'
     - name: Development of cisco-based urban wireless networks for infrastructure surveillance and public
         fleet communications
       date: '2005'
       summary: Cisco Systems, Inc. — $89,000 (PI)
       slug: cisco_wireless
       subcategory: Wireless Technologies
-      ordinal: 3
+      ordinal: '3'
     - name: Deployment and performance testing of an 8 hop 4.9hgz cisco metro grid on the smart road
       date: 2005-2006
       summary: Cisco Systems, Inc. — $100,000 (PI)
       slug: smart_road_wireless
       subcategory: Wireless Technologies
-      ordinal: 2
+      ordinal: '2'
     - name: 'Virginia''s Wounded Warriors: Assessment of the Experiences, Supportive Service Needs and
         Service Gaps of Veterans within the Commonwealth of Virginia'
       date: 2009-2010
@@ -392,7 +392,7 @@ cv:
         Freedom (OIF) and Operation Enduring Freedom (OEF).
       slug: WoundedWarrior
       subcategory: Program Evaluation/Policy Analysis
-      ordinal: 1
+      ordinal: '1'
     - name: 'Saving Dollars While Making Sense: Comparing Operational Costs of Intergenerational Shared
         Site Facilities'
       date: 2006-2007
@@ -403,7 +403,7 @@ cv:
         without intergenerational components.
       slug: Intergenerational
       subcategory: Program Evaluation/Policy Analysis
-      ordinal: 3
+      ordinal: '3'
       report: Shared_Site_Cost_Savings_Final.pdf
     - name: I-81 Evaluation Framework
       date: 2002-2004
@@ -418,7 +418,7 @@ cv:
         the on-going evaluation of ITS projects funded through the Program.
       slug: I81EvaluationFramework
       subcategory: Program Evaluation/Policy Analysis
-      ordinal: 2
+      ordinal: '2'
       report: I-81 ITS Program Evaluation Framework.pdf
     - name: Case Study Evaluation of the Virginia Department of Transportation’s I-81 ITS Program
       date: '2003'
@@ -429,14 +429,14 @@ cv:
         are made about how the Program can be improved.
       slug: I81CaseStudy
       subcategory: Program Evaluation/Policy Analysis
-      ordinal: 3
+      ordinal: '3'
       report: Case Study I-81 ITS Program.pdf
     - name: Corridor Concept of Operations
       date: '2001'
       summary: Virginia Department of Transportion (VDOT) — $50,000 (PI)
       slug: CorridorConceptOps
       subcategory: Program Evaluation/Policy Analysis
-      ordinal: 5
+      ordinal: '5'
     - name: Staunton District ITS Concept of Operations
       date: '2000'
       summary: Virginia Department of Transportion (VDOT) — $125,000 (PI)
@@ -444,7 +444,7 @@ cv:
         ITS, the agencies involved in operating and managing the ITS, and each agency's roles and responsibilities.
       slug: StauntonConceptOps
       subcategory: Program Evaluation/Policy Analysis
-      ordinal: 5
+      ordinal: '5'
     - name: I-81 Intelligent Transportation Systems Task Force
       date: 2000-2001
       summary: Virginia Department of Transportion (VDOT) — $275,000 (PI)
@@ -456,14 +456,14 @@ cv:
         be funded for each coming fiscal year.'
       slug: I81ITSTaskForce
       subcategory: Program Evaluation/Policy Analysis
-      ordinal: 4
+      ordinal: '4'
     - name: Building Research Infrastructure and Community to Advance Social Scientific and Educational
         Use of Administrative Data
       date: 2013-2016
       summary: National Science Foundation — $500,004 (Co-PI)
       slug: NSF_Resinfra
       subcategory: Data Integration & Management
-      ordinal: 2
+      ordinal: '2'
     - name: Regional Pedestrian Activity Measurement
       date: '2006'
       summary: USDOT Center for ITS Implementation Research — $50,000 (PI)
@@ -475,14 +475,14 @@ cv:
         in multiple domains including: human health and medicine, civic planning, and transportation.'
       slug: PedestrianActivity
       subcategory: Activity Measurement
-      ordinal: 1
+      ordinal: '1'
       report: VTTI_Ped_FINRPT_FINAL.pdf
     - name: Virginia Department of Emergency Management (VDEM) Data Flows -- Establishing a Baseline
       date: '2016'
       summary: VA Department of Emergency Management — $50,000 (PI)
       slug: VDEM
       subcategory: Data Integration & Management
-      ordinal: 1
+      ordinal: '1'
     - name: Baseline Distinct Counts of Select Data Sets to Support Early Childhood Integrated Data System
         (ECIDS) Establishment
       date: '2018'
@@ -493,7 +493,7 @@ cv:
         childhood policy and programmatic analyses and uses.
       slug: VECF
       subcategory: Data Integration & Management
-      ordinal: 1
+      ordinal: '1'
       report: Distinct Counts from VLDS to Support ECIDS.pdf
     - name: Iowa Early Childhood Integrated Data System (IDS) Development Support
       date: 2019-2020
@@ -505,7 +505,7 @@ cv:
         related to dataset profiling, preparation, and deduplication/linkage.
       slug: ISU_IDS
       subcategory: Data Integration & Management
-      ordinal: 1
+      ordinal: '1'
     - name: The American Soldier in World War II - Advanced Data Operations
       date: '2021'
       summary: National Endowment for the Humanities — $60,971 (part of a larger American Soldier in World
@@ -518,7 +518,7 @@ cv:
         analyses to demonstrate the potential of this new data sources.
       slug: AmericanSoldier
       subcategory: Data Integration & Management
-      ordinal: 1
+      ordinal: '1'
     - name: VDH Data Commons - Building a Sustainable Data Commons to Support Department of Health Strategic
         Plans – Phase 1
       date: '2021'
@@ -528,7 +528,7 @@ cv:
         the dissemination of the Virginia Department of Health (VDH)’s Rural Health Plan.
       slug: VDHDataCommons
       subcategory: Data Integration & Management
-      ordinal: 1
+      ordinal: '1'
     - name: Social Impact Data Commons – Arlington
       date: 2021-2022
       summary: Mastercard Center for Inclusive Growth — $500,000 (PI)
@@ -539,7 +539,7 @@ cv:
         the pilot Social Impact Data Commons for Arlington County. Virginia.
       slug: MCDataCommons
       subcategory: Data Integration & Management
-      ordinal: 1
+      ordinal: '1'
     Presentations:
     - name: 'The Social Impact Data Commons: Supporting local equity-informed decision-making in the National
         Capital Region'
@@ -723,7 +723,7 @@ cv:
     - name: ''
       date: '2012-05-31'
       summary: Presenter at Virginia's Early Childhood Advisory Council (ECAC)
-      url: /downloads/Governors_ECAC_Slides_5_30_12.pdf
+      local_path: /downloads/Governors_ECAC_Slides_5_30_12.pdf
       content: Schroeder, A.D., & Bradburn, I. Presented to Virginia’s Early Childhood Advisory Council,
         (ECAC).  This presentation included recent progress on Project Child HANDS and a video about how
         the system works.
@@ -844,7 +844,7 @@ cv:
       date: '2012-04-26'
       summary: Presenter at November 17. Global Forum on Urban and Regional Resilience (GFURR) Resilience
         Workshop, Virginia Tech
-      url: /downloads/Workshop3-Schroeder-Building-Data-Sharing-Infrastructures.pdf
+      local_path: /downloads/Workshop3-Schroeder-Building-Data-Sharing-Infrastructures.pdf
       slug: sharing_infra
       subcategory: Presentations/Workshops
       report: Workshop3-Schroeder-Building-Data-Sharing-Infrastructures.pdf
@@ -2734,7 +2734,7 @@ cv:
       - Shipp, S.
       date: '2017-04-16'
       journal: Cityscape, 18(4)
-      url: https://www.jstor.org/stable/26328312?seq=1#page_scan_tab_contents
+      url: https://www.jstor.org/stable/26328312?seq=1
       slug: admin-housing-data
       subcategory: Journal Publications (refereed)
       content: 'This article examines the feasibility of using local administrative data sources for enhancing
@@ -2803,7 +2803,7 @@ cv:
         the heterogeneous exposure levels of the population across timewithin the greater Houston area.
         We find that individuals in the samezip code, neighborhood, block, and even household have varying
         levelsof exposure depending on their activity patterns throughout the day.
-      ordinal: 6
+      ordinal: '6'
     - title: 'Pad and Chaff: Secure Approximate String Matching in Private Record Linkage'
       authors:
       - '**Schroeder, A.D.**'
@@ -2940,7 +2940,7 @@ cv:
       - Ward, R.
       date: '2012-07-30'
       journal: Handbook of Emergency Management
-      url: ../../../downloads/Schroeder_Evolution_of_Emergency_Management.pdf
+      local_path: ../../../downloads/Schroeder_Evolution_of_Emergency_Management.pdf
       slug: em_evolution
       subcategory: Book Chapters
       content: This chapter traces the evolutionary maturation of emergency management in America. It
@@ -2971,7 +2971,7 @@ cv:
       date: '2012-04-26'
       journal: November 17. Global Forum on Urban and Regional Resilience (GFURR) Resilience Workshop,
         Virginia Tech
-      url: /downloads/Workshop3-Schroeder-Building-Data-Sharing-Infrastructures.pdf
+      local_path: /downloads/Workshop3-Schroeder-Building-Data-Sharing-Infrastructures.pdf
       slug: sharing_infra
       subcategory: Conference Proceedings/Presentations
     - title: Association between perceived university environment and physical activity in college students.
@@ -3142,7 +3142,7 @@ cv:
       - '**Schroeder, A.D.**'
       date: '2012-05-19'
       journal: 'Data Quality Campaign: Washington, DC'
-      url: /downloads/Multi_Agency_Data_Federation.pdf
+      local_path: /downloads/Multi_Agency_Data_Federation.pdf
       slug: multi_agency
       subcategory: Research/Technical Reports
     - title: 'Local School Division Student Assessments at Kindergarten Enrollment and During Kindergarten:
@@ -3152,7 +3152,7 @@ cv:
       - Bradburb, I.
       date: '2012-05-18'
       journal: Project Child HANDS, VA
-      url: /downloads/HANDS_School Assessments Research Report April 2010.pdf
+      local_path: /downloads/HANDS_School Assessments Research Report April 2010.pdf
       slug: local_school_divs
       subcategory: Research/Technical Reports
       content: The Commonwealth of Virginia has 132 school divisions that operate under the authority
@@ -3167,7 +3167,7 @@ cv:
       - Bradburb, I.
       date: '2012-05-17'
       journal: Project Child HANDS, VA
-      url: /downloads/VA Local Social Service Agencies and Quality Improvement_No1.pdf
+      local_path: /downloads/VA Local Social Service Agencies and Quality Improvement_No1.pdf
       slug: local_social_service
       subcategory: Research/Technical Reports
       content: 'The Child Care Development Fund (CCDF) is a federal work support program to help low-income  families
@@ -3197,7 +3197,7 @@ cv:
       - Bradburb, I.
       date: '2012-05-16'
       journal: Project Child HANDS, VA
-      url: /downloads/HANDS_Technical_QI_Classification_website.pdf
+      local_path: /downloads/HANDS_Technical_QI_Classification_website.pdf
       slug: classification_system
       subcategory: Research/Technical Reports
       content: 'This report describes:
@@ -3217,7 +3217,7 @@ cv:
       - '**Schroeder, A.D.**'
       date: '2012-05-15'
       journal: 'Generations United: Washington, DC'
-      url: /downloads/Shared_Site_Cost_Savings_Final.pdf
+      local_path: /downloads/Shared_Site_Cost_Savings_Final.pdf
       slug: intergenerational
       subcategory: Research/Technical Reports
       content: 'VAs the leading advocate for intergenerational
@@ -3244,7 +3244,7 @@ cv:
       - '**Schroeder, A.D.**'
       date: '2012-05-14'
       journal: USDOT Center for ITS Implementation Research
-      url: /downloads/511 Virginia E-mail alert system.pdf
+      local_path: /downloads/511 Virginia E-mail alert system.pdf
       slug: email_alert
       subcategory: Research/Technical Reports
       content: '511 Virginia is a statewide web and phone service that disseminates, amongst other things,
@@ -3275,7 +3275,7 @@ cv:
       - '**Schroeder, A.D.**'
       date: '2012-05-13'
       journal: USDOT Center for ITS Implementation Research
-      url: downloads/Serial%20Wireless%20IP%20Networks%20for%20DOT-IEEE.pdf
+      local_path: downloads/Serial%20Wireless%20IP%20Networks%20for%20DOT-IEEE.pdf
       slug: wireless_protocols
       subcategory: Research/Technical Reports
     - title: Route 460 Wireless Network
@@ -3283,7 +3283,7 @@ cv:
       - '**Schroeder, A.D.**'
       date: '2012-05-12'
       journal: USDOT Center for ITS Implementation Research
-      url: /downloads/460wireless.pdf
+      local_path: /downloads/460wireless.pdf
       slug: 460_wireless
       subcategory: Research/Technical Reports
       content: 'The Virginia Tech Transportation Institute in cooperation with VDOT’s Christiansburg
@@ -3303,7 +3303,7 @@ cv:
       - '**Schroeder, A.D.**'
       date: '2012-05-11'
       journal: USDOT Center for ITS Implementation Research
-      url: /downloads/VTTI_Ped_FINRPT_FINAL.pdf
+      local_path: /downloads/VTTI_Ped_FINRPT_FINAL.pdf
       slug: ped
       subcategory: Research/Technical Reports
       content: 'The goal of this project was to develop a detailed understanding of what would be required
@@ -3356,7 +3356,7 @@ cv:
       - '**Schroeder, A.D.**'
       date: '2012-05-07'
       journal: USDOT Center for ITS Implementation Research
-      url: /downloads/TravelVirginia.pdf
+      local_path: /downloads/TravelVirginia.pdf
       slug: travel_virginia
       subcategory: Research/Technical Reports
       content: This report summarizes the results of a fifteen-month study to assess the feasibility of
@@ -3376,7 +3376,7 @@ cv:
       - K.
       date: '2012-05-05'
       journal: USDOT Center for ITS Implementation Research
-      url: /downloads/transportation_data_clearinghouse.pdf
+      local_path: /downloads/transportation_data_clearinghouse.pdf
       slug: data_clearinghouse
       subcategory: Research/Technical Reports
       content: 'In late 1999, the Virginia Tech Transportation Institute (VTTI), at the request of the
@@ -3486,7 +3486,7 @@ cv:
       - '**Schroeder, A.D.**'
       date: '2012-04-10'
       journal: April 30. Roanoke Times and World News
-      url: /downloads/The Political Roots of Hating Government, Schroeder.pdf
+      local_path: /downloads/The Political Roots of Hating Government, Schroeder.pdf
       slug: hating_govt
       subcategory: Editorials
       content: '<h3>Response to Editorial in Roanoke Times</h3>
@@ -3541,31 +3541,31 @@ cv:
         context to a multiple-organization network context. Managerially, we must respond accordingly.
     Awards & Honors:
     - label: Member, Arlington County Open Data Advisory Group
-      date: 2018-2019
+      details: 2018-2019
     - label: COVITS Winner — Cross-Boundary Collaboration on IT (VLDS)
-      date: '2013'
+      details: '2013'
     - label: COVITS Finalist — Virginia Longitudinal Data System
-      date: '2012'
+      details: '2012'
     - label: Invited, Virginia Governor's Early Childhood Advisory Council
-      date: '2010'
+      details: '2010'
     - label: Invited, National Institute of Statistical Sciences Workshop
-      date: '2009'
+      details: '2009'
     - label: Invited, National Press Club — intergenerational day care findings
-      date: '2008'
+      details: '2008'
     - label: Invited speaker, Florida DOT ITS Conference
-      date: '2003'
+      details: '2003'
     - label: Invited workshop lead, Univ. of LaVerne — IT implementation
-      date: '2000'
+      details: '2000'
     - label: Invited, Virginia Transportation Conference
-      date: 1999-2000
+      details: 1999-2000
     - label: Nominee, ASG Award for Innovation in State Government (Travel Shenandoah)
-      date: '1999'
+      details: '1999'
     - label: Appointed Member, Congressional Commission on I-81 Truck Safety
-      date: '1999'
+      details: '1999'
     - label: Eno Transportation Fellow
-      date: '1997'
+      details: '1997'
     - label: Invited Guest Editor, Administration & Society
-      date: '1997'
+      details: '1997'
     Skills:
     - R
     - Python

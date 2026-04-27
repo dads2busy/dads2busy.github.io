@@ -73,19 +73,19 @@ EDUCATION = [
 ]
 
 AWARDS = [
-    {"label": "Member, Arlington County Open Data Advisory Group", "date": "2018-2019"},
-    {"label": "COVITS Winner — Cross-Boundary Collaboration on IT (VLDS)", "date": "2013"},
-    {"label": "COVITS Finalist — Virginia Longitudinal Data System", "date": "2012"},
-    {"label": "Invited, Virginia Governor's Early Childhood Advisory Council", "date": "2010"},
-    {"label": "Invited, National Institute of Statistical Sciences Workshop", "date": "2009"},
-    {"label": "Invited, National Press Club — intergenerational day care findings", "date": "2008"},
-    {"label": "Invited speaker, Florida DOT ITS Conference", "date": "2003"},
-    {"label": "Invited workshop lead, Univ. of LaVerne — IT implementation", "date": "2000"},
-    {"label": "Invited, Virginia Transportation Conference", "date": "1999-2000"},
-    {"label": "Nominee, ASG Award for Innovation in State Government (Travel Shenandoah)", "date": "1999"},
-    {"label": "Appointed Member, Congressional Commission on I-81 Truck Safety", "date": "1999"},
-    {"label": "Eno Transportation Fellow", "date": "1997"},
-    {"label": "Invited Guest Editor, Administration & Society", "date": "1997"},
+    {"label": "Member, Arlington County Open Data Advisory Group", "details": "2018-2019"},
+    {"label": "COVITS Winner — Cross-Boundary Collaboration on IT (VLDS)", "details": "2013"},
+    {"label": "COVITS Finalist — Virginia Longitudinal Data System", "details": "2012"},
+    {"label": "Invited, Virginia Governor's Early Childhood Advisory Council", "details": "2010"},
+    {"label": "Invited, National Institute of Statistical Sciences Workshop", "details": "2009"},
+    {"label": "Invited, National Press Club — intergenerational day care findings", "details": "2008"},
+    {"label": "Invited speaker, Florida DOT ITS Conference", "details": "2003"},
+    {"label": "Invited workshop lead, Univ. of LaVerne — IT implementation", "details": "2000"},
+    {"label": "Invited, Virginia Transportation Conference", "details": "1999-2000"},
+    {"label": "Nominee, ASG Award for Innovation in State Government (Travel Shenandoah)", "details": "1999"},
+    {"label": "Appointed Member, Congressional Commission on I-81 Truck Safety", "details": "1999"},
+    {"label": "Eno Transportation Fellow", "details": "1997"},
+    {"label": "Invited Guest Editor, Administration & Society", "details": "1997"},
 ]
 
 SKILLS = [

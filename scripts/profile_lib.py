@@ -1,6 +1,21 @@
 import re
 
 
+def _split_url_or_local(website: str | None) -> tuple[str | None, str | None]:
+    """Return (http_url, local_path). Exactly one is non-None when website truthy.
+
+    URL fragments (#...) are stripped from http(s) URLs because Typst interprets
+    '#' as a code marker inside link text, causing TypstError at PDF compile time.
+    """
+    if not website:
+        return None, None
+    if website.startswith(("http://", "https://")):
+        # Strip any URL fragment — Typst treats # as code and chokes on it.
+        url = website.split("#")[0]
+        return url, None
+    return None, website
+
+
 def split_authors(s: str) -> list[str]:
     """Split an author string into a list of individual author names.
 
@@ -125,8 +140,12 @@ def writing_entry_to_publication(entry: dict) -> dict:
     doi = normalize_doi(entry.get("DOI"))
     if doi:
         out["doi"] = doi
-    elif entry.get("website"):
-        out["url"] = entry["website"]
+    else:
+        url, local = _split_url_or_local(entry.get("website"))
+        if url:
+            out["url"] = url
+        if local:
+            out["local_path"] = local
 
     # Custom keys preserved verbatim — only when populated.
     for key in ("slug", "subcategory", "content"):
@@ -136,17 +155,21 @@ def writing_entry_to_publication(entry: dict) -> dict:
     for key in ("editors", "pages", "ordinal"):
         val = entry.get(key)
         if val not in (None, "", 0):
-            out[key] = val
+            out[key] = str(val) if isinstance(val, int) else val
 
     return out
 
 
 def _passthrough_custom(entry: dict, out: dict, keys: tuple[str, ...]) -> None:
-    """Copy non-empty custom keys from entry into out."""
+    """Copy non-empty custom keys from entry into out.
+
+    Integer values are coerced to strings so RenderCV's template engine
+    (which calls re.sub on all entry fields) never receives a bare int.
+    """
     for key in keys:
         val = entry.get(key)
         if val not in (None, "", 0, False):
-            out[key] = val
+            out[key] = str(val) if isinstance(val, int) else val
 
 
 def working_entry_to_normal(entry: dict) -> dict:
@@ -174,8 +197,11 @@ def research_entry_to_normal(entry: dict) -> dict:
     if summary:
         out["summary"] = summary
 
-    if entry.get("website"):
-        out["url"] = entry["website"]
+    url, local = _split_url_or_local(entry.get("website"))
+    if url:
+        out["url"] = url
+    if local:
+        out["local_path"] = local
     if entry.get("content"):
         out["content"] = entry["content"]
 
@@ -207,8 +233,11 @@ def speaking_entry_to_normal(entry: dict) -> dict:
     if summary_parts:
         out["summary"] = summary_parts[0]
 
-    if entry.get("website"):
-        out["url"] = entry["website"]
+    url, local = _split_url_or_local(entry.get("website"))
+    if url:
+        out["url"] = url
+    if local:
+        out["local_path"] = local
     if entry.get("content"):
         out["content"] = entry["content"]
 
@@ -228,8 +257,11 @@ def teaching_entry_to_normal(entry: dict) -> dict:
     out: dict = {"name": entry["title"]}
     if entry.get("date"):
         out["date"] = entry["date"]
-    if entry.get("website"):
-        out["url"] = entry["website"]
+    url, local = _split_url_or_local(entry.get("website"))
+    if url:
+        out["url"] = url
+    if local:
+        out["local_path"] = local
     if entry.get("content"):
         out["content"] = entry["content"]
     _passthrough_custom(entry, out, ("slug",))

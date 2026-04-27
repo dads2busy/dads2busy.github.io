@@ -247,7 +247,7 @@ def test_working_entry_basic():
     assert out["summary"] == "Research Associate Professor at Social and Decision Analytics Division, Bioinformatics Institute, University of Virginia"
     assert out["slug"] == "associate-research-professor"
     assert out["content"].startswith("Dr. Schroeder")
-    assert out["ordinal"] == 1
+    assert out["ordinal"] == "1"  # int coerced to str to satisfy RenderCV template engine
 
 
 def test_research_entry_basic():
@@ -310,3 +310,26 @@ def test_teaching_entry_basic():
     assert out["name"] == "Administrative Data Systems & Technologies"
     assert out["date"] == "2013-05-22"
     assert out["slug"] == "data-systems"
+
+
+def test_writing_entry_relative_website_becomes_local_path():
+    """Relative paths can't be RenderCV urls — preserve them under 'local_path'."""
+    entry = dict(SAMPLE_WRITING_ENTRY, DOI="", website="/downloads/foo.pdf")
+    out = writing_entry_to_publication(entry)
+    assert "url" not in out
+    assert out["local_path"] == "/downloads/foo.pdf"
+
+
+def test_writing_entry_dotdot_website_becomes_local_path():
+    entry = dict(SAMPLE_WRITING_ENTRY, DOI="", website="../../../downloads/foo.pdf")
+    out = writing_entry_to_publication(entry)
+    assert "url" not in out
+    assert out["local_path"] == "../../../downloads/foo.pdf"
+
+
+def test_research_entry_relative_website_becomes_local_path():
+    from profile_lib import research_entry_to_normal
+    entry = {"title": "X", "website": "/downloads/x.pdf"}
+    out = research_entry_to_normal(entry)
+    assert "url" not in out
+    assert out["local_path"] == "/downloads/x.pdf"
