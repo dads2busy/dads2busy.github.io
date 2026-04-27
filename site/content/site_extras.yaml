@@ -27,12 +27,3 @@ polymath_callout:
     long enough to be awarded various degrees, ostensibly to entice the
     person to go away (unless, of course, they are good at bringing in
     grant money).
-
-# The three Research Focus paragraphs displayed on the home page panel.
-# These are the same as cv.sections.Summary in profile.yaml — kept here
-# for now as a website-display copy; future Plan C may dedupe by reading
-# Summary directly from profile.yaml instead.
-research_focus_paragraphs:
-  - "Dr. Schroeder's overarching research focus is the enablement of Evidence-Based Policy-Making and Program Evaluation through the secure liberation, integration and analysis of administrative data."
-  - "A particular focus has been the integration of education, health, social service and non-profit administrative data streams to support policy analyses and program evaluations across pre-K services, child care, K-12 and adult education, state workforce training, and U.S. veteran services."
-  - "High-profile information integration projects in the Commonwealth of Virginia include the USED-funded Statewide Longitudinal Data System, the USHHS-funded Project Child HANDS, and the USDOT-funded design and evaluation of the U.S.'s first statewide travel information system, Virginia 511."
