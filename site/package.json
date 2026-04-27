@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "predev": "cd .. && .venv/bin/python scripts/profile_to_content_jsons.py",
+    "predev": "cd .. && $(test -x .venv/bin/python && echo .venv/bin/python || echo python3) scripts/profile_to_content_jsons.py",
     "build": "next build",
-    "prebuild": "cd .. && .venv/bin/python scripts/profile_to_content_jsons.py",
-    "gen:content": "cd .. && .venv/bin/python scripts/profile_to_content_jsons.py",
+    "prebuild": "cd .. && $(test -x .venv/bin/python && echo .venv/bin/python || echo python3) scripts/profile_to_content_jsons.py",
+    "gen:content": "cd .. && $(test -x .venv/bin/python && echo .venv/bin/python || echo python3) scripts/profile_to_content_jsons.py",
+    "gen:vita": "cd .. && $(test -x .venv/bin/rendercv && echo .venv/bin/rendercv || echo rendercv) render site/content/profile.yaml && cp site/content/rendercv_output/Aaron_D._Schroeder_CV.pdf site/public/vita.pdf",
     "start": "next start",
     "lint": "eslint"
   },
