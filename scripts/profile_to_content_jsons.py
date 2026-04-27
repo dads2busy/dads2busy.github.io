@@ -9,6 +9,7 @@ content pages always reflect the SSOT.
 """
 
 import json
+import re
 from pathlib import Path
 
 import yaml
@@ -24,6 +25,33 @@ from json_emitters import (
 REPO_ROOT = Path(__file__).resolve().parent.parent
 CONTENT_DIR = REPO_ROOT / "site" / "content"
 PROFILE_PATH = CONTENT_DIR / "profile.yaml"
+
+
+def _slug_from_title(title: str) -> str:
+    """Best-effort slug from a title: lowercase, alphanumerics + hyphens, max 60 chars."""
+    s = re.sub(r"[^a-z0-9]+", "-", (title or "").lower()).strip("-")
+    return s[:60] or "untitled"
+
+
+def _dedup_slugs(entries: list[dict]) -> list[dict]:
+    """Ensure slugs are unique within a list. Empty/missing slugs get derived from title.
+
+    Duplicates get a -2, -3, ... suffix. Modifies entries in place; returns the list.
+    """
+    seen: dict[str, int] = {}
+    for entry in entries:
+        base = entry.get("slug") or ""
+        # Treat very short generic slugs ('a', 'b') as missing
+        if not base or len(base) <= 2:
+            base = _slug_from_title(entry.get("title") or entry.get("name") or "")
+        if base in seen:
+            seen[base] += 1
+            entry["slug"] = f"{base}-{seen[base]}"
+        else:
+            seen[base] = 1
+            entry["slug"] = base
+    return entries
+
 
 # Inverse of Plan A's WRITING_SECTIONS — maps profile.yaml's section name to
 # the original writing.json subcategory string.
@@ -57,11 +85,11 @@ def main() -> None:
     sections = profile["cv"]["sections"]
 
     outputs = {
-        "writing.json": emit_writing(sections),
-        "working.json": emit_simple(sections, "Experience", experience_entry_to_working),
-        "research.json": emit_simple(sections, "Research Projects", project_entry_to_research),
-        "speaking.json": emit_simple(sections, "Presentations", presentation_entry_to_speaking),
-        "teaching.json": emit_simple(sections, "Teaching", teaching_entry_to_teaching),
+        "writing.json": _dedup_slugs(emit_writing(sections)),
+        "working.json": _dedup_slugs(emit_simple(sections, "Experience", experience_entry_to_working)),
+        "research.json": _dedup_slugs(emit_simple(sections, "Research Projects", project_entry_to_research)),
+        "speaking.json": _dedup_slugs(emit_simple(sections, "Presentations", presentation_entry_to_speaking)),
+        "teaching.json": _dedup_slugs(emit_simple(sections, "Teaching", teaching_entry_to_teaching)),
     }
 
     for name, data in outputs.items():
