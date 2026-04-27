@@ -12,3 +12,5 @@ package.json
 
 # Git worktrees (isolated workspaces)
 .worktrees/
+scripts/__pycache__/
+scripts/tests/__pycache__/
