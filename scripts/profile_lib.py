@@ -139,3 +139,98 @@ def writing_entry_to_publication(entry: dict) -> dict:
             out[key] = val
 
     return out
+
+
+def _passthrough_custom(entry: dict, out: dict, keys: tuple[str, ...]) -> None:
+    """Copy non-empty custom keys from entry into out."""
+    for key in keys:
+        val = entry.get(key)
+        if val not in (None, "", 0, False):
+            out[key] = val
+
+
+def working_entry_to_normal(entry: dict) -> dict:
+    out: dict = {"name": entry["title"]}
+    if entry.get("dates"):
+        out["date"] = entry["dates"]
+    if entry.get("subtitle"):
+        out["summary"] = entry["subtitle"]
+    if entry.get("content"):
+        out["content"] = entry["content"]
+    _passthrough_custom(entry, out, ("slug", "subcategory", "ordinal"))
+    return out
+
+
+def research_entry_to_normal(entry: dict) -> dict:
+    out: dict = {"name": entry["title"]}
+    if entry.get("dates"):
+        out["date"] = str(entry["dates"])
+
+    summary = entry.get("sponsor") or ""
+    if entry.get("award"):
+        summary = f"{summary} — {entry['award']}" if summary else entry["award"]
+    if entry.get("role"):
+        summary = f"{summary} ({entry['role']})" if summary else f"({entry['role']})"
+    if summary:
+        out["summary"] = summary
+
+    if entry.get("website"):
+        out["url"] = entry["website"]
+    if entry.get("content"):
+        out["content"] = entry["content"]
+
+    _passthrough_custom(
+        entry, out,
+        (
+            "slug", "subcategory", "ordinal",
+            "report", "report2", "report3", "report4", "report5", "report6",
+            "media1", "media2", "media3",
+            "media1title", "media2title", "media3title",
+        ),
+    )
+    return out
+
+
+def speaking_entry_to_normal(entry: dict) -> dict:
+    out: dict = {"name": entry["title"]}
+    if entry.get("date"):
+        out["date"] = entry["date"]
+
+    summary_parts = []
+    if entry.get("role"):
+        summary_parts.append(entry["role"])
+    if entry.get("sponsor"):
+        if summary_parts:
+            summary_parts[0] = f"{summary_parts[0]} at {entry['sponsor']}"
+        else:
+            summary_parts.append(entry["sponsor"])
+    if summary_parts:
+        out["summary"] = summary_parts[0]
+
+    if entry.get("website"):
+        out["url"] = entry["website"]
+    if entry.get("content"):
+        out["content"] = entry["content"]
+
+    _passthrough_custom(
+        entry, out,
+        (
+            "slug", "subcategory",
+            "report",
+            "media1", "media2", "media3",
+            "media1title", "media2title", "media3title",
+        ),
+    )
+    return out
+
+
+def teaching_entry_to_normal(entry: dict) -> dict:
+    out: dict = {"name": entry["title"]}
+    if entry.get("date"):
+        out["date"] = entry["date"]
+    if entry.get("website"):
+        out["url"] = entry["website"]
+    if entry.get("content"):
+        out["content"] = entry["content"]
+    _passthrough_custom(entry, out, ("slug",))
+    return out

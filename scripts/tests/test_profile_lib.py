@@ -220,3 +220,93 @@ def test_writing_entry_empty_optional_strings_omitted():
     out = writing_entry_to_publication(SAMPLE_WRITING_ENTRY)
     assert "editors" not in out
     assert "pages" not in out
+
+
+from profile_lib import (
+    working_entry_to_normal,
+    research_entry_to_normal,
+    speaking_entry_to_normal,
+    teaching_entry_to_normal,
+)
+
+
+def test_working_entry_basic():
+    entry = {
+        "title": "Associate Research Professor",
+        "subtitle": "Research Associate Professor at Social and Decision Analytics Division, Bioinformatics Institute, University of Virginia",
+        "dates": "2018-Present",
+        "comments": True,
+        "ordinal": 1,
+        "slug": "associate-research-professor",
+        "date": "2000-11-08",
+        "content": "Dr. Schroeder's overarching research focus...",
+    }
+    out = working_entry_to_normal(entry)
+    assert out["name"] == "Associate Research Professor"
+    assert out["date"] == "2018-Present"
+    assert out["summary"] == "Research Associate Professor at Social and Decision Analytics Division, Bioinformatics Institute, University of Virginia"
+    assert out["slug"] == "associate-research-professor"
+    assert out["content"].startswith("Dr. Schroeder")
+    assert out["ordinal"] == 1
+
+
+def test_research_entry_basic():
+    entry = {
+        "subcategory": "Data Integration & Management",
+        "title": "ATIS Implementation Center",
+        "date": "2004-05-22",
+        "sponsor": "U.S. DOT Research and Special Programs Administration (RSPA)",
+        "award": "$543,000",
+        "dates": "2004-2005",
+        "role": "Co-PI",
+        "website": "",
+        "ordinal": 9,
+        "slug": "atis_rce",
+        "content": "",
+    }
+    out = research_entry_to_normal(entry)
+    assert out["name"] == "ATIS Implementation Center"
+    assert out["date"] == "2004-2005"
+    assert out["summary"] == "U.S. DOT Research and Special Programs Administration (RSPA) — $543,000 (Co-PI)"
+    assert out["slug"] == "atis_rce"
+    assert out["subcategory"] == "Data Integration & Management"
+
+
+def test_research_entry_no_award_no_role():
+    entry = {
+        "title": "Bare project",
+        "dates": "2020",
+        "sponsor": "Sponsor X",
+    }
+    out = research_entry_to_normal(entry)
+    assert out["summary"] == "Sponsor X"
+
+
+def test_speaking_entry_basic():
+    entry = {
+        "slug": "COPAFS",
+        "date": "2023-12-02",
+        "title": "The Social Impact Data Commons",
+        "subcategory": "Presentations/Workshops",
+        "sponsor": "Council of Professional Associations on Federal Statistics (COPAFS)",
+        "dates": 2023,
+        "role": "Lecture",
+    }
+    out = speaking_entry_to_normal(entry)
+    assert out["name"] == "The Social Impact Data Commons"
+    assert out["date"] == "2023-12-02"
+    assert out["summary"] == "Lecture at Council of Professional Associations on Federal Statistics (COPAFS)"
+
+
+def test_teaching_entry_basic():
+    entry = {
+        "title": "Administrative Data Systems & Technologies",
+        "date": "2013-05-22",
+        "comments": False,
+        "website": "",
+        "slug": "data-systems",
+    }
+    out = teaching_entry_to_normal(entry)
+    assert out["name"] == "Administrative Data Systems & Technologies"
+    assert out["date"] == "2013-05-22"
+    assert out["slug"] == "data-systems"
