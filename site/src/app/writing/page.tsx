@@ -14,6 +14,15 @@ export default function WritingPage() {
     grouped.get(sub)!.push(post);
   }
 
+  // Sort each subcategory's entries by year descending (use full date if available)
+  for (const subPosts of grouped.values()) {
+    subPosts.sort((a, b) => {
+      const yearA = a.dates || (a.date ? a.date.slice(0, 4) : "0");
+      const yearB = b.dates || (b.date ? b.date.slice(0, 4) : "0");
+      return String(yearB).localeCompare(String(yearA));
+    });
+  }
+
   const entries = Array.from(grouped.entries());
   const journalIndex = entries.findIndex(
     ([subcategory]) => subcategory === "Journal Publications (refereed)",
@@ -21,6 +30,15 @@ export default function WritingPage() {
   if (journalIndex > 0) {
     const [journalEntry] = entries.splice(journalIndex, 1);
     entries.unshift(journalEntry);
+  }
+
+  const confIndex = entries.findIndex(
+    ([subcategory]) => subcategory === "Conference Proceedings",
+  );
+  if (confIndex > 0) {
+    const [confEntry] = entries.splice(confIndex, 1);
+    // Insert at position 1 (right after the journal entry which is now at 0)
+    entries.splice(1, 0, confEntry);
   }
 
   return (

@@ -10,7 +10,10 @@ export default function WritingCitation({ post }: Props) {
     <div className="mb-3">
       <p className="text-sm">
         {post.authors && <>{post.authors} </>}
-        {post.dates && <>({post.dates}). </>}
+        {(() => {
+          const year = post.dates || (post.date ? post.date.slice(0, 4) : "");
+          return year ? <>({year}). </> : null;
+        })()}
         <Link href={`/${post.year}/${post.month}/${post.slug}`} className="font-semibold">
           {post.title}
         </Link>
