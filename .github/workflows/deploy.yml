@@ -31,8 +31,8 @@ jobs:
         working-directory: site
       - name: Render vita PDF
         run: |
-          rendercv render site/content/profile.yaml --output-folder rendercv_output
-          cp rendercv_output/Aaron_D._Schroeder_CV.pdf site/public/vita.pdf
+          rendercv render site/content/profile.yaml
+          cp site/content/rendercv_output/Aaron_D._Schroeder_CV.pdf site/public/vita.pdf
       - run: npm run build
         working-directory: site
       - uses: actions/upload-pages-artifact@v3
