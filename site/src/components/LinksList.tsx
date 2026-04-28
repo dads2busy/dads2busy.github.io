@@ -30,7 +30,7 @@ export default function LinksList({ category }: LinksListProps) {
     case "speaking":
       return (
         <div className="text-center">
-          <img src="/images/lecture_icon.png" alt="Speaking" className="mx-auto max-w-full" />
+          <img src="/images/lecture_icon.png" alt="Presenting" className="mx-auto max-w-full" />
         </div>
       );
     case "coaching":
