@@ -702,6 +702,16 @@ cv:
         subcategory: Data Integration & Management
         ordinal: "1"
     Presentations:
+      - name: "Smart Metadata in Action: The Social Impact Data Commons"
+        date: "2024-04-11"
+        summary: "Presentation at Conference On Smart Metadata for Official Statistics 2024 (COSMOS 2024), Paris, France"
+        content:
+          'Joanna Schroeder, Alan Wang, Kathryn Linehan, Joel Thurston, **Aaron Schroeder** (2024).
+          "Smart Metadata in Action: The Social Impact Data Commons." Conference On Smart Metadata for Official
+          Statistics 2024 (COSMOS 2024), April 11-12, 2024, Paris, France.'
+        slug: smart-metadata-cosmos-2024
+        subcategory: Presentations/Workshops
+        sponsor: Conference On Smart Metadata for Official Statistics 2024 (COSMOS 2024)
       - name:
           "The Social Impact Data Commons: Supporting local equity-informed decision-making in the National
           Capital Region"
