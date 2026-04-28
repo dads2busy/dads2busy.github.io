@@ -1,8 +1,238 @@
 {
   "last-modified-date": {
-    "value": 1746806616170
+    "value": 1776362211419
   },
   "group": [
+    {
+      "last-modified-date": {
+        "value": 1776361613651
+      },
+      "external-ids": {
+        "external-id": []
+      },
+      "work-summary": [
+        {
+          "put-code": 211935016,
+          "created-date": {
+            "value": 1776361539785
+          },
+          "last-modified-date": {
+            "value": 1776361613651
+          },
+          "source": {
+            "source-orcid": {
+              "uri": "https://orcid.org/0000-0003-4372-2241",
+              "path": "0000-0003-4372-2241",
+              "host": "orcid.org"
+            },
+            "source-client-id": null,
+            "source-name": {
+              "value": "Aaron Schroeder"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "STDN Explorer: Interactive dashboard for Shallow Technology Dependency Networks \u2014 supply chain risk analysis"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": []
+          },
+          "url": {
+            "value": "https://dads2busy.github.io/stdn-explorer/"
+          },
+          "type": "software",
+          "publication-date": {
+            "year": {
+              "value": "2026"
+            },
+            "month": {
+              "value": "04"
+            },
+            "day": null
+          },
+          "journal-title": null,
+          "visibility": "public",
+          "path": "/0000-0003-4372-2241/work/211935016",
+          "display-index": "0"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1776360753454
+      },
+      "external-ids": {
+        "external-id": []
+      },
+      "work-summary": [
+        {
+          "put-code": 211933907,
+          "created-date": {
+            "value": 1776360753454
+          },
+          "last-modified-date": {
+            "value": 1776360753454
+          },
+          "source": {
+            "source-orcid": {
+              "uri": "https://orcid.org/0000-0003-4372-2241",
+              "path": "0000-0003-4372-2241",
+              "host": "orcid.org"
+            },
+            "source-client-id": null,
+            "source-name": {
+              "value": "Aaron Schroeder"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "A Novel Framework for Synthesizing Shallow Technology\n                 Dependency Networks (STDNs) for Disruption Analysis\n                 of Global Manufacturing and Trade Networks"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": []
+          },
+          "url": null,
+          "type": "report",
+          "publication-date": {
+            "year": {
+              "value": "2025"
+            },
+            "month": null,
+            "day": null
+          },
+          "journal-title": null,
+          "visibility": "public",
+          "path": "/0000-0003-4372-2241/work/211933907",
+          "display-index": "0"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1776360753454
+      },
+      "external-ids": {
+        "external-id": []
+      },
+      "work-summary": [
+        {
+          "put-code": 211933906,
+          "created-date": {
+            "value": 1776360753454
+          },
+          "last-modified-date": {
+            "value": 1776360753454
+          },
+          "source": {
+            "source-orcid": {
+              "uri": "https://orcid.org/0000-0003-4372-2241",
+              "path": "0000-0003-4372-2241",
+              "host": "orcid.org"
+            },
+            "source-client-id": null,
+            "source-name": {
+              "value": "Aaron Schroeder"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "An Agentic AI Approach for Material Evolution Knowledge\n                 Hypergraph Discovery"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": []
+          },
+          "url": null,
+          "type": "report",
+          "publication-date": {
+            "year": {
+              "value": "2025"
+            },
+            "month": null,
+            "day": null
+          },
+          "journal-title": null,
+          "visibility": "public",
+          "path": "/0000-0003-4372-2241/work/211933906",
+          "display-index": "0"
+        }
+      ]
+    },
+    {
+      "last-modified-date": {
+        "value": 1776362211419
+      },
+      "external-ids": {
+        "external-id": []
+      },
+      "work-summary": [
+        {
+          "put-code": 211936162,
+          "created-date": {
+            "value": 1776362211419
+          },
+          "last-modified-date": {
+            "value": 1776362211419
+          },
+          "source": {
+            "source-orcid": {
+              "uri": "https://orcid.org/0000-0003-4372-2241",
+              "path": "0000-0003-4372-2241",
+              "host": "orcid.org"
+            },
+            "source-client-id": null,
+            "source-name": {
+              "value": "Aaron Schroeder"
+            },
+            "assertion-origin-orcid": null,
+            "assertion-origin-client-id": null,
+            "assertion-origin-name": null
+          },
+          "title": {
+            "title": {
+              "value": "Smart Metadata in Action: The Social Impact Data Commons"
+            },
+            "subtitle": null,
+            "translated-title": null
+          },
+          "external-ids": {
+            "external-id": []
+          },
+          "url": null,
+          "type": "journal-article",
+          "publication-date": {
+            "year": {
+              "value": "2025"
+            },
+            "month": null,
+            "day": null
+          },
+          "journal-title": {
+            "value": "arXiv preprint arXiv:2511.17694"
+          },
+          "visibility": "public",
+          "path": "/0000-0003-4372-2241/work/211936162",
+          "display-index": "0"
+        }
+      ]
+    },
     {
       "last-modified-date": {
         "value": 1727119840486
@@ -603,7 +833,7 @@
     },
     {
       "last-modified-date": {
-        "value": 1696860104441
+        "value": 1772044056952
       },
       "external-ids": {
         "external-id": [
@@ -627,7 +857,7 @@
             "value": 1696860104403
           },
           "last-modified-date": {
-            "value": 1696860104403
+            "value": 1772044056952
           },
           "source": {
             "source-orcid": null,
@@ -679,7 +909,7 @@
           },
           "visibility": "public",
           "path": "/0000-0003-4372-2241/work/143985960",
-          "display-index": "0"
+          "display-index": "13"
         },
         {
           "put-code": 143985961,
@@ -687,7 +917,7 @@
             "value": 1696860104441
           },
           "last-modified-date": {
-            "value": 1696860104441
+            "value": 1772044049007
           },
           "source": {
             "source-orcid": null,
@@ -739,7 +969,7 @@
           },
           "visibility": "public",
           "path": "/0000-0003-4372-2241/work/143985961",
-          "display-index": "0"
+          "display-index": "12"
         }
       ]
     },
