@@ -14,6 +14,12 @@ import os
 import sys
 import urllib.parse
 import urllib.request
+from datetime import datetime
+
+# Re-use Plan G's analyzer_lib + Plan E's diff lib
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "scripts"))
+from analyzer_lib import extract_profile_dois, extract_profile_titles  # noqa: E402
+from orcid_diff_lib import compute_diff, orcid_group_to_entry  # noqa: E402
 
 API_BASE = "https://pub.orcid.org/v3.0"
 TOKEN_URL = "https://orcid.org/oauth/token"
@@ -108,6 +114,66 @@ def print_works(data: dict) -> None:
         print("-" * 80)
 
 
+def write_diff(orcid_data: dict, profile_path: str = "site/content/profile.yaml",
+               diff_path: str = "orcid_diff.md") -> tuple[int, int, int]:
+    """Compare ORCID works against profile.yaml; write markdown diff.
+
+    Returns (matched_count, new_count, fuzzy_count).
+    """
+    import yaml
+    profile = yaml.safe_load(open(profile_path).read())
+    profile_titles = set(extract_profile_titles(profile))
+    profile_dois = extract_profile_dois(profile)
+
+    orcid_entries = [
+        e for g in orcid_data.get("group", [])
+        if (e := orcid_group_to_entry(g)) is not None
+    ]
+    matched, new, fuzzy = compute_diff(orcid_entries, profile_titles, profile_dois)
+
+    lines = [
+        "# ORCID Sync Diff",
+        "",
+        f"Generated {datetime.now().isoformat(timespec='seconds')}",
+        f"Source: ORCID ({len(orcid_entries)} work-groups)",
+        f"SSOT: {profile_path} ({len(profile_titles)} titled entries, {len(profile_dois)} DOIs)",
+        "",
+        "## Summary",
+        f"- ✓ {len(matched)} entries already in profile.yaml",
+        f"- + {len(new)} candidate NEW entries (proposed YAML below)",
+        f"- ~ {len(fuzzy)} fuzzy matches (DOI matches but title differs — review for stale metadata)",
+        "",
+        f"## Already in profile.yaml ({len(matched)})",
+    ]
+    for e in matched:
+        lines.append(f"- ✓ \"{e['title']}\"" + (f" (DOI: {e['doi']})" if e['doi'] else ""))
+
+    lines.extend(["", f"## Candidate NEW entries ({len(new)})", ""])
+    for e in new:
+        lines.append(f"### {e['title']} ({e['year'] or 'n.d.'})")
+        lines.append("")
+        lines.append("```yaml")
+        lines.append(f"- title: \"{e['title']}\"")
+        lines.append("  authors: []  # ORCID work-summary doesn't include authors; add by hand")
+        if e['year']:
+            lines.append(f"  date: \"{e['year']}\"")
+        if e['doi']:
+            lines.append(f"  doi: {e['doi']}")
+        if e['journal']:
+            lines.append(f"  journal: \"{e['journal']}\"")
+        lines.append("```")
+        lines.append("")
+
+    lines.extend([f"## Fuzzy matches ({len(fuzzy)})", ""])
+    for e in fuzzy:
+        lines.append(f"- DOI `{e['doi']}` is in profile.yaml but the ORCID title differs:")
+        lines.append(f"  - ORCID: \"{e['title']}\"")
+        lines.append("")
+
+    open(diff_path, "w").write("\n".join(lines) + "\n")
+    return len(matched), len(new), len(fuzzy)
+
+
 def main():
     load_dotenv()
 
@@ -141,6 +207,12 @@ def main():
     print(f"Full JSON saved to {output_file}")
 
     print_works(data)
+
+    matched, new, fuzzy = write_diff(data)
+    print(f"\nWrote orcid_diff.md")
+    print(f"  Already in SSOT: {matched}")
+    print(f"  Candidate new:   {new}")
+    print(f"  Fuzzy matches:   {fuzzy}")
 
 
 if __name__ == "__main__":
