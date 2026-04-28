@@ -12,7 +12,7 @@ export const NAV_ITEMS: NavItem[] = [
   { label: "Teaching", href: "/teaching" },
   { label: "Working", href: "/working" },
   { label: "Researching", href: "/research" },
-  { label: "Speaking", href: "/speaking" },
+  { label: "Presenting", href: "/speaking" },
   { label: "Coaching", href: "/coaching" },
   { label: "Playing", href: "/guitar" },
   { label: "Data Scienceing", href: "/datascience" },
