@@ -702,6 +702,46 @@ cv:
         subcategory: Data Integration & Management
         ordinal: "1"
     Presentations:
+      - name: "Building Data Sharing Infrastructures: Taking Context and Stakeholders Seriously"
+        date: "2012-11-17"
+        summary: "Presentation at Global Forum on Urban and Regional Resilience (GFURR) Resilience Workshop, Virginia Tech"
+        content:
+          '**Schroeder, A.D.** (2012). "Building Data Sharing Infrastructures: Taking Context and
+          Stakeholders Seriously." November 17, Global Forum on Urban and Regional Resilience (GFURR)
+          Resilience Workshop, Virginia Tech.'
+        slug: sharing_infra
+        subcategory: Presentations/Workshops
+        sponsor: Global Forum on Urban and Regional Resilience (GFURR) Resilience Workshop
+        local_path: /downloads/Workshop3-Schroeder-Building-Data-Sharing-Infrastructures.pdf
+      - name: Association between perceived university environment and physical activity in college students
+        date: "2012-11-01"
+        summary: "Presentation at American Public Health Association 139th Annual Meeting and Exposition, Washington, DC"
+        content:
+          'Stephanie Goodwin, Hosig K.W., Serrano E., Redican K., **Schroeder A.D.**, You W., Anderson E.S.
+          (2012). "Association between perceived university environment and physical activity in college
+          students." November 1, American Public Health Association 139th Annual Meeting and Exposition,
+          Washington, DC.'
+        slug: phys_ed
+        subcategory: Presentations/Workshops
+        sponsor: American Public Health Association 139th Annual Meeting and Exposition
+      - name: Data - The New Asset Class
+        date: "2012-04-06"
+        summary: "Presentation at HPC Day, Virginia Tech"
+        content:
+          'Keller, S., **Schroeder, A.D.** (2012). "Data - The New Asset Class." April 6, HPC Day, Virginia
+          Tech.'
+        slug: hpc_day
+        subcategory: Presentations/Workshops
+        sponsor: HPC Day, Virginia Tech
+      - name: Stakeholder Analysis
+        date: "1999-04-10"
+        summary: "Presentation at 60th Annual Meeting of the American Society for Public Administration, Orlando, FL"
+        content:
+          'Tennert, J.R., **Schroeder, A.D.** (1999). "Stakeholder Analysis." 60th Annual Meeting of the
+          American Society for Public Administration, Orlando, FL.'
+        slug: stakeholder-analysis-aspa-60
+        subcategory: Presentations/Workshops
+        sponsor: 60th Annual Meeting of the American Society for Public Administration
       - name: "Smart Metadata in Action: The Social Impact Data Commons"
         date: "2024-04-11"
         summary: "Presentation at Conference On Smart Metadata for Official Statistics 2024 (COSMOS 2024), Paris, France"
@@ -3340,47 +3380,6 @@ cv:
           chapter concludes with some questions concerning the future of emergency management, FEMA, and
           the network of which FEMA is the center.
         editors: "Ali Farazmand. Marcel-Dekker: New York"
-    Conference Proceedings:
-      - title: Data - The New Asset Class
-        authors:
-          - Keller, S.
-          - "**Schroeder, A.D.**"
-        date: "2012-04-27"
-        journal: April 6. HPC Day, Virginia Tech
-        slug: hpc_day
-        subcategory: Conference Proceedings/Presentations
-      - title: "Building Data Sharing Infrastructures: Taking Context and Stakeholders Seriously"
-        authors:
-          - "**Schroeder, A.D.**"
-        date: "2012-04-26"
-        journal:
-          November 17. Global Forum on Urban and Regional Resilience (GFURR) Resilience Workshop,
-          Virginia Tech
-        local_path: /downloads/Workshop3-Schroeder-Building-Data-Sharing-Infrastructures.pdf
-        slug: sharing_infra
-        subcategory: Conference Proceedings/Presentations
-      - title:
-          Association between perceived university environment and physical activity in college students.
-          1-Nov. American Public Health Association 139th Annual Meeting and Exposition
-        authors:
-          - Stephanie Goodwin, Hosig K.W.
-          - Serrano E., Redican K.
-          - Schroeder A.D., You W.
-          - Anderson E.S.
-        date: "2012-04-25"
-        journal:
-          November 1. American Public Health Association 139th Annual Meeting and Exposition. Washington,
-          DC
-        slug: phys_ed
-        subcategory: Conference Proceedings/Presentations
-      - title: Stakeholder Analysis
-        authors:
-          - Tennert, J.R.
-          - "**Schroeder, A.D.**"
-        date: "1999-04-10"
-        journal: 60th Annual Meeting of the American Society for Public Administration, Orlando, FL.
-        slug: a
-        subcategory: Conference Proceedings/Presentations
     Research / Technical Reports:
       - title:
           "Census Curated Data Enterprise Use Case Demonstration: Climate Resiliency of Skilled Nursing

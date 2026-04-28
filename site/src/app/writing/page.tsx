@@ -32,14 +32,6 @@ export default function WritingPage() {
     entries.unshift(journalEntry);
   }
 
-  const confIndex = entries.findIndex(
-    ([subcategory]) => subcategory === "Conference Proceedings",
-  );
-  if (confIndex > 0) {
-    const [confEntry] = entries.splice(confIndex, 1);
-    // Insert at position 1 (right after the journal entry which is now at 0)
-    entries.splice(1, 0, confEntry);
-  }
 
   return (
     <CategoryLayout category="writing">
