@@ -58,7 +58,7 @@ def _dedup_slugs(entries: list[dict]) -> list[dict]:
 WRITING_SUBCATEGORY = {
     "Refereed Journal Articles": "Journal Publications (refereed)",
     "Book Chapters": "Book Chapters",
-    "Conference Proceedings / Presentations": "Conference Proceedings/Presentations",
+    "Conference Proceedings": "Conference Proceedings",
     "Research / Technical Reports": "Research/Technical Reports",
     "Editorials": "Editorials",
     "Dissertation": "Dissertation",
