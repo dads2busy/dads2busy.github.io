@@ -15,9 +15,29 @@ export default function SpeakingPage() {
     grouped.get(sub)!.push(post);
   }
 
+  const CATEGORY_ORDER = [
+    "Panelist", "Presentation", "Committee", "Lecture",
+    "Expert Forum", "Expert Webinar", "Workshop",
+  ];
+
+  // Sort each group by date DESC
+  for (const subPosts of grouped.values()) {
+    subPosts.sort((a, b) => (b.date || "").localeCompare(a.date || ""));
+  }
+
+  // Order the entries by CATEGORY_ORDER (any unknown categories fall to the end)
+  const orderedEntries = [
+    ...CATEGORY_ORDER.map((cat) => [cat, grouped.get(cat)] as const).filter(
+      ([, posts]) => posts && posts.length > 0,
+    ),
+    ...Array.from(grouped.entries()).filter(
+      ([cat]) => !CATEGORY_ORDER.includes(cat),
+    ),
+  ] as Array<readonly [string, SpeakingPost[]]>;
+
   return (
     <CategoryLayout category="speaking">
-      {Array.from(grouped.entries()).map(([subcategory, subPosts]) => (
+      {orderedEntries.map(([subcategory, subPosts]) => (
         <div key={subcategory}>
           <h3 className="text-lg font-bold border-b border-black pb-1 mb-4 mt-6">
             {subcategory}

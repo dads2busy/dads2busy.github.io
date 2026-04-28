@@ -7,6 +7,7 @@ interface Props {
 
 export default async function SpeakingCitation({ post }: Props) {
   const htmlContent = await renderMarkdown(post.content);
+  const year = post.date ? post.date.slice(0, 4) : "";
   const media = [
     { link: post.media1, title: post.media1title },
     { link: post.media2, title: post.media2title },
@@ -15,6 +16,9 @@ export default async function SpeakingCitation({ post }: Props) {
 
   return (
     <div className="mb-6">
+      <p className="font-semibold text-sm mb-1">
+        {post.title}{year && <> ({year})</>}
+      </p>
       <p className="text-sm">
         {htmlContent ? truncateContent(htmlContent, 100) : ""}
       </p>

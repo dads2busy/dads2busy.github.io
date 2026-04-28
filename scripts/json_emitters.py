@@ -95,6 +95,28 @@ def project_entry_to_research(entry: dict) -> dict:
     return out
 
 
+PRESENTATION_CATEGORIES = (
+    "Panelist", "Presentation", "Committee", "Lecture",
+    "Expert Forum", "Expert Webinar", "Workshop",
+)
+
+
+def _derive_presentation_category(entry: dict) -> str:
+    """If entry's subcategory is already one of the 7 valid categories, use it.
+    Else parse the content for a keyword. Default to 'Presentation'.
+    """
+    sub = (entry.get("subcategory") or "").strip()
+    if sub in PRESENTATION_CATEGORIES:
+        return sub
+    content = entry.get("content") or ""
+    for cat in PRESENTATION_CATEGORIES:
+        # Match the category word followed by a colon (with optional whitespace)
+        # Pattern: word boundary, the category, optional space, colon
+        if re.search(rf"\b{re.escape(cat)}\s*:", content):
+            return cat
+    return "Presentation"
+
+
 def presentation_entry_to_speaking(entry: dict) -> dict:
     out: dict = {"title": entry["name"]}
     if entry.get("date"):
@@ -103,10 +125,12 @@ def presentation_entry_to_speaking(entry: dict) -> dict:
         out["content"] = entry["content"]
     if entry.get("url"):
         out["website"] = entry["url"]
+    # Derived category overrides any passthrough subcategory
+    out["subcategory"] = _derive_presentation_category(entry)
     _passthrough(
         entry, out,
         (
-            "slug", "subcategory",
+            "slug",
             "sponsor", "role",
             "report",
             "media1", "media2", "media3",

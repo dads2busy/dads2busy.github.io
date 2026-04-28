@@ -129,7 +129,8 @@ def test_presentation_basic():
     assert out["title"] == "The Social Impact Data Commons"
     assert out["date"] == "2023-12-02"
     assert out["slug"] == "COPAFS"
-    assert out["subcategory"] == "Presentations/Workshops"
+    # Legacy "Presentations/Workshops" is not a valid category; no content to parse → defaults
+    assert out["subcategory"] == "Presentation"
 
 
 def test_teaching_basic():
@@ -158,3 +159,35 @@ def test_publication_ordinal_empty_string_omits_field():
     entry = {"title": "Paper", "authors": ["X"], "ordinal": ""}
     out = publication_entry_to_writing(entry)
     assert "ordinal" not in out or out["ordinal"] == ""
+
+
+def test_presentation_explicit_subcategory_kept_when_valid():
+    entry = {"name": "X", "subcategory": "Workshop"}
+    out = presentation_entry_to_speaking(entry)
+    assert out["subcategory"] == "Workshop"
+
+
+def test_presentation_subcategory_derived_from_content_keyword():
+    entry = {"name": "X", "content": 'Schroeder, A.D. Lecture: "X" (2023), Foo.'}
+    out = presentation_entry_to_speaking(entry)
+    assert out["subcategory"] == "Lecture"
+
+
+def test_presentation_defaults_to_presentation_when_no_match():
+    entry = {"name": "X", "content": "Some unstructured citation text"}
+    out = presentation_entry_to_speaking(entry)
+    assert out["subcategory"] == "Presentation"
+
+
+def test_presentation_legacy_subcategory_falls_through_to_content():
+    """The legacy 'Presentations/Workshops' subcategory should NOT be honored."""
+    entry = {"name": "X", "subcategory": "Presentations/Workshops",
+             "content": 'Schroeder, A.D. Panelist: "X" (2023), Bar.'}
+    out = presentation_entry_to_speaking(entry)
+    assert out["subcategory"] == "Panelist"
+
+
+def test_presentation_recognizes_expert_forum_two_word():
+    entry = {"name": "X", "content": 'Schroeder, A.D. Expert Forum: "X" (2023), Baz.'}
+    out = presentation_entry_to_speaking(entry)
+    assert out["subcategory"] == "Expert Forum"
