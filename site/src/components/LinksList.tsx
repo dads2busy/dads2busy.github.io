@@ -18,19 +18,31 @@ export default function LinksList({ category }: LinksListProps) {
     case "teaching":
       return (
         <div className="text-center">
-          <img src="/images/lecture_icon.png" alt="Teaching" className="mx-auto max-w-full" />
+          <img
+            src="/images/lecture_icon.png"
+            alt="Teaching"
+            className="mx-auto max-w-full"
+          />
         </div>
       );
     case "research":
       return (
         <div className="text-center">
-          <img src="/images/data-researcher.png" alt="Research" className="mx-auto max-w-full" />
+          <img
+            src="/images/data-researcher.png"
+            alt="Research"
+            className="mx-auto max-w-full"
+          />
         </div>
       );
     case "speaking":
       return (
         <div className="text-center">
-          <img src="/images/lecture_icon.png" alt="Presenting" className="mx-auto max-w-full" />
+          <img
+            src="/images/lecture_icon.png"
+            alt="Speaking"
+            className="mx-auto max-w-full"
+          />
         </div>
       );
     case "coaching":
@@ -51,12 +63,24 @@ export default function LinksList({ category }: LinksListProps) {
       return (
         <table className="text-xs">
           <tbody>
-            <tr><td>Tumble outta bed</td></tr>
-            <tr><td>And stumble to the kitchen</td></tr>
-            <tr><td>Pour myself a cup of ambition</td></tr>
-            <tr><td>And yawn and stretch</td></tr>
-            <tr><td>And try to come to life</td></tr>
-            <tr><td className="pt-2 italic">- Dolly Parton, 9 to 5</td></tr>
+            <tr>
+              <td>Tumble outta bed</td>
+            </tr>
+            <tr>
+              <td>And stumble to the kitchen</td>
+            </tr>
+            <tr>
+              <td>Pour myself a cup of ambition</td>
+            </tr>
+            <tr>
+              <td>And yawn and stretch</td>
+            </tr>
+            <tr>
+              <td>And try to come to life</td>
+            </tr>
+            <tr>
+              <td className="pt-2 italic">- Dolly Parton, 9 to 5</td>
+            </tr>
           </tbody>
         </table>
       );
