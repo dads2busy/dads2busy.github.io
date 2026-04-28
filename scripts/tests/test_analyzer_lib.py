@@ -144,3 +144,40 @@ def _write_minimal_docx(path, text):
         z.writestr("[Content_Types].xml", content_types_xml)
         z.writestr("_rels/.rels", rels_xml)
         z.writestr("word/document.xml", document_xml)
+
+
+from analyzer_lib import extract_profile_dois
+
+
+def test_extract_profile_dois_only_from_publication_sections():
+    profile = {
+        "cv": {
+            "sections": {
+                "Refereed Journal Articles": [
+                    {"title": "Paper A", "doi": "10.x/a"},
+                    {"title": "Paper B", "doi": "10.x/b"},
+                    {"title": "Paper C"},
+                ],
+                "Research / Technical Reports": [
+                    {"title": "Report X", "doi": "10.x/x"},
+                ],
+                "Experience": [
+                    {"name": "Position", "doi": "should-not-appear"},
+                ],
+                "Awards & Honors": [
+                    {"label": "Award", "details": "2020"},
+                ],
+            },
+        },
+    }
+    out = extract_profile_dois(profile)
+    assert "10.x/a" in out
+    assert "10.x/b" in out
+    assert "10.x/x" in out
+    assert "should-not-appear" not in out
+    assert len(out) == 3
+
+
+def test_extract_profile_dois_handles_empty_sections():
+    profile = {"cv": {"sections": {}}}
+    assert extract_profile_dois(profile) == set()

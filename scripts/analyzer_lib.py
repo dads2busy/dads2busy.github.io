@@ -55,3 +55,26 @@ def docx_to_markdown(path: Path) -> str:
     with open(path, "rb") as f:
         result = mammoth.convert_to_markdown(f)
     return result.value
+
+
+_PUBLICATION_SECTIONS = {
+    "Refereed Journal Articles",
+    "Book Chapters",
+    "Conference Proceedings / Presentations",
+    "Research / Technical Reports",
+    "Editorials",
+    "Dissertation",
+}
+
+
+def extract_profile_dois(profile: dict) -> set[str]:
+    """Set of bare DOI strings from profile.yaml's publication sections."""
+    out: set[str] = set()
+    sections = profile.get("cv", {}).get("sections", {})
+    for section_name, entries in sections.items():
+        if section_name not in _PUBLICATION_SECTIONS or not isinstance(entries, list):
+            continue
+        for entry in entries:
+            if isinstance(entry, dict) and entry.get("doi"):
+                out.add(entry["doi"])
+    return out
