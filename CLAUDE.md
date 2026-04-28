@@ -151,9 +151,23 @@ Sidebar shows site tagline + contextual links for the current category.
 
 ## ORCID Integration
 
-`orcid_works.py` fetches publications from the ORCID API using credentials in `.env`:
-```
-ORCID_CLIENT_ID=APP-BT2Q0LHTCJW1QAKN
-ORCID_CLIENT_SECRET=<in .env>
-```
-Output: `orcid_works.json` — used to populate the Writing/publications section.
+`orcid_works.py` (at repo root) does two things:
+
+1. **Fetches** publications from the ORCID Public API using credentials in `.env`:
+   ```
+   ORCID_CLIENT_ID=APP-...
+   ORCID_CLIENT_SECRET=...
+   ORCID_ID=0000-0003-4372-2241   # or pass on CLI
+   ```
+   Output: `orcid_works.json` (committed snapshot of the last sync).
+
+2. **Diffs** the fetched works against `site/content/profile.yaml` (the SSOT) and writes `orcid_diff.md` (gitignored) with three sections:
+   - **Already in profile.yaml** — entries the SSOT and ORCID agree on
+   - **Candidate NEW entries** — ORCID entries not yet in the SSOT, with ready-to-paste YAML
+   - **Fuzzy matches** — DOI matches but title differs (stale SSOT metadata to review)
+
+   Run: `.venv/bin/python orcid_works.py`
+
+   Review `orcid_diff.md` and hand-paste accepted entries into `site/content/profile.yaml`. The script never edits `profile.yaml` directly.
+
+Pure functions are in `scripts/orcid_diff_lib.py` with pytest coverage (`scripts/tests/test_orcid_diff_lib.py`).
