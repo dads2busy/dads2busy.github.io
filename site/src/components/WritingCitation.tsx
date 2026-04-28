@@ -6,6 +6,7 @@ interface Props {
 }
 
 export default function WritingCitation({ post }: Props) {
+  const isPreprint = !!post.DOI && /arxiv/i.test(post.DOI);
   return (
     <div className="mb-3">
       <p className="text-sm">
@@ -14,6 +15,11 @@ export default function WritingCitation({ post }: Props) {
           const year = post.dates || (post.date ? post.date.slice(0, 4) : "");
           return year ? <>({year}). </> : null;
         })()}
+        {isPreprint && (
+          <span className="italic" style={{ color: "var(--text-muted)" }}>
+            (preprint){" "}
+          </span>
+        )}
         <Link href={`/${post.year}/${post.month}/${post.slug}`} className="font-semibold">
           {post.title}
         </Link>
