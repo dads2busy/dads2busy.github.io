@@ -161,7 +161,7 @@ SAMPLE_WRITING_ENTRY = {
     "date": "2023-01-01",
     "title": "Census Curated Data Enterprise Use Case Demonstration",
     "subcategory": "Research/Technical Reports",
-    "sponsor": "Proceedings of the Biocomplexity Institute, TR# 2023-53",
+    "journal": "Proceedings of the Biocomplexity Institute, TR# 2023-53",
     "dates": 2023,
     "authors": "Lancaster V, Shipp S, Keller S, Schroeder A, Mortveit H, Swarup S, Xie D",
     "editors": "",
@@ -255,7 +255,7 @@ def test_research_entry_basic():
         "subcategory": "Data Integration & Management",
         "title": "ATIS Implementation Center",
         "date": "2004-05-22",
-        "sponsor": "U.S. DOT Research and Special Programs Administration (RSPA)",
+        "funder": "U.S. DOT Research and Special Programs Administration (RSPA)",
         "award": "$543,000",
         "dates": "2004-2005",
         "role": "Co-PI",
@@ -276,7 +276,7 @@ def test_research_entry_no_award_no_role():
     entry = {
         "title": "Bare project",
         "dates": "2020",
-        "sponsor": "Sponsor X",
+        "funder": "Sponsor X",
     }
     out = research_entry_to_normal(entry)
     assert out["summary"] == "Sponsor X"
@@ -288,7 +288,7 @@ def test_speaking_entry_basic():
         "date": "2023-12-02",
         "title": "The Social Impact Data Commons",
         "subcategory": "Presentations/Workshops",
-        "sponsor": "Council of Professional Associations on Federal Statistics (COPAFS)",
+        "event": "Council of Professional Associations on Federal Statistics (COPAFS)",
         "dates": 2023,
         "role": "Lecture",
     }

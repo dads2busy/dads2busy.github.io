@@ -45,7 +45,7 @@ def publication_entry_to_writing(entry: dict) -> dict:
     if entry.get("date"):
         out["date"] = entry["date"]
     if entry.get("journal"):
-        out["sponsor"] = entry["journal"]
+        out["journal"] = entry["journal"]
     doi = _doi_with_prefix(entry)
     if doi:
         out["DOI"] = doi
@@ -83,7 +83,7 @@ def project_entry_to_research(entry: dict) -> dict:
         entry, out,
         (
             "slug", "subcategory",
-            "sponsor", "award", "role",
+            "funder", "award", "role",
             "report", "report2", "report3", "report4", "report5", "report6",
             "media1", "media2", "media3",
             "media1title", "media2title", "media3title",
@@ -104,7 +104,7 @@ def presentation_entry_to_speaking(entry: dict) -> dict:
         entry, out,
         (
             "slug", "subcategory",
-            "sponsor", "role",
+            "event", "role",
             "report",
             "media1", "media2", "media3",
             "media1title", "media2title", "media3title",

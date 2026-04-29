@@ -711,7 +711,7 @@ cv:
           Resilience Workshop, Virginia Tech.'
         slug: sharing_infra
         subcategory: Presentations/Workshops
-        sponsor: Global Forum on Urban and Regional Resilience (GFURR) Resilience Workshop
+        event: Global Forum on Urban and Regional Resilience (GFURR) Resilience Workshop
         local_path: /downloads/Workshop3-Schroeder-Building-Data-Sharing-Infrastructures.pdf
       - name: Association between perceived university environment and physical activity in college students
         date: "2012-11-01"
@@ -723,7 +723,7 @@ cv:
           Washington, DC.'
         slug: phys_ed
         subcategory: Presentations/Workshops
-        sponsor: American Public Health Association 139th Annual Meeting and Exposition
+        event: American Public Health Association 139th Annual Meeting and Exposition
       - name: Data - The New Asset Class
         date: "2012-04-06"
         summary: "Presentation at HPC Day, Virginia Tech"
@@ -732,7 +732,7 @@ cv:
           Tech.'
         slug: hpc_day
         subcategory: Presentations/Workshops
-        sponsor: HPC Day, Virginia Tech
+        event: HPC Day, Virginia Tech
       - name: Stakeholder Analysis
         date: "1999-04-10"
         summary: "Presentation at 60th Annual Meeting of the American Society for Public Administration, Orlando, FL"
@@ -741,7 +741,7 @@ cv:
           American Society for Public Administration, Orlando, FL.'
         slug: stakeholder-analysis-aspa-60
         subcategory: Presentations/Workshops
-        sponsor: 60th Annual Meeting of the American Society for Public Administration
+        event: 60th Annual Meeting of the American Society for Public Administration
       - name: "Smart Metadata in Action: The Social Impact Data Commons"
         date: "2024-04-11"
         summary: "Presentation at Conference On Smart Metadata for Official Statistics 2024 (COSMOS 2024), Paris, France"
@@ -751,7 +751,7 @@ cv:
           Statistics 2024 (COSMOS 2024), April 11-12, 2024, Paris, France.'
         slug: smart-metadata-cosmos-2024
         subcategory: Presentations/Workshops
-        sponsor: Conference On Smart Metadata for Official Statistics 2024 (COSMOS 2024)
+        event: Conference On Smart Metadata for Official Statistics 2024 (COSMOS 2024)
       - name:
           "The Social Impact Data Commons: Supporting local equity-informed decision-making in the National
           Capital Region"
@@ -763,7 +763,7 @@ cv:
           Federal Statistics (COPAFS). Contributors: Aaron Schroeder.'
         slug: COPAFS
         subcategory: Lecture
-        sponsor: Council of Professional Associations on Federal Statistics (COPAFS)
+        event: Council of Professional Associations on Federal Statistics (COPAFS)
       - name: "Supporting Local Decision-Making through the Aggregation of ACS Demographic Estimates within Locally-Relevant Geographies"
         date: "2023-05-17"
         summary: Presenter/Panelist at 2023 ACS Data Users Conference
@@ -773,7 +773,7 @@ cv:
           Conference.'
         slug: ACS-Users
         subcategory: Presentations/Workshops
-        sponsor: 2023 ACS Data Users Conference
+        event: 2023 ACS Data Users Conference
         report: Schroeder_Pop_Redist_ACS_Data_Users--Final.pdf
       - name: "Data Re-Use in Action: Social Impact Data Commons"
         date: "2022-05-06"
@@ -791,7 +791,7 @@ cv:
           and Data Commons" (2021), 2021 Governor''s Summit on Rural Prosperity, Farmville, VA.'
         slug: a
         subcategory: Presentations/Workshops
-        sponsor: 2021 Governor''s Summit on Rural Prosperity
+        event: 2021 Governor''s Summit on Rural Prosperity
         report:
           GSummit - Introduction of the 2022-2026 Virginia Rural Health Plan and Data Commons_10292021_UVA
           slides.pdf
@@ -803,7 +803,7 @@ cv:
           (2020), Implementation Working Group, Open Data Charter.'
         slug: a
         subcategory: Presentations/Workshops
-        sponsor: Open Data Charter
+        event: Open Data Charter
       - name: "Measuring the Scope and Impact of Open Source Software"
         date: "2019-09-23"
         summary: Presenter/Panelist at Government Advancement of Statistical Programming (GASP) Workshop
@@ -813,7 +813,7 @@ cv:
           (GASP) Workshop.'
         slug: a
         subcategory: Presentations/Workshops
-        sponsor: Government Advancement of Statistical Programming (GASP) Workshop
+        event: Government Advancement of Statistical Programming (GASP) Workshop
         report: Measuring the Scope and Impact of Open Source Software-GASP-korkmaz-schroeder.pdf
       - name: "How to 'do' Data Science for the Public Good"
         date: "2019-05-23"
@@ -824,7 +824,7 @@ cv:
           05/23/2019.'
         slug: a
         subcategory: Presentations/Workshops
-        sponsor: 2019 Midwest Big Data Summer School, Iowa State University
+        event: 2019 Midwest Big Data Summer School, Iowa State University
         report: MBDSS2019.pdf
       - name: "Data Platforms & Processes for Policy Analysis"
         date: "2019-03-26"
@@ -853,7 +853,7 @@ cv:
           Validation" (2018). 2018 ADRF Network Research Conference Presentations. 10.'
         slug: a
         subcategory: Presentations/Workshops
-        sponsor: 2018 ADRF Network Research Conference
+        event: 2018 ADRF Network Research Conference
         report: MultiFamily Address List Creation Using Open Data and Delivery Poi.pdf
       - name: "Repurposing Administrative Data for Statistical Purposes"
         date: "2017-06-07"
@@ -864,7 +864,7 @@ cv:
           DC.'
         slug: a
         subcategory: Presentations/Workshops
-        sponsor: National Academy of Sciences workshop on Data Privacy for Employment Data
+        event: National Academy of Sciences workshop on Data Privacy for Employment Data
         report: Schroeder_NAS.pdf
       - name: "Pre-Summit Workshop on Technology to Support Data Sharing"
         date: "2017-04-10"
@@ -874,7 +874,7 @@ cv:
           Governor’s Data Analytics Summit". Charlottesville, Va.'
         slug: a
         subcategory: Committee
-        sponsor: Governor’s Data Analytics Summit
+        event: Governor’s Data Analytics Summit
       - name: "Building Data Sharing Infrastructures at the State Level: Context, Stakeholders and Technology"
         date: "2015-10-14"
         summary:
@@ -920,7 +920,7 @@ cv:
           Session provided and overview of data security and privacy and how they are the foundation of the VLDS platform. In addition to a presentation of VLDS data and its uses, presented the details of VLDS implementation for privacy protection."
         slug: a
         subcategory: Panelist
-        sponsor: 2013 VLDS Insights Conference
+        event: 2013 VLDS Insights Conference
         report: D-1_Data_Security_and_Technology.pdf
       - name: "Project Child HANDS: Child Care, Subsidy, and Early Education"
         date: "2013-06-25"
@@ -938,7 +938,7 @@ cv:
         abstract: "Schroeder, A.D. Panelist: Federated and Centralized Models. 26th Annual Management Information Systems (MIS) Conference, The National Center for Education Statistics (NCES), U.S. Department of Education’s Institute of Education Sciences (IES). In this session, panelists from Arkansas, Mississippi, Virginia, and Kentucky discussed their states’ use of a federated or centralized model of system architecture. Panelists presented their rationale for choosing the model they did, the roles and responsibilities of participating agencies, the matching process employed, data access and response time, and rules for data integrity."
         slug: a
         subcategory: Panelist
-        sponsor: 26th Annual Management Information Systems (MIS) Conference
+        event: 26th Annual Management Information Systems (MIS) Conference
         report: Federated & Centralized Models.pdf
       - name: "Virginia Longitudinal Data System—Accessing Multiple Datasets and Merging Records"
         date: "2013-02-11"
@@ -960,7 +960,7 @@ cv:
           (ECAC). This presentation included recent progress on Project Child HANDS and a video about how the system works.
         slug: a
         subcategory: Presentations/Workshops
-        sponsor: Virginia Early Childhood Advisory Council
+        event: Virginia Early Childhood Advisory Council
         report: Governors_ECAC_Slides_5_30_12.pdf
       - name: "BUILD Initiative: Early Learning Challenge State Plans"
         date: "2011-10-17"
@@ -970,7 +970,7 @@ cv:
           Challenge Collaborative to advise a select number of state delegations on their efforts at drafting plans to build integrated early childhood systems as part of the US Department of Education Race-To-The-Top Early Learning Challenge Grant Program. The Early Learning Challenge Collaborative (ELCC) is a partnership between the BUILD Initiative and the First Five Years Fund supported by private foundation dollars and was established to support states as they plan, apply for, and implement the Early Learning Challenge."
         slug: a
         subcategory: Expert Forum
-        sponsor: BUILD Initiative
+        event: BUILD Initiative
       - name: "Early Learning Challenge Collaborative Data Systems Webinar"
         date: "2011-08-10"
         summary: Expert at Early Learning Challenge Collaborative
@@ -979,7 +979,7 @@ cv:
           expert on government data systems integration to advise multiple state delegations on their efforts at drafting plans to build integrated early childhood systems as part of the US Department of Education Race-To-The-Top Early Learning Challenge Grant Program."
         slug: a
         subcategory: Expert Webinar
-        sponsor: Early Learning Challenge Collaborative
+        event: Early Learning Challenge Collaborative
       - name: "US Department of Education Race-To-The-Top Early Learning Challenge"
         date: "2011-08-01"
         summary: Expert at US Department of Education Race-To-The-Top Early Learning Challenge Grant Program
@@ -988,14 +988,14 @@ cv:
           Directly to the Experts" webinar. Invited expert on government data systems integration to advise multiple state delegations on their efforts at drafting plans to build integrated early childhood systems as part of the US Department of Education Race-To-The-Top Early Learning Challenge Grant Program.'
         slug: a
         subcategory: Expert Webinar
-        sponsor: US Department of Education Race-To-The-Top Early Learning Challenge Grant Program
+        event: US Department of Education Race-To-The-Top Early Learning Challenge Grant Program
       - name: "Developing Unified Early Childhood Data Systems"
         date: "2011-04-27"
         summary: Panelist at 2011 ACF Early Childhood State Advisory Council Grantees Meeting
         abstract: "Schroeder, A.D. Panelist: Developing Unified Early Childhood Data Systems. 2011 ACF Early Childhood State Advisory Council Grantees Meeting. Arlington, VA."
         slug: a
         subcategory: Panelist
-        sponsor: ACF Early Childhood State Advisory Council
+        event: ACF Early Childhood State Advisory Council
       - name: "Project Child HANDS Status Update"
         date: "2010-12-08"
         summary: Presentation at Governor's Early Childhood Advisory Council (ECAC)
@@ -1004,7 +1004,7 @@ cv:
           and current status to the Governor's Early Childhood Advisory Council (ECAC). The ECAC is chaired by the Secretary of Education, co-chaired by the President of the Virginia Early Childhood Foundation, and is comprised of the Secretary of Commerce, the Secretary of Health and Human Services, the Secretary of Finance, the Governor’s Director of Policy, the State Superintendent of Instruction, the Commissioner of the Department of Social Services, the Commissioner of Health, the Commissioner of Behavioral Health and Rehabilitative Services, the Director of Medical Assistance Services, the Executive Director of the State Council Higher Education, the Chancellor of the Virginia Community College System, the Executive Director of the Virginia Economic Development Partnership, the Director of the state Head Start Collaboration office, and many assigned local representatives."
         slug: a
         subcategory: Presentations/Workshops
-        sponsor: Governor's Early Childhood Advisory Council (ECAC)
+        event: Governor's Early Childhood Advisory Council (ECAC)
       - name: "Child Care Data Collaboration, Integration and Linkages"
         date: "2010-11-10"
         summary: Presentation at 2010 USHHS Child Care Policy Research Consortium (CCPRC)
@@ -1025,7 +1025,7 @@ cv:
           (IES). February 16-17. NULL. Invited to present on methods of public-sector data integration and issues created by federal and state privacy laws to a workshop on Research Use of State Longitudinal Data Systems sponsored by the National Institute of Statistical Sciences (NISS) , the National Center for Education Statistics (NCES), and the Institute of Education Sciences (IES)."
         slug: a
         subcategory: Presentations/Workshops
-        sponsor: National Institute of Statistical Sciences (NISS)
+        event: National Institute of Statistical Sciences (NISS)
         report: Multi_Agency_Data_Federation.pdf
       - name: "Child Care Policy Research Panel"
         date: "2009-10-28"
@@ -1033,14 +1033,14 @@ cv:
         abstract: 'Schroeder, A.D. and Bradburn, I. Presentation: Invited speakers at the annual National Child Care Policy Research Consortium in Washington, D.C. Drs. Schroeder and Bradburn presented for the panel "The Role of Data System Integration in Policy, Practice, and Research". The HANDS team was specifically asked to discuss some of the ways that integrated data systems like HANDS can be used to answer research questions, analyze policies, and inform practice.'
         slug: a
         subcategory: Presentations/Workshops
-        sponsor: National Child Care Policy Research Consortium
+        event: National Child Care Policy Research Consortium
       - name: "Intelligent Transportation Systems of Virginia"
         date: "2003-11-01"
         summary: Workshop at Intelligent Transportation Systems of Virginia Annual Conference
         abstract: "Schroeder, A.D. Workshop: Intelligent Transportation Systems of Virginia Annual Conference."
         slug: a
         subcategory: Presentations/Workshops
-        sponsor: Intelligent Transportation Systems of Virginia
+        event: Intelligent Transportation Systems of Virginia
       - name: "Rural Advanced Traveler Information Systems"
         date: "2003-10-10"
         summary: Presentation at Rural Advanced Traveler Information Systems Conference

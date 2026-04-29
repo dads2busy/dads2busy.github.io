@@ -28,7 +28,7 @@ def test_publication_basic():
     assert out["authors"] == "Lancaster V, Shipp S, Schroeder A, Mortveit H"
     assert out["date"] == "2023-01-01"
     assert out["DOI"] == "https://doi.org/10.18130/ce97-sp05"
-    assert out["sponsor"] == "Proceedings of the Biocomplexity Institute"
+    assert out["journal"] == "Proceedings of the Biocomplexity Institute"
     assert out["slug"] == "census_curated_data_enterprise"
     assert out["subcategory"] == "Research/Technical Reports"
     assert out["ordinal"] == 0
@@ -175,7 +175,7 @@ def test_publication_writing_shape_complete():
     }
     out = publication_entry_to_writing(entry)
     expected = {
-        "title", "authors", "date", "DOI", "sponsor", "website",
+        "title", "authors", "date", "DOI", "journal", "website",
         "ordinal", "slug", "subcategory", "abstract", "editors", "pages",
     }
     assert set(out.keys()) == expected, (
@@ -197,13 +197,13 @@ def test_experience_working_shape_complete():
 def test_research_research_shape_complete():
     entry = {
         "name": "X", "date": "2020", "url": "http://x.com", "abstract": "abstract",
-        "slug": "s", "subcategory": "Some Sub", "sponsor": "Sponsor X",
+        "slug": "s", "subcategory": "Some Sub", "funder": "Funder X",
         "award": "$1000", "role": "PI", "ordinal": "3",
     }
     out = project_entry_to_research(entry)
     expected = {
         "title", "dates", "website", "abstract", "ordinal", "slug",
-        "subcategory", "sponsor", "award", "role",
+        "subcategory", "funder", "award", "role",
     }
     assert set(out.keys()) == expected
 
@@ -212,12 +212,12 @@ def test_presentation_speaking_shape_complete():
     entry = {
         "name": "X", "date": "2023-12-02", "abstract": "Speech text",
         "url": "http://x.com", "slug": "s", "subcategory": "Lecture",
-        "sponsor": "Venue", "role": "speaker",
+        "event": "Venue", "role": "speaker",
     }
     out = presentation_entry_to_speaking(entry)
     expected = {
         "title", "date", "abstract", "website", "slug", "subcategory",
-        "sponsor", "role",
+        "event", "role",
     }
     assert set(out.keys()) == expected, (
         f"presentation_entry_to_speaking key drift: missing={expected - set(out)} extra={set(out) - expected}"

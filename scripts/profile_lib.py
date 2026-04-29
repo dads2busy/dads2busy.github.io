@@ -134,8 +134,8 @@ def writing_entry_to_publication(entry: dict) -> dict:
 
     if entry.get("date"):
         out["date"] = entry["date"]
-    if entry.get("sponsor"):
-        out["journal"] = entry["sponsor"]
+    if entry.get("journal"):
+        out["journal"] = entry["journal"]
 
     doi = normalize_doi(entry.get("DOI"))
     if doi:
@@ -189,7 +189,7 @@ def research_entry_to_normal(entry: dict) -> dict:
     if entry.get("dates"):
         out["date"] = str(entry["dates"])
 
-    summary = entry.get("sponsor") or ""
+    summary = entry.get("funder") or ""
     if entry.get("award"):
         summary = f"{summary} — {entry['award']}" if summary else entry["award"]
     if entry.get("role"):
@@ -225,11 +225,11 @@ def speaking_entry_to_normal(entry: dict) -> dict:
     summary_parts = []
     if entry.get("role"):
         summary_parts.append(entry["role"])
-    if entry.get("sponsor"):
+    if entry.get("event"):
         if summary_parts:
-            summary_parts[0] = f"{summary_parts[0]} at {entry['sponsor']}"
+            summary_parts[0] = f"{summary_parts[0]} at {entry['event']}"
         else:
-            summary_parts.append(entry["sponsor"])
+            summary_parts.append(entry["event"])
     if summary_parts:
         out["summary"] = summary_parts[0]
 

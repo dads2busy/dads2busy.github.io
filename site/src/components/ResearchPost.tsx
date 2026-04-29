@@ -36,10 +36,10 @@ export default function ResearchPost({ post }: Props) {
               <td>{post.role}</td>
             </tr>
           )}
-          {post.sponsor && (
+          {post.funder && (
             <tr>
-              <td className="pr-4 font-semibold align-top">Sponsor:</td>
-              <td>{post.sponsor}</td>
+              <td className="pr-4 font-semibold align-top">Funder:</td>
+              <td>{post.funder}</td>
             </tr>
           )}
           {post.dates && (

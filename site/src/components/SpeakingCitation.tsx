@@ -30,10 +30,10 @@ export default async function SpeakingCitation({ post }: Props) {
               <td>{post.role}</td>
             </tr>
           )}
-          {post.sponsor && post.sponsor.trim() !== "" && (
+          {post.event && post.event.trim() !== "" && (
             <tr>
-              <td className="pr-4 font-semibold align-top">Sponsor:</td>
-              <td>{post.sponsor}</td>
+              <td className="pr-4 font-semibold align-top">Event:</td>
+              <td>{post.event}</td>
             </tr>
           )}
           {post.dates && (

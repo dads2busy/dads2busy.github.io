@@ -24,7 +24,7 @@ export default function WritingCitation({ post }: Props) {
           {post.title}
         </Link>
         .{" "}
-        {post.sponsor && <>{post.sponsor}. </>}
+        {post.journal && <>{post.journal}. </>}
         {post.pages && post.pages.trim() !== "" && <>{post.pages}. </>}
         {post.DOI && post.DOI.trim() !== "" && <>DOI={post.DOI}. </>}
         {post.editors && post.editors.trim() !== "" && <>{post.editors}. </>}

@@ -14,7 +14,7 @@ export interface BasePost {
 }
 
 export interface ResearchPost extends BasePost {
-  sponsor?: string;
+  funder?: string;
   award?: string;
   dates?: string;
   role?: string;
@@ -33,7 +33,7 @@ export interface ResearchPost extends BasePost {
 }
 
 export interface WritingPost extends BasePost {
-  sponsor?: string;
+  journal?: string;
   authors?: string;
   editors?: string;
   pages?: string;
@@ -42,7 +42,7 @@ export interface WritingPost extends BasePost {
 }
 
 export interface SpeakingPost extends BasePost {
-  sponsor?: string;
+  event?: string;
   dates?: string;
   role?: string;
   report?: string;
