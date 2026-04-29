@@ -127,3 +127,23 @@ def teaching_entry_to_teaching(entry: dict) -> dict:
         out["website"] = entry["url"]
     _passthrough(entry, out, ("slug",))
     return out
+
+
+def release_entry_to_releases(entry: dict) -> dict:
+    out: dict = {"title": entry["name"]}
+    if entry.get("date"):
+        out["date"] = entry["date"]
+    if entry.get("summary"):
+        out["summary"] = entry["summary"]
+    if entry.get("abstract"):
+        out["abstract"] = entry["abstract"]
+    if entry.get("url"):
+        out["url"] = entry["url"]
+    if entry.get("doi"):
+        out["doi"] = entry["doi"]
+    if entry.get("authors"):
+        # authors may be a list (CSL-ish) or a string; pass through as list of strings
+        out["authors"] = entry["authors"]
+    out["ordinal"] = _coerce_ordinal(entry.get("ordinal"))
+    _passthrough(entry, out, ("slug", "subcategory"))
+    return out

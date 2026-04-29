@@ -147,6 +147,7 @@ export function getAllPosts(): BasePost[] {
   posts.push(...loadJsonPosts("teaching.json", "teaching"));
   posts.push(...loadJsonPosts("working.json", "working"));
   posts.push(...loadJsonPosts("research.json", "research"));
+  posts.push(...loadJsonPosts("releases.json", "release"));
 
   postsCache = posts;
   return posts;
@@ -185,7 +186,7 @@ export function getAllPostSlugs(): {
   slug: string;
 }[] {
   return getAllPosts()
-    .filter((p) => p.category?.toLowerCase() !== "research")
+    .filter((p) => p.category?.toLowerCase() !== "research" && p.category?.toLowerCase() !== "release")
     .map((p) => ({
       year: p.year,
       month: p.month,

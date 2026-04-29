@@ -8,6 +8,7 @@ from json_emitters import (
     project_entry_to_research,
     presentation_entry_to_speaking,
     teaching_entry_to_teaching,
+    release_entry_to_releases,
 )
 
 
@@ -231,6 +232,25 @@ def test_teaching_teaching_shape_complete():
     }
     out = teaching_entry_to_teaching(entry)
     expected = {"title", "date", "website", "abstract", "slug"}
+    assert set(out.keys()) == expected
+
+
+def test_release_releases_shape_complete():
+    entry = {
+        "name": "X", "date": "2026-01-01",
+        "summary": "Brief description",
+        "abstract": "Long abstract",
+        "url": "https://github.com/example/repo",
+        "doi": "10.x/y",
+        "authors": ["Schroeder, A."],
+        "slug": "s", "subcategory": "Software",
+        "ordinal": "1",
+    }
+    out = release_entry_to_releases(entry)
+    expected = {
+        "title", "date", "summary", "abstract", "url", "doi",
+        "authors", "ordinal", "slug", "subcategory",
+    }
     assert set(out.keys()) == expected
 
 

@@ -10,6 +10,7 @@ export const GITHUB_USERNAME = "dads2busy";
 export const NAV_ITEMS: NavItem[] = [
   { label: "Writing", href: "/writing" },
   { label: "Researching", href: "/research" },
+  { label: "Releasing", href: "/releases" },
   { label: "Speaking", href: "/speaking" },
   { label: "Teaching", href: "/teaching" },
   { label: "Working", href: "/working" },

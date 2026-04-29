@@ -70,6 +70,13 @@ export interface DataSciencePost extends BasePost {
   description?: string;
 }
 
+export interface ReleasePost extends BasePost {
+  url?: string;
+  doi?: string;
+  authors?: string[];
+  summary?: string;
+}
+
 export interface NavItem {
   label: string;
   href: string;

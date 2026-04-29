@@ -45,6 +45,16 @@ export default function LinksList({ category }: LinksListProps) {
           />
         </div>
       );
+    case "release":
+      return (
+        <div className="text-center">
+          <img
+            src="/images/data-researcher.png"
+            alt="Data & Software Releases"
+            className="mx-auto max-w-full"
+          />
+        </div>
+      );
     case "coaching":
       return (
         <ul className="list-none p-0 text-sm">

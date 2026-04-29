@@ -19,6 +19,7 @@ from json_emitters import (
     presentation_entry_to_speaking,
     project_entry_to_research,
     publication_entry_to_writing,
+    release_entry_to_releases,
     teaching_entry_to_teaching,
 )
 
@@ -89,6 +90,7 @@ def main() -> None:
         "research.json": _dedup_slugs(emit_simple(sections, "Research Projects", project_entry_to_research)),
         "speaking.json": _dedup_slugs(emit_simple(sections, "Presentations", presentation_entry_to_speaking)),
         "teaching.json": _dedup_slugs(emit_simple(sections, "Teaching", teaching_entry_to_teaching)),
+        "releases.json": _dedup_slugs(emit_simple(sections, "Data & Software", release_entry_to_releases)),
     }
 
     for name, data in outputs.items():
