@@ -244,12 +244,13 @@ def test_release_releases_shape_complete():
         "doi": "10.x/y",
         "authors": ["Schroeder, A."],
         "slug": "s", "subcategory": "Software",
+        "type": "Software",
         "ordinal": "1",
     }
     out = release_entry_to_releases(entry)
     expected = {
         "title", "date", "summary", "abstract", "url", "doi",
-        "authors", "ordinal", "slug", "subcategory",
+        "authors", "ordinal", "slug", "subcategory", "type",
     }
     assert set(out.keys()) == expected
 

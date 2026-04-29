@@ -4231,6 +4231,7 @@ cv:
           context to a multiple-organization network context. Managerially, we must respond accordingly.
     "Data & Software":
       - name: STDN Agentic Framework
+        type: Software
         date: "2026-04-29"
         summary: "Multi-agent AI system for generating Shallow Technology Dependency Networks (STDNs)"
         url: https://github.com/dads2busy/dpi_stdn_agentic
@@ -4241,6 +4242,7 @@ cv:
           Four-stage pipeline with optional multi-agent debate; each link includes confidence
           scores and reasoning for auditable, interpretable analysis.
       - name: Intelligence Budget Estimation System
+        type: Software
         date: "2026-04-29"
         summary: "Multi-agent LangGraph workflow for estimating the classified portion of U.S. intelligence spending"
         url: https://github.com/dads2busy/dpi_budget_estimation_agentic
@@ -4252,6 +4254,7 @@ cv:
           methodology operationalizes top-down reconciliation as a repeatable, auditable
           pipeline.
       - name: STDN Explorer
+        type: Software
         date: "2026-03-10"
         summary: "Interactive dashboard for Shallow Technology Dependency Networks — supply chain risk analysis"
         url: https://github.com/dads2busy/stdn-explorer
@@ -4259,30 +4262,35 @@ cv:
           Interactive web dashboard for exploring Shallow Technology Dependency Networks (STDNs)
           and conducting supply chain risk analysis. Built with TypeScript and Python.
       - name: Social Data Commons - Master Metadata
+        type: Dataset
         date: "2022-01-01"
         summary: Dataset deposited in UVA Dataverse, University of Virginia
         abstract: >-
           **Schroeder A.D.**; Schroeder J; Iserman M; Linehan K. Social Data Commons: Master
           Metadata. UVA Dataverse. University of Virginia. 2022.
       - name: Social Impact Data Commons Website - National Capital Region
+        type: Software
         date: "2022-01-01"
         summary: Interactive data commons web platform
         abstract: >-
           **Schroeder, A.D.** Social Impact Data Commons - National Capital Region.
           https://uva-bi-sdad.github.io/capital_region
       - name: VDH Data Commons Website
+        type: Software
         date: "2022-01-01"
         summary: Interactive data commons web platform for Virginia Department of Health
         abstract: >-
           **Schroeder, A.D.** Virginia Department of Health Data Commons.
           https://uva-bi-sdad.github.io/vdh_rural_health_site
       - name: Travel Information Data Clearinghouse and Management System
+        type: Software
         date: "1999-01-01"
         summary: Copyright held by Virginia Polytechnic Institute and State University
         abstract: >-
           **Schroeder, A.D.** Travel Information Data Clearinghouse and Management System.
           Copyright: Virginia Polytechnic Institute and State University, 1999.
       - name: Web-Based Dynamic Ride Request, Assignment, and Tracking System
+        type: Software
         date: "1999-01-01"
         summary: Copyright held by Virginia Polytechnic Institute and State University
         abstract: >-
