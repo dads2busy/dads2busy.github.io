@@ -14,7 +14,6 @@ export const NAV_ITEMS: NavItem[] = [
   { label: "Speaking", href: "/speaking" },
   { label: "Teaching", href: "/teaching" },
   { label: "Working", href: "/working" },
-  { label: "Coaching", href: "/coaching" },
   { label: "Playing", href: "/guitar" },
   { label: "Data Scienceing", href: "/datascience" },
   {
