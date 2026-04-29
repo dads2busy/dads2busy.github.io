@@ -4261,6 +4261,40 @@ cv:
         abstract: >-
           Interactive web dashboard for exploring Shallow Technology Dependency Networks (STDNs)
           and conducting supply chain risk analysis. Built with TypeScript and Python.
+      - name: Social Data Commons (SDC)
+        subcategory: Software
+        date: "2026-02-25"
+        summary: "Unified monorepo for Social Data Commons data pipelines"
+        url: https://github.com/dads2busy/Social-Data-Commons
+        abstract: >-
+          Domain-specific data pipelines plus a shared Python core (sdc-core) for ingesting,
+          standardizing, and distributing datasets across multiple social impact domains
+          (demographics, health, housing, etc.). Each pipeline emits standardized long-form
+          CSVs to a common distribution layer.
+      - name: Virginia Public Health Data Commons
+        subcategory: Software
+        date: "2026-02-24"
+        summary: "Interactive data commons web platform for Virginia public health indicators"
+        url: https://github.com/dads2busy/virginia_public_health_data
+        abstract: >-
+          Interactive web dashboard for exploring Virginia public health indicators.
+          Successor to the original VDH Rural Health Data Commons.
+          Live site: https://dads2busy.github.io/virginia_public_health_data/
+      - name: National Capital Region Data Commons
+        subcategory: Software
+        date: "2026-02-24"
+        summary: "Interactive Next.js dashboard for demographic, economic, health, housing, and infrastructure indicators across the National Capital Region"
+        url: https://github.com/dads2busy/national_capital_region_data
+        abstract: >-
+          Interactive dashboard for exploring demographic, economic, health, housing, and
+          infrastructure indicators across the National Capital Region (Washington, DC and
+          surrounding counties in Virginia and Maryland). Renders choropleth maps,
+          time-series plots, and ranked tables across multiple geographic levels (county,
+          tract, block group, civic association, zip code, planning district, supervisor
+          district, human services region) with shareable URL state and an integrated AI
+          assistant. Built with Next.js 15, React 19, Leaflet, Plotly, and TanStack Table;
+          consumes standardized CSVs produced by the Social Data Commons pipelines.
+          Live site: https://dads2busy.github.io/national_capital_region_data/
       - name: Social Data Commons - Master Metadata
         subcategory: Dataset
         date: "2022-01-01"
@@ -4268,20 +4302,6 @@ cv:
         abstract: >-
           **Schroeder A.D.**; Schroeder J; Iserman M; Linehan K. Social Data Commons: Master
           Metadata. UVA Dataverse. University of Virginia. 2022.
-      - name: Social Impact Data Commons Website - National Capital Region
-        subcategory: Software
-        date: "2022-01-01"
-        summary: Interactive data commons web platform
-        abstract: >-
-          **Schroeder, A.D.** Social Impact Data Commons - National Capital Region.
-          https://uva-bi-sdad.github.io/capital_region
-      - name: VDH Data Commons Website
-        subcategory: Software
-        date: "2022-01-01"
-        summary: Interactive data commons web platform for Virginia Department of Health
-        abstract: >-
-          **Schroeder, A.D.** Virginia Department of Health Data Commons.
-          https://uva-bi-sdad.github.io/vdh_rural_health_site
       - name: Travel Information Data Clearinghouse and Management System
         subcategory: Software
         date: "1999-01-01"
