@@ -85,6 +85,12 @@ Review `sources/_diff.md` (gitignored) and hand-paste accepted entries into `pro
 ```
 Review `orcid_diff.md` (gitignored). Same paste workflow.
 
+### Sync new datasets from Zenodo
+```bash
+.venv/bin/python scripts/zenodo_works.py
+```
+Review `zenodo_diff.md` (gitignored). Same paste workflow — proposed entries land in `profile.yaml`'s `Data & Software` section.
+
 ### Find missing fields across profile.yaml
 ```bash
 .venv/bin/python scripts/fill_missing_fields.py

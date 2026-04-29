@@ -29,6 +29,9 @@ site/public/vita.pdf
 # ORCID review-diff (regenerate via orcid_works.py)
 orcid_diff.md
 
+# Zenodo review-diff (regenerate via scripts/zenodo_works.py)
+zenodo_diff.md
+
 # Profile fill review-diff (regenerate via fill_missing_fields.py)
 profile_fill_diff.md
 
