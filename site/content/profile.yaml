@@ -762,7 +762,7 @@ cv:
           decision-making in the National Capital Region" (2023), Council of Professional Associations on
           Federal Statistics (COPAFS). Contributors: Aaron Schroeder.'
         slug: COPAFS
-        subcategory: Presentations/Workshops
+        subcategory: Lecture
       - name: "Supporting Local Decision-Making through the Aggregation of ACS Demographic Estimates within Locally-Relevant Geographies"
         date: "2023-05-17"
         summary: Presenter/Panelist at 2023 ACS Data Users Conference
@@ -865,7 +865,7 @@ cv:
           'Schroeder, A.D. Committee: "Pre-Summit Workshop on Technology to Support Data Sharing,
           Governor’s Data Analytics Summit". Charlottesville, Va.'
         slug: a
-        subcategory: Presentations/Workshops
+        subcategory: Committee
       - name: "Building Data Sharing Infrastructures at the State Level: Context, Stakeholders and Technology"
         date: "2015-10-14"
         summary:
@@ -937,7 +937,7 @@ cv:
           did, the roles and responsibilities of participating agencies, the matching process employed,
           data access and response time, and rules for data integrity."
         slug: a
-        subcategory: Presentations/Workshops
+        subcategory: Panelist
         report: Federated & Centralized Models.pdf
       - name: "Virginia Longitudinal Data System—Accessing Multiple Datasets and Merging Records"
         date: "2013-02-11"
@@ -952,7 +952,7 @@ cv:
           presentation provided a description and demonstration of the solution used by the VLDS and addressed
           some of the challenges presented with working with multiple, disparate datasets."
         slug: b
-        subcategory: Presentations/Workshops
+        subcategory: Panelist
       - name: "Project Child HANDS Update for Virginia's ECAC"
         date: "2012-05-31"
         summary: Presenter at Virginia's Early Childhood Advisory Council (ECAC)
@@ -976,7 +976,7 @@ cv:
           dollars and was established to support states as they plan, apply for, and implement the Early
           Learning Challenge."
         slug: a
-        subcategory: Presentations/Workshops
+        subcategory: Expert Forum
       - name: "Early Learning Challenge Collaborative Data Systems Webinar"
         date: "2011-08-10"
         summary: Expert at Early Learning Challenge Collaborative
@@ -986,7 +986,7 @@ cv:
           at drafting plans to build integrated early childhood systems as part of the US Department of
           Education Race-To-The-Top Early Learning Challenge Grant Program."
         slug: a
-        subcategory: Presentations/Workshops
+        subcategory: Expert Webinar
       - name: "US Department of Education Race-To-The-Top Early Learning Challenge"
         date: "2011-08-01"
         summary: Expert at US Department of Education Race-To-The-Top Early Learning Challenge Grant Program
@@ -998,7 +998,7 @@ cv:
           systems as part of the US Department of Education Race-To-The-Top Early Learning Challenge Grant
           Program.'
         slug: a
-        subcategory: Presentations/Workshops
+        subcategory: Expert Webinar
       - name: "Developing Unified Early Childhood Data Systems"
         date: "2011-04-27"
         summary: Panelist at 2011 ACF Early Childhood State Advisory Council Grantees Meeting
@@ -1006,7 +1006,7 @@ cv:
           "Schroeder, A.D. Panelist: Developing Unified Early Childhood Data Systems. 2011 ACF Early
           Childhood State Advisory Council Grantees Meeting. Arlington, VA."
         slug: a
-        subcategory: Presentations/Workshops
+        subcategory: Panelist
       - name: "Project Child HANDS Status Update"
         date: "2010-12-08"
         summary: Presentation at Governor's Early Childhood Advisory Council (ECAC)
@@ -1045,7 +1045,7 @@ cv:
           Data Systems sponsored by the National Institute of Statistical Sciences (NISS) , the National
           Center for Education Statistics (NCES), and the Institute of Education Sciences (IES)."
         slug: a
-        subcategory: Presentations/Workshops
+        subcategory: Workshop
         report: Multi_Agency_Data_Federation.pdf
       - name: "Child Care Policy Research Panel"
         date: "2009-10-28"
@@ -1063,7 +1063,7 @@ cv:
         summary: Workshop at Intelligent Transportation Systems of Virginia Annual Conference
         content: "Schroeder, A.D. Workshop: Intelligent Transportation Systems of Virginia Annual Conference."
         slug: a
-        subcategory: Presentations/Workshops
+        subcategory: Workshop
       - name: "Rural Advanced Traveler Information Systems"
         date: "2003-10-10"
         summary: Presentation at Rural Advanced Traveler Information Systems Conference
@@ -1110,6 +1110,7 @@ cv:
           Schroeder, A.D. Presentation: "The Social Impact Data Commons: Regional Data-Driven
           Decision-Making." BigSurv23 Conference. Quito, Ecuador. October 27, 2023.
           https://aenu.ec/abstracts/#36
+        subcategory: Presentations/Workshops
       - name: "Virginia's New Rural Health Data Commons: Informing Health Policy through Featuring Health Related Metrics for Visualizing Health Services Access"
         date: '2023-01-01'
         summary: Presenter at International Conference on Health Policy Statistics, Scottsdale, AZ
@@ -1117,6 +1118,7 @@ cv:
           Schroeder J, Montalvo C, Charankevich H, Linehan K, Iserman M, Lancaster V,
           Kattampallil N, Siwe L, Shipp S, Thurston J, **Schroeder A**. Presented at
           International Conference on Health Policy Statistics. January 2023; Scottsdale, AZ.
+        subcategory: Presentations/Workshops
       - name: Best Practices in Coordinating Large-Scale Data Science Initiatives
         date: '2022-08-01'
         summary: Presenter at Joint Statistical Meetings 2022, Washington, DC
@@ -1124,12 +1126,14 @@ cv:
           Thurston J, Keller S, **Schroeder A**, Shipp S. Joint Statistical Meetings 2022.
           August 2022; Washington, DC.
           https://ww2.amstat.org/meetings/jsm/2022/onlineprogram/AbstractDetails.cfm?abstractid=323426
+        subcategory: Presentations/Workshops
       - name: Evaluating the Impact of USDA Broadband Subsidy Programs Using Differentiable Gaussian Random Fields
         date: '2022-08-01'
         summary: Presenter at Joint Statistical Meetings 2022
         content: >-
           Goldstein J, Halder A, Charankevich H, Pender J, **Schroeder A.D.**, Shipp S, Keller S.
           Joint Statistical Meetings 2022. American Statistical Association.
+        subcategory: Presentations/Workshops
       - name: Building the Social Impact Data Commons - Data Discovery and Acquisition Lessons Learned
         date: '2022-08-01'
         summary: Presenter at Federal Committee on Statistical Methodology Research and Policy Conference, Washington, DC
@@ -1137,6 +1141,7 @@ cv:
           Schroeder J, Linehan K, Montalvo C, Charankevich H, Iserman M, Lancaster V,
           Kattampallil N, Siwe L, Shipp S, Thurston J, **Schroeder A**, Keller S. FCSM
           Research and Policy Conference. August 2022; Washington, DC.
+        subcategory: Presentations/Workshops
       - name: 'Social Impact Data Commons: an innovative approach to inform equitable growth'
         date: '2022-05-01'
         summary: Presenter at APDU Data Symposium and CIC Symposium, virtual
@@ -1144,18 +1149,21 @@ cv:
           **Schroeder A**, Linehan K, Charankevich H, Iserman M, Kattampallil N, Lancaster V,
           Montalvo C, Oh E, Schroeder J, Siwe G, Shipp S, Thurston J, Keller S. APDU Data
           Symposium and CIC Symposium: Methods, Metrics and Measurement. May 2022. Virtual.
+        subcategory: Presentations/Workshops
       - name: Data Science for the Public Good (DSPG) Young Scholars Program - Overview 2014-2021
         date: '2022-01-01'
         summary: Presenter at Data Science Approaches to Health Disparities Research Symposium, Biocomplexity Institute, UVA
         content: >-
           **Schroeder A.D.** Data Science Approaches to Health Disparities Research Symposium 2022.
           Biocomplexity Institute, UVA.
+        subcategory: Presentations/Workshops
       - name: "Virginia's New Rural Health Data Commons - Supporting the 2022-2026 Virginia Rural Health Plan"
         date: '2022-07-17'
         summary: Presenter at National Association of County and City Health Officials (NACCHO 2022)
         content: >-
           **Schroeder A**, Montalvo C. NACCHO 2022. July 17, 2022.
           https://doi.org/10.18130/5zdw-kh69
+        subcategory: Presentations/Workshops
       - name: Example Metrics of The Social Impact Data Commons
         date: '2022-04-01'
         summary: Presenter at Biocomplexity Institute Spring 2022 Research Symposium, Arlington, VA
@@ -1163,6 +1171,7 @@ cv:
           Charankevich H, Iserman M, Lancaster V, Linehan K, Montalvo C, Siwe L, Schroeder J,
           **Schroeder A.D.** Biocomplexity Institute Spring 2022 Research Symposium. UVA
           Biocomplexity Institute and Initiative.
+        subcategory: Presentations/Workshops
       - name: Building a Data Commons
         date: '2022-04-01'
         summary: Presenter at Biocomplexity Institute Spring 2022 Research Symposium, Arlington, VA
@@ -1170,12 +1179,14 @@ cv:
           Charankevich H, Iserman M, Lancaster V, Linehan K, Montalvo C, Siwe L, Schroeder J,
           **Schroeder A**. Biocomplexity Institute Spring 2022 Research Symposium.
           April 2022; Arlington, VA.
+        subcategory: Presentations/Workshops
       - name: Challenges in conceptualizing and modeling performance in the U.S. Army
         date: '2022-01-01'
         summary: Presenter at Military Operations Research Society (MORS) 90th Symposium
         content: >-
           Thurston J, Ratcliff N, Halder A, Goldstein J, Oh E, Schroeder J, Shipp S, Keller S.
           Military Operations Research Society (MORS) 90th Symposium.
+        subcategory: Presentations/Workshops
       - name: Measuring the Cost and Impact of Open-Source Software Innovation on GitHub
         date: '2020-05-01'
         summary: Presenter at Federal Committee on Statistical Methodology (FCSM) CSPOS Webinar on Blended Data, Washington, DC
@@ -1183,12 +1194,14 @@ cv:
           Calderon J.B.S., Kramer B.L., Korkmaz G., Robbins C., **Schroeder A.D.**, Keller S.
           FCSM Computational Statistics and the Production of Official Statistics (CSPOS)
           Webinar on Blended Data. Washington, DC, May 1, 2020.
+        subcategory: Presentations/Workshops
       - name: Ethical Principles and Data Science - Repurposing Administrative and Opportunity Data
         date: '2020-09-21'
         summary: Presenter at Federal Committee on Statistical Methodology, virtual
         content: >-
           Shipp S., Keller S., **Schroeder A.** Federal Committee on Statistical Methodology.
           21 September 2020. Virtual meeting.
+        subcategory: Presentations/Workshops
       - name: Impacts of the Broadband Initiatives Program on Rural Prosperity
         date: '2020-08-18'
         summary: Presenter at Agricultural and Applied Economics Association Community and Regional Economics Network annual meeting, online
@@ -1196,12 +1209,14 @@ cv:
           Pender J., Goldstein J., Pristavec T., Mahoney-Nair D., Shipp S., Kattampallil N.,
           **Schroeder A.**, Keller S., & Keeler Z. AAEA Community and Regional Economics
           Network annual meeting. August 18, 2020. Online.
+        subcategory: Presentations/Workshops
       - name: Impacts of Broadband Access and the Broadband Initiatives Program on Telework
         date: '2020-11-01'
         summary: Presentation (venue not specified)
         content: >-
           Pender J, Goldstein J, Pristavec T, Mahoney-Nair D, Shipp S, Kattampallil N,
           **Schroeder A**, Keller S. November 2020.
+        subcategory: Presentations/Workshops
       - name: Economic and Social Impact of Arlington Restaurant Initiative
         date: '2019-08-09'
         summary: Presenter at Data Science for the Public Good Program Symposium, Arlington, VA
@@ -1209,6 +1224,7 @@ cv:
           Calderon J.B.S., Kateryna Savchyn, Victoria Halewicz, Jessica Keast, **Schroeder A.D.**,
           Gizem Korkmaz. Data Science for the Public Good Program Symposium. Arlington, VA,
           August 9, 2019. https://bit.ly/3bDVjWh
+        subcategory: Presentations/Workshops
       - name: Measuring the Universe of Open-Source Software
         date: '2019-08-09'
         summary: Presenter at Data Science for the Public Good Program Symposium, Arlington, VA
@@ -1216,12 +1232,14 @@ cv:
           Calderon J.B.S., Cong C., Isch C., Tobin E., Kramer B.L., **Schroeder A.D.**,
           Korkmaz G. Data Science for the Public Good Program Symposium. Arlington, VA,
           August 9, 2019. https://bit.ly/2y7ryyD
+        subcategory: Presentations/Workshops
       - name: Measuring the Eligibility, Incidence, and Impact of Rural Utilities Service (RUS) Broadband Programs
         date: '2021-05-01'
         summary: Presenter at USDA Rural Utilities Service, Service Seminar
         content: >-
           Pender J, Keller S, Goldstein J, Halder A, Mahoney-Nair D, Kattampallil N,
           **Schroeder A**, Shipp S. USDA Rural Utilities Service, Service Seminar. May 2021.
+        subcategory: Presentations/Workshops
       - name: Evaluation of Broadband Subsidy Programs - Combining Spatial Regression Discontinuity Designs and Bayesian Wombling
         date: '2021-08-01'
         summary: Presenter at 2021 Joint Statistical Meetings
@@ -1229,6 +1247,7 @@ cv:
           Goldstein J, Halder A, Pender J, **Schroeder A**, Mahoney-Nair D, Kattampallil N,
           Shipp S, Keller S. 2021 Joint Statistical Meetings. August 2021.
           https://biocomplexity.virginia.edu/evaluation-broadband-subsidy-programs-combining-spatial-regression-discontinuity-designs-and
+        subcategory: Presentations/Workshops
       - name: Measuring the Impact of the Broadband Initiatives Program on Property Values
         date: '2021-11-01'
         summary: Presenter at 68th North America Meetings of the Regional Science Association International, Denver, CO
@@ -1236,18 +1255,21 @@ cv:
           Goldstein J, Halder A, Charankevich H, Kattampallil N, **Schroeder A**, Pender J,
           Shipp S, Keller S. Regional Science Association International 68th Annual Meeting.
           November 2021; Denver, CO.
+        subcategory: Presentations/Workshops
       - name: Learning to Live with Chaos - A Case for the Dissipative Structure Metaphor in Policy Subsystem Analysis
         date: '1997-01-01'
         summary: Presenter at Intergovernmental Analysis Conference, Copenhagen, Denmark
         content: >-
           **Schroeder A.D.**, Evans K.E., Wamsley G.L. Conference Proceedings, Intergovernmental
           Analysis Conference. Copenhagen, Denmark, 1997.
+        subcategory: Presentations/Workshops
       - name: Policy Subsystems and the New Physics - Policy Development and Implementation at the Edge of Chaos
         date: '1994-01-01'
         summary: Presenter at Network Analysis and Innovations in Public Programs Conference, University of Wisconsin - Madison
         content: >-
           Evans K., **Schroeder A.D.**, Wamsley G.L. Network Analysis and Innovations in Public
           Programs Conference, University of Wisconsin - Madison, 1994.
+        subcategory: Presentations/Workshops
     Teaching:
       - name: Administrative Data Systems & Technologies
         date: "2013-05-22"
