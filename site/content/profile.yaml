@@ -272,12 +272,16 @@ cv:
           Aimed to promote more widespread implementation and testing of evidence-based policies
           and programs by creatively addressing existing limitations of Integrated Data System (IDS) use.
       - name: ATIS Implementation Center
+        funder: U.S. DOT Research and Special Programs Administration (RSPA)
+        role: Co-PI
         date: 2004-2005
         summary: U.S. DOT Research and Special Programs Administration (RSPA) — $543,000 (Co-PI)
         slug: atis_rce
         subcategory: Data Integration & Management
         ordinal: "9"
       - name: Virginia Longitudinal Data System Expansion - Linking to Workforce and Postsecondary
+        funder: U.S. Department of Education
+        role: PI
         date: 2010-2013
         summary: U.S. Department of Education — $1,760,000 (PI)
         url: https://myvlds.virginia.gov/
@@ -300,6 +304,8 @@ cv:
         report5: VT-VLDS Data Adapter User Guide.pdf
         report6: VT-VLDS Identity Resolution and Query Execution Process Overview.pdf
       - name: Virginia Early Childhood Professional Registry
+        funder: Virginia Department of Social Services
+        role: PI
         date: 2010-2016
         award: $110,840
         summary: Virginia Department of Social Services — $110,840 (PI)
@@ -322,6 +328,8 @@ cv:
       - name:
           "Child HANDS: Building Child and Family Policy Research Data Capacity for the Commonwealth
           of Virginia: An Integrated Model"
+        funder: Administration for Children & Families (US Department of Health & Human Services)
+        role: PI
         date: 2008-2011
         summary:
           Administration for Children & Families (US Department of Health & Human Services) — $650,000
@@ -342,12 +350,16 @@ cv:
         subcategory: Data Integration & Management
         ordinal: "3"
       - name: I-81 Design & Implementation of Database Management System
+        funder: VA Department of Transportation (VDOT)
+        role: PI
         date: "2002"
         summary: VA Department of Transportation (VDOT) — $180,000 (PI)
         slug: I81_db
         subcategory: Data Integration & Management
         ordinal: "5"
       - name: "Intelligent Transportation Systems Implementation: Virginia Traveler Information Clearinghouse"
+        funder: Research and Special Programs Administration (US Department of Transportation)
+        role: PI
         date: 1999-2006
         summary:
           Research and Special Programs Administration (US Department of Transportation) — $1,800,000
@@ -362,18 +374,24 @@ cv:
         ordinal: "4"
         report: dataclearinghouse.pdf
       - name: I-81 Interim Data Operation Center
+        funder: VA Department of Transportation (VDOT)
+        role: PI
         date: 2002-2005
         summary: VA Department of Transportation (VDOT) — $747,817 (PI)
         slug: ops_center
         subcategory: Data Integration & Management
         ordinal: "4"
       - name: Advanced Travel Information Systems
+        funder: Virginia Department of Transportion (VDOT)
+        role: PI
         date: "1999"
         summary: Virginia Department of Transportion (VDOT) — $60,733 (PI)
         slug: ATIS
         subcategory: Data Integration & Management
         ordinal: "6"
       - name: 511 Virginia
+        funder: Virginia Department of Transportion (VDOT)
+        role: PI
         date: 2000-2003
         summary: Virginia Department of Transportion (VDOT) — $1,207,000 (PI)
         url: http://www.511virginia.org/
@@ -388,6 +406,8 @@ cv:
         ordinal: "3"
         report: 511VirginiaEvaluation.pdf
       - name: Travel Shenandoah – An Advanced Traveler Information System for Virginia’s Shenandoah Valley
+        funder: Virginia Department of Transportion (VDOT) and Shenandoah Telecommunications (SHENTEL)
+        role: PI
         date: 1998-2000
         summary:
           Virginia Department of Transportion (VDOT) and Shenandoah Telecommunications (SHENTEL)
@@ -409,6 +429,8 @@ cv:
       - name:
           Design and Implementation of a Truck Fleet Alert Service for I-81 and the Virginia Inland
           Port/Port of Virginia
+        funder: Virginia Department of Transportation (VDOT)
+        role: PI
         date: 1999-2000
         summary: Virginia Department of Transportation (VDOT) — $75,000 (PI)
         abstract:
@@ -421,6 +443,8 @@ cv:
         ordinal: "7"
         report: TruckFleetSupportProgramEvaluation.pdf
       - name: Travel Virginia – A Statewide System of Private-Public Partnerships
+        funder: Virginia Department of Transportation (VDOT)
+        role: Co-PI
         date: 1999-2000
         summary: Virginia Department of Transportation (VDOT) — $200,000 (Co-PI)
         abstract:
@@ -431,6 +455,8 @@ cv:
         ordinal: "1"
         report: TravelVirginia.pdf
       - name: Enhanced Night Visibility
+        funder: Federal Highway Administration (FHWA), US Department of Transportation (USDOT)
+        role: Co-PI
         date: 1997-2002
         summary:
           Federal Highway Administration (FHWA), US Department of Transportation (USDOT) — $125,000
@@ -443,6 +469,8 @@ cv:
         ordinal: "2"
         report: Enhanced Night Visibility Series.pdf
       - name: Bedford Ride
+        funder: Bedford County, VA
+        role: PI
         date: 2000-2001
         summary: Bedford County, VA — $86,000 (PI)
         abstract:
@@ -456,6 +484,8 @@ cv:
         media1: BedfordRideArticle.jpg
         media1title: Medical Transportation Program Supported By VTTI Flourishes
       - name: ACCESS to Rides – A Dynamic System for Volunteer and Transportation Resource Management
+        funder: Federal Highway Administartion (FHWA), US Department of Transportation (USDOT)
+        role: PI
         date: 1998-2002
         summary:
           Federal Highway Administartion (FHWA), US Department of Transportation (USDOT) — $56,000
@@ -469,6 +499,8 @@ cv:
         ordinal: "2"
         report: AccessToRidesDatabaseUserGuide.pdf
       - name: Wireless Linear LAN for Interstate 81 (Salem District)
+        funder: Virginia Department of Transportion (VDOT)
+        role: PI
         date: 2003-2005
         summary: Virginia Department of Transportion (VDOT) — $593,603 (PI)
         abstract:
@@ -481,6 +513,8 @@ cv:
         subcategory: Wireless Technologies
         ordinal: "1"
       - name: US460 Wireless Corridor
+        funder: Virginia Department of Transportion (VDOT)
+        role: PI
         date: 2001-2004
         summary: Virginia Department of Transportion (VDOT) — $250,000 (PI)
         abstract:
@@ -493,6 +527,8 @@ cv:
         ordinal: "3"
         report: 460wireless.pdf
       - name: I-81 Video System Design & Implementation
+        funder: USDOT Center for ITS Implementation Research
+        role: PI
         date: "2003"
         award: $80,000
         summary: USDOT Center for ITS Implementation Research — $80,000 (PI)
@@ -510,12 +546,16 @@ cv:
       - name:
           Development of cisco-based urban wireless networks for infrastructure surveillance and public
           fleet communications
+        funder: Cisco Systems, Inc.
+        role: PI
         date: "2005"
         summary: Cisco Systems, Inc. — $89,000 (PI)
         slug: cisco_wireless
         subcategory: Wireless Technologies
         ordinal: "3"
       - name: Deployment and performance testing of an 8 hop 4.9hgz cisco metro grid on the smart road
+        funder: Cisco Systems, Inc.
+        role: PI
         date: 2005-2006
         summary: Cisco Systems, Inc. — $100,000 (PI)
         slug: smart_road_wireless
@@ -524,6 +564,8 @@ cv:
       - name:
           "Virginia's Wounded Warriors: Assessment of the Experiences, Supportive Service Needs and
           Service Gaps of Veterans within the Commonwealth of Virginia"
+        funder: Virginia Department of Veteran Services
+        role: Co-PI
         date: 2009-2010
         summary: Virginia Department of Veteran Services — $148,780 (Co-PI)
         abstract:
@@ -539,6 +581,8 @@ cv:
       - name:
           "Saving Dollars While Making Sense: Comparing Operational Costs of Intergenerational Shared
           Site Facilities"
+        funder: Generations United (GU) and the MET Life Foundation
+        role: Co-PI
         date: 2006-2007
         summary: Generations United (GU) and the MET Life Foundation — $14,000 (Co-PI)
         abstract:
@@ -551,6 +595,8 @@ cv:
         ordinal: "3"
         report: Shared_Site_Cost_Savings_Final.pdf
       - name: I-81 Evaluation Framework
+        funder: Virginia Department of Transportion (VDOT)
+        role: PI
         date: 2002-2004
         summary: Virginia Department of Transportion (VDOT) — $140,200 (PI)
         abstract:
@@ -567,6 +613,8 @@ cv:
         ordinal: "2"
         report: I-81 ITS Program Evaluation Framework.pdf
       - name: Case Study Evaluation of the Virginia Department of Transportation’s I-81 ITS Program
+        funder: Virginia Department of Transportion (VDOT)
+        role: PI
         date: "2003"
         summary: Virginia Department of Transportion (VDOT) — $140,200 (PI)
         abstract:
@@ -579,12 +627,16 @@ cv:
         ordinal: "3"
         report: Case Study I-81 ITS Program.pdf
       - name: Corridor Concept of Operations
+        funder: Virginia Department of Transportion (VDOT)
+        role: PI
         date: "2001"
         summary: Virginia Department of Transportion (VDOT) — $50,000 (PI)
         slug: CorridorConceptOps
         subcategory: Program Evaluation/Policy Analysis
         ordinal: "5"
       - name: Staunton District ITS Concept of Operations
+        funder: Virginia Department of Transportion (VDOT)
+        role: PI
         date: "2000"
         summary: Virginia Department of Transportion (VDOT) — $125,000 (PI)
         abstract:
@@ -594,6 +646,8 @@ cv:
         subcategory: Program Evaluation/Policy Analysis
         ordinal: "5"
       - name: I-81 Intelligent Transportation Systems Task Force
+        funder: Virginia Department of Transportion (VDOT)
+        role: PI
         date: 2000-2001
         summary: Virginia Department of Transportion (VDOT) — $275,000 (PI)
         abstract:
@@ -609,6 +663,8 @@ cv:
       - name:
           Building Research Infrastructure and Community to Advance Social Scientific and Educational
           Use of Administrative Data
+        funder: National Science Foundation
+        role: Co-PI
         date: 2013-2017
         award: $500,004
         summary: National Science Foundation — $500,004 (Co-PI)
@@ -616,6 +672,8 @@ cv:
         subcategory: Data Integration & Management
         ordinal: "2"
       - name: Regional Pedestrian Activity Measurement
+        funder: USDOT Center for ITS Implementation Research
+        role: PI
         date: "2006"
         summary: USDOT Center for ITS Implementation Research — $50,000 (PI)
         abstract:
@@ -630,6 +688,8 @@ cv:
         ordinal: "1"
         report: VTTI_Ped_FINRPT_FINAL.pdf
       - name: Virginia Department of Emergency Management (VDEM) Data Flows -- Establishing a Baseline
+        funder: VA Department of Emergency Management
+        role: PI
         date: "2016"
         summary: VA Department of Emergency Management — $50,000 (PI)
         slug: VDEM
@@ -638,6 +698,8 @@ cv:
       - name:
           Baseline Distinct Counts of Select Data Sets to Support Early Childhood Integrated Data System
           (ECIDS) Establishment
+        funder: Virginia Early Childhood Foundation (VECF)
+        role: PI
         date: "2018"
         summary: Virginia Early Childhood Foundation (VECF) — $75,000 (PI)
         abstract:
@@ -650,6 +712,8 @@ cv:
         ordinal: "1"
         report: Distinct Counts from VLDS to Support ECIDS.pdf
       - name: Iowa Early Childhood Integrated Data System (IDS) Development Support
+        funder: Iowa State University
+        role: PI
         date: 2019-2020
         summary: Iowa State University — $77,761 (PI)
         abstract:
@@ -662,6 +726,8 @@ cv:
         subcategory: Data Integration & Management
         ordinal: "1"
       - name: The American Soldier in World War II - Advanced Data Operations
+        funder: National Endowment for the Humanities
+        role: PI
         date: "2021"
         summary:
           National Endowment for the Humanities — $60,971 (part of a larger American Soldier in World
@@ -677,6 +743,8 @@ cv:
         subcategory: Data Integration & Management
         ordinal: "1"
       - name: VDH Data Commons
+        funder: U.S. Centers for Disease Control (via the Virginia Department of Health)
+        role: PI
         date: 2021-2024
         award: $1,150,000
         summary: U.S. Centers for Disease Control (via the Virginia Department of Health) — $1,150,000 (PI)
@@ -688,6 +756,8 @@ cv:
         subcategory: Data Integration & Management
         ordinal: "1"
       - name: Social Impact Data Commons Implementation – National Capital Region
+        funder: Mastercard Center for Inclusive Growth
+        role: PI
         date: 2021-2025
         award: $1,100,000
         summary: Mastercard Center for Inclusive Growth — $1,100,000 (PI)
