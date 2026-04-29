@@ -126,7 +126,7 @@ def test_presentation_basic():
         "subcategory": "Lecture",
     }
     out = presentation_entry_to_speaking(entry)
-    assert out["name"] == "The Social Impact Data Commons"
+    assert out["title"] == "The Social Impact Data Commons"
     assert out["date"] == "2023-12-02"
     assert out["slug"] == "COPAFS"
     assert out["subcategory"] == "Lecture"

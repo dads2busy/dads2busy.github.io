@@ -93,7 +93,7 @@ def project_entry_to_research(entry: dict) -> dict:
 
 
 def presentation_entry_to_speaking(entry: dict) -> dict:
-    out: dict = {"name": entry["name"]}
+    out: dict = {"title": entry["name"]}
     if entry.get("date"):
         out["date"] = entry["date"]
     if entry.get("content"):
