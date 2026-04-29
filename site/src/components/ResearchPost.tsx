@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { ResearchPost as ResearchPostType } from "@/lib/types";
 
 interface Props {
@@ -17,11 +16,7 @@ export default function ResearchPost({ post }: Props) {
 
   return (
     <div className="mb-6">
-      <h4 className="font-bold">
-        <Link href={`/${post.year}/${post.month}/${post.slug}`}>
-          {post.title}
-        </Link>
-      </h4>
+      <h4 className="font-bold">{post.title}</h4>
       <table className="text-sm mt-1">
         <tbody>
           {post.award && (
@@ -46,6 +41,12 @@ export default function ResearchPost({ post }: Props) {
             <tr>
               <td className="pr-4 font-semibold align-top">Dates:</td>
               <td>{post.dates}</td>
+            </tr>
+          )}
+          {post.abstract && post.abstract.trim() !== "" && (
+            <tr>
+              <td className="pr-4 font-semibold align-top">Abstract:</td>
+              <td>{post.abstract}</td>
             </tr>
           )}
         </tbody>
