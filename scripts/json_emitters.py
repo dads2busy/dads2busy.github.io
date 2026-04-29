@@ -53,7 +53,7 @@ def publication_entry_to_writing(entry: dict) -> dict:
     if website:
         out["website"] = website
     out["ordinal"] = _coerce_ordinal(entry.get("ordinal"))
-    _passthrough(entry, out, ("slug", "subcategory", "content", "editors", "pages"))
+    _passthrough(entry, out, ("slug", "subcategory", "abstract", "editors", "pages"))
     return out
 
 
@@ -63,8 +63,8 @@ def experience_entry_to_working(entry: dict) -> dict:
         out["dates"] = entry["date"]
     if entry.get("summary"):
         out["subtitle"] = entry["summary"]
-    if entry.get("content"):
-        out["content"] = entry["content"]
+    if entry.get("abstract"):
+        out["abstract"] = entry["abstract"]
     out["ordinal"] = _coerce_ordinal(entry.get("ordinal"))
     _passthrough(entry, out, ("slug", "subcategory"))
     return out
@@ -74,8 +74,8 @@ def project_entry_to_research(entry: dict) -> dict:
     out: dict = {"title": entry["name"]}
     if entry.get("date"):
         out["dates"] = entry["date"]
-    if entry.get("content"):
-        out["content"] = entry["content"]
+    if entry.get("abstract"):
+        out["abstract"] = entry["abstract"]
     if entry.get("url"):
         out["website"] = entry["url"]
     out["ordinal"] = _coerce_ordinal(entry.get("ordinal"))
@@ -96,8 +96,8 @@ def presentation_entry_to_speaking(entry: dict) -> dict:
     out: dict = {"title": entry["name"]}
     if entry.get("date"):
         out["date"] = entry["date"]
-    if entry.get("content"):
-        out["content"] = entry["content"]
+    if entry.get("abstract"):
+        out["abstract"] = entry["abstract"]
     if entry.get("url"):
         out["website"] = entry["url"]
     _passthrough(
@@ -117,8 +117,8 @@ def teaching_entry_to_teaching(entry: dict) -> dict:
     out: dict = {"title": entry["name"]}
     if entry.get("date"):
         out["date"] = entry["date"]
-    if entry.get("content"):
-        out["content"] = entry["content"]
+    if entry.get("abstract"):
+        out["abstract"] = entry["abstract"]
     if entry.get("url"):
         out["website"] = entry["url"]
     _passthrough(entry, out, ("slug",))

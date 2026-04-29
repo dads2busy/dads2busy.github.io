@@ -148,7 +148,7 @@ def writing_entry_to_publication(entry: dict) -> dict:
             out["local_path"] = local
 
     # Custom keys preserved verbatim — only when populated.
-    for key in ("slug", "subcategory", "content"):
+    for key in ("slug", "subcategory", "abstract"):
         val = entry.get(key)
         if val:
             out[key] = val
@@ -178,8 +178,8 @@ def working_entry_to_normal(entry: dict) -> dict:
         out["date"] = entry["dates"]
     if entry.get("subtitle"):
         out["summary"] = entry["subtitle"]
-    if entry.get("content"):
-        out["content"] = entry["content"]
+    if entry.get("abstract"):
+        out["abstract"] = entry["abstract"]
     _passthrough_custom(entry, out, ("slug", "subcategory", "ordinal"))
     return out
 
@@ -202,8 +202,8 @@ def research_entry_to_normal(entry: dict) -> dict:
         out["url"] = url
     if local:
         out["local_path"] = local
-    if entry.get("content"):
-        out["content"] = entry["content"]
+    if entry.get("abstract"):
+        out["abstract"] = entry["abstract"]
 
     _passthrough_custom(
         entry, out,
@@ -238,8 +238,8 @@ def speaking_entry_to_normal(entry: dict) -> dict:
         out["url"] = url
     if local:
         out["local_path"] = local
-    if entry.get("content"):
-        out["content"] = entry["content"]
+    if entry.get("abstract"):
+        out["abstract"] = entry["abstract"]
 
     _passthrough_custom(
         entry, out,
@@ -262,7 +262,7 @@ def teaching_entry_to_normal(entry: dict) -> dict:
         out["url"] = url
     if local:
         out["local_path"] = local
-    if entry.get("content"):
-        out["content"] = entry["content"]
+    if entry.get("abstract"):
+        out["abstract"] = entry["abstract"]
     _passthrough_custom(entry, out, ("slug",))
     return out

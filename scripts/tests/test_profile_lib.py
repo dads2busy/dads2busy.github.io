@@ -169,7 +169,7 @@ SAMPLE_WRITING_ENTRY = {
     "DOI": "https://doi.org/10.18130/ce97-sp05",
     "website": "https://doi.org/10.18130/ce97-sp05",
     "ordinal": "",
-    "content": "The proposed Curated Data Enterprise...",
+    "abstract": "The proposed Curated Data Enterprise...",
 }
 
 
@@ -193,7 +193,7 @@ def test_writing_entry_custom_keys_preserved():
     out = writing_entry_to_publication(SAMPLE_WRITING_ENTRY)
     assert out["slug"] == "census_curated_data_enterprise"
     assert out["subcategory"] == "Research/Technical Reports"
-    assert out["content"].startswith("The proposed Curated Data Enterprise")
+    assert out["abstract"].startswith("The proposed Curated Data Enterprise")
 
 
 def test_writing_entry_empty_doi_omits_field():
@@ -239,14 +239,14 @@ def test_working_entry_basic():
         "ordinal": 1,
         "slug": "associate-research-professor",
         "date": "2000-11-08",
-        "content": "Dr. Schroeder's overarching research focus...",
+        "abstract": "Dr. Schroeder's overarching research focus...",
     }
     out = working_entry_to_normal(entry)
     assert out["name"] == "Associate Research Professor"
     assert out["date"] == "2018-Present"
     assert out["summary"] == "Research Associate Professor at Social and Decision Analytics Division, Bioinformatics Institute, University of Virginia"
     assert out["slug"] == "associate-research-professor"
-    assert out["content"].startswith("Dr. Schroeder")
+    assert out["abstract"].startswith("Dr. Schroeder")
     assert out["ordinal"] == "1"  # int coerced to str to satisfy RenderCV template engine
 
 
@@ -262,7 +262,7 @@ def test_research_entry_basic():
         "website": "",
         "ordinal": 9,
         "slug": "atis_rce",
-        "content": "",
+        "abstract": "",
     }
     out = research_entry_to_normal(entry)
     assert out["name"] == "ATIS Implementation Center"

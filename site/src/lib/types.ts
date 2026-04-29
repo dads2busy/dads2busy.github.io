@@ -8,7 +8,7 @@ export interface BasePost {
   subcategory?: string;
   comments?: boolean;
   ordinal?: number;
-  content: string;
+  abstract: string;
   htmlContent: string;
   website?: string;
 }

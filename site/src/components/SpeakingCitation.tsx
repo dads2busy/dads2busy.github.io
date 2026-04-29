@@ -6,7 +6,7 @@ interface Props {
 }
 
 export default async function SpeakingCitation({ post }: Props) {
-  const htmlContent = await renderMarkdown(post.content);
+  const htmlContent = await renderMarkdown(post.abstract);
   const year = post.date ? post.date.slice(0, 4) : "";
   const media = [
     { link: post.media1, title: post.media1title },

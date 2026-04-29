@@ -15,7 +15,7 @@ export async function GET() {
       <title><![CDATA[${post.title}]]></title>
       <link>${SITE_URL}/${post.year}/${post.month}/${post.slug}/</link>
       <pubDate>${new Date(post.date).toUTCString()}</pubDate>
-      <description><![CDATA[${post.content.slice(0, 200)}]]></description>
+      <description><![CDATA[${post.abstract.slice(0, 200)}]]></description>
     </item>`
     )
     .join("");

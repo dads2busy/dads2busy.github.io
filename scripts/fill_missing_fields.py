@@ -34,7 +34,7 @@ def main() -> None:
     category_props: list[dict] = []
 
     for entry in pres:
-        content = entry.get("content") or ""
+        content = entry.get("abstract") or ""
         date = entry.get("date", "?")
         slug = entry.get("slug", "?")
 

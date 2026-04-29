@@ -9,7 +9,7 @@ export default async function TeachingPage() {
   const postsWithHtml = await Promise.all(
     posts.map(async (post) => ({
       ...post,
-      htmlContent: await renderMarkdown(post.content),
+      htmlContent: await renderMarkdown(post.abstract),
     }))
   );
 

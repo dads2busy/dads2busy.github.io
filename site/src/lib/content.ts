@@ -91,7 +91,7 @@ function loadJsonPosts(filename: string, category: string): BasePost[] {
       category,
       subcategory: (entry.subcategory as string) || undefined,
       ordinal: typeof entry.ordinal === "number" ? entry.ordinal : undefined,
-      content: (entry.content as string) || "",
+      abstract: (entry.abstract as string) || "",
       htmlContent: "",
       website: (entry.website as string) || undefined,
       dates,
@@ -133,7 +133,7 @@ export function getAllPosts(): BasePost[] {
       subcategory: data.subcategory || undefined,
       comments: data.comments,
       ordinal: data.ordinal,
-      content,
+      abstract: content,
       htmlContent: "",
       website: data.website || undefined,
     };

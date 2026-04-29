@@ -41,7 +41,7 @@ cv:
         summary:
           Research Associate Professor at Social and Decision Analytics Division, Bioinformatics
           Institute, University of Virginia
-        content:
+        abstract:
           "Dr. Schroeder's overarching research focus is the enablement of Evidence-Based Policy-Making
           and Program Evaluation through the Secure Liberation, Integration and Analysis of Administrative
           Data.
@@ -55,7 +55,7 @@ cv:
       - name: Senior Data Scientist & Architect
         date: 2014-2018
         summary: "Social Decisions & Analytics\tLab, Biocomplexity Institute at Virginia Tech (BI)"
-        content:
+        abstract:
           Responsible for planning, securing and executing major research projects focused on the
           techniques, methods, and theories related to the integration, storage, retrieval, sharing, and
           optimal use of policy-relevant data, information, and knowledge for the purposes of policy analysis
@@ -72,7 +72,7 @@ cv:
         summary: >-
           (2015-2018) Social & Decision Analytics Laboratory (SDAL), Biocomplexity Institute of Virginia Tech
           (2019-2024) Social & Decision Analytics Division (SDAD), University of Virginia Biocomplexity Institute
-        content: >-
+        abstract: >-
           The Data Science for Public Good (DSPG) program began as a joint effort of the Biocomplexity
           Institute of Virginia Tech and the Honors College. The DSPG program comprises graduate
           fellows selected from a competitive, nationwide search, and Virginia Tech Honors students,
@@ -82,7 +82,7 @@ cv:
       - name: "Information\tArchitect\t& Data\tScientist,\tLeader, Public\tPolicy Data\tGroup"
         date: 2010-2014
         summary: Virginia Tech Institute for Policy & Governance (VTIPG)
-        content:
+        abstract:
           "Responsible for leadership of\ta\tmultidisciplinary\tresearch program dedicated to conducting\
           \ policy\nanalyses and program evaluation using the techniques,\tmethods, and theories related\
           \ to the\tintegration,\nstorage, retrieval, sharing, and optimal use of policy relevant data,\t\
@@ -101,7 +101,7 @@ cv:
       - name: Research Scientist
         date: 2008-2010
         summary: Virginia Tech Institute for Policy & Governance (VTIPG)
-        content:
+        abstract:
           "Responsible for planning, securing and executing major research projects focused on the\
           \ techniques,\nmethods, and theories related to the integration,\tstorage, retrieval, sharing,\
           \ and optimal use of\npolicy-relevant data,\tinformation,\tand knowledge for the purposes of policy\
@@ -118,14 +118,14 @@ cv:
       - name: Visiting Assistant Professor
         date: 2007-2010
         summary: Virginia Tech Center for Public Administration & Policy (CPAP)
-        content: >-
+        abstract: >-
           Courses taught: Public Administration & Policy Inquiry (research design and statistics);
           Public Policy and Program Evaluation; Government Administration: Applied Technologies.
         ordinal: "5"
       - name: "Research Scientist, Director,\tCenter for Technology Deployment"
         date: 2004-2006
         summary: Virginia Tech Transportation Institute (VTTI)
-        content:
+        abstract:
           "Director of the first\tresearch center within the Virginia\tTech Transportation Institute\
           \ and, by itself,\nthe fifth largest research center at Virginia\tTech.\tThe director is responsible\
           \ for managing\napproximately 20\tresearch projects/year, 20\tfull-time and part-time staff members,\t\
@@ -144,7 +144,7 @@ cv:
       - name: Senior Research Associate, Leader, Information Applications Group
         date: 2002-2004
         summary: Virginia Tech Transportation Institute (VTTI)
-        content:
+        abstract:
           "The mission of the Information Applications Program was to utilize information technology\
           \ and\ninter-institutional (e.g.\tpublic-private) partnerships to develop and deploy new\tor enhanced\
           \ public\nservices.\tResponsibilities include the management of existing program development and\n\
@@ -161,14 +161,14 @@ cv:
       - name: Visiting Assistant Professor
         date: 2002-2010
         summary: Virginia Tech Center for Public Administration & Policy (CPAP)
-        content: >-
+        abstract: >-
           Courses taught: Public Administration & Policy Inquiry (research design and statistics);
           Public Policy and Program Evaluation; Government Administration: Applied Technologies.
         ordinal: "7"
       - name: "Senior Research\tAssociate"
         date: 1998-2002
         summary: Virginia Tech Transportation Institute (VTTI)
-        content:
+        abstract:
           "Served on numerous research teams taking responsibility for necessary policy analyses,
           stakeholder
 
@@ -180,14 +180,14 @@ cv:
       - name: Adjunct Instructor
         date: 1994-2001
         summary: Virginia Tech Center for Public Administration & Policy (CPAP)
-        content: >-
+        abstract: >-
           Courses taught: Statistical Methods; Computer Business Applications; Internet and
           Database Technologies; Public Budgeting; Policy Network Analysis.
         ordinal: "8"
       - name: Research Associate
         date: 1995-1996
         summary: National Academy of Public Administration (NAPA)
-        content:
+        abstract:
           "Standing Panel on\tExecutive Organization\tand\tManagement\nServed as\tthe Assistant to\
           \ the Director of a\tNational Academy of Public Administration study\nfocusing on the relationship\
           \ of the National Guard to public, non-profit, and private agencies in\nnatural disaster response\
@@ -197,7 +197,7 @@ cv:
       - name: Adjunct Instructor
         date: 1995-1996
         summary: Elon University Department of Political Science & Public Administration
-        content: >-
+        abstract: >-
           Courses taught: Public Administration; Policy Analysis.
         ordinal: "9"
     Research Projects:
@@ -206,7 +206,7 @@ cv:
         summary: National Center for Science and Engineering Statistics (NSF) — $101,000 (PI)
         slug: green_ai
         subcategory: Data Integration & Management
-        content: >-
+        abstract: >-
           Focuses on supplementing the Annual Business Survey with Large Language Models to
           produce additional data on the development of green products in the United States.
           Builds on previous work using Natural Language Processing and Machine Learning to
@@ -216,7 +216,7 @@ cv:
         summary: U.S. Army Research Institute for the Behavioral and Social Sciences — $813,848 (years 4–5) (PI)
         slug: army_pathways
         subcategory: Program Evaluation/Policy Analysis
-        content: >-
+        abstract: >-
           Identifies and develops data and statistical tools (scalable to large datasets) to
           (a) identify different classes or dimensions of career profiles representing different
           career trajectories or patterns, and (b) develop predictive models of individual career
@@ -228,7 +228,7 @@ cv:
         summary: Army Research Institute — $3,000,000 (Senior Personnel)
         slug: army_constructs
         subcategory: Program Evaluation/Policy Analysis
-        content: >-
+        abstract: >-
           Primary objective is to define and quantify the social component constructs of the
           Human Dimension and to use these as predictor constructs to describe and model Soldier
           and Team/Unit performance.
@@ -237,7 +237,7 @@ cv:
         summary: United States Department of Agriculture / National Science Foundation — $2,500,000 (Senior Personnel / Founding Co-PI)
         slug: stat_surveys
         subcategory: Data Integration & Management
-        content: >-
+        abstract: >-
           Explores and applies "Big Data" analytics for enhancement, improvement, or redesign of
           current surveys. Focus areas include identifying and collecting naturally occurring
           non-statistically designed data, assessing data quality of alternative sources, capturing
@@ -248,7 +248,7 @@ cv:
         summary: Army Research Institute — $1,691,337 (Co-PI)
         slug: dod_data
         subcategory: Data Integration & Management
-        content: >-
+        abstract: >-
           Assesses best approaches for successfully accessing and integrating DOD data and other
           data sources to expand the types of questions the data might inform, in particular the
           study of important recurring military issues. Assessment conducted within the context of
@@ -258,7 +258,7 @@ cv:
         summary: Laura and John Arnold Foundation — $144,000 (Co-PI)
         slug: arn_learn
         subcategory: Program Evaluation/Policy Analysis
-        content: >-
+        abstract: >-
           Planning grant to demonstrate and refine SDAL's Community Learning framework and to
           develop a plan for deploying it across Virginia and then nationally. Demonstration
           partners include government leaders in Arlington, Virginia and Virginia Tech Cooperative
@@ -268,7 +268,7 @@ cv:
         summary: University of Pennsylvania / Laura and John Arnold Foundation — $22,500 (Co-PI)
         slug: arn_evidence
         subcategory: Program Evaluation/Policy Analysis
-        content: >-
+        abstract: >-
           Aimed to promote more widespread implementation and testing of evidence-based policies
           and programs by creatively addressing existing limitations of Integrated Data System (IDS) use.
       - name: ATIS Implementation Center
@@ -281,7 +281,7 @@ cv:
         date: 2010-2013
         summary: U.S. Department of Education — $1,760,000 (PI)
         url: https://myvlds.virginia.gov/
-        content:
+        abstract:
           "Working with the Virginia Department of Education (VDOE), the Virginia Information Technologies
           Agency (VITA), the State Council of Higher Education (SCHEV), the Virginia Community College System,
           and Virginia’s workforce agencies on a $17.5 million grant to establish a comprehensive, longitudinal
@@ -304,7 +304,7 @@ cv:
         award: $110,840
         summary: Virginia Department of Social Services — $110,840 (PI)
         url: http://registry.fivehokies.com/
-        content:
+        abstract:
           The creation of an early childhood education workforce personnel and training registry
           system for the Commonwealth of Virginia is necessary for two reasons—to provide the most complete
           and best understanding of the day care environment a child has experienced in concert with the
@@ -327,7 +327,7 @@ cv:
           Administration for Children & Families (US Department of Health & Human Services) — $650,000
           (PI)
         url: http://www.childhands.net/
-        content:
+        abstract:
           "Using a federated data approach to multi-agency data integration, the central aim of Project
           Child HANDS (Child Care Subsidy, Health and Early Education: Helping Analyze Needed Data Securely)
           is to build an integrated, web-based data system for Virginia childhood initiatives aimed at low-income
@@ -352,7 +352,7 @@ cv:
         summary:
           Research and Special Programs Administration (US Department of Transportation) — $1,800,000
           (PI)
-        content:
+        abstract:
           Co-directed a $12 million / 6-year program to facilitate ITS deployment in the Commonwealth
           of Virginia. The Center for Technology Deployment was responsible for directly administering $1.8
           million over the 6-year period and focused on the design , development and production of the “Virginia
@@ -377,7 +377,7 @@ cv:
         date: 2000-2003
         summary: Virginia Department of Transportion (VDOT) — $1,207,000 (PI)
         url: http://www.511virginia.org/
-        content:
+        abstract:
           Contracted by the Virginia Department of Transportation in 2000 to investigate the feasibility
           of converting an existing ATIS, Travel Shenandoah (see below), into 511Virginia, an ATIS accessible
           to the public by dialing 511. Responsibilities included the design both conceptually, and technically
@@ -392,7 +392,7 @@ cv:
         summary:
           Virginia Department of Transportion (VDOT) and Shenandoah Telecommunications (SHENTEL)
           — $1,400,000 (PI)
-        content:
+        abstract:
           "Directed the conceptual and technical design, development, and deployment of a Traveler
           Information System in Virginia’s Shenandoah Valley: Travel Shenandoah (www.travelshenandoah.com).
           The system integrated current traffic & travel conditions, food and lodging information, traveler
@@ -411,7 +411,7 @@ cv:
           Port/Port of Virginia
         date: 1999-2000
         summary: Virginia Department of Transportation (VDOT) — $75,000 (PI)
-        content:
+        abstract:
           Truck Fleet Alert was built as a particular application of Travel Shenandoah. The system
           provided timely, relevant information on traffic and road conditions, weather, parking availability,
           route guidance, and other information for commercial traffic traveling through the Commonwealth
@@ -423,7 +423,7 @@ cv:
       - name: Travel Virginia – A Statewide System of Private-Public Partnerships
         date: 1999-2000
         summary: Virginia Department of Transportation (VDOT) — $200,000 (Co-PI)
-        content:
+        abstract:
           Co-directed a planning and design effort to replicate the success of Travel Shenandoah
           across the Commonwealth of Virginia.
         slug: TravelVirginia
@@ -435,7 +435,7 @@ cv:
         summary:
           Federal Highway Administration (FHWA), US Department of Transportation (USDOT) — $125,000
           (Co-PI)
-        content:
+        abstract:
           Worked with the Federal Highway Administration on a project to establish a policy implementation
           network for the nationwide deployment of UV-A Fluorescent headlamps and traffic control devices.
         slug: NightVis
@@ -445,7 +445,7 @@ cv:
       - name: Bedford Ride
         date: 2000-2001
         summary: Bedford County, VA — $86,000 (PI)
-        content:
+        abstract:
           Following on the success of the Access to Rides system in Montgomery County, VA, Bedford
           County, VA contracted with our research group to develop a strategic plan for medical ride-sharing
           and a software support system. The program was developed and is currently considered a Bedford
@@ -460,7 +460,7 @@ cv:
         summary:
           Federal Highway Administartion (FHWA), US Department of Transportation (USDOT) — $56,000
           (PI)
-        content:
+        abstract:
           Designed, developed and operated, in partnership with local non-profit and governmental
           organizations, a dynamic on-line scheduling system for managing a volunteer-based ride-sharing
           program in Virginia’s New River Valley.
@@ -471,7 +471,7 @@ cv:
       - name: Wireless Linear LAN for Interstate 81 (Salem District)
         date: 2003-2005
         summary: Virginia Department of Transportion (VDOT) — $593,603 (PI)
-        content:
+        abstract:
           Based on successful preliminary analysis of the US460 installation (see below), VDOT provided
           funding for a 10 mile section of Interstate 81 around Roanoke to covered with an 802.11 wireless
           spine, 9 digital cameras, and a series of digital traffic counters and weather stations. This
@@ -483,7 +483,7 @@ cv:
       - name: US460 Wireless Corridor
         date: 2001-2004
         summary: Virginia Department of Transportion (VDOT) — $250,000 (PI)
-        content:
+        abstract:
           Directed design, installation and operation of experimental 802.11 wireless corridor on
           US460 in Virginia. This project is being used by the Salem District of the Virginia Department
           of Transportation to demonstrate the benefits and costs of wireless backbone technology for managing
@@ -496,7 +496,7 @@ cv:
         date: "2003"
         award: $80,000
         summary: USDOT Center for ITS Implementation Research — $80,000 (PI)
-        content:
+        abstract:
           The goal of this project was to install several Internet-based traffic monitoring cameras
           along the Interstate corridor in the Northern Shenandoah Valley to provide video images to the
           Virginia Department of Transportation (VDOT) and to the traveling public via the 511 web page.
@@ -526,7 +526,7 @@ cv:
           Service Gaps of Veterans within the Commonwealth of Virginia"
         date: 2009-2010
         summary: Virginia Department of Veteran Services — $148,780 (Co-PI)
-        content:
+        abstract:
           Assessed the current service experiences (consumer satisfaction), emerging and unserved
           needs and service gaps within the range of veteran’s services available in the Commonwealth of
           Virginia. There are over 800,000 veterans residing within the Commonwealth of Virginia. While
@@ -541,7 +541,7 @@ cv:
           Site Facilities"
         date: 2006-2007
         summary: Generations United (GU) and the MET Life Foundation — $14,000 (Co-PI)
-        content:
+        abstract:
           Working with Generations United (GU) and Dr. Shannon Jarrott of the Virginia Tech Department
           of Human Development, tested the hypothesis that operational costs of day care facilities with
           intergenerational components are the same or less than the operational costs of day care facilities
@@ -553,7 +553,7 @@ cv:
       - name: I-81 Evaluation Framework
         date: 2002-2004
         summary: Virginia Department of Transportion (VDOT) — $140,200 (PI)
-        content:
+        abstract:
           The I-81 ITS Program is a framework for on-going coordination, planning, design, and implementation
           of ITS investments along the I-81 Corridor in Virginia. Numerous stakeholders are involved in
           the Program including the Virginia Department of Transportation (VDOT), who sponsors the Program,
@@ -569,7 +569,7 @@ cv:
       - name: Case Study Evaluation of the Virginia Department of Transportation’s I-81 ITS Program
         date: "2003"
         summary: Virginia Department of Transportion (VDOT) — $140,200 (PI)
-        content:
+        abstract:
           The primary goal of this report is to provide information to the Sponsors, Policy Committee,
           and Management of the I-81 ITS Program that may improve the Program. In order to do this, the
           report focuses on the development of the Program and the lessons learned. Through lessons learned,recommendations
@@ -587,7 +587,7 @@ cv:
       - name: Staunton District ITS Concept of Operations
         date: "2000"
         summary: Virginia Department of Transportion (VDOT) — $125,000 (PI)
-        content:
+        abstract:
           Conducted analysis and created report outlining the functions of the integrated regional
           ITS, the agencies involved in operating and managing the ITS, and each agency's roles and responsibilities.
         slug: StauntonConceptOps
@@ -596,7 +596,7 @@ cv:
       - name: I-81 Intelligent Transportation Systems Task Force
         date: 2000-2001
         summary: Virginia Department of Transportion (VDOT) — $275,000 (PI)
-        content:
+        abstract:
           "Directed an effort to plan for Intelligent Transportation Systems deployment in the I-81
           corridor in Virginia. This includes overseeing and participating in 6 technical working groups,
           including: Corridor Concept of Operation; Public Information & Marketing; Incident Response and
@@ -618,7 +618,7 @@ cv:
       - name: Regional Pedestrian Activity Measurement
         date: "2006"
         summary: USDOT Center for ITS Implementation Research — $50,000 (PI)
-        content:
+        abstract:
           "The goal of this project was to develop a detailed understanding of what would be required
           to undertake a wearable-technology pedestrian survey and to establish, as a foundation, the next
           step of technology prototyping. Over the long term, the goal would be to develop and deploy a
@@ -640,7 +640,7 @@ cv:
           (ECIDS) Establishment
         date: "2018"
         summary: Virginia Early Childhood Foundation (VECF) — $75,000 (PI)
-        content:
+        abstract:
           Integrated data across multiple state agencies to create a distinct count of children,
           birth to five, served by one or more early childhood programs and/or services. As a result of
           this research, these integrated data became a foundational metric for a range of future early
@@ -652,7 +652,7 @@ cv:
       - name: Iowa Early Childhood Integrated Data System (IDS) Development Support
         date: 2019-2020
         summary: Iowa State University — $77,761 (PI)
-        content:
+        abstract:
           Assisted ISU in the overall conceptualization and design of the separate processes, platforms,
           and infrastructure necessary to support an operational policy-oriented IDS. Additionally, supported
           the establishment of the Data Analytics Platform by developing the algorithms and attendant code
@@ -666,7 +666,7 @@ cv:
         summary:
           National Endowment for the Humanities — $60,971 (part of a larger American Soldier in World
           War II initiative led by Virginia Tech) (PI)
-        content:
+        abstract:
           Part of an open-access digital project funded by the National Endowment for the Humanities.
           Successfully applied a significant number of current data science approaches, including Advanced
           Data Wrangling, Natural Language Processing, Computational Text Analysis; Social Network Analysis,
@@ -681,7 +681,7 @@ cv:
         award: $1,150,000
         summary: U.S. Centers for Disease Control (via the Virginia Department of Health) — $1,150,000 (PI)
         url: https://uva-bi-sdad.github.io/vdh_rural_health_site
-        content:
+        abstract:
           Led the construction and deployment (Phases 1 & 2) of an interactive social impact data
           commons to support the dissemination of the Virginia Department of Health (VDH)’s Rural Health Plan.
         slug: VDHDataCommons
@@ -692,7 +692,7 @@ cv:
         award: $1,100,000
         summary: Mastercard Center for Inclusive Growth — $1,100,000 (PI)
         url: https://uva-bi-sdad.github.io/sdc.intro/
-        content:
+        abstract:
           Led a phased expansion of the Social Impact Data Commons, beginning with a pilot deployment
           for Arlington County, Virginia, and expanding to cover the full National Capital Region (including
           Fairfax County and surrounding jurisdictions). Applied a local-government stakeholder-centered
@@ -705,7 +705,7 @@ cv:
       - name: "Building Data Sharing Infrastructures: Taking Context and Stakeholders Seriously"
         date: "2012-11-17"
         summary: "Presentation at Global Forum on Urban and Regional Resilience (GFURR) Resilience Workshop, Virginia Tech"
-        content:
+        abstract:
           '**Schroeder, A.D.** (2012). "Building Data Sharing Infrastructures: Taking Context and
           Stakeholders Seriously." November 17, Global Forum on Urban and Regional Resilience (GFURR)
           Resilience Workshop, Virginia Tech.'
@@ -716,7 +716,7 @@ cv:
       - name: Association between perceived university environment and physical activity in college students
         date: "2012-11-01"
         summary: "Presentation at American Public Health Association 139th Annual Meeting and Exposition, Washington, DC"
-        content:
+        abstract:
           'Stephanie Goodwin, Hosig K.W., Serrano E., Redican K., **Schroeder A.D.**, You W., Anderson E.S.
           (2012). "Association between perceived university environment and physical activity in college
           students." November 1, American Public Health Association 139th Annual Meeting and Exposition,
@@ -727,7 +727,7 @@ cv:
       - name: Data - The New Asset Class
         date: "2012-04-06"
         summary: "Presentation at HPC Day, Virginia Tech"
-        content:
+        abstract:
           'Keller, S., **Schroeder, A.D.** (2012). "Data - The New Asset Class." April 6, HPC Day, Virginia
           Tech.'
         slug: hpc_day
@@ -736,7 +736,7 @@ cv:
       - name: Stakeholder Analysis
         date: "1999-04-10"
         summary: "Presentation at 60th Annual Meeting of the American Society for Public Administration, Orlando, FL"
-        content:
+        abstract:
           'Tennert, J.R., **Schroeder, A.D.** (1999). "Stakeholder Analysis." 60th Annual Meeting of the
           American Society for Public Administration, Orlando, FL.'
         slug: stakeholder-analysis-aspa-60
@@ -745,7 +745,7 @@ cv:
       - name: "Smart Metadata in Action: The Social Impact Data Commons"
         date: "2024-04-11"
         summary: "Presentation at Conference On Smart Metadata for Official Statistics 2024 (COSMOS 2024), Paris, France"
-        content:
+        abstract:
           'Joanna Schroeder, Alan Wang, Kathryn Linehan, Joel Thurston, **Aaron Schroeder** (2024).
           "Smart Metadata in Action: The Social Impact Data Commons." Conference On Smart Metadata for Official
           Statistics 2024 (COSMOS 2024), April 11-12, 2024, Paris, France.'
@@ -757,7 +757,7 @@ cv:
           Capital Region"
         date: "2023-12-02"
         summary: Lecture at Council of Professional Associations on Federal Statistics (COPAFS)
-        content:
+        abstract:
           'Schroeder, A.D. Lecture: "The Social Impact Data Commons: Supporting local equity-informed
           decision-making in the National Capital Region" (2023), Council of Professional Associations on
           Federal Statistics (COPAFS). Contributors: Aaron Schroeder.'
@@ -767,7 +767,7 @@ cv:
       - name: "Supporting Local Decision-Making through the Aggregation of ACS Demographic Estimates within Locally-Relevant Geographies"
         date: "2023-05-17"
         summary: Presenter/Panelist at 2023 ACS Data Users Conference
-        content:
+        abstract:
           'Schroeder, A.D. Presentation: "Supporting Local Decision-Making through the Aggregation
           of ACS Demographic Estimates within Locally-Relevant Geographies" (2023), 2023 ACS Data Users
           Conference.'
@@ -778,7 +778,7 @@ cv:
       - name: "Data Re-Use in Action: Social Impact Data Commons"
         date: "2022-05-06"
         summary: Presenter/Panelist at Mid-Atlantic Statistics Network (MASN)
-        content:
+        abstract:
           'Schroeder, A.D. Presentation: "Data Re-Use in Action: Social Impact Data Commons" (2022),
           Mid-Atlantic Statistics Network (MASN).'
         slug: a
@@ -786,7 +786,7 @@ cv:
       - name: "Introduction of the 2022-2026 Virginia Rural Health Plan and Data Commons"
         date: "2021-11-05"
         summary: Presenter/Panelist at 2021 Governor's Summit on Rural Prosperity
-        content:
+        abstract:
           'Schroeder, A.D. Presentation: "Introduction of the 2022-2026 Virginia Rural Health Plan
           and Data Commons" (2021), 2021 Governor''s Summit on Rural Prosperity, Farmville, VA.'
         slug: a
@@ -798,7 +798,7 @@ cv:
       - name: "Building Science for the Public Good (DSPG)"
         date: "2020-03-24"
         summary: Presenter/Panelist at Implementation Working Group, Open Data Charter
-        content:
+        abstract:
           'Schroeder, A.D. and Korkmaz, G. Presentation: "Building Science for the Public Good (DSPG)"
           (2020), Implementation Working Group, Open Data Charter.'
         slug: a
@@ -807,7 +807,7 @@ cv:
       - name: "Measuring the Scope and Impact of Open Source Software"
         date: "2019-09-23"
         summary: Presenter/Panelist at Government Advancement of Statistical Programming (GASP) Workshop
-        content:
+        abstract:
           'Robbins C., Korkmaz G., Calderón B.S., Kramer B., Schroeder A.D. Presentation: "Measuring
           the Scope and Impact of Open Source Software" (2019), Government Advancement of Statistical Programming
           (GASP) Workshop.'
@@ -818,7 +818,7 @@ cv:
       - name: "How to 'do' Data Science for the Public Good"
         date: "2019-05-23"
         summary: Presenter/Panelist at 2019 Midwest Big Data Summer School, Iowa State University
-        content:
+        abstract:
           'Schroeder, A.D. Presentation: "How to ''do'' Data Science for the Public Good" (2019),
           Keynote Speaker, Public Good Track, 2019 Midwest Big Data Summer School, Iowa State University,
           05/23/2019.'
@@ -829,7 +829,7 @@ cv:
       - name: "Data Platforms & Processes for Policy Analysis"
         date: "2019-03-26"
         summary: Presenter/Panelist at Data Science for the Public Good, Iowa State University
-        content:
+        abstract:
           'Schroeder, A.D. Presentation: "Data Platfroms & Processes for Policy Analysis" (2019).
           Data Science for the Public Good: Helping Communities Use Data to Make Better Decisions, Iowa
           State University, 03/26/2019.'
@@ -839,7 +839,7 @@ cv:
       - name: "Data Profiling, Cleaning, Linking & Exploration"
         date: "2019-03-25"
         summary: Presenter/Panelist at Data Science for the Public Good, Iowa State University
-        content:
+        abstract:
           'Schroeder, A.D. Presentation: "Data Profiling, Cleaning, Linking & Exploration" (2019).
           Data Science for the Public Good: Community Learning Through Data Discovery, Iowa State University,
           03/25/2019.'
@@ -848,7 +848,7 @@ cv:
       - name: "Multi-Family Address List Creation Using Open Data & Delivery-Point Validation"
         date: "2018-11-14"
         summary: Presenter/Panelist at 2018 ADRF Network Research Conference
-        content:
+        abstract:
           'Schroeder, A.D. Presentation: "Multi-Family Address List Creation Using Open Data & Delivery-Point
           Validation" (2018). 2018 ADRF Network Research Conference Presentations. 10.'
         slug: a
@@ -858,7 +858,7 @@ cv:
       - name: "Repurposing Administrative Data for Statistical Purposes"
         date: "2017-06-07"
         summary: Presenter/Panelist at National Academy of Sciences
-        content:
+        abstract:
           'Schroeder, A.D. Presentation: "Repurposing Administrative Data for Statistical Purposes",
           National Academy of Sciences workshop on Data Privacy for Employment Data, Jun 6 2017, Washington
           DC.'
@@ -869,7 +869,7 @@ cv:
       - name: "Pre-Summit Workshop on Technology to Support Data Sharing"
         date: "2017-04-10"
         summary: Committe Member at Governor's Data Analytics Summit
-        content:
+        abstract:
           'Schroeder, A.D. Committee: "Pre-Summit Workshop on Technology to Support Data Sharing,
           Governor’s Data Analytics Summit". Charlottesville, Va.'
         slug: a
@@ -880,7 +880,7 @@ cv:
         summary:
           Panelist at Office of Planning, Research and Evaluation (OPRE), US DHHS Administration
           for Children and Families
-        content:
+        abstract:
           'Schroeder, A.D. Presentation: "Building Data Sharing Infrastructures at the State Level:
           Context, Stakeholders and Technology". Presentated at "The Promises and Challenges of Administrative
           Data in Social Policy Research" meeting sponsored by the Office of Planning, Research and Evaluation
@@ -896,7 +896,7 @@ cv:
       - name: "Data - The New Asset Class"
         date: "2015-04-06"
         summary: Presenter at Second Annual High Performance Computing Day, Virginia Tech
-        content:
+        abstract:
           'Keller, S., Schroeder, A.D. Presentation: "Data - The New Asset Class". Second Annual
           High Performance Computing Day. Apr 6 2015. Virginia Tech, Blacksburg, Va.'
         slug: a
@@ -905,7 +905,7 @@ cv:
       - name: "Building Data Sharing Infrastructures: Taking Stakeholders and Context Seriously"
         date: "2014-10-14"
         summary: Panelist at Normative Dimension of Resilience Conference
-        content:
+        abstract:
           "Schroeder, A.D. Presentation: Building Data Sharing Infrastructures: Taking Stakeholders
           and Context Seriously. Workshop on Resilience Research: The Living-Lab as a Model of Translation
           of Resilience Technology and Policy. Normative Dimension of Resilience Conference."
@@ -915,7 +915,7 @@ cv:
       - name: "Data: Security and Technology"
         date: "2013-06-25"
         summary: Panelist at 2013 VLDS Insights Conference
-        content:
+        abstract:
           "Schroeder, A.D. Panelist. Data: Security and Technology, 2013 VLDS Insights Conference.
           Session provided and overview of data security and privacy and how they are the foundation of the VLDS platform. In addition to a presentation of VLDS data and its uses, presented the details of VLDS implementation for privacy protection."
         slug: a
@@ -925,7 +925,7 @@ cv:
       - name: "Project Child HANDS: Child Care, Subsidy, and Early Education"
         date: "2013-06-25"
         summary: Panelist at 2013 VLDS Insights Conference
-        content:
+        abstract:
           "Schroeder, A.D. Presentation. Project Child HANDS: Child Care, Subsidy, and Early Education:
           Helping Analyze Needed Data Securely, 2013 VLDS Insights Conference. Provided an overview and
           status of Project Child HANDS."
@@ -935,7 +935,7 @@ cv:
       - name: "Federated and Centralized Models"
         date: "2013-02-11"
         summary: Panelist at 26th Annual Management Information Systems (MIS) Conference, NCES, IES
-        content: "Schroeder, A.D. Panelist: Federated and Centralized Models. 26th Annual Management Information Systems (MIS) Conference, The National Center for Education Statistics (NCES), U.S. Department of Education’s Institute of Education Sciences (IES). In this session, panelists from Arkansas, Mississippi, Virginia, and Kentucky discussed their states’ use of a federated or centralized model of system architecture. Panelists presented their rationale for choosing the model they did, the roles and responsibilities of participating agencies, the matching process employed, data access and response time, and rules for data integrity."
+        abstract: "Schroeder, A.D. Panelist: Federated and Centralized Models. 26th Annual Management Information Systems (MIS) Conference, The National Center for Education Statistics (NCES), U.S. Department of Education’s Institute of Education Sciences (IES). In this session, panelists from Arkansas, Mississippi, Virginia, and Kentucky discussed their states’ use of a federated or centralized model of system architecture. Panelists presented their rationale for choosing the model they did, the roles and responsibilities of participating agencies, the matching process employed, data access and response time, and rules for data integrity."
         slug: a
         subcategory: Panelist
         sponsor: 26th Annual Management Information Systems (MIS) Conference
@@ -943,7 +943,7 @@ cv:
       - name: "Virginia Longitudinal Data System—Accessing Multiple Datasets and Merging Records"
         date: "2013-02-11"
         summary: Panelist at 26th Annual Management Information Systems (MIS) Conference, NCES, IES
-        content:
+        abstract:
           "Schroeder, A.D. Panelist: Virginia Longitudinal Data System—Accessing Multiple Datasets
           and Merging Records. 26th Annual Management Information Systems (MIS) Conference, The National
           Center for Education Statistics (NCES), U.S. Department of Education’s Institute of Education
@@ -955,7 +955,7 @@ cv:
         date: "2012-05-31"
         summary: Presenter at Virginia's Early Childhood Advisory Council (ECAC)
         local_path: /downloads/Governors_ECAC_Slides_5_30_12.pdf
-        content:
+        abstract:
           Schroeder, A.D., & Bradburn, I. Presented to Virginia’s Early Childhood Advisory Council,
           (ECAC). This presentation included recent progress on Project Child HANDS and a video about how the system works.
         slug: a
@@ -965,7 +965,7 @@ cv:
       - name: "BUILD Initiative: Early Learning Challenge State Plans"
         date: "2011-10-17"
         summary: Expert at BUILD Initiative / Early Learning Challenge Collaborative
-        content:
+        abstract:
           "Schroeder, A.D. Expert Forum: BUILD Initiative. August. Invited by the Early Learning
           Challenge Collaborative to advise a select number of state delegations on their efforts at drafting plans to build integrated early childhood systems as part of the US Department of Education Race-To-The-Top Early Learning Challenge Grant Program. The Early Learning Challenge Collaborative (ELCC) is a partnership between the BUILD Initiative and the First Five Years Fund supported by private foundation dollars and was established to support states as they plan, apply for, and implement the Early Learning Challenge."
         slug: a
@@ -974,7 +974,7 @@ cv:
       - name: "Early Learning Challenge Collaborative Data Systems Webinar"
         date: "2011-08-10"
         summary: Expert at Early Learning Challenge Collaborative
-        content:
+        abstract:
           "Schroeder, A.D. Expert Webinar: Early Learning Challenge Collaborative. August. Invited
           expert on government data systems integration to advise multiple state delegations on their efforts at drafting plans to build integrated early childhood systems as part of the US Department of Education Race-To-The-Top Early Learning Challenge Grant Program."
         slug: a
@@ -983,7 +983,7 @@ cv:
       - name: "US Department of Education Race-To-The-Top Early Learning Challenge"
         date: "2011-08-01"
         summary: Expert at US Department of Education Race-To-The-Top Early Learning Challenge Grant Program
-        content:
+        abstract:
           'Schroeder, A.D. Expert Webinar: US Department of Education Race-To-The-Top Early Learning Challenge Grant Program. August. Invited expert for ""Part Two: Data System Development - Talk
           Directly to the Experts" webinar. Invited expert on government data systems integration to advise multiple state delegations on their efforts at drafting plans to build integrated early childhood systems as part of the US Department of Education Race-To-The-Top Early Learning Challenge Grant Program.'
         slug: a
@@ -992,14 +992,14 @@ cv:
       - name: "Developing Unified Early Childhood Data Systems"
         date: "2011-04-27"
         summary: Panelist at 2011 ACF Early Childhood State Advisory Council Grantees Meeting
-        content: "Schroeder, A.D. Panelist: Developing Unified Early Childhood Data Systems. 2011 ACF Early Childhood State Advisory Council Grantees Meeting. Arlington, VA."
+        abstract: "Schroeder, A.D. Panelist: Developing Unified Early Childhood Data Systems. 2011 ACF Early Childhood State Advisory Council Grantees Meeting. Arlington, VA."
         slug: a
         subcategory: Panelist
         sponsor: ACF Early Childhood State Advisory Council
       - name: "Project Child HANDS Status Update"
         date: "2010-12-08"
         summary: Presentation at Governor's Early Childhood Advisory Council (ECAC)
-        content:
+        abstract:
           "Schroeder, A.D. and Bradburn, I. Presentation: Made a presentation on Project Child HANDS
           and current status to the Governor's Early Childhood Advisory Council (ECAC). The ECAC is chaired by the Secretary of Education, co-chaired by the President of the Virginia Early Childhood Foundation, and is comprised of the Secretary of Commerce, the Secretary of Health and Human Services, the Secretary of Finance, the Governor’s Director of Policy, the State Superintendent of Instruction, the Commissioner of the Department of Social Services, the Commissioner of Health, the Commissioner of Behavioral Health and Rehabilitative Services, the Director of Medical Assistance Services, the Executive Director of the State Council Higher Education, the Chancellor of the Virginia Community College System, the Executive Director of the Virginia Economic Development Partnership, the Director of the state Head Start Collaboration office, and many assigned local representatives."
         slug: a
@@ -1008,7 +1008,7 @@ cv:
       - name: "Child Care Data Collaboration, Integration and Linkages"
         date: "2010-11-10"
         summary: Presentation at 2010 USHHS Child Care Policy Research Consortium (CCPRC)
-        content:
+        abstract:
           "Schroeder, A.D., & Bradburn, I. Presentation: 2010 USHHS Child Care Policy Research Consortium
           (CCPRC). November. Presented for the Child Care Data Collaboration, Integration and Linkages session
           of the 2010 USHHS Child Care Policy Research Consortium (CCPRC)."
@@ -1019,7 +1019,7 @@ cv:
         summary:
           Workshop at National Institute of Statistical Sciences (NISS), the National Center for
           Education Statistics (NCES), and the Institute of Education Sciences (IES)
-        content:
+        abstract:
           "Schroeder, A.D. Presentation & Workshop: National Institute of Statistical Sciences (NISS)
           , the National Center for Education Statistics (NCES), and the Institute of Education Sciences
           (IES). February 16-17. NULL. Invited to present on methods of public-sector data integration and issues created by federal and state privacy laws to a workshop on Research Use of State Longitudinal Data Systems sponsored by the National Institute of Statistical Sciences (NISS) , the National Center for Education Statistics (NCES), and the Institute of Education Sciences (IES)."
@@ -1030,21 +1030,21 @@ cv:
       - name: "Child Care Policy Research Panel"
         date: "2009-10-28"
         summary: Presentation at National Child Care Policy Research Consortium
-        content: 'Schroeder, A.D. and Bradburn, I. Presentation: Invited speakers at the annual National Child Care Policy Research Consortium in Washington, D.C. Drs. Schroeder and Bradburn presented for the panel "The Role of Data System Integration in Policy, Practice, and Research". The HANDS team was specifically asked to discuss some of the ways that integrated data systems like HANDS can be used to answer research questions, analyze policies, and inform practice.'
+        abstract: 'Schroeder, A.D. and Bradburn, I. Presentation: Invited speakers at the annual National Child Care Policy Research Consortium in Washington, D.C. Drs. Schroeder and Bradburn presented for the panel "The Role of Data System Integration in Policy, Practice, and Research". The HANDS team was specifically asked to discuss some of the ways that integrated data systems like HANDS can be used to answer research questions, analyze policies, and inform practice.'
         slug: a
         subcategory: Presentations/Workshops
         sponsor: National Child Care Policy Research Consortium
       - name: "Intelligent Transportation Systems of Virginia"
         date: "2003-11-01"
         summary: Workshop at Intelligent Transportation Systems of Virginia Annual Conference
-        content: "Schroeder, A.D. Workshop: Intelligent Transportation Systems of Virginia Annual Conference."
+        abstract: "Schroeder, A.D. Workshop: Intelligent Transportation Systems of Virginia Annual Conference."
         slug: a
         subcategory: Presentations/Workshops
         sponsor: Intelligent Transportation Systems of Virginia
       - name: "Rural Advanced Traveler Information Systems"
         date: "2003-10-10"
         summary: Presentation at Rural Advanced Traveler Information Systems Conference
-        content:
+        abstract:
           "Schroeder, A.D. Presentation: Rural Advanced Traveler Information Systems Conference,
           Tampa Bay, FL."
         slug: a
@@ -1052,7 +1052,7 @@ cv:
       - name: "Technology in Public Administration"
         date: "2000-11-08"
         summary: Presentation at Technology in Public Administration Conference, University of LaVerne
-        content:
+        abstract:
           "Schroeder, A.D. Presentation: Technology in Public Administration Conference, University
           of LaVerne, California."
         slug: a
@@ -1083,7 +1083,7 @@ cv:
       - name: "The Social Impact Data Commons: Regional Data-Driven Decision-Making"
         date: "2023-10-27"
         summary: Presenter at BigSurv23 Conference, Quito, Ecuador
-        content: >-
+        abstract: >-
           Schroeder, A.D. Presentation: "The Social Impact Data Commons: Regional Data-Driven
           Decision-Making." BigSurv23 Conference. Quito, Ecuador. October 27, 2023.
           https://aenu.ec/abstracts/#36
@@ -1091,7 +1091,7 @@ cv:
       - name: "Virginia's New Rural Health Data Commons: Informing Health Policy through Featuring Health Related Metrics for Visualizing Health Services Access"
         date: "2023-01-01"
         summary: Presenter at International Conference on Health Policy Statistics, Scottsdale, AZ
-        content: >-
+        abstract: >-
           Schroeder J, Montalvo C, Charankevich H, Linehan K, Iserman M, Lancaster V,
           Kattampallil N, Siwe L, Shipp S, Thurston J, **Schroeder A**. Presented at
           International Conference on Health Policy Statistics. January 2023; Scottsdale, AZ.
@@ -1099,7 +1099,7 @@ cv:
       - name: Best Practices in Coordinating Large-Scale Data Science Initiatives
         date: "2022-08-01"
         summary: Presenter at Joint Statistical Meetings 2022, Washington, DC
-        content: >-
+        abstract: >-
           Thurston J, Keller S, **Schroeder A**, Shipp S. Joint Statistical Meetings 2022.
           August 2022; Washington, DC.
           https://ww2.amstat.org/meetings/jsm/2022/onlineprogram/AbstractDetails.cfm?abstractid=323426
@@ -1107,14 +1107,14 @@ cv:
       - name: Evaluating the Impact of USDA Broadband Subsidy Programs Using Differentiable Gaussian Random Fields
         date: "2022-08-01"
         summary: Presenter at Joint Statistical Meetings 2022
-        content: >-
+        abstract: >-
           Goldstein J, Halder A, Charankevich H, Pender J, **Schroeder A.D.**, Shipp S, Keller S.
           Joint Statistical Meetings 2022. American Statistical Association.
         subcategory: Presentations/Workshops
       - name: Building the Social Impact Data Commons - Data Discovery and Acquisition Lessons Learned
         date: "2022-08-01"
         summary: Presenter at Federal Committee on Statistical Methodology Research and Policy Conference, Washington, DC
-        content: >-
+        abstract: >-
           Schroeder J, Linehan K, Montalvo C, Charankevich H, Iserman M, Lancaster V,
           Kattampallil N, Siwe L, Shipp S, Thurston J, **Schroeder A**, Keller S. FCSM
           Research and Policy Conference. August 2022; Washington, DC.
@@ -1122,7 +1122,7 @@ cv:
       - name: "Social Impact Data Commons: an innovative approach to inform equitable growth"
         date: "2022-05-01"
         summary: Presenter at APDU Data Symposium and CIC Symposium, virtual
-        content: >-
+        abstract: >-
           **Schroeder A**, Linehan K, Charankevich H, Iserman M, Kattampallil N, Lancaster V,
           Montalvo C, Oh E, Schroeder J, Siwe G, Shipp S, Thurston J, Keller S. APDU Data
           Symposium and CIC Symposium: Methods, Metrics and Measurement. May 2022. Virtual.
@@ -1130,21 +1130,21 @@ cv:
       - name: Data Science for the Public Good (DSPG) Young Scholars Program - Overview 2014-2021
         date: "2022-01-01"
         summary: Presenter at Data Science Approaches to Health Disparities Research Symposium, Biocomplexity Institute, UVA
-        content: >-
+        abstract: >-
           **Schroeder A.D.** Data Science Approaches to Health Disparities Research Symposium 2022.
           Biocomplexity Institute, UVA.
         subcategory: Presentations/Workshops
       - name: "Virginia's New Rural Health Data Commons - Supporting the 2022-2026 Virginia Rural Health Plan"
         date: "2022-07-17"
         summary: Presenter at National Association of County and City Health Officials (NACCHO 2022)
-        content: >-
+        abstract: >-
           **Schroeder A**, Montalvo C. NACCHO 2022. July 17, 2022.
           https://doi.org/10.18130/5zdw-kh69
         subcategory: Presentations/Workshops
       - name: Example Metrics of The Social Impact Data Commons
         date: "2022-04-01"
         summary: Presenter at Biocomplexity Institute Spring 2022 Research Symposium, Arlington, VA
-        content: >-
+        abstract: >-
           Charankevich H, Iserman M, Lancaster V, Linehan K, Montalvo C, Siwe L, Schroeder J,
           **Schroeder A.D.** Biocomplexity Institute Spring 2022 Research Symposium. UVA
           Biocomplexity Institute and Initiative.
@@ -1152,7 +1152,7 @@ cv:
       - name: Building a Data Commons
         date: "2022-04-01"
         summary: Presenter at Biocomplexity Institute Spring 2022 Research Symposium, Arlington, VA
-        content: >-
+        abstract: >-
           Charankevich H, Iserman M, Lancaster V, Linehan K, Montalvo C, Siwe L, Schroeder J,
           **Schroeder A**. Biocomplexity Institute Spring 2022 Research Symposium.
           April 2022; Arlington, VA.
@@ -1160,14 +1160,14 @@ cv:
       - name: Challenges in conceptualizing and modeling performance in the U.S. Army
         date: "2022-01-01"
         summary: Presenter at Military Operations Research Society (MORS) 90th Symposium
-        content: >-
+        abstract: >-
           Thurston J, Ratcliff N, Halder A, Goldstein J, Oh E, Schroeder J, Shipp S, Keller S.
           Military Operations Research Society (MORS) 90th Symposium.
         subcategory: Presentations/Workshops
       - name: Measuring the Cost and Impact of Open-Source Software Innovation on GitHub
         date: "2020-05-01"
         summary: Presenter at Federal Committee on Statistical Methodology (FCSM) CSPOS Webinar on Blended Data, Washington, DC
-        content: >-
+        abstract: >-
           Calderon J.B.S., Kramer B.L., Korkmaz G., Robbins C., **Schroeder A.D.**, Keller S.
           FCSM Computational Statistics and the Production of Official Statistics (CSPOS)
           Webinar on Blended Data. Washington, DC, May 1, 2020.
@@ -1175,14 +1175,14 @@ cv:
       - name: Ethical Principles and Data Science - Repurposing Administrative and Opportunity Data
         date: "2020-09-21"
         summary: Presenter at Federal Committee on Statistical Methodology, virtual
-        content: >-
+        abstract: >-
           Shipp S., Keller S., **Schroeder A.** Federal Committee on Statistical Methodology.
           21 September 2020. Virtual meeting.
         subcategory: Presentations/Workshops
       - name: Impacts of the Broadband Initiatives Program on Rural Prosperity
         date: "2020-08-18"
         summary: Presenter at Agricultural and Applied Economics Association Community and Regional Economics Network annual meeting, online
-        content: >-
+        abstract: >-
           Pender J., Goldstein J., Pristavec T., Mahoney-Nair D., Shipp S., Kattampallil N.,
           **Schroeder A.**, Keller S., & Keeler Z. AAEA Community and Regional Economics
           Network annual meeting. August 18, 2020. Online.
@@ -1190,14 +1190,14 @@ cv:
       - name: Impacts of Broadband Access and the Broadband Initiatives Program on Telework
         date: "2020-11-01"
         summary: Presentation (venue not specified)
-        content: >-
+        abstract: >-
           Pender J, Goldstein J, Pristavec T, Mahoney-Nair D, Shipp S, Kattampallil N,
           **Schroeder A**, Keller S. November 2020.
         subcategory: Presentations/Workshops
       - name: Economic and Social Impact of Arlington Restaurant Initiative
         date: "2019-08-09"
         summary: Presenter at Data Science for the Public Good Program Symposium, Arlington, VA
-        content: >-
+        abstract: >-
           Calderon J.B.S., Kateryna Savchyn, Victoria Halewicz, Jessica Keast, **Schroeder A.D.**,
           Gizem Korkmaz. Data Science for the Public Good Program Symposium. Arlington, VA,
           August 9, 2019. https://bit.ly/3bDVjWh
@@ -1205,7 +1205,7 @@ cv:
       - name: Measuring the Universe of Open-Source Software
         date: "2019-08-09"
         summary: Presenter at Data Science for the Public Good Program Symposium, Arlington, VA
-        content: >-
+        abstract: >-
           Calderon J.B.S., Cong C., Isch C., Tobin E., Kramer B.L., **Schroeder A.D.**,
           Korkmaz G. Data Science for the Public Good Program Symposium. Arlington, VA,
           August 9, 2019. https://bit.ly/2y7ryyD
@@ -1213,14 +1213,14 @@ cv:
       - name: Measuring the Eligibility, Incidence, and Impact of Rural Utilities Service (RUS) Broadband Programs
         date: "2021-05-01"
         summary: Presenter at USDA Rural Utilities Service, Service Seminar
-        content: >-
+        abstract: >-
           Pender J, Keller S, Goldstein J, Halder A, Mahoney-Nair D, Kattampallil N,
           **Schroeder A**, Shipp S. USDA Rural Utilities Service, Service Seminar. May 2021.
         subcategory: Presentations/Workshops
       - name: Evaluation of Broadband Subsidy Programs - Combining Spatial Regression Discontinuity Designs and Bayesian Wombling
         date: "2021-08-01"
         summary: Presenter at 2021 Joint Statistical Meetings
-        content: >-
+        abstract: >-
           Goldstein J, Halder A, Pender J, **Schroeder A**, Mahoney-Nair D, Kattampallil N,
           Shipp S, Keller S. 2021 Joint Statistical Meetings. August 2021.
           https://biocomplexity.virginia.edu/evaluation-broadband-subsidy-programs-combining-spatial-regression-discontinuity-designs-and
@@ -1228,7 +1228,7 @@ cv:
       - name: Measuring the Impact of the Broadband Initiatives Program on Property Values
         date: "2021-11-01"
         summary: Presenter at 68th North America Meetings of the Regional Science Association International, Denver, CO
-        content: >-
+        abstract: >-
           Goldstein J, Halder A, Charankevich H, Kattampallil N, **Schroeder A**, Pender J,
           Shipp S, Keller S. Regional Science Association International 68th Annual Meeting.
           November 2021; Denver, CO.
@@ -1236,21 +1236,21 @@ cv:
       - name: Learning to Live with Chaos - A Case for the Dissipative Structure Metaphor in Policy Subsystem Analysis
         date: "1997-01-01"
         summary: Presenter at Intergovernmental Analysis Conference, Copenhagen, Denmark
-        content: >-
+        abstract: >-
           **Schroeder A.D.**, Evans K.E., Wamsley G.L. Conference Proceedings, Intergovernmental
           Analysis Conference. Copenhagen, Denmark, 1997.
         subcategory: Presentations/Workshops
       - name: Policy Subsystems and the New Physics - Policy Development and Implementation at the Edge of Chaos
         date: "1994-01-01"
         summary: Presenter at Network Analysis and Innovations in Public Programs Conference, University of Wisconsin - Madison
-        content: >-
+        abstract: >-
           Evans K., **Schroeder A.D.**, Wamsley G.L. Network Analysis and Innovations in Public
           Programs Conference, University of Wisconsin - Madison, 1994.
         subcategory: Presentations/Workshops
     Teaching:
       - name: Administrative Data Systems & Technologies
         date: "2013-05-22"
-        content:
+        abstract:
           "<p><u><span style='font-size:12.0pt;font-family:\"Arial Narrow\"'>Purpose\nof Class</span></u><span\
           \ style='font-size:12.0pt;font-family:\"Arial Narrow\"'>: To\nintroduce Master's-level CPAP students\
           \ to some of the systems and technologies\nthey are likely to encounter in today's governmental\
@@ -1755,7 +1755,7 @@ cv:
         slug: data-systems
       - name: Policy & Program Evaluation
         date: "2013-05-22"
-        content: '<style>
+        abstract: '<style>
 
           .P1 { font-size:11pt; font-family:Times New Roman; writing-mode:lr-tb; }
 
@@ -2845,7 +2845,7 @@ cv:
         slug: policy-eval
       - name: Public Administration & Policy Inquiry (Research Design & Statistics)
         date: "2013-05-22"
-        content:
+        abstract:
           "### Course Description\n<p>\n    PA and Policy Inquiry serves as the &quot;methods&quot;\
           \ course for the MPA curriculum.\n    However, unlike traditional methods course, this course\
           \ is aimed at those who\n    are or soon will be administrators, as opposed to those who wish\
@@ -2921,7 +2921,7 @@ cv:
         slug: research-design
       - name: Dissertations & Theses
         date: "2013-05-22"
-        content:
+        abstract:
           "<TABLE>\n<TR>\n\t<TD colspan=\"2\"><h3>DISSERTATION COMMITTEES</h3></TD>\n\t<TD>&nbsp;</TD>\n\
           </TR>\n<TR>\n\t<TD style=\"font-weight: bold\">Gouk Tae Kim</TD>\n\t<TD><P>The Scientific Science\
           \ Policy Framework: Implications for STI (Science, Technology, and Innovation) Policy and Evaluation\
@@ -2956,7 +2956,7 @@ cv:
         doi: 10.48550/arXiv.2511.17694
         slug: smart_metadata_data_commons
         subcategory: Journal Publications (refereed)
-        content:
+        abstract:
           This article describes the use of metadata and standards in the Social Impact Data Commons
           to expose official statisticians to an innovative project built on actionable and evaluable metadata,
           which produces a FAIR data system. We begin by introducing the concept of the Data Commons, focusing
@@ -2988,7 +2988,7 @@ cv:
         doi: 10.1162/99608f92.2d83f7f5
         slug: harvard_econ
         subcategory: Journal Publications (refereed)
-        content:
+        abstract:
           Today’s data revolution is not just about big data, it is about data of all sizes and types.
           While the issues of volume and velocity presented by the ingestion of massive amounts of data
           remain prevalent, it is the rapidly developing challenges being presented by the third v, variety,
@@ -3014,7 +3014,7 @@ cv:
         journal: Big Data for 21st Century Economic Statistics. University of Chicago Press.
         slug: open_source_econ
         subcategory: Journal Publications (refereed)
-        content:
+        abstract:
           Open source software allows free access to digital tools and constitutes a part of intangible
           investment with the qualities of public goods. Open source software (OSS) provides users with
           an unknown amount of freely modifiable software tools and other useful products; they arecreated
@@ -3039,7 +3039,7 @@ cv:
         doi: 10.3233/SJI-180455
         slug: predicting_post_secondary
         subcategory: Journal Publications (refereed)
-        content:
+        abstract:
           "Postsecondary educational attainment is an important determinant of future economic opportunity
           and social mobility. However, sizable gaps in educational attainment exist within communities
           and across sociodemographic lines. The goal of this research is to develop processes and methodologies
@@ -3068,7 +3068,7 @@ cv:
         doi: 10.23889/ijpds.v3i5.1061
         slug: potts_model
         subcategory: Journal Publications (refereed)
-        content:
+        abstract:
           Situated at the nexus of federal, state, and local governments, the Arlington Department
           of Human Services (DHS) receives service utilization data from a multitude of different sources.
           Because of their “no wrong door” policy, customers can sign up for any DHS service from any DHS
@@ -3097,7 +3097,7 @@ cv:
         url: https://ijpds.org/article/view/1061
         slug: harnessing
         subcategory: Journal Publications (refereed)
-        content:
+        abstract:
           "Volumes of data are generated at every moment as we go through the paces of our daily
           lives. Many of these data flows are routinely captured through administrative records, social
           media, and surveys. Historically, agencies at different levels of government have been responsible
@@ -3130,7 +3130,7 @@ cv:
         doi: 10.1016/j.envsoft.2018.02.007
         slug: ozone
         subcategory: Journal Publications (refereed)
-        content:
+        abstract:
           There is ample evidence that short-term ozone exposure is associated with increased respiratory
           symptoms. Many studies, however, aggregate the population, activities, or concentration levels
           of the pollutant across space and/or time, failing to capture critical variations in the exposure
@@ -3154,7 +3154,7 @@ cv:
         url: https://www.jstor.org/stable/26328312?seq=1
         slug: admin-housing-data
         subcategory: Journal Publications (refereed)
-        content:
+        abstract:
           "This article examines the feasibility of using local administrative data sources for enhancing
           and supplementing federally collected survey data to describe housing in Arlington County, Virginia.
           Using real estate assessment data and the American Community Survey (ACS) from 2009 to 2013, we
@@ -3176,7 +3176,7 @@ cv:
         doi: 10.1146/annurev-statistics-060116-054114
         slug: data_quality_hist
         subcategory: Journal Publications (refereed)
-        content:
+        abstract:
           Data, and hence data quality, transcends all boundaries of science, commerce, engineering,
           and policy. Data quality has historically been addressed by controlling the measurement processes,
           controlling the data collection processes, and through data ownership. For many data sources being
@@ -3192,7 +3192,7 @@ cv:
         journal: Annual Review of Statistics and Its Application, 3(1)
         slug: privacy_landscape
         subcategory: Journal Publications (refereed)
-        content:
+        abstract:
           The current data revolution is changing the conduct of social science research as increasing
           amounts of digital and administrative data become accessible for use. This new data landscape
           has created significant tension around data privacy and confidentiality. The risk-utility theory
@@ -3215,7 +3215,7 @@ cv:
         journal: Computational Social Science Society of America Conference. Santa Fe, New Mexico.
         slug: in-silico-air-quality
         subcategory: Journal Publications (refereed)
-        content:
+        abstract:
           In this paper we couple a spatiotemporal air quality modelof ozone concentration levels
           with the synthetic information model of theHouston Metropolitan Area. While traditional approaches
           often aggre-gate the population, activities, or concentration levels of the pollutantacross  space  and/or  time,  we  utilize  high  performance  computing  andstatistical
@@ -3236,7 +3236,7 @@ cv:
         doi: 10.1145/2428736.2428757
         slug: pad_and_chaff
         subcategory: Journal Publications (refereed)
-        content:
+        abstract:
           The promise of high-quality, integrated data sets for policy analysis is great. However,
           significant impediments remain that make the creation of such data sets very difficult. The identification
           of processes and algorithms for carrying out approximate string matching on personal-level information
@@ -3258,7 +3258,7 @@ cv:
         url: https://www.researchgate.net/publication/232095799_New_Data_on_Child_Care_Subsidy_Programs
         slug: subsidy_data
         subcategory: Journal Publications (refereed)
-        content:
+        abstract:
           Federal support has been improving states’ capacity to conduct child care policy research
           to guide this challenging process through partnerships with state governments and institutions
           of higher education. Three recipients of Research Cooperative Agreements awarded by the U. S.
@@ -3305,7 +3305,7 @@ cv:
         url: http://onlinelibrary.wiley.com/doi/10.1002/1097-4571(2000)9999:9999%3C::AID-ASI1004%3E3.0.CO;2-5/abstract
         slug: network_org
         subcategory: Journal Publications (refereed)
-        content:
+        abstract:
           Does information technology "pull" the organizational management toward change in terms
           of authority and control, or is information technology "pushed" through the organization, by management,
           to maintain its existing system of authority and control? These conflicting positions are explored
@@ -3321,7 +3321,7 @@ cv:
         url: https://www.researchgate.net/publication/272574256_Escalating_in_a_Quagmire_The_Changing_Dynamics_of_the_Emergency_Management_Policy_Subsystem
         slug: quagmire
         subcategory: Journal Publications (refereed)
-        content:
+        abstract:
           "How has the federal emergency management system fared in post-Andrew era? When Hurricane
           Andrew struck south Florida in the waning days of the 1992 presidential campaign, it sent shock
           waves through the White House and emergency management policy subsystem that have not yet subsided.
@@ -3341,7 +3341,7 @@ cv:
         url: https://www.researchgate.net/publication/238430496_To_Politicize_is_Not_to_Control_The_Pathologies_of_Control_in_Federal_Emergency_Management
         slug: politicize
         subcategory: Journal Publications (refereed)
-        content:
+        abstract:
           One of the most significant problems of bureaucracy in a democratic polity is how to achieve
           a tolerable coexistence between political and managerial control. When these aspects of control
           get out of balance, certain pathologies occur. This paper seeks to draw lessons from a study of
@@ -3365,7 +3365,7 @@ cv:
         local_path: ../../../downloads/Schroeder_Evolution_of_Emergency_Management.pdf
         slug: em_evolution
         subcategory: Book Chapters
-        content:
+        abstract:
           This chapter traces the evolutionary maturation of emergency management in America. It
           has been a slow and torturous process of ‘‘coming of age,’’ made all the more difficult by the
           unique peculiarities of America’s democratized, constitutional, and federal republic and made
@@ -3398,7 +3398,7 @@ cv:
         doi: 10.18130/ce97-sp05
         slug: census_curated_data_enterprise
         subcategory: Research/Technical Reports
-        content:
+        abstract:
           "The proposed Curated Data Enterprise (CDE) is a transformative approach for how the Census
           Bureau could accomplish its mission to develop and provide high-quality, timely, and geographically
           detailed statistical products by changing how it manages its data assets, incorporates information
@@ -3449,7 +3449,7 @@ cv:
         url: https://dads2busy.github.io/downloads/Distinct%20Counts%20from%20VLDS%20to%20Support%20ECIDS.pdf
         slug: distinct_counts
         subcategory: Research/Technical Reports
-        content:
+        abstract:
           Integrated data across multiple state agencies to create a distinct count of children,
           birth to five, served by one or more early childhood programs and/or services. As a result of
           this research, these integrated data became a foundational metric for a range of future early
@@ -3465,7 +3465,7 @@ cv:
         url: https://www.aisp.upenn.edu/wp-content/uploads/2016/07/Technology-Data-Security.pdf
         slug: towards_ids
         subcategory: Research/Technical Reports
-        content:
+        abstract:
           Our vision for AISP Innovation is to facilitate a network of jurisdictions and evaluators
           from across the United States in working together to further a culture of evidence-based decision
           making in government. This document proposes a series of technology solutions that help achieve
@@ -3557,7 +3557,7 @@ cv:
         local_path: /downloads/HANDS_School Assessments Research Report April 2010.pdf
         slug: local_school_divs
         subcategory: Research/Technical Reports
-        content:
+        abstract:
           The Commonwealth of Virginia has 132 school divisions that operate under the authority
           of local school boards. This report describes what divisions are currently collecting by way of
           child screenings or assessments when children enroll in Kindergarten, in the fall of the Kindergarten
@@ -3574,7 +3574,7 @@ cv:
         local_path: /downloads/VA Local Social Service Agencies and Quality Improvement_No1.pdf
         slug: local_social_service
         subcategory: Research/Technical Reports
-        content:
+        abstract:
           "The Child Care Development Fund (CCDF) is a federal work support program to help low-income  families
           pay for  child  care while parents  are  at  work.    Administered  as  a block grant  to states,
           the program is designed to enable parents to choose the child care arrangements that best suit
@@ -3606,7 +3606,7 @@ cv:
         local_path: /downloads/HANDS_Technical_QI_Classification_website.pdf
         slug: classification_system
         subcategory: Research/Technical Reports
-        content: "This report describes:
+        abstract: "This report describes:
 
           * The development and preliminary testing of a classification system to quantitatively summarize
           QI activities for Virginia.
@@ -3627,7 +3627,7 @@ cv:
         local_path: /downloads/Shared_Site_Cost_Savings_Final.pdf
         slug: intergenerational
         subcategory: Research/Technical Reports
-        content: "VAs the leading advocate for intergenerational
+        abstract: "VAs the leading advocate for intergenerational
 
           shared sites, Generations United and our partners
 
@@ -3654,7 +3654,7 @@ cv:
         local_path: /downloads/511 Virginia E-mail alert system.pdf
         slug: email_alert
         subcategory: Research/Technical Reports
-        content:
+        abstract:
           '511 Virginia is a statewide web and phone service that disseminates, amongst other things,
           traffic information on 96 roads throughout the state of Virginia. The service, which is sponsored
           by the Virginia Department of Transportation (VDOT), has been in operation statewide since February
@@ -3694,7 +3694,7 @@ cv:
         local_path: /downloads/460wireless.pdf
         slug: 460_wireless
         subcategory: Research/Technical Reports
-        content:
+        abstract:
           "The Virginia Tech Transportation Institute in cooperation with VDOT’s Christiansburg
 
           Residency deployed one of the first serial wireless networks in the country along Route
@@ -3715,7 +3715,7 @@ cv:
         local_path: /downloads/VTTI_Ped_FINRPT_FINAL.pdf
         slug: ped
         subcategory: Research/Technical Reports
-        content:
+        abstract:
           "The goal of this project was to develop a detailed understanding of what would be required
           to undertake a
 
@@ -3770,7 +3770,7 @@ cv:
         local_path: /downloads/TravelVirginia.pdf
         slug: travel_virginia
         subcategory: Research/Technical Reports
-        content:
+        abstract:
           This report summarizes the results of a fifteen-month study to assess the feasibility of
           expanding Travel Shenandoah, a pilot rural ATIS service developed for Virginia’s Northern Shenandoah
           Valley, into a comprehensive, statewide service covering the entire Commonwealth of Virginia.
@@ -3791,7 +3791,7 @@ cv:
         local_path: /downloads/transportation_data_clearinghouse.pdf
         slug: data_clearinghouse
         subcategory: Research/Technical Reports
-        content:
+        abstract:
           "In late 1999, the Virginia Tech Transportation Institute (VTTI), at the request of the
           Virginia Department of Transportation, undertook the process of examining the feasibility of expanding
           Virginia’s Operational Database Management System (ODMS) to include data from neighboring states
@@ -3947,7 +3947,7 @@ cv:
         local_path: /downloads/The Political Roots of Hating Government, Schroeder.pdf
         slug: hating_govt
         subcategory: Editorials
-        content: '<h3>Response to Editorial in Roanoke Times</h3>
+        abstract: '<h3>Response to Editorial in Roanoke Times</h3>
 
           IN RESPONSE to the excellent May 14 commentary by Aaron D. Schroeder and Gary L. Wamsley, "The
           political roots of hating government":
@@ -3987,7 +3987,7 @@ cv:
         url: http://scholar.lib.vt.edu/theses/available/etd-05082001-162010/unrestricted/ImplementationNetworks.pdf
         slug: dissertation
         subcategory: Dissertation
-        content:
+        abstract:
           The purpose of this dissertation is the delineation of a new approach, or, more precisely,
           a new “role” and “methodological system,” for those persons engaged in building and managing multi-actor
           structures, or “networks,” for the purpose of policy implementation. As policy formulation and
@@ -4003,31 +4003,31 @@ cv:
       - name: Social Data Commons - Master Metadata
         date: "2022-01-01"
         summary: Dataset deposited in UVA Dataverse, University of Virginia
-        content: >-
+        abstract: >-
           **Schroeder A.D.**; Schroeder J; Iserman M; Linehan K. Social Data Commons: Master
           Metadata. UVA Dataverse. University of Virginia. 2022.
       - name: Social Impact Data Commons Website - National Capital Region
         date: "2022-01-01"
         summary: Interactive data commons web platform
-        content: >-
+        abstract: >-
           **Schroeder, A.D.** Social Impact Data Commons - National Capital Region.
           https://uva-bi-sdad.github.io/capital_region
       - name: VDH Data Commons Website
         date: "2022-01-01"
         summary: Interactive data commons web platform for Virginia Department of Health
-        content: >-
+        abstract: >-
           **Schroeder, A.D.** Virginia Department of Health Data Commons.
           https://uva-bi-sdad.github.io/vdh_rural_health_site
       - name: Travel Information Data Clearinghouse and Management System
         date: "1999-01-01"
         summary: Copyright held by Virginia Polytechnic Institute and State University
-        content: >-
+        abstract: >-
           **Schroeder, A.D.** Travel Information Data Clearinghouse and Management System.
           Copyright: Virginia Polytechnic Institute and State University, 1999.
       - name: Web-Based Dynamic Ride Request, Assignment, and Tracking System
         date: "1999-01-01"
         summary: Copyright held by Virginia Polytechnic Institute and State University
-        content: >-
+        abstract: >-
           **Schroeder, A.D.** and Daily, B. Web-Based Dynamic Ride Request, Assignment, and
           Tracking System. Copyright: Virginia Polytechnic Institute and State University, 1999.
     Awards & Honors:

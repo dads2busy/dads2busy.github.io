@@ -21,7 +21,7 @@ def test_publication_basic():
         "slug": "census_curated_data_enterprise",
         "subcategory": "Research/Technical Reports",
         "ordinal": "0",
-        "content": "Abstract...",
+        "abstract": "Abstract...",
     }
     out = publication_entry_to_writing(entry)
     assert out["title"] == "Census Curated Data Enterprise"
@@ -32,7 +32,7 @@ def test_publication_basic():
     assert out["slug"] == "census_curated_data_enterprise"
     assert out["subcategory"] == "Research/Technical Reports"
     assert out["ordinal"] == 0
-    assert out["content"] == "Abstract..."
+    assert out["abstract"] == "Abstract..."
 
 
 def test_publication_local_path_to_website():
@@ -78,7 +78,7 @@ def test_experience_basic():
         "summary": "Research Associate Professor at SDAL",
         "slug": "associate-research-professor",
         "ordinal": "1",
-        "content": "Description...",
+        "abstract": "Description...",
     }
     out = experience_entry_to_working(entry)
     assert out["title"] == "Associate Research Professor"
@@ -86,7 +86,7 @@ def test_experience_basic():
     assert out["subtitle"] == "Research Associate Professor at SDAL"
     assert out["slug"] == "associate-research-professor"
     assert out["ordinal"] == 1
-    assert out["content"] == "Description..."
+    assert out["abstract"] == "Description..."
 
 
 def test_research_project_basic():
@@ -171,12 +171,12 @@ def test_publication_writing_shape_complete():
         "title": "X", "authors": ["A", "B"], "date": "2023-01-01",
         "doi": "10.x/y", "journal": "J", "url": "http://example.com",
         "slug": "s", "subcategory": "Refereed Journal Articles",
-        "content": "abstract", "editors": "ed", "pages": "1-10", "ordinal": "5",
+        "abstract": "abstract", "editors": "ed", "pages": "1-10", "ordinal": "5",
     }
     out = publication_entry_to_writing(entry)
     expected = {
         "title", "authors", "date", "DOI", "sponsor", "website",
-        "ordinal", "slug", "subcategory", "content", "editors", "pages",
+        "ordinal", "slug", "subcategory", "abstract", "editors", "pages",
     }
     assert set(out.keys()) == expected, (
         f"publication_entry_to_writing key drift: missing={expected - set(out)} extra={set(out) - expected}"
@@ -186,23 +186,23 @@ def test_publication_writing_shape_complete():
 def test_experience_working_shape_complete():
     entry = {
         "name": "X", "date": "2018-Present", "summary": "Role at Org",
-        "content": "Description", "slug": "s", "subcategory": "current",
+        "abstract": "Description", "slug": "s", "subcategory": "current",
         "ordinal": "1",
     }
     out = experience_entry_to_working(entry)
-    expected = {"title", "dates", "subtitle", "content", "ordinal", "slug", "subcategory"}
+    expected = {"title", "dates", "subtitle", "abstract", "ordinal", "slug", "subcategory"}
     assert set(out.keys()) == expected
 
 
 def test_research_research_shape_complete():
     entry = {
-        "name": "X", "date": "2020", "url": "http://x.com", "content": "abstract",
+        "name": "X", "date": "2020", "url": "http://x.com", "abstract": "abstract",
         "slug": "s", "subcategory": "Some Sub", "sponsor": "Sponsor X",
         "award": "$1000", "role": "PI", "ordinal": "3",
     }
     out = project_entry_to_research(entry)
     expected = {
-        "title", "dates", "website", "content", "ordinal", "slug",
+        "title", "dates", "website", "abstract", "ordinal", "slug",
         "subcategory", "sponsor", "award", "role",
     }
     assert set(out.keys()) == expected
@@ -210,13 +210,13 @@ def test_research_research_shape_complete():
 
 def test_presentation_speaking_shape_complete():
     entry = {
-        "name": "X", "date": "2023-12-02", "content": "Speech text",
+        "name": "X", "date": "2023-12-02", "abstract": "Speech text",
         "url": "http://x.com", "slug": "s", "subcategory": "Lecture",
         "sponsor": "Venue", "role": "speaker",
     }
     out = presentation_entry_to_speaking(entry)
     expected = {
-        "title", "date", "content", "website", "slug", "subcategory",
+        "title", "date", "abstract", "website", "slug", "subcategory",
         "sponsor", "role",
     }
     assert set(out.keys()) == expected, (
@@ -227,10 +227,10 @@ def test_presentation_speaking_shape_complete():
 def test_teaching_teaching_shape_complete():
     entry = {
         "name": "X", "date": "2013-05-22", "url": "http://x.com",
-        "content": "syllabus", "slug": "s",
+        "abstract": "syllabus", "slug": "s",
     }
     out = teaching_entry_to_teaching(entry)
-    expected = {"title", "date", "website", "content", "slug"}
+    expected = {"title", "date", "website", "abstract", "slug"}
     assert set(out.keys()) == expected
 
 

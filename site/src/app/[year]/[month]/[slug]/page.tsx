@@ -19,7 +19,7 @@ export default async function PostPage({
     return <div className="text-center py-12">Post not found.</div>;
   }
 
-  const htmlContent = await renderMarkdown(post.content);
+  const htmlContent = await renderMarkdown(post.abstract);
   const isDsCategory = DS_CATEGORIES.includes(post.category?.toLowerCase());
 
   const content = (
