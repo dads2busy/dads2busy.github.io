@@ -3566,6 +3566,25 @@ cv:
         editors: "Ali Farazmand. Marcel-Dekker: New York"
     Research / Technical Reports:
       - title:
+          "A Novel Framework for Synthesizing Shallow Technology Dependency Networks (STDNs) for
+          Disruption Analysis of Global Manufacturing and Trade Networks"
+        authors:
+          - "**Schroeder, Aaron**"
+          - Wilson, Mandy L.
+          - Harrison, Galen S.
+          - Machi, Dustin
+          - Klahn, Brian
+          - Swarup, Samarth
+          - Vullikanti, Anil
+          - Marathe, Achla
+          - Foster, Margaret
+          - Potter, Philip
+          - Marathe, Madhav V.
+        date: "2025-12-01"
+        journal: "Biocomplexity Institute, University of Virginia, Technical Report BI-2025-17"
+        slug: stdn_framework
+        subcategory: Research/Technical Reports
+      - title:
           "Census Curated Data Enterprise Use Case Demonstration: Climate Resiliency of Skilled Nursing
           Facilities"
         authors:
