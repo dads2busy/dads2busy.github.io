@@ -3133,6 +3133,24 @@ cv:
         slug: theses
     Refereed Journal Articles:
       - title:
+          "Physician accessibility measures for Virginia and the National Capital Region
+          at the census block group level"
+        authors:
+          - "**Schroeder, Aaron**"
+        date: "2026"
+        journal: "Data & Policy (submitted, under review)"
+        slug: data_policy_physician_accessibility
+        subcategory: Journal Publications (refereed)
+      - title:
+          "Licensed childcare accessibility measures for Virginia at the census block
+          group level"
+        authors:
+          - "**Schroeder, Aaron**"
+        date: "2026"
+        journal: "Data & Policy (submitted, under review)"
+        slug: data_policy_childcare_accessibility
+        subcategory: Journal Publications (refereed)
+      - title:
           "Compressing the Data Science Pipeline: How Large Language Models Can Accelerate the
           Production of Policy-Relevant Datasets"
         authors:
