@@ -145,5 +145,5 @@ def release_entry_to_releases(entry: dict) -> dict:
         # authors may be a list (CSL-ish) or a string; pass through as list of strings
         out["authors"] = entry["authors"]
     out["ordinal"] = _coerce_ordinal(entry.get("ordinal"))
-    _passthrough(entry, out, ("slug", "subcategory", "type"))
+    _passthrough(entry, out, ("slug", "subcategory"))
     return out

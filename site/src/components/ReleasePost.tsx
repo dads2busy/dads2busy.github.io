@@ -10,10 +10,10 @@ export default function ReleasePost({ post }: Props) {
       <h4 className="font-bold">{post.title}</h4>
       <table className="text-sm mt-1">
         <tbody>
-          {post.type && (
+          {post.subcategory && (
             <tr>
               <td className="pr-4 font-semibold align-top">Type:</td>
-              <td>{post.type}</td>
+              <td>{post.subcategory}</td>
             </tr>
           )}
           {post.date && (

@@ -102,6 +102,11 @@ def write_diff(records: list[dict], profile_path: Path, diff_path: Path) -> tupl
         lines.append("")
         lines.append("```yaml")
         lines.append(f"- name: \"{e['title']}\"")
+        # Zenodo resource_type → Data & Software subcategory.
+        # Software stays Software; everything else (Dataset, Image, Publication, …) → Dataset.
+        rtype = (e.get("resource_type") or "").strip().lower()
+        subcat = "Software" if rtype == "software" else "Dataset"
+        lines.append(f"  subcategory: {subcat}")
         if e.get("authors"):
             lines.append("  authors:")
             for a in e["authors"]:

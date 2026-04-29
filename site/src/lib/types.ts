@@ -75,7 +75,6 @@ export interface ReleasePost extends BasePost {
   doi?: string;
   authors?: string[];
   summary?: string;
-  type?: string;
 }
 
 export interface NavItem {
