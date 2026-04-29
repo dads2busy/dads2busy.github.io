@@ -202,6 +202,7 @@ cv:
         ordinal: "9"
     Research Projects:
       - name: Leveraging Large Language Models to Identify Green Innovation
+        award: $101,000
         date: 2023-2024
         start_year: "2023"
         end_year: "2024"
