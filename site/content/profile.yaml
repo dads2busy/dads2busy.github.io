@@ -4230,6 +4230,34 @@ cv:
           the context of “getting things done” in the public sector is changing from a singular organizational
           context to a multiple-organization network context. Managerially, we must respond accordingly.
     "Data & Software":
+      - name: STDN Agentic Framework
+        date: "2026-04-29"
+        summary: "Multi-agent AI system for generating Shallow Technology Dependency Networks (STDNs)"
+        url: https://github.com/dads2busy/dpi_stdn_agentic
+        abstract: >-
+          Multi-agent AI framework that automates the analysis of global technology supply chains
+          by orchestrating LLM-powered agents that propose, critique, and refine technology
+          dependency networks (Technologies → Components → Materials → Producing Countries).
+          Four-stage pipeline with optional multi-agent debate; each link includes confidence
+          scores and reasoning for auditable, interpretable analysis.
+      - name: Intelligence Budget Estimation System
+        date: "2026-04-29"
+        summary: "Multi-agent LangGraph workflow for estimating the classified portion of U.S. intelligence spending"
+        url: https://github.com/dads2busy/dpi_budget_estimation_agentic
+        abstract: >-
+          Multi-agent, LangGraph-based workflow that estimates the classified ('black budget')
+          portion of U.S. intelligence spending by reconciling public budget documents (DoD R-1
+          exhibits) against disclosed national and military intelligence program totals. Each
+          stage is a Pydantic AI agent with typed state and explicit quality gates; the
+          methodology operationalizes top-down reconciliation as a repeatable, auditable
+          pipeline.
+      - name: STDN Explorer
+        date: "2026-03-10"
+        summary: "Interactive dashboard for Shallow Technology Dependency Networks — supply chain risk analysis"
+        url: https://github.com/dads2busy/stdn-explorer
+        abstract: >-
+          Interactive web dashboard for exploring Shallow Technology Dependency Networks (STDNs)
+          and conducting supply chain risk analysis. Built with TypeScript and Python.
       - name: Social Data Commons - Master Metadata
         date: "2022-01-01"
         summary: Dataset deposited in UVA Dataverse, University of Virginia
