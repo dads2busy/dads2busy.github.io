@@ -4293,20 +4293,23 @@ cv:
         details: "2024"
       - label: Proposal Reviewer, NSF Methodology, Measurement, and Statistics (MMS) Program
         details: "2022"
+    Specializations:
+      - label: Policy & Evaluation
+        details: "Methods of data collection · research design · quantitative & qualitative analysis · information policy · privacy law · policy/implementation network analysis"
+      - label: Information Management
+        details: "Information integration · data management · big data · web-enabled public services"
+      - label: Agentic AI for Statistical Data Production
+        details: "Multi-agent LLM systems · structured agent debate · ontology-backed extraction & normalization · hallucination mitigation via agreement-feedback consensus · provenance tracking & authoritative data fusion · knowledge graphs & dependency networks · agentic pipelines for federal statistical workflows"
     Skills:
-      - R
+      - Multi-agent AI
+      - LLM pipelines (Claude API)
       - Python
+      - R
+      - LaTeX
       - PostgreSQL
-      - Oracle PL/SQL
-      - MS SQL Server
       - Linux Admin
       - Docker
-      - JavaEE
-      - ASP.NET/C#
-      - SAS
-      - SPSS
-      - Network Admin
-      - Photoshop/GIMP
-      - LLMs/AI
+      - Knowledge graphs
+      - Ontology design
 design:
   theme: classic

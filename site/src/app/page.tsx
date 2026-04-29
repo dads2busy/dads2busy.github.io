@@ -13,6 +13,8 @@ type ProfileEducationEntry = {
 
 type ProfileAward = { label: string; details?: string };
 
+type ProfileSpecialization = { label: string; details: string };
+
 type Profile = {
   cv: {
     name: string;
@@ -21,6 +23,7 @@ type Profile = {
       Summary: string[];
       Education: ProfileEducationEntry[];
       Skills: string[];
+      Specializations: ProfileSpecialization[];
       "Awards & Honors": ProfileAward[];
     };
   };
@@ -40,6 +43,7 @@ const summaryParagraphs = profile.cv.sections.Summary;
 const educationEntries = profile.cv.sections.Education;
 const awards = profile.cv.sections["Awards & Honors"];
 const skills = profile.cv.sections.Skills;
+const specializations = profile.cv.sections.Specializations as Array<{ label: string; details: string }>;
 
 export default function Home() {
   return (
@@ -126,43 +130,23 @@ export default function Home() {
         <div>
           <p className="section-label">Specializations</p>
           <div className="panel p-5 space-y-4">
+            {specializations.map((spec, i) => (
+              <div key={i}>
+                <p className="text-sm font-semibold mb-2" style={{ color: "var(--accent)" }}>
+                  {spec.label}
+                </p>
+                <p className="text-sm" style={{ color: "var(--text-muted)" }}>
+                  {spec.details}
+                </p>
+              </div>
+            ))}
             <div>
-              <p
-                className="text-sm font-semibold mb-2"
-                style={{ color: "var(--accent)" }}
-              >
-                Policy &amp; Evaluation
-              </p>
-              <p className="text-sm" style={{ color: "var(--text-muted)" }}>
-                Methods of data collection · research design · quantitative
-                &amp; qualitative analysis · information policy · privacy law ·
-                policy/implementation network analysis
-              </p>
-            </div>
-            <div>
-              <p
-                className="text-sm font-semibold mb-2"
-                style={{ color: "var(--accent)" }}
-              >
-                Information Management
-              </p>
-              <p className="text-sm" style={{ color: "var(--text-muted)" }}>
-                Information integration · data management · big data ·
-                web-enabled public services
-              </p>
-            </div>
-            <div>
-              <p
-                className="text-sm font-semibold mb-2"
-                style={{ color: "var(--accent)" }}
-              >
+              <p className="text-sm font-semibold mb-2" style={{ color: "var(--accent)" }}>
                 Technical Skills
               </p>
               <div className="flex flex-wrap gap-1.5">
                 {skills.map((s) => (
-                  <span key={s} className="chip">
-                    {s}
-                  </span>
+                  <span key={s} className="chip">{s}</span>
                 ))}
               </div>
             </div>
