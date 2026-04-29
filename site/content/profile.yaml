@@ -3592,6 +3592,36 @@ cv:
           the network of which FEMA is the center.
         editors: "Ali Farazmand. Marcel-Dekker: New York"
     Research / Technical Reports:
+      - title: "An Agentic AI Approach for Estimating the U.S. Classified Intelligence Budget"
+        authors:
+          - "**Schroeder, Aaron**"
+        date: "2026-04-27"
+        journal: "Biocomplexity Institute, University of Virginia, Technical Report BI-2026-3"
+        url: "https://proceedings.biocomplexity.virginia.edu/system/files/publications/2026-04/main_0.pdf"
+        slug: ibes_agentic_intelligence_budget
+        subcategory: Research/Technical Reports
+        abstract: >-
+          The U.S. government publishes high-level intelligence budget aggregates — the
+          National Intelligence Program (NIP) and Military Intelligence Program (MIP)
+          toplines — but does not provide a public line-item breakdown of where those
+          funds go. This report describes the Intelligence Budget Estimation System
+          (IBES), a multi-agent workflow that infers the classified "black budget"
+          residual by enumerating observable line items in public Department of Defense
+          (DoD) budget exhibits, classifying them for intelligence relevance, and
+          reconciling them against the disclosed totals. The system is built on
+          LangGraph for workflow orchestration, Pydantic AI for typed agent schemas,
+          and locally hosted large language models served by Ollama, yielding a stack
+          that keeps technology dependencies shallow while making each analytical step
+          explicit and auditable. The current implementation integrates DoD R-1
+          (Research, Development, Test & Evaluation), P-1 (Procurement), and O-1
+          (Operation & Maintenance) exhibits across fiscal years 2020–2025, applies a
+          four-tier classification scheme combining rule-based heuristics with LLM
+          reasoning, and produces residual estimates ranging from $82B to $105B per
+          year alongside a linear trend model with R² = 0.836. The report describes
+          the architecture, data integration, classification methodology, results,
+          limitations, and a roadmap for incorporating additional public data sources
+          (SEC 10-K filings, ODNI breakdowns, congressional justifications) to improve
+          coverage.
       - title: "An Agentic AI Approach for Material Evolution Knowledge Hypergraph Discovery"
         authors:
           - "**Schroeder, Aaron**"
