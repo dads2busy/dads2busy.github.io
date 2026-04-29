@@ -160,3 +160,77 @@ def test_publication_ordinal_empty_string_omits_field():
     assert "ordinal" not in out or out["ordinal"] == ""
 
 
+# ─── Shape-completeness tests ────────────────────────────────────────
+# These tests pin the output key-set for each emitter. A renamed key
+# causes a test failure here, catching regressions before the website breaks.
+
+def test_publication_writing_shape_complete():
+    """publication_entry_to_writing on a fully-populated entry must produce
+    exactly these keys (the writing.json shape the website's content.ts expects)."""
+    entry = {
+        "title": "X", "authors": ["A", "B"], "date": "2023-01-01",
+        "doi": "10.x/y", "journal": "J", "url": "http://example.com",
+        "slug": "s", "subcategory": "Refereed Journal Articles",
+        "content": "abstract", "editors": "ed", "pages": "1-10", "ordinal": "5",
+    }
+    out = publication_entry_to_writing(entry)
+    expected = {
+        "title", "authors", "date", "DOI", "sponsor", "website",
+        "ordinal", "slug", "subcategory", "content", "editors", "pages",
+    }
+    assert set(out.keys()) == expected, (
+        f"publication_entry_to_writing key drift: missing={expected - set(out)} extra={set(out) - expected}"
+    )
+
+
+def test_experience_working_shape_complete():
+    entry = {
+        "name": "X", "date": "2018-Present", "summary": "Role at Org",
+        "content": "Description", "slug": "s", "subcategory": "current",
+        "ordinal": "1",
+    }
+    out = experience_entry_to_working(entry)
+    expected = {"title", "dates", "subtitle", "content", "ordinal", "slug", "subcategory"}
+    assert set(out.keys()) == expected
+
+
+def test_research_research_shape_complete():
+    entry = {
+        "name": "X", "date": "2020", "url": "http://x.com", "content": "abstract",
+        "slug": "s", "subcategory": "Some Sub", "sponsor": "Sponsor X",
+        "award": "$1000", "role": "PI", "ordinal": "3",
+    }
+    out = project_entry_to_research(entry)
+    expected = {
+        "title", "dates", "website", "content", "ordinal", "slug",
+        "subcategory", "sponsor", "award", "role",
+    }
+    assert set(out.keys()) == expected
+
+
+def test_presentation_speaking_shape_complete():
+    entry = {
+        "name": "X", "date": "2023-12-02", "content": "Speech text",
+        "url": "http://x.com", "slug": "s", "subcategory": "Lecture",
+        "sponsor": "Venue", "role": "speaker",
+    }
+    out = presentation_entry_to_speaking(entry)
+    expected = {
+        "title", "date", "content", "website", "slug", "subcategory",
+        "sponsor", "role",
+    }
+    assert set(out.keys()) == expected, (
+        f"presentation_entry_to_speaking key drift: missing={expected - set(out)} extra={set(out) - expected}"
+    )
+
+
+def test_teaching_teaching_shape_complete():
+    entry = {
+        "name": "X", "date": "2013-05-22", "url": "http://x.com",
+        "content": "syllabus", "slug": "s",
+    }
+    out = teaching_entry_to_teaching(entry)
+    expected = {"title", "date", "website", "content", "slug"}
+    assert set(out.keys()) == expected
+
+
