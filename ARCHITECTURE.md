@@ -58,7 +58,7 @@ Scripts that help populate or curate profile.yaml. They emit *review diffs*
 | `scripts/fill_missing_fields.py`    | Walks profile.yaml; proposes derivations for blank fields (Plan H)| `profile_fill_diff.md` |
 
 Shared library:
-- `scripts/profile_derive_lib.py` — pure title/category derivation from prose
+- `scripts/profile_derive_lib.py` — pure title/category derivation from prose (maps 7 keywords to 6 canonical categories)
 - `scripts/analyzer_lib.py` — title normalization, profile-yaml entry extraction
 - `scripts/orcid_diff_lib.py` — ORCID work-group → entry, diff bucketing
 

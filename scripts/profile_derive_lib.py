@@ -5,6 +5,16 @@ CATEGORIES = (
     "Expert Forum", "Expert Webinar", "Workshop",
 )
 
+_KEYWORD_TO_CATEGORY = {
+    "Panelist": "Panelist",
+    "Presentation": "Presentations/Workshops",
+    "Committee": "Committee",
+    "Lecture": "Lecture",
+    "Expert Forum": "Expert Forum",
+    "Expert Webinar": "Expert Webinar",
+    "Workshop": "Presentations/Workshops",
+}
+
 # Title: <Category>: <captured>  where captured is either:
 #   1. text in straight or smart double quotes
 #   2. bare text up to the next period
@@ -35,10 +45,17 @@ def derive_title_from_content(content: str) -> str | None:
 
 
 def derive_category_from_content(content: str) -> str | None:
-    """Return the first category keyword that appears as `<cat>:` in the content."""
+    """Map a content-keyword to its canonical category. Returns None if no match.
+
+    The 6 canonical categories: Panelist, Presentations/Workshops, Committee,
+    Lecture, Expert Forum, Expert Webinar. Both 'Presentation:' and 'Workshop:'
+    in prose map to 'Presentations/Workshops' (the umbrella category).
+    """
     if not content:
         return None
-    for cat in CATEGORIES:
-        if re.search(rf"\b{re.escape(cat)}\s*:", content):
-            return cat
+    # Order matters: longer keywords first (e.g. 'Expert Forum' before 'Forum'),
+    # so we use the dict's keys in their original CATEGORIES order.
+    for kw in CATEGORIES:
+        if re.search(rf"\b{re.escape(kw)}\s*:", content):
+            return _KEYWORD_TO_CATEGORY[kw]
     return None

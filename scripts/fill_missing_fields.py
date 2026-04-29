@@ -2,8 +2,8 @@
 """Review tool: propose derived title/category for incomplete profile.yaml entries.
 
 Walks the Presentations section, finds entries with empty `name` or with
-`subcategory: Presentations/Workshops` (the legacy default bucket), runs the
-derivation library on each entry's `content`, and emits a markdown diff.
+`subcategory: Presentations/Workshops`, runs the derivation library on each
+entry's `content`, and emits a markdown diff.
 
 The script NEVER writes to profile.yaml. Review the diff and hand-apply
 acceptable proposals via your editor.
@@ -47,7 +47,7 @@ def main() -> None:
 
         if (entry.get("subcategory") or "").strip() == "Presentations/Workshops":
             proposed = derive_category_from_content(content)
-            if proposed:
+            if proposed and proposed != "Presentations/Workshops":
                 category_props.append({
                     "date": date, "slug": slug, "current": "Presentations/Workshops",
                     "proposed": proposed, "content": content[:140],

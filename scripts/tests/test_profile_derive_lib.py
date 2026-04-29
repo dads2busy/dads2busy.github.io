@@ -58,9 +58,14 @@ def test_category_panelist():
     assert derive_category_from_content(s) == "Panelist"
 
 
+def test_category_presentation():
+    s = 'Schroeder, A.D. Presentation: "Data Re-Use in Action" (2022), MASN.'
+    assert derive_category_from_content(s) == "Presentations/Workshops"
+
+
 def test_category_workshop():
     s = "Schroeder, A.D. Workshop: ITSVA Annual Conference."
-    assert derive_category_from_content(s) == "Workshop"
+    assert derive_category_from_content(s) == "Presentations/Workshops"
 
 
 def test_category_expert_forum_two_word():
@@ -89,6 +94,6 @@ def test_category_returns_none_for_empty():
 
 def test_category_first_match_wins_when_multiple():
     """If content somehow has multiple keywords, the first one in the canonical
-    order wins (Panelist before Presentation, etc.)."""
+    order wins (Panelist before Presentation, etc.). Mapped to 6 canonical categories."""
     s = "Discussed at Panelist: Topic A. Followed by Lecture: Topic B."
     assert derive_category_from_content(s) == "Panelist"
