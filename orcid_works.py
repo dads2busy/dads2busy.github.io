@@ -70,6 +70,28 @@ def get_works(orcid_id: str, token: str) -> dict:
         return json.loads(resp.read())
 
 
+def get_work_authors(orcid_id: str, put_code: int, token: str) -> list[str]:
+    """Fetch a single work's full author list (credit-name strings, in order)."""
+    url = f"{API_BASE}/{orcid_id}/work/{put_code}"
+    req = urllib.request.Request(url)
+    req.add_header("Authorization", f"Bearer {token}")
+    req.add_header("Accept", "application/json")
+    try:
+        with urllib.request.urlopen(req) as resp:
+            data = json.loads(resp.read())
+    except Exception as e:
+        print(f"  warn: failed to fetch authors for put-code {put_code}: {e}", file=sys.stderr)
+        return []
+    contribs = (data.get("contributors") or {}).get("contributor") or []
+    authors = []
+    for c in contribs:
+        cn = c.get("credit-name") or {}
+        name = cn.get("value")
+        if name:
+            authors.append(name)
+    return authors
+
+
 def print_works(data: dict) -> None:
     """Print a human-readable summary of each work."""
     groups = data.get("group", [])
@@ -114,7 +136,8 @@ def print_works(data: dict) -> None:
         print("-" * 80)
 
 
-def write_diff(orcid_data: dict, profile_path: str = "site/content/profile.yaml",
+def write_diff(orcid_data: dict, orcid_id: str, token: str,
+               profile_path: str = "site/content/profile.yaml",
                diff_path: str = "orcid_diff.md") -> tuple[int, int, int]:
     """Compare ORCID works against profile.yaml; write markdown diff.
 
@@ -130,6 +153,16 @@ def write_diff(orcid_data: dict, profile_path: str = "site/content/profile.yaml"
         if (e := orcid_group_to_entry(g)) is not None
     ]
     matched, new, fuzzy = compute_diff(orcid_entries, profile_titles, profile_dois)
+
+    # Fetch authors for candidate-NEW entries (one API call each)
+    print(f"Fetching authors for {len(new)} candidate entries...", file=sys.stderr)
+    for i, e in enumerate(new, 1):
+        if e.get("put_code"):
+            e["authors"] = get_work_authors(orcid_id, e["put_code"], token)
+        else:
+            e["authors"] = []
+        if i % 10 == 0:
+            print(f"  ...{i}/{len(new)}", file=sys.stderr)
 
     lines = [
         "# ORCID Sync Diff",
@@ -154,7 +187,13 @@ def write_diff(orcid_data: dict, profile_path: str = "site/content/profile.yaml"
         lines.append("")
         lines.append("```yaml")
         lines.append(f"- title: \"{e['title']}\"")
-        lines.append("  authors: []  # ORCID work-summary doesn't include authors; add by hand")
+        if e.get("authors"):
+            lines.append("  authors:")
+            for a in e["authors"]:
+                escaped = a.replace('"', '\\"')
+                lines.append(f'    - "{escaped}"')
+        else:
+            lines.append("  authors: []  # ORCID has no contributors recorded for this work")
         if e['year']:
             lines.append(f"  date: \"{e['year']}\"")
         if e['doi']:
@@ -208,7 +247,7 @@ def main():
 
     print_works(data)
 
-    matched, new, fuzzy = write_diff(data)
+    matched, new, fuzzy = write_diff(data, orcid_id, token)
     print(f"\nWrote orcid_diff.md")
     print(f"  Already in SSOT: {matched}")
     print(f"  Candidate new:   {new}")

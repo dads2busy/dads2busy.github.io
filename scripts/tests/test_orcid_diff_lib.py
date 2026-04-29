@@ -17,6 +17,7 @@ SAMPLE_GROUP = {
             "type": "journal-article",
             "publication-date": {"year": {"value": "2023"}},
             "journal-title": {"value": "Some Journal"},
+            "put-code": 12345,
         },
     ],
 }
@@ -29,6 +30,7 @@ def test_orcid_group_extracts_basic_fields():
     assert out["year"] == "2023"
     assert out["journal"] == "Some Journal"
     assert out["type"] == "journal-article"
+    assert out["put_code"] == 12345
 
 
 def test_orcid_group_handles_missing_doi():

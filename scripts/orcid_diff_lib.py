@@ -6,7 +6,7 @@ from analyzer_lib import normalize_title
 
 
 def orcid_group_to_entry(group: dict) -> dict | None:
-    """Extract {title, doi, year, journal, type} from one ORCID work-group dict.
+    """Extract {title, doi, year, journal, type, put_code} from one ORCID work-group dict.
 
     Returns None if the group has no work-summary.
     """
@@ -37,6 +37,7 @@ def orcid_group_to_entry(group: dict) -> dict | None:
         "year": year,
         "journal": journal,
         "type": work.get("type", "unknown"),
+        "put_code": work.get("put-code"),
     }
 
 
