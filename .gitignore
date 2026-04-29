@@ -31,3 +31,6 @@ orcid_diff.md
 
 # Profile fill review-diff (regenerate via fill_missing_fields.py)
 profile_fill_diff.md
+
+# AI agent context (local only — keep out of history)
+CLAUDE.md
