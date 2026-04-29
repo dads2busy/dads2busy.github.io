@@ -8,13 +8,9 @@ export default function ResearchPage() {
   return (
     <CategoryLayout category="research">
       {RESEARCH_SUBCATEGORIES.map((subcategory) => {
-        const posts = getPostsBySubcategory("research", subcategory).sort(
-          (a, b) => {
-            const dateCompare = b.date.localeCompare(a.date);
-            if (dateCompare !== 0) return dateCompare;
-            return (a.ordinal ?? 999) - (b.ordinal ?? 999);
-          },
-        ) as ResearchPost[];
+        const posts = (getPostsBySubcategory("research", subcategory) as ResearchPost[]).sort(
+          (a, b) => (b.end_year ?? 0) - (a.end_year ?? 0),
+        );
         if (posts.length === 0) return null;
         return (
           <div key={subcategory}>

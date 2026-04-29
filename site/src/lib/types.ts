@@ -17,6 +17,8 @@ export interface ResearchPost extends BasePost {
   funder?: string;
   award?: string;
   dates?: string;
+  start_year?: number;
+  end_year?: number;
   role?: string;
   report?: string;
   report2?: string;

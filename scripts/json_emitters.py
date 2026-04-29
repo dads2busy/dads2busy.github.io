@@ -89,6 +89,10 @@ def project_entry_to_research(entry: dict) -> dict:
             "media1title", "media2title", "media3title",
         ),
     )
+    if entry.get("start_year") is not None:
+        out["start_year"] = int(entry["start_year"])
+    if entry.get("end_year") is not None:
+        out["end_year"] = int(entry["end_year"])
     return out
 
 

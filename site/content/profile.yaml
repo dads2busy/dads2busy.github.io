@@ -203,6 +203,8 @@ cv:
     Research Projects:
       - name: Leveraging Large Language Models to Identify Green Innovation
         date: 2023-2024
+        start_year: "2023"
+        end_year: "2024"
         summary: National Center for Science and Engineering Statistics (NSF) — $101,000 (PI)
         slug: green_ai
         subcategory: Data Integration & Management
@@ -213,6 +215,8 @@ cv:
           create supplemental indicators of innovation to existing survey statistics.
       - name: Developing Predictive Models of U.S. Army Career Pathways
         date: 2021-2025
+        start_year: "2021"
+        end_year: "2025"
         summary: U.S. Army Research Institute for the Behavioral and Social Sciences — $813,848 (years 4–5) (PI)
         slug: army_pathways
         subcategory: Program Evaluation/Policy Analysis
@@ -225,6 +229,8 @@ cv:
           methods for modeling career dynamics.
       - name: The Social Component of the Human Dimension - Leveraging Existing DoD Data Towards Optimized Individual and Team Performance in the Army
         date: 2017-2022
+        start_year: "2017"
+        end_year: "2022"
         summary: Army Research Institute — $3,000,000 (Senior Personnel)
         slug: army_constructs
         subcategory: Program Evaluation/Policy Analysis
@@ -234,6 +240,8 @@ cv:
           and Team/Unit performance.
       - name: Use Statistical and Survey Methodology Research to Improve or Redesign Surveys
         date: 2017-2021
+        start_year: "2017"
+        end_year: "2021"
         summary: United States Department of Agriculture / National Science Foundation — $2,500,000 (Senior Personnel / Founding Co-PI)
         slug: stat_surveys
         subcategory: Data Integration & Management
@@ -245,6 +253,8 @@ cv:
           beyond traditional survey collections including opportunity data with spatial or temporal design.
       - name: Towards an Integrated Data Framework for Understanding the Context of Military Environments
         date: 2015-2018
+        start_year: "2015"
+        end_year: "2018"
         summary: Army Research Institute — $1,691,337 (Co-PI)
         slug: dod_data
         subcategory: Data Integration & Management
@@ -255,6 +265,8 @@ cv:
           a case study on military attrition, with a focus on the Army.
       - name: Bringing Evidence-Based Decision Making to Local Communities through Community Learning
         date: "2016"
+        start_year: "2016"
+        end_year: "2016"
         summary: Laura and John Arnold Foundation — $144,000 (Co-PI)
         slug: arn_learn
         subcategory: Program Evaluation/Policy Analysis
@@ -265,6 +277,8 @@ cv:
           Extension.
       - name: Actionable Intelligence for Social Policy Innovation
         date: 2016-2017
+        start_year: "2016"
+        end_year: "2017"
         summary: University of Pennsylvania / Laura and John Arnold Foundation — $22,500 (Co-PI)
         slug: arn_evidence
         subcategory: Program Evaluation/Policy Analysis
@@ -276,6 +290,8 @@ cv:
         role: Co-PI
         award: $543,000
         date: 2004-2005
+        start_year: "2004"
+        end_year: "2005"
         summary: U.S. DOT Research and Special Programs Administration (RSPA) — $543,000 (Co-PI)
         slug: atis_rce
         subcategory: Data Integration & Management
@@ -285,6 +301,8 @@ cv:
         role: PI
         award: $1,760,000
         date: 2010-2013
+        start_year: "2010"
+        end_year: "2013"
         summary: U.S. Department of Education — $1,760,000 (PI)
         url: https://myvlds.virginia.gov/
         abstract:
@@ -309,6 +327,8 @@ cv:
         funder: Virginia Department of Social Services
         role: PI
         date: 2010-2016
+        start_year: "2010"
+        end_year: "2016"
         award: $110,840
         summary: Virginia Department of Social Services — $110,840 (PI)
         url: http://registry.fivehokies.com/
@@ -334,6 +354,8 @@ cv:
         role: PI
         award: $650,000
         date: 2008-2011
+        start_year: "2008"
+        end_year: "2011"
         summary:
           Administration for Children & Families (US Department of Health & Human Services) — $650,000
           (PI)
@@ -357,6 +379,8 @@ cv:
         role: PI
         award: $180,000
         date: "2002"
+        start_year: "2002"
+        end_year: "2002"
         summary: VA Department of Transportation (VDOT) — $180,000 (PI)
         slug: I81_db
         subcategory: Data Integration & Management
@@ -366,6 +390,8 @@ cv:
         role: PI
         award: $1,800,000
         date: 1999-2006
+        start_year: "1999"
+        end_year: "2006"
         summary:
           Research and Special Programs Administration (US Department of Transportation) — $1,800,000
           (PI)
@@ -383,6 +409,8 @@ cv:
         role: PI
         award: $747,817
         date: 2002-2005
+        start_year: "2002"
+        end_year: "2005"
         summary: VA Department of Transportation (VDOT) — $747,817 (PI)
         slug: ops_center
         subcategory: Data Integration & Management
@@ -392,6 +420,8 @@ cv:
         role: PI
         award: $60,733
         date: "1999"
+        start_year: "1999"
+        end_year: "1999"
         summary: Virginia Department of Transportion (VDOT) — $60,733 (PI)
         slug: ATIS
         subcategory: Data Integration & Management
@@ -401,6 +431,8 @@ cv:
         role: PI
         award: $1,207,000
         date: 2000-2003
+        start_year: "2000"
+        end_year: "2003"
         summary: Virginia Department of Transportion (VDOT) — $1,207,000 (PI)
         url: http://www.511virginia.org/
         abstract:
@@ -418,6 +450,8 @@ cv:
         role: PI
         award: $1,400,000
         date: 1998-2000
+        start_year: "1998"
+        end_year: "2000"
         summary:
           Virginia Department of Transportion (VDOT) and Shenandoah Telecommunications (SHENTEL)
           — $1,400,000 (PI)
@@ -442,6 +476,8 @@ cv:
         role: PI
         award: $75,000
         date: 1999-2000
+        start_year: "1999"
+        end_year: "2000"
         summary: Virginia Department of Transportation (VDOT) — $75,000 (PI)
         abstract:
           Truck Fleet Alert was built as a particular application of Travel Shenandoah. The system
@@ -457,6 +493,8 @@ cv:
         role: Co-PI
         award: $200,000
         date: 1999-2000
+        start_year: "1999"
+        end_year: "2000"
         summary: Virginia Department of Transportation (VDOT) — $200,000 (Co-PI)
         abstract:
           Co-directed a planning and design effort to replicate the success of Travel Shenandoah
@@ -470,6 +508,8 @@ cv:
         role: Co-PI
         award: $125,000
         date: 1997-2002
+        start_year: "1997"
+        end_year: "2002"
         summary:
           Federal Highway Administration (FHWA), US Department of Transportation (USDOT) — $125,000
           (Co-PI)
@@ -485,6 +525,8 @@ cv:
         role: PI
         award: $86,000
         date: 2000-2001
+        start_year: "2000"
+        end_year: "2001"
         summary: Bedford County, VA — $86,000 (PI)
         abstract:
           Following on the success of the Access to Rides system in Montgomery County, VA, Bedford
@@ -501,6 +543,8 @@ cv:
         role: PI
         award: $56,000
         date: 1998-2002
+        start_year: "1998"
+        end_year: "2002"
         summary:
           Federal Highway Administartion (FHWA), US Department of Transportation (USDOT) — $56,000
           (PI)
@@ -517,6 +561,8 @@ cv:
         role: PI
         award: $593,603
         date: 2003-2005
+        start_year: "2003"
+        end_year: "2005"
         summary: Virginia Department of Transportion (VDOT) — $593,603 (PI)
         abstract:
           Based on successful preliminary analysis of the US460 installation (see below), VDOT provided
@@ -532,6 +578,8 @@ cv:
         role: PI
         award: $250,000
         date: 2001-2004
+        start_year: "2001"
+        end_year: "2004"
         summary: Virginia Department of Transportion (VDOT) — $250,000 (PI)
         abstract:
           Directed design, installation and operation of experimental 802.11 wireless corridor on
@@ -546,6 +594,8 @@ cv:
         funder: USDOT Center for ITS Implementation Research
         role: PI
         date: "2003"
+        start_year: "2003"
+        end_year: "2003"
         award: $80,000
         summary: USDOT Center for ITS Implementation Research — $80,000 (PI)
         abstract:
@@ -566,6 +616,8 @@ cv:
         role: PI
         award: $89,000
         date: "2005"
+        start_year: "2005"
+        end_year: "2005"
         summary: Cisco Systems, Inc. — $89,000 (PI)
         slug: cisco_wireless
         subcategory: Wireless Technologies
@@ -575,6 +627,8 @@ cv:
         role: PI
         award: $100,000
         date: 2005-2006
+        start_year: "2005"
+        end_year: "2006"
         summary: Cisco Systems, Inc. — $100,000 (PI)
         slug: smart_road_wireless
         subcategory: Wireless Technologies
@@ -586,6 +640,8 @@ cv:
         role: Co-PI
         award: $148,780
         date: 2009-2010
+        start_year: "2009"
+        end_year: "2010"
         summary: Virginia Department of Veteran Services — $148,780 (Co-PI)
         abstract:
           Assessed the current service experiences (consumer satisfaction), emerging and unserved
@@ -604,6 +660,8 @@ cv:
         role: Co-PI
         award: $14,000
         date: 2006-2007
+        start_year: "2006"
+        end_year: "2007"
         summary: Generations United (GU) and the MET Life Foundation — $14,000 (Co-PI)
         abstract:
           Working with Generations United (GU) and Dr. Shannon Jarrott of the Virginia Tech Department
@@ -619,6 +677,8 @@ cv:
         role: PI
         award: $140,200
         date: 2002-2004
+        start_year: "2002"
+        end_year: "2004"
         summary: Virginia Department of Transportion (VDOT) — $140,200 (PI)
         abstract:
           The I-81 ITS Program is a framework for on-going coordination, planning, design, and implementation
@@ -638,6 +698,8 @@ cv:
         role: PI
         award: $140,200
         date: "2003"
+        start_year: "2003"
+        end_year: "2003"
         summary: Virginia Department of Transportion (VDOT) — $140,200 (PI)
         abstract:
           The primary goal of this report is to provide information to the Sponsors, Policy Committee,
@@ -653,6 +715,8 @@ cv:
         role: PI
         award: $50,000
         date: "2001"
+        start_year: "2001"
+        end_year: "2001"
         summary: Virginia Department of Transportion (VDOT) — $50,000 (PI)
         slug: CorridorConceptOps
         subcategory: Program Evaluation/Policy Analysis
@@ -662,6 +726,8 @@ cv:
         role: PI
         award: $125,000
         date: "2000"
+        start_year: "2000"
+        end_year: "2000"
         summary: Virginia Department of Transportion (VDOT) — $125,000 (PI)
         abstract:
           Conducted analysis and created report outlining the functions of the integrated regional
@@ -674,6 +740,8 @@ cv:
         role: PI
         award: $275,000
         date: 2000-2001
+        start_year: "2000"
+        end_year: "2001"
         summary: Virginia Department of Transportion (VDOT) — $275,000 (PI)
         abstract:
           "Directed an effort to plan for Intelligent Transportation Systems deployment in the I-81
@@ -691,6 +759,8 @@ cv:
         funder: National Science Foundation
         role: Co-PI
         date: 2013-2017
+        start_year: "2013"
+        end_year: "2017"
         award: $500,004
         summary: National Science Foundation — $500,004 (Co-PI)
         slug: NSF_Resinfra
@@ -701,6 +771,8 @@ cv:
         role: PI
         award: $50,000
         date: "2006"
+        start_year: "2006"
+        end_year: "2006"
         summary: USDOT Center for ITS Implementation Research — $50,000 (PI)
         abstract:
           "The goal of this project was to develop a detailed understanding of what would be required
@@ -718,6 +790,8 @@ cv:
         role: PI
         award: $50,000
         date: "2016"
+        start_year: "2016"
+        end_year: "2016"
         summary: VA Department of Emergency Management — $50,000 (PI)
         slug: VDEM
         subcategory: Data Integration & Management
@@ -729,6 +803,8 @@ cv:
         role: PI
         award: $75,000
         date: "2018"
+        start_year: "2018"
+        end_year: "2018"
         summary: Virginia Early Childhood Foundation (VECF) — $75,000 (PI)
         abstract:
           Integrated data across multiple state agencies to create a distinct count of children,
@@ -744,6 +820,8 @@ cv:
         role: PI
         award: $77,761
         date: 2019-2020
+        start_year: "2019"
+        end_year: "2020"
         summary: Iowa State University — $77,761 (PI)
         abstract:
           Assisted ISU in the overall conceptualization and design of the separate processes, platforms,
@@ -759,6 +837,8 @@ cv:
         role: PI
         award: "$60,971 (part of a larger American Soldier in World War II initiative led by Virginia Tech)"
         date: "2021"
+        start_year: "2021"
+        end_year: "2021"
         summary:
           National Endowment for the Humanities — $60,971 (part of a larger American Soldier in World
           War II initiative led by Virginia Tech) (PI)
@@ -776,6 +856,8 @@ cv:
         funder: U.S. Centers for Disease Control (via the Virginia Department of Health)
         role: PI
         date: 2021-2024
+        start_year: "2021"
+        end_year: "2024"
         award: $1,150,000
         summary: U.S. Centers for Disease Control (via the Virginia Department of Health) — $1,150,000 (PI)
         url: https://uva-bi-sdad.github.io/vdh_rural_health_site
@@ -789,6 +871,8 @@ cv:
         funder: Mastercard Center for Inclusive Growth
         role: PI
         date: 2021-2025
+        start_year: "2021"
+        end_year: "2025"
         award: $1,100,000
         summary: Mastercard Center for Inclusive Growth — $1,100,000 (PI)
         url: https://uva-bi-sdad.github.io/sdc.intro/
