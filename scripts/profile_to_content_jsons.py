@@ -90,7 +90,10 @@ def main() -> None:
         "research.json": _dedup_slugs(emit_simple(sections, "Research Projects", project_entry_to_research)),
         "speaking.json": _dedup_slugs(emit_simple(sections, "Presentations", presentation_entry_to_speaking)),
         "teaching.json": _dedup_slugs(emit_simple(sections, "Teaching", teaching_entry_to_teaching)),
-        "releases.json": _dedup_slugs(emit_simple(sections, "Data & Software", release_entry_to_releases)),
+        "releases.json": _dedup_slugs(
+            emit_simple(sections, "Software", release_entry_to_releases)
+            + emit_simple(sections, "Datasets", release_entry_to_releases)
+        ),
     }
 
     for name, data in outputs.items():

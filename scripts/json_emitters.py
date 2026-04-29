@@ -130,7 +130,9 @@ def teaching_entry_to_teaching(entry: dict) -> dict:
 
 
 def release_entry_to_releases(entry: dict) -> dict:
-    out: dict = {"title": entry["name"]}
+    # Accept either `name` (NormalEntry-style, used for software) or `title`
+    # (PublicationEntry-style, used for DOI'd datasets).
+    out: dict = {"title": entry.get("title") or entry["name"]}
     if entry.get("date"):
         out["date"] = entry["date"]
     if entry.get("summary"):

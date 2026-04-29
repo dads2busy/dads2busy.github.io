@@ -85,7 +85,7 @@ def test_compute_diff_title_match():
     entries = [{"title": "My Awesome Dataset", "doi": "10.5281/zenodo.1234567",
                 "year": "2023", "description": None, "html_url": None,
                 "resource_type": "Dataset", "authors": []}]
-    profile_titles = {("Data & Software", "My Awesome Dataset")}
+    profile_titles = {("Datasets", "My Awesome Dataset")}
     profile_dois = set()
     matched, new, fuzzy = compute_diff(entries, profile_titles, profile_dois)
     assert len(matched) == 1
@@ -97,7 +97,7 @@ def test_compute_diff_doi_match_fuzzy():
     entries = [{"title": "New Title for Known Dataset", "doi": "10.5281/zenodo.1234567",
                 "year": "2023", "description": None, "html_url": None,
                 "resource_type": "Dataset", "authors": []}]
-    profile_titles = {("Data & Software", "Old Title for Known Dataset")}
+    profile_titles = {("Datasets", "Old Title for Known Dataset")}
     profile_dois = {"10.5281/zenodo.1234567"}
     matched, new, fuzzy = compute_diff(entries, profile_titles, profile_dois)
     assert len(matched) == 0
@@ -109,7 +109,7 @@ def test_compute_diff_new_entry():
     entries = [{"title": "Brand New Dataset", "doi": "10.5281/zenodo.9999999",
                 "year": "2024", "description": None, "html_url": None,
                 "resource_type": "Dataset", "authors": []}]
-    profile_titles = {("Data & Software", "Other Dataset")}
+    profile_titles = {("Datasets", "Other Dataset")}
     profile_dois = {"10.5281/zenodo.111"}
     matched, new, fuzzy = compute_diff(entries, profile_titles, profile_dois)
     assert len(matched) == 0
@@ -122,7 +122,7 @@ def test_compute_diff_title_match_normalizes():
     entries = [{"title": "my awesome dataset.", "doi": None,
                 "year": "2023", "description": None, "html_url": None,
                 "resource_type": "Dataset", "authors": []}]
-    profile_titles = {("Data & Software", "My Awesome Dataset")}
+    profile_titles = {("Datasets", "My Awesome Dataset")}
     profile_dois = set()
     matched, new, fuzzy = compute_diff(entries, profile_titles, profile_dois)
     assert len(matched) == 1

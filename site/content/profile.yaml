@@ -4229,7 +4229,7 @@ cv:
           information about problems, preferences and means, and trade-off goals and resources. That is,
           the context of “getting things done” in the public sector is changing from a singular organizational
           context to a multiple-organization network context. Managerially, we must respond accordingly.
-    "Data & Software":
+    Software:
       - name: STDN Agentic Framework
         subcategory: Software
         date: "2026-04-29"
@@ -4295,7 +4295,34 @@ cv:
           assistant. Built with Next.js 15, React 19, Leaflet, Plotly, and TanStack Table;
           consumes standardized CSVs produced by the Social Data Commons pipelines.
           Live site: https://dads2busy.github.io/national_capital_region_data/
-      - name: "Social Data Commons: Segregation Index (HOI) (v1.0.1)"
+      - name: Travel Information Data Clearinghouse and Management System
+        subcategory: Software
+        date: "1999-01-01"
+        summary: Copyright held by Virginia Polytechnic Institute and State University
+        abstract: >-
+          **Schroeder, A.D.** Travel Information Data Clearinghouse and Management System.
+          Copyright: Virginia Polytechnic Institute and State University, 1999.
+      - name: Web-Based Dynamic Ride Request, Assignment, and Tracking System
+        subcategory: Software
+        date: "1999-01-01"
+        summary: Copyright held by Virginia Polytechnic Institute and State University
+        abstract: >-
+          **Schroeder, A.D.** and Daily, B. Web-Based Dynamic Ride Request, Assignment, and
+          Tracking System. Copyright: Virginia Polytechnic Institute and State University, 1999.
+    Datasets:
+      - title: "Social Data Commons: Master Metadata"
+        subcategory: Dataset
+        authors:
+          - "**Schroeder, A.D.**"
+          - "Schroeder, J."
+          - "Iserman, M."
+          - "Linehan, K."
+        date: "2022"
+        journal: "UVA Dataverse, University of Virginia"
+        abstract: >-
+          Master metadata catalog for the Social Data Commons, deposited in the UVA Dataverse,
+          University of Virginia.
+      - title: "Social Data Commons: Segregation Index (HOI) (v1.0.1)"
         subcategory: Dataset
         authors:
           - "Schroeder, Aaron"
@@ -4310,7 +4337,7 @@ cv:
           race/ethnicity categories. Builds on methodology used in the Virginia Department
           of Health's Health Opportunity Index (HOI). Produced by the Social Data Commons
           at the University of Virginia.
-      - name: "Social Data Commons: Ookla Speed (v2.0.0)"
+      - title: "Social Data Commons: Ookla Speed (v2.0.0)"
         subcategory: Dataset
         authors:
           - "Schroeder, Aaron"
@@ -4325,7 +4352,7 @@ cv:
           exceeding 25/3 and 100/20 Mb/s broadband thresholds. Block group values are
           aggregated to tracts and counties. Produced by the Social Data Commons at the
           University of Virginia.
-      - name: "Social Data Commons: Daycare Accessibility (v1.2.0)"
+      - title: "Social Data Commons: Daycare Accessibility (v1.2.0)"
         subcategory: Dataset
         authors:
           - "Schroeder, Aaron"
@@ -4339,7 +4366,7 @@ cv:
           (seats per 1,000 children) for three age groups. Combines VDSS facility data,
           ACS child population estimates, and OSRM-based travel times. Produced by the
           Social Data Commons at the University of Virginia.
-      - name: "Social Data Commons: Primary Care Service Accessibility (FCA) (v4.0.1)"
+      - title: "Social Data Commons: Primary Care Service Accessibility (FCA) (v4.0.1)"
         subcategory: Dataset
         authors:
           - "Schroeder, Aaron"
@@ -4354,7 +4381,7 @@ cv:
           Medicine, and General Practice in VA, DC, and MD. Travel times from OSRM
           block-group-to-block-group matrices; catchment threshold 30 minutes. Coverage
           2018–2025. Produced by the Social Data Commons at the University of Virginia.
-      - name: "Social Data Commons: Employment Access Index (v2.0.0)"
+      - title: "Social Data Commons: Employment Access Index (v2.0.0)"
         subcategory: Dataset
         authors:
           - "Schroeder, Aaron"
@@ -4368,7 +4395,7 @@ cv:
           hierarchical distance approximation (block <34 mi, tract 34–165 mi, county
           165–200 mi) with 1/d^2 weighting. Inspired by the CNT H+T Affordability Index
           methodology. Produced by the Social Data Commons at the University of Virginia.
-      - name: "Social Data Commons: Walkability (v5.0.0)"
+      - title: "Social Data Commons: Walkability (v5.0.0)"
         subcategory: Dataset
         authors:
           - "Schroeder, Aaron"
@@ -4385,7 +4412,7 @@ cv:
           combining; block group scores are aggregated to tracts and counties via
           population-weighted means. Produced by the Social Data Commons at the
           University of Virginia.
-      - name: "Social Data Commons: OB-GYN Service Accessibility (FCA) (v2.0.0)"
+      - title: "Social Data Commons: OB-GYN Service Accessibility (FCA) (v2.0.0)"
         subcategory: Dataset
         authors:
           - "Schroeder, Aaron"
@@ -4400,7 +4427,7 @@ cv:
           (2017–2025) filtered to Obstetrics/Gynecology with MD/DO credentials in VA, DC,
           and MD. Travel times from a pre-computed OSRM block-group-to-block-group matrix.
           Produced by the Social Data Commons at the University of Virginia.
-      - name: "Social Data Commons: Access to Care Index (HOI) (v3.0.0)"
+      - title: "Social Data Commons: Access to Care Index (HOI) (v3.0.0)"
         subcategory: Dataset
         authors:
           - "Schroeder, Aaron"
@@ -4416,7 +4443,7 @@ cv:
           indicate better access. Reproduces and extends the VDH-OMHHE Health
           Opportunity Index Access-to-Care indicator using open data. Produced by the
           Social Data Commons at the University of Virginia.
-      - name: "Social Data Commons: Prenatal Care Adequacy (Kotelchuck Index) (v4.0.3)"
+      - title: "Social Data Commons: Prenatal Care Adequacy (Kotelchuck Index) (v4.0.3)"
         subcategory: Dataset
         authors:
           - "Schroeder, Aaron"
@@ -4431,7 +4458,7 @@ cv:
           visits. 2014–2020 from NCHS Natality microdata; 2021–2024 projected from the
           2020 baseline using year-over-year changes from CDC WONDER Natality Expanded
           (D149). Produced by the Social Data Commons at the University of Virginia.
-      - name: "Social Data Commons: Housing + Transportation Affordability (v3.1.2)"
+      - title: "Social Data Commons: Housing + Transportation Affordability (v3.1.2)"
         subcategory: Dataset
         authors:
           - "Schroeder, Aaron"
@@ -4447,7 +4474,7 @@ cv:
           regression models drive transportation costs from 17 independent variables
           computed from ACS, LEHD, TIGER, and GTFS at block-group resolution. Produced
           by the Social Data Commons at the University of Virginia.
-      - name: "Social Data Commons: Social Vulnerability Index (v3.0.0)"
+      - title: "Social Data Commons: Social Vulnerability Index (v3.0.0)"
         subcategory: Dataset
         authors:
           - "Schroeder, Aaron"
@@ -4463,7 +4490,7 @@ cv:
           stability instead of DP05/DP02 which renumber across ACS vintages. Validated
           against CDC SVI 2020 at r > 0.998 for all themes. Produced by the Social Data
           Commons at the University of Virginia.
-      - name: "Social Data Commons: Pediatric Service Accessibility (FCA) (v2.0.0)"
+      - title: "Social Data Commons: Pediatric Service Accessibility (FCA) (v2.0.0)"
         subcategory: Dataset
         authors:
           - "Schroeder, Aaron"
@@ -4478,7 +4505,7 @@ cv:
           (2018–2025), filtered to PEDIATRIC MEDICINE specialty with MD/DO credentials
           in VA, DC, and MD. Travel times from a pre-computed OSRM block-group-to-block-group
           driving matrix. Produced by the Social Data Commons at the University of Virginia.
-      - name: "Social Data Commons: Material Deprivation (v2.0.0)"
+      - title: "Social Data Commons: Material Deprivation (v2.0.0)"
         subcategory: Dataset
         authors:
           - "Schroeder, Aaron"
@@ -4494,27 +4521,6 @@ cv:
           deprivation. The VDH Health Opportunity Index includes a similar adaptation
           as one of its 13 indicators. Produced by the Social Data Commons at the
           University of Virginia.
-      - name: Social Data Commons - Master Metadata
-        subcategory: Dataset
-        date: "2022-01-01"
-        summary: Dataset deposited in UVA Dataverse, University of Virginia
-        abstract: >-
-          **Schroeder A.D.**; Schroeder J; Iserman M; Linehan K. Social Data Commons: Master
-          Metadata. UVA Dataverse. University of Virginia. 2022.
-      - name: Travel Information Data Clearinghouse and Management System
-        subcategory: Software
-        date: "1999-01-01"
-        summary: Copyright held by Virginia Polytechnic Institute and State University
-        abstract: >-
-          **Schroeder, A.D.** Travel Information Data Clearinghouse and Management System.
-          Copyright: Virginia Polytechnic Institute and State University, 1999.
-      - name: Web-Based Dynamic Ride Request, Assignment, and Tracking System
-        subcategory: Software
-        date: "1999-01-01"
-        summary: Copyright held by Virginia Polytechnic Institute and State University
-        abstract: >-
-          **Schroeder, A.D.** and Daily, B. Web-Based Dynamic Ride Request, Assignment, and
-          Tracking System. Copyright: Virginia Polytechnic Institute and State University, 1999.
     Awards & Honors:
       - label: Member, Arlington County Open Data Advisory Group
         details: 2018-2019

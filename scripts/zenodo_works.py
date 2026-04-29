@@ -57,17 +57,18 @@ def fetch_records(creator_name: str, token: str) -> list[dict]:
 
 
 def extract_data_software_section(profile: dict) -> tuple[set, set]:
-    """Return (title_tuples, dois) from profile.yaml's Data & Software section."""
+    """Return (title_tuples, dois) from profile.yaml's Software + Datasets sections."""
     titles, dois = set(), set()
-    section = profile.get("cv", {}).get("sections", {}).get("Data & Software") or []
-    for entry in section:
-        if not isinstance(entry, dict):
-            continue
-        name = entry.get("name") or entry.get("title")
-        if name:
-            titles.add(("Data & Software", name))
-        if entry.get("doi"):
-            dois.add(entry["doi"])
+    sections = profile.get("cv", {}).get("sections", {})
+    for section_name in ("Software", "Datasets"):
+        for entry in sections.get(section_name) or []:
+            if not isinstance(entry, dict):
+                continue
+            name = entry.get("name") or entry.get("title")
+            if name:
+                titles.add((section_name, name))
+            if entry.get("doi"):
+                dois.add(entry["doi"])
     return titles, dois
 
 
@@ -84,7 +85,7 @@ def write_diff(records: list[dict], profile_path: Path, diff_path: Path) -> tupl
         "",
         f"Generated {datetime.now().isoformat(timespec='seconds')}",
         f"Source: Zenodo ({len(entries)} records)",
-        f"SSOT: {profile_path.relative_to(REPO_ROOT)} Data & Software ({len(profile_titles)} titles, {len(profile_dois)} DOIs)",
+        f"SSOT: {profile_path.relative_to(REPO_ROOT)} Software + Datasets ({len(profile_titles)} titles, {len(profile_dois)} DOIs)",
         "",
         "## Summary",
         f"- ✓ {len(matched)} entries already in profile.yaml",
@@ -100,12 +101,18 @@ def write_diff(records: list[dict], profile_path: Path, diff_path: Path) -> tupl
     for e in new:
         lines.append(f"### {e['title']} ({e['year'] or 'n.d.'})")
         lines.append("")
-        lines.append("```yaml")
-        lines.append(f"- name: \"{e['title']}\"")
-        # Zenodo resource_type → Data & Software subcategory.
-        # Software stays Software; everything else (Dataset, Image, Publication, …) → Dataset.
+        # Zenodo resource_type → target section + key. Software → Software section
+        # (NormalEntry-style, `name:`). Everything else (Dataset, Image, Publication,
+        # …) → Datasets section (PublicationEntry-style, `title:`).
         rtype = (e.get("resource_type") or "").strip().lower()
-        subcat = "Software" if rtype == "software" else "Dataset"
+        is_software = rtype == "software"
+        target_section = "Software" if is_software else "Datasets"
+        title_key = "name" if is_software else "title"
+        subcat = "Software" if is_software else "Dataset"
+        lines.append(f"_Paste under `{target_section}:`_")
+        lines.append("")
+        lines.append("```yaml")
+        lines.append(f"- {title_key}: \"{e['title']}\"")
         lines.append(f"  subcategory: {subcat}")
         if e.get("authors"):
             lines.append("  authors:")
@@ -118,8 +125,6 @@ def write_diff(records: list[dict], profile_path: Path, diff_path: Path) -> tupl
             lines.append(f"  doi: {e['doi']}")
         if e.get('html_url'):
             lines.append(f"  url: {e['html_url']}")
-        if e.get('resource_type'):
-            lines.append(f"  summary: \"{e['resource_type']}\"")
         if e.get('description'):
             # Description from Zenodo is HTML; do a quick strip for the abstract
             desc = e['description']
