@@ -3132,6 +3132,15 @@ cv:
           </TABLE>"
         slug: theses
     Refereed Journal Articles:
+      - title:
+          "Compressing the Data Science Pipeline: How Large Language Models Can Accelerate the
+          Production of Policy-Relevant Datasets"
+        authors:
+          - "**Schroeder, Aaron**"
+        date: "2026"
+        journal: "Harvard Data Science Review (invited submission, in preparation)"
+        slug: hdsr_compressing_pipeline
+        subcategory: Journal Publications (refereed)
       - title: "Smart Metadata in Action: The Social Impact Data Commons"
         authors:
           - Joanna Schroeder, Alan Wang
