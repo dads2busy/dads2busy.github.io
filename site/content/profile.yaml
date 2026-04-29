@@ -3565,6 +3565,23 @@ cv:
           the network of which FEMA is the center.
         editors: "Ali Farazmand. Marcel-Dekker: New York"
     Research / Technical Reports:
+      - title: "An Agentic AI Approach for Material Evolution Knowledge Hypergraph Discovery"
+        authors:
+          - "**Schroeder, Aaron**"
+          - Machi, Dustin
+          - Klahn, Brian
+          - Harrison, Galen S.
+          - Vullikanti, Anil
+          - Marathe, Achla
+          - Wilson, Mandy L.
+          - Foster, Margaret
+          - Potter, Philip
+          - Swarup, Samarth
+          - Marathe, Madhav V.
+        date: "2025-12-01"
+        journal: "Biocomplexity Institute, University of Virginia, Technical Report BI-2025-18"
+        slug: mekh_agentic_ai
+        subcategory: Research/Technical Reports
       - title:
           "A Novel Framework for Synthesizing Shallow Technology Dependency Networks (STDNs) for
           Disruption Analysis of Global Manufacturing and Trade Networks"
