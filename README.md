@@ -184,7 +184,6 @@ Output: `site/public/vita.pdf` (gitignored). CI also runs RenderCV on every push
 ├── orcid_works.json               # ORCID snapshot (committed)
 ├── docs/superpowers/plans/        # Implementation plans (Plans A–H)
 ├── ARCHITECTURE.md                # Data-build vs delivery layer details
-├── CLAUDE.md                      # Project context for AI agents
 ├── SSOT_PLAN.md                   # Higher-level SSOT vision
 ├── .github/workflows/deploy.yml   # CI: render vita + build + deploy
 └── old jekyll site/               # Archived original Jekyll site
