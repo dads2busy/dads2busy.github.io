@@ -16,8 +16,12 @@ export default function SpeakingPage() {
   }
 
   const CATEGORY_ORDER = [
-    "Panelist", "Presentation", "Committee", "Lecture",
-    "Expert Forum", "Expert Webinar", "Workshop",
+    "Panelist",
+    "Presentations/Workshops",
+    "Committee",
+    "Lecture",
+    "Expert Forum",
+    "Expert Webinar",
   ];
 
   // Sort each group by date DESC
