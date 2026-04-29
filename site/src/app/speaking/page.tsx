@@ -16,8 +16,8 @@ export default function SpeakingPage() {
   }
 
   const CATEGORY_ORDER = [
-    "Panelist",
     "Presentations/Workshops",
+    "Panelist",
     "Committee",
     "Lecture",
     "Expert Forum",
