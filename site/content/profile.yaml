@@ -763,7 +763,7 @@ cv:
           Federal Statistics (COPAFS). Contributors: Aaron Schroeder.'
         slug: COPAFS
         subcategory: Presentations/Workshops
-      - name: ""
+      - name: "Supporting Local Decision-Making through the Aggregation of ACS Demographic Estimates within Locally-Relevant Geographies"
         date: "2023-05-17"
         summary: Presenter/Panelist at 2023 ACS Data Users Conference
         content:
@@ -773,7 +773,7 @@ cv:
         slug: ACS-Users
         subcategory: Presentations/Workshops
         report: Schroeder_Pop_Redist_ACS_Data_Users--Final.pdf
-      - name: ""
+      - name: "Data Re-Use in Action: Social Impact Data Commons"
         date: "2022-05-06"
         summary: Presenter/Panelist at Mid-Atlantic Statistics Network (MASN)
         content:
@@ -781,7 +781,7 @@ cv:
           Mid-Atlantic Statistics Network (MASN).'
         slug: a
         subcategory: Presentations/Workshops
-      - name: ""
+      - name: "Introduction of the 2022-2026 Virginia Rural Health Plan and Data Commons"
         date: "2021-11-05"
         summary: Presenter/Panelist at 2021 Governor's Summit on Rural Prosperity
         content:
@@ -792,7 +792,7 @@ cv:
         report:
           GSummit - Introduction of the 2022-2026 Virginia Rural Health Plan and Data Commons_10292021_UVA
           slides.pdf
-      - name: ""
+      - name: "Building Science for the Public Good (DSPG)"
         date: "2020-03-24"
         summary: Presenter/Panelist at Implementation Working Group, Open Data Charter
         content:
@@ -800,7 +800,7 @@ cv:
           (2020), Implementation Working Group, Open Data Charter.'
         slug: a
         subcategory: Presentations/Workshops
-      - name: ""
+      - name: "Measuring the Scope and Impact of Open Source Software"
         date: "2019-09-23"
         summary: Presenter/Panelist at Government Advancement of Statistical Programming (GASP) Workshop
         content:
@@ -810,7 +810,7 @@ cv:
         slug: a
         subcategory: Presentations/Workshops
         report: Measuring the Scope and Impact of Open Source Software-GASP-korkmaz-schroeder.pdf
-      - name: ""
+      - name: "How to 'do' Data Science for the Public Good"
         date: "2019-05-23"
         summary: Presenter/Panelist at 2019 Midwest Big Data Summer School, Iowa State University
         content:
@@ -820,7 +820,7 @@ cv:
         slug: a
         subcategory: Presentations/Workshops
         report: MBDSS2019.pdf
-      - name: ""
+      - name: "Data Platforms & Processes for Policy Analysis"
         date: "2019-03-26"
         summary: Presenter/Panelist at Data Science for the Public Good, Iowa State University
         content:
@@ -830,7 +830,7 @@ cv:
         slug: a
         subcategory: Presentations/Workshops
         report: ISU CLD3 Processes Platforms Examples.pdf
-      - name: ""
+      - name: "Data Profiling, Cleaning, Linking & Exploration"
         date: "2019-03-25"
         summary: Presenter/Panelist at Data Science for the Public Good, Iowa State University
         content:
@@ -839,7 +839,7 @@ cv:
           03/25/2019.'
         slug: a
         subcategory: Presentations/Workshops
-      - name: ""
+      - name: "Multi-Family Address List Creation Using Open Data & Delivery-Point Validation"
         date: "2018-11-14"
         summary: Presenter/Panelist at 2018 ADRF Network Research Conference
         content:
@@ -848,7 +848,7 @@ cv:
         slug: a
         subcategory: Presentations/Workshops
         report: MultiFamily Address List Creation Using Open Data and Delivery Poi.pdf
-      - name: ""
+      - name: "Repurposing Administrative Data for Statistical Purposes"
         date: "2017-06-07"
         summary: Presenter/Panelist at National Academy of Sciences
         content:
@@ -858,7 +858,7 @@ cv:
         slug: a
         subcategory: Presentations/Workshops
         report: Schroeder_NAS.pdf
-      - name: ""
+      - name: "Pre-Summit Workshop on Technology to Support Data Sharing"
         date: "2017-04-10"
         summary: Committe Member at Governor's Data Analytics Summit
         content:
@@ -866,7 +866,7 @@ cv:
           Governor’s Data Analytics Summit". Charlottesville, Va.'
         slug: a
         subcategory: Presentations/Workshops
-      - name: ""
+      - name: "Building Data Sharing Infrastructures at the State Level: Context, Stakeholders and Technology"
         date: "2015-10-14"
         summary:
           Panelist at Office of Planning, Research and Evaluation (OPRE), US DHHS Administration
@@ -884,7 +884,7 @@ cv:
         slug: a
         subcategory: Presentations/Workshops
         report: Schroeder_DataLinkageStateLevel.pdf
-      - name: ""
+      - name: "Data - The New Asset Class"
         date: "2015-04-06"
         summary: Presenter at Second Annual High Performance Computing Day, Virginia Tech
         content:
@@ -893,7 +893,7 @@ cv:
         slug: a
         subcategory: Presentations/Workshops
         report: Sallie Aaron HPC Day Final.pdf
-      - name: ""
+      - name: "Building Data Sharing Infrastructures: Taking Stakeholders and Context Seriously"
         date: "2014-10-14"
         summary: Panelist at Normative Dimension of Resilience Conference
         content:
@@ -903,7 +903,7 @@ cv:
         slug: a
         subcategory: Presentations/Workshops
         report: Workshop3-Schroeder-Building-Data-Sharing-Infrastructures.pdf
-      - name: ""
+      - name: "Data: Security and Technology"
         date: "2013-06-25"
         summary: Panelist at 2013 VLDS Insights Conference
         content:
@@ -913,9 +913,9 @@ cv:
           and privacy and how they are the foundation of the VLDS platform. In addition to a presentation
           of VLDS data and its uses, presented the details of VLDS implementation for privacy protection."
         slug: a
-        subcategory: Presentations/Workshops
+        subcategory: Panelist
         report: D-1_Data_Security_and_Technology.pdf
-      - name: ""
+      - name: "Project Child HANDS: Child Care, Subsidy, and Early Education"
         date: "2013-06-25"
         summary: Panelist at 2013 VLDS Insights Conference
         content:
@@ -925,7 +925,7 @@ cv:
         slug: b
         subcategory: Presentations/Workshops
         report: INSIGHTS Presentation_6_25_13.pdf
-      - name: ""
+      - name: "Federated and Centralized Models"
         date: "2013-02-11"
         summary: Panelist at 26th Annual Management Information Systems (MIS) Conference, NCES, IES
         content:
@@ -939,7 +939,7 @@ cv:
         slug: a
         subcategory: Presentations/Workshops
         report: Federated & Centralized Models.pdf
-      - name: ""
+      - name: "Virginia Longitudinal Data System—Accessing Multiple Datasets and Merging Records"
         date: "2013-02-11"
         summary: Panelist at 26th Annual Management Information Systems (MIS) Conference, NCES, IES
         content:
@@ -953,7 +953,7 @@ cv:
           some of the challenges presented with working with multiple, disparate datasets."
         slug: b
         subcategory: Presentations/Workshops
-      - name: ""
+      - name: "Project Child HANDS Update for Virginia's ECAC"
         date: "2012-05-31"
         summary: Presenter at Virginia's Early Childhood Advisory Council (ECAC)
         local_path: /downloads/Governors_ECAC_Slides_5_30_12.pdf
@@ -964,7 +964,7 @@ cv:
         slug: a
         subcategory: Presentations/Workshops
         report: Governors_ECAC_Slides_5_30_12.pdf
-      - name: ""
+      - name: "BUILD Initiative: Early Learning Challenge State Plans"
         date: "2011-10-17"
         summary: Expert at BUILD Initiative / Early Learning Challenge Collaborative
         content:
@@ -977,7 +977,7 @@ cv:
           Learning Challenge."
         slug: a
         subcategory: Presentations/Workshops
-      - name: ""
+      - name: "Early Learning Challenge Collaborative Data Systems Webinar"
         date: "2011-08-10"
         summary: Expert at Early Learning Challenge Collaborative
         content:
@@ -987,7 +987,7 @@ cv:
           Education Race-To-The-Top Early Learning Challenge Grant Program."
         slug: a
         subcategory: Presentations/Workshops
-      - name: ""
+      - name: "US Department of Education Race-To-The-Top Early Learning Challenge"
         date: "2011-08-01"
         summary: Expert at US Department of Education Race-To-The-Top Early Learning Challenge Grant Program
         content:
@@ -999,7 +999,7 @@ cv:
           Program.'
         slug: a
         subcategory: Presentations/Workshops
-      - name: ""
+      - name: "Developing Unified Early Childhood Data Systems"
         date: "2011-04-27"
         summary: Panelist at 2011 ACF Early Childhood State Advisory Council Grantees Meeting
         content:
@@ -1007,7 +1007,7 @@ cv:
           Childhood State Advisory Council Grantees Meeting. Arlington, VA."
         slug: a
         subcategory: Presentations/Workshops
-      - name: ""
+      - name: "Project Child HANDS Status Update"
         date: "2010-12-08"
         summary: Presentation at Governor's Early Childhood Advisory Council (ECAC)
         content:
@@ -1023,7 +1023,7 @@ cv:
           of the state Head Start Collaboration office, and many assigned local representatives."
         slug: a
         subcategory: Presentations/Workshops
-      - name: ""
+      - name: "Child Care Data Collaboration, Integration and Linkages"
         date: "2010-11-10"
         summary: Presentation at 2010 USHHS Child Care Policy Research Consortium (CCPRC)
         content:
@@ -1032,7 +1032,7 @@ cv:
           of the 2010 USHHS Child Care Policy Research Consortium (CCPRC)."
         slug: a
         subcategory: Presentations/Workshops
-      - name: ""
+      - name: "Federal Workshop on Education Statistics Data"
         date: "2010-02-16"
         summary:
           Workshop at National Institute of Statistical Sciences (NISS), the National Center for
@@ -1047,7 +1047,7 @@ cv:
         slug: a
         subcategory: Presentations/Workshops
         report: Multi_Agency_Data_Federation.pdf
-      - name: ""
+      - name: "Child Care Policy Research Panel"
         date: "2009-10-28"
         summary: Presentation at National Child Care Policy Research Consortium
         content:
@@ -1058,13 +1058,13 @@ cv:
           can be used to answer research questions, analyze policies, and inform practice.'
         slug: a
         subcategory: Presentations/Workshops
-      - name: ""
+      - name: "Intelligent Transportation Systems of Virginia"
         date: "2003-11-01"
         summary: Workshop at Intelligent Transportation Systems of Virginia Annual Conference
         content: "Schroeder, A.D. Workshop: Intelligent Transportation Systems of Virginia Annual Conference."
         slug: a
         subcategory: Presentations/Workshops
-      - name: ""
+      - name: "Rural Advanced Traveler Information Systems"
         date: "2003-10-10"
         summary: Presentation at Rural Advanced Traveler Information Systems Conference
         content:
@@ -1072,7 +1072,7 @@ cv:
           Tampa Bay, FL."
         slug: a
         subcategory: Presentations/Workshops
-      - name: ""
+      - name: "Technology in Public Administration"
         date: "2000-11-08"
         summary: Presentation at Technology in Public Administration Conference, University of LaVerne
         content:
