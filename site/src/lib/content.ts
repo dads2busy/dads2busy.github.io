@@ -184,11 +184,13 @@ export function getAllPostSlugs(): {
   month: string;
   slug: string;
 }[] {
-  return getAllPosts().map((p) => ({
-    year: p.year,
-    month: p.month,
-    slug: p.slug,
-  }));
+  return getAllPosts()
+    .filter((p) => p.category?.toLowerCase() !== "research")
+    .map((p) => ({
+      year: p.year,
+      month: p.month,
+      slug: p.slug,
+    }));
 }
 
 export function sortByOrdinal<T extends { ordinal?: number }>(posts: T[]): T[] {
