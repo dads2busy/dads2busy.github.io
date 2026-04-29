@@ -4295,6 +4295,205 @@ cv:
           assistant. Built with Next.js 15, React 19, Leaflet, Plotly, and TanStack Table;
           consumes standardized CSVs produced by the Social Data Commons pipelines.
           Live site: https://dads2busy.github.io/national_capital_region_data/
+      - name: "Social Data Commons: Segregation Index (HOI) (v1.0.1)"
+        subcategory: Dataset
+        authors:
+          - "Schroeder, Aaron"
+        date: "2026"
+        doi: 10.5281/zenodo.19025089
+        url: https://doi.org/10.5281/zenodo.19025089
+        summary: "Residential segregation indicator (Theil's Entropy Index, H) from ACS race/ethnicity data"
+        abstract: >-
+          Residential segregation indicator computed as the Entropy Index (Theil's H) from
+          ACS table B03002 (Hispanic or Latino Origin by Race) data, measuring how sub-area
+          racial/ethnic composition differs from the overall state composition. Uses eight
+          race/ethnicity categories. Builds on methodology used in the Virginia Department
+          of Health's Health Opportunity Index (HOI). Produced by the Social Data Commons
+          at the University of Virginia.
+      - name: "Social Data Commons: Ookla Speed (v2.0.0)"
+        subcategory: Dataset
+        authors:
+          - "Schroeder, Aaron"
+        date: "2026"
+        doi: 10.5281/zenodo.19192908
+        url: https://doi.org/10.5281/zenodo.19192908
+        summary: "Fixed and mobile broadband speed measures from Ookla Speedtest Open Data, joined to Census 2020 block groups"
+        abstract: >-
+          Fixed and mobile broadband speed measures derived from quarterly Ookla Speedtest
+          Open Data tiles spatially joined to Census 2020 block groups. Includes
+          device-weighted average download/upload speeds (Mb/s) and percent of devices
+          exceeding 25/3 and 100/20 Mb/s broadband thresholds. Block group values are
+          aggregated to tracts and counties. Produced by the Social Data Commons at the
+          University of Virginia.
+      - name: "Social Data Commons: Daycare Accessibility (v1.2.0)"
+        subcategory: Dataset
+        authors:
+          - "Schroeder, Aaron"
+        date: "2026"
+        doi: 10.5281/zenodo.19139080
+        url: https://doi.org/10.5281/zenodo.19139080
+        summary: "Daycare accessibility for Virginia: drive time to nearest provider, total capacity, and FCA seats per 1,000 children"
+        abstract: >-
+          Daycare accessibility measures for Virginia, including minimum drive time to the
+          nearest provider, total licensed capacity, and floating catchment area ratios
+          (seats per 1,000 children) for three age groups. Combines VDSS facility data,
+          ACS child population estimates, and OSRM-based travel times. Produced by the
+          Social Data Commons at the University of Virginia.
+      - name: "Social Data Commons: Primary Care Service Accessibility (FCA) (v4.0.1)"
+        subcategory: Dataset
+        authors:
+          - "Schroeder, Aaron"
+        date: "2026"
+        doi: 10.5281/zenodo.19152538
+        url: https://doi.org/10.5281/zenodo.19152538
+        summary: "Floating catchment area (2SFCA, E2SFCA, 3SFCA) measures of primary care physician accessibility at block group level"
+        abstract: >-
+          Floating catchment area analysis measuring primary care physician accessibility
+          at block group level. Computes 2SFCA, E2SFCA, and 3SFCA variants with physician
+          counts from CMS Doctors and Clinicians data filtered to Family Practice, Family
+          Medicine, and General Practice in VA, DC, and MD. Travel times from OSRM
+          block-group-to-block-group matrices; catchment threshold 30 minutes. Coverage
+          2018–2025. Produced by the Social Data Commons at the University of Virginia.
+      - name: "Social Data Commons: Employment Access Index (v2.0.0)"
+        subcategory: Dataset
+        authors:
+          - "Schroeder, Aaron"
+        date: "2026"
+        doi: 10.5281/zenodo.19025096
+        url: https://doi.org/10.5281/zenodo.19025096
+        summary: "Employment Intensity (gravity model) from LEHD-LODES job counts and TIGER/Line block centroids"
+        abstract: >-
+          Employment Intensity computed via a gravity model from LEHD-LODES Workplace
+          Area Characteristics job counts and TIGER/Line Census block centroids. Uses a
+          hierarchical distance approximation (block <34 mi, tract 34–165 mi, county
+          165–200 mi) with 1/d^2 weighting. Inspired by the CNT H+T Affordability Index
+          methodology. Produced by the Social Data Commons at the University of Virginia.
+      - name: "Social Data Commons: Walkability (v5.0.0)"
+        subcategory: Dataset
+        authors:
+          - "Schroeder, Aaron"
+        date: "2026"
+        doi: 10.5281/zenodo.19025432
+        url: https://doi.org/10.5281/zenodo.19025432
+        summary: "Multi-year Walkability Index from LEHD-LODES employment entropy, GTFS transit proximity, and EPA SLD street connectivity"
+        abstract: >-
+          Multi-year Walkability Index computed per the EPA National Walkability Index
+          methodology. Each block group is scored using NatWalkInd =
+          D2A_Ranked/6 + D2B_Ranked/6 + D3B_Ranked/3 + D4C_Ranked/3, combining LODES/ACS
+          employment-and-household land-use entropy, EPA SLD street connectivity, and
+          GTFS transit proximity. Components are quantile-ranked into 20 bins before
+          combining; block group scores are aggregated to tracts and counties via
+          population-weighted means. Produced by the Social Data Commons at the
+          University of Virginia.
+      - name: "Social Data Commons: OB-GYN Service Accessibility (FCA) (v2.0.0)"
+        subcategory: Dataset
+        authors:
+          - "Schroeder, Aaron"
+        date: "2026"
+        doi: 10.5281/zenodo.19152569
+        url: https://doi.org/10.5281/zenodo.19152569
+        summary: "Floating catchment area measures of OB-GYN service accessibility (female pop 15+ as demand)"
+        abstract: >-
+          Floating catchment area analysis measuring OB-GYN service accessibility at
+          block group level using female population ages 15+ as consumer demand. Computes
+          2SFCA, E2SFCA, and 3SFCA variants from CMS Doctors and Clinicians data
+          (2017–2025) filtered to Obstetrics/Gynecology with MD/DO credentials in VA, DC,
+          and MD. Travel times from a pre-computed OSRM block-group-to-block-group matrix.
+          Produced by the Social Data Commons at the University of Virginia.
+      - name: "Social Data Commons: Access to Care Index (HOI) (v3.0.0)"
+        subcategory: Dataset
+        authors:
+          - "Schroeder, Aaron"
+        date: "2026"
+        doi: 10.5281/zenodo.19025101
+        url: https://doi.org/10.5281/zenodo.19025101
+        summary: "Composite z-score of physician availability (CMS PUF + OSRM) and insurance coverage (ACS uninsured rate)"
+        abstract: >-
+          Access to care composite for Virginia tracts, counties, and health districts.
+          Combines primary care physician availability (CMS Medicare Physician PUF,
+          OSRM-based travel within 30 driving miles) with insurance coverage (ACS 5-year
+          uninsured rate ages 19–64) into a z-score composite where higher values
+          indicate better access. Reproduces and extends the VDH-OMHHE Health
+          Opportunity Index Access-to-Care indicator using open data. Produced by the
+          Social Data Commons at the University of Virginia.
+      - name: "Social Data Commons: Prenatal Care Adequacy (Kotelchuck Index) (v4.0.3)"
+        subcategory: Dataset
+        authors:
+          - "Schroeder, Aaron"
+        date: "2026"
+        doi: 10.5281/zenodo.19039389
+        url: https://doi.org/10.5281/zenodo.19039389
+        summary: "Adequacy of Prenatal Care Utilization (Kotelchuck Index) classifying births by trimester of entry and visit ratio"
+        abstract: >-
+          Adequacy of prenatal care utilization measured via the Kotelchuck Index (APNCU),
+          classifying births into inadequate / intermediate / adequate / adequate-plus
+          categories from when prenatal care began and the ratio of actual to expected
+          visits. 2014–2020 from NCHS Natality microdata; 2021–2024 projected from the
+          2020 baseline using year-over-year changes from CDC WONDER Natality Expanded
+          (D149). Produced by the Social Data Commons at the University of Virginia.
+      - name: "Social Data Commons: Housing + Transportation Affordability (v3.1.2)"
+        subcategory: Dataset
+        authors:
+          - "Schroeder, Aaron"
+        date: "2026"
+        doi: 10.5281/zenodo.19025106
+        url: https://doi.org/10.5281/zenodo.19025106
+        summary: "H+T Affordability Index reproduced via CNT methodology (housing + modeled transportation costs as % income)"
+        abstract: >-
+          Housing and transportation affordability index independently reproduced using
+          the Center for Neighborhood Technology (CNT) H+T Index methodology. Combines
+          housing costs with modeled transportation costs (auto ownership, VMT, transit
+          use) as a percentage of income for a Regional Typical Household. Three
+          regression models drive transportation costs from 17 independent variables
+          computed from ACS, LEHD, TIGER, and GTFS at block-group resolution. Produced
+          by the Social Data Commons at the University of Virginia.
+      - name: "Social Data Commons: Social Vulnerability Index (v3.0.0)"
+        subcategory: Dataset
+        authors:
+          - "Schroeder, Aaron"
+        date: "2026"
+        doi: 10.5281/zenodo.19025102
+        url: https://doi.org/10.5281/zenodo.19025102
+        summary: "CDC/ATSDR SVI 2022 methodology computed from ACS 5-year estimates"
+        abstract: >-
+          CDC/ATSDR Social Vulnerability Index computed from ACS 5-year estimates
+          following the 2022 SVI methodology. Sixteen social factors across four themes
+          are converted to percentages, percentile-ranked within region (VA or NCR),
+          summed by theme, and re-ranked. Uses B-table variables for cross-year
+          stability instead of DP05/DP02 which renumber across ACS vintages. Validated
+          against CDC SVI 2020 at r > 0.998 for all themes. Produced by the Social Data
+          Commons at the University of Virginia.
+      - name: "Social Data Commons: Pediatric Service Accessibility (FCA) (v2.0.0)"
+        subcategory: Dataset
+        authors:
+          - "Schroeder, Aaron"
+        date: "2026"
+        doi: 10.5281/zenodo.19152601
+        url: https://doi.org/10.5281/zenodo.19152601
+        summary: "Floating catchment area measures of pediatric service accessibility (population ages 0–17 as demand)"
+        abstract: >-
+          Floating catchment area analysis measuring pediatric service accessibility at
+          block group level using population ages 0–17 as consumer demand. Computes
+          2SFCA, E2SFCA, and 3SFCA variants from CMS Doctors and Clinicians data
+          (2018–2025), filtered to PEDIATRIC MEDICINE specialty with MD/DO credentials
+          in VA, DC, and MD. Travel times from a pre-computed OSRM block-group-to-block-group
+          driving matrix. Produced by the Social Data Commons at the University of Virginia.
+      - name: "Social Data Commons: Material Deprivation (v2.0.0)"
+        subcategory: Dataset
+        authors:
+          - "Schroeder, Aaron"
+        date: "2026"
+        doi: 10.5281/zenodo.19025098
+        url: https://doi.org/10.5281/zenodo.19025098
+        summary: "Townsend Material Deprivation Index from four ACS-derived indicators (unemployment, overcrowding, no car, no home)"
+        abstract: >-
+          Townsend Material Deprivation Index for Virginia tracts, counties, and health
+          districts. Combines four ACS-derived indicators — unemployment rate,
+          overcrowding, non-car ownership, non-home ownership — into a z-score
+          composite, rescaled to 0–1, with higher values indicating greater material
+          deprivation. The VDH Health Opportunity Index includes a similar adaptation
+          as one of its 13 indicators. Produced by the Social Data Commons at the
+          University of Virginia.
       - name: Social Data Commons - Master Metadata
         subcategory: Dataset
         date: "2022-01-01"
