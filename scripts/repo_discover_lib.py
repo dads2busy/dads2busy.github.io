@@ -45,3 +45,12 @@ def content_hash(repo: RepoMeta) -> str:
     ]
     blob = "\x1f".join(parts).encode("utf-8")
     return hashlib.sha256(blob).hexdigest()
+
+
+def is_substantive(repo: RepoMeta, source_file_count: int) -> bool:
+    """README ≥ 200 chars AND ≥ 5 commits AND ≥ 5 source files."""
+    return (
+        len(repo.readme_excerpt) >= 200
+        and repo.commit_count >= 5
+        and source_file_count >= 5
+    )

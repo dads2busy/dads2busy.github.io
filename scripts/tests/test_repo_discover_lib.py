@@ -61,3 +61,33 @@ def test_content_hash_falls_back_to_last_commit_date_when_sha_empty():
     a = _meta(last_commit_sha="", last_commit_date="2026-04-01T00:00:00Z")
     b = _meta(last_commit_sha="", last_commit_date="2026-04-02T00:00:00Z")
     assert content_hash(a) != content_hash(b)
+
+
+from repo_discover_lib import is_substantive
+
+
+def test_is_substantive_passes_all_three_thresholds():
+    m = _meta(readme_excerpt="x" * 200, commit_count=5)
+    # source_file_count is passed in directly, not computed in the lib
+    assert is_substantive(m, source_file_count=5) is True
+
+
+def test_is_substantive_short_readme():
+    m = _meta(readme_excerpt="x" * 199, commit_count=10)
+    assert is_substantive(m, source_file_count=10) is False
+
+
+def test_is_substantive_few_commits():
+    m = _meta(readme_excerpt="x" * 500, commit_count=4)
+    assert is_substantive(m, source_file_count=10) is False
+
+
+def test_is_substantive_few_source_files():
+    m = _meta(readme_excerpt="x" * 500, commit_count=10)
+    assert is_substantive(m, source_file_count=4) is False
+
+
+def test_is_substantive_exact_thresholds_pass():
+    """Exactly 200 chars, exactly 5 commits, exactly 5 source files all pass."""
+    m = _meta(readme_excerpt="x" * 200, commit_count=5)
+    assert is_substantive(m, source_file_count=5) is True
