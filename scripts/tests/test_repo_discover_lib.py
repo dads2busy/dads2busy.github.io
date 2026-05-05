@@ -155,3 +155,74 @@ def test_count_source_files_excludes_known_dirs(tmp_path):
 
     # Two source files, ignoring .git, node_modules, and binary png
     assert count_source_files(tmp_path) == 2
+
+
+import json as _json
+from repo_discover_lib import list_github_repos, parse_gh_repo_list
+
+
+def _gh_payload():
+    return _json.dumps([
+        {
+            "name": "foo", "description": "A demo",
+            "primaryLanguage": {"name": "Python"},
+            "languages": [{"node": {"name": "Python"}, "size": 1000}],
+            "pushedAt": "2026-04-01T10:00:00Z",
+            "isArchived": False, "isFork": False,
+            "defaultBranchRef": {"name": "main"},
+            "url": "https://github.com/dads2busy/foo",
+            "owner": {"login": "dads2busy"},
+        },
+        {
+            "name": "fork-of-x", "description": None,
+            "primaryLanguage": None,
+            "languages": [],
+            "pushedAt": "2025-01-01T00:00:00Z",
+            "isArchived": False, "isFork": True,
+            "defaultBranchRef": {"name": "main"},
+            "url": "https://github.com/dads2busy/fork-of-x",
+            "owner": {"login": "dads2busy"},
+        },
+    ])
+
+
+def test_parse_gh_repo_list_filters_forks():
+    parsed = parse_gh_repo_list(_gh_payload())
+    names = [r["name"] for r in parsed]
+    assert names == ["foo"]
+
+
+def test_list_github_repos_calls_gh_runner_with_correct_args():
+    captured: dict = {}
+
+    def fake_runner(args: list[str]) -> str:
+        captured["args"] = args
+        return _gh_payload()
+
+    def fake_readme_runner(owner: str, name: str) -> str:
+        return "# foo\n" + "x" * 300
+
+    def fake_commit_count(owner: str, name: str) -> int:
+        return 12
+
+    repos = list_github_repos(
+        "dads2busy",
+        gh_runner=fake_runner,
+        readme_runner=fake_readme_runner,
+        commit_count_runner=fake_commit_count,
+    )
+
+    assert captured["args"][0] == "gh"
+    assert "repo" in captured["args"]
+    assert "list" in captured["args"]
+    assert "dads2busy" in captured["args"]
+    # Forks filtered, so only one repo
+    assert len(repos) == 1
+    r = repos[0]
+    assert r.name == "foo"
+    assert r.owner == "dads2busy"
+    assert r.primary_language == "Python"
+    assert r.commit_count == 12
+    assert r.html_url == "https://github.com/dads2busy/foo"
+    assert r.fork is False
+    assert "x" * 200 in r.readme_excerpt

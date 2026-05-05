@@ -4,10 +4,11 @@ all I/O is injected by the caller."""
 from __future__ import annotations
 
 import hashlib
+import json
 import subprocess
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Literal
+from typing import Callable, Literal
 
 
 @dataclass
@@ -229,3 +230,123 @@ def list_local_repos(roots: list[Path]) -> list[RepoMeta]:
             meta.substantive = is_substantive(meta, src_count)
             found.append(meta)
     return found
+
+
+GH_FIELDS = (
+    "name,description,primaryLanguage,languages,pushedAt,"
+    "isArchived,isFork,defaultBranchRef,url,owner"
+)
+
+
+def parse_gh_repo_list(payload: str) -> list[dict]:
+    """Parse `gh repo list --json` output; drop forks."""
+    raw = json.loads(payload)
+    return [r for r in raw if not r.get("isFork", False)]
+
+
+def _truncate_readme(text: str) -> str:
+    if len(text) > 50_000:
+        return text[:2000] + "\n\n[... truncated ...]\n\n" + text[-500:]
+    return text[:2000] if len(text) > 2000 else text
+
+
+def list_github_repos(
+    owner: str,
+    *,
+    gh_runner: Callable[[list[str]], str],
+    readme_runner: Callable[[str, str], str],
+    commit_count_runner: Callable[[str, str], int],
+) -> list[RepoMeta]:
+    """Query gh CLI for owner's repos. Forks are filtered. Archived included.
+
+    Runners are injected so tests can substitute fakes:
+      - gh_runner(args)         -> stdout str
+      - readme_runner(owner, name) -> README text (or "" if missing)
+      - commit_count_runner(owner, name) -> int
+    """
+    payload = gh_runner([
+        "gh", "repo", "list", owner,
+        "--limit", "500", "--json", GH_FIELDS,
+    ])
+    parsed = parse_gh_repo_list(payload)
+
+    repos: list[RepoMeta] = []
+    for r in parsed:
+        name = r["name"]
+        readme = _truncate_readme(readme_runner(owner, name))
+        primary = (r.get("primaryLanguage") or {}).get("name")
+        langs = {l["node"]["name"]: l["size"] for l in r.get("languages") or []}
+        commits = commit_count_runner(owner, name)
+
+        meta = RepoMeta(
+            name=name,
+            owner=owner,
+            source="github",
+            description=r.get("description"),
+            primary_language=primary,
+            languages=langs,
+            last_commit_date=r.get("pushedAt") or "",
+            last_commit_sha="",  # gh repo list doesn't return commit sha; content_hash falls back to date
+            commit_count=commits,
+            archived=bool(r.get("isArchived")),
+            fork=False,
+            default_branch=(r.get("defaultBranchRef") or {}).get("name") or "main",
+            html_url=r.get("url"),
+            local_path=None,
+            readme_excerpt=readme,
+            manifest_files=[],  # not detectable without clone; left empty
+            substantive=False,  # caller fills in after; for github-only repos we
+                                # approximate "source files" by sum(languages.values()) > 0
+            paragraph=None,
+        )
+        # GitHub-only substantive heuristic: README + commits + at least one tracked language
+        meta.substantive = (
+            len(readme) >= 200
+            and commits >= 5
+            and len(langs) >= 1
+        )
+        repos.append(meta)
+    return repos
+
+
+def default_gh_runner(args: list[str]) -> str:
+    return subprocess.run(args, capture_output=True, text=True, check=True).stdout
+
+
+def default_readme_runner(owner: str, name: str) -> str:
+    """Use `gh api repos/{owner}/{name}/readme` to fetch README content."""
+    out = subprocess.run(
+        ["gh", "api", f"repos/{owner}/{name}/readme",
+         "-H", "Accept: application/vnd.github.raw"],
+        capture_output=True, text=True, check=False,
+    )
+    if out.returncode != 0:
+        return ""
+    return out.stdout
+
+
+def default_commit_count_runner(owner: str, name: str) -> int:
+    """Use GraphQL totalCount of default branch."""
+    query = (
+        "query($owner:String!,$name:String!){repository(owner:$owner,name:$name){"
+        "defaultBranchRef{target{... on Commit{history{totalCount}}}}}}"
+    )
+    out = subprocess.run(
+        ["gh", "api", "graphql", "-f", f"query={query}",
+         "-F", f"owner={owner}", "-F", f"name={name}"],
+        capture_output=True, text=True, check=False,
+    )
+    if out.returncode != 0:
+        return 0
+    try:
+        data = json.loads(out.stdout)
+        return (
+            data.get("data", {})
+            .get("repository", {})
+            .get("defaultBranchRef", {})
+            .get("target", {})
+            .get("history", {})
+            .get("totalCount", 0)
+        )
+    except (json.JSONDecodeError, AttributeError, TypeError):
+        return 0
