@@ -3776,6 +3776,7 @@ cv:
         authors:
           - "**Schroeder, A.D.**"
         date: "2012-05-21"
+        doi: "https://doi.org/10.5281/zenodo.20044352"
         journal: Virginia Information Technologies Agency
         url:
           http://dads2busy.github.io/downloads/VT-VLDS  Identity  Resolution  and  Query  Execution Process
@@ -3786,6 +3787,7 @@ cv:
         authors:
           - "**Schroeder, A.D.**"
         date: "2012-05-21"
+        doi: "https://doi.org/10.5281/zenodo.20044352"
         journal: Virginia Information Technologies Agency
         url: http://dads2busy.github.io/downloads/VT-VLDS  Shaker  Specifications v2.pdf
         slug: shaker_specification
@@ -3794,6 +3796,7 @@ cv:
         authors:
           - "**Schroeder, A.D.**"
         date: "2012-05-20"
+        doi: "https://doi.org/10.5281/zenodo.20044352"
         journal: Virginia Information Technologies Agency
         url: http://dads2busy.github.io/downloads/VT-VLDS Data Adapter User Guide.pdf
         slug: data_adapter
@@ -3802,6 +3805,7 @@ cv:
         authors:
           - "**Schroeder, A.D.**"
         date: "2012-05-20"
+        doi: "https://doi.org/10.5281/zenodo.20044352"
         journal: Virginia Information Technologies Agency
         url: http://dads2busy.github.io/downloads/VT-VLDS Lexicon Metadata Tool Design Document.pdf
         slug: lexicon_metadata_tool
@@ -3810,6 +3814,7 @@ cv:
         authors:
           - "**Schroeder, A.D.**"
         date: "2012-05-20"
+        doi: "https://doi.org/10.5281/zenodo.20044352"
         journal: Virginia Information Technologies Agency
         url: http://dads2busy.github.io/downloads/VT-VLDS Lexicon Specifications v1.pdf
         slug: lexicon_specifications
