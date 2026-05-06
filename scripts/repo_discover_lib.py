@@ -129,6 +129,32 @@ def _origin_url(repo_path: Path) -> str | None:
         return None
 
 
+def normalize_github_url(origin: str | None) -> str | None:
+    """Return the canonical https://github.com/owner/repo form for any
+    recognized github remote, or None for non-github / unrecognized URLs.
+
+    Handles:
+      - https://github.com/owner/repo[.git]
+      - git@github.com:owner/repo[.git]
+      - ssh://git@github.com/owner/repo[.git]
+    """
+    if not origin:
+        return None
+    o = origin.strip().rstrip("/")
+    # https form
+    if o.startswith("https://github.com/"):
+        return o.removesuffix(".git")
+    # ssh shorthand: git@github.com:owner/repo.git
+    if o.startswith("git@github.com:"):
+        path = o[len("git@github.com:"):]
+        return "https://github.com/" + path.removesuffix(".git")
+    # ssh url form
+    if o.startswith("ssh://git@github.com/"):
+        path = o[len("ssh://git@github.com/"):]
+        return "https://github.com/" + path.removesuffix(".git")
+    return None
+
+
 def _commit_count(repo_path: Path) -> int:
     out = subprocess.run(
         ["git", "rev-list", "--count", "HEAD"],
@@ -196,16 +222,15 @@ def list_local_repos(roots: list[Path]) -> list[RepoMeta]:
             origin = _origin_url(child)
             if origin and origin.rstrip("/") in _SELF_URLS:
                 continue
+            html_url = normalize_github_url(origin)
+            if html_url and html_url in _SELF_URLS:
+                continue
 
             sha, date = _last_commit(child)
             primary_lang, langs = _detect_languages(child)
             readme = _read_readme_excerpt(child)
             commits = _commit_count(child)
             src_count = count_source_files(child)
-
-            html_url = None
-            if origin and origin.startswith("https://github.com/"):
-                html_url = origin.removesuffix(".git")
 
             meta = RepoMeta(
                 name=child.name,
@@ -272,6 +297,9 @@ def list_github_repos(
 
     repos: list[RepoMeta] = []
     for r in parsed:
+        url = r.get("url") or ""
+        if normalize_github_url(url) in _SELF_URLS:
+            continue
         name = r["name"]
         readme = _truncate_readme(readme_runner(owner, name))
         primary = (r.get("primaryLanguage") or {}).get("name")

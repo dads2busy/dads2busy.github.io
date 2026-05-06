@@ -261,3 +261,92 @@ def test_merge_repos_keeps_unique_github():
     merged = merge_repos([gh], [])
     assert len(merged) == 1
     assert merged[0].source == "github"
+
+
+from repo_discover_lib import normalize_github_url
+
+
+def test_normalize_github_url_https():
+    assert normalize_github_url("https://github.com/foo/bar") == "https://github.com/foo/bar"
+    assert normalize_github_url("https://github.com/foo/bar.git") == "https://github.com/foo/bar"
+    assert normalize_github_url("https://github.com/foo/bar/") == "https://github.com/foo/bar"
+
+
+def test_normalize_github_url_ssh_shorthand():
+    assert normalize_github_url("git@github.com:foo/bar.git") == "https://github.com/foo/bar"
+    assert normalize_github_url("git@github.com:foo/bar") == "https://github.com/foo/bar"
+
+
+def test_normalize_github_url_ssh_url():
+    assert normalize_github_url("ssh://git@github.com/foo/bar.git") == "https://github.com/foo/bar"
+
+
+def test_normalize_github_url_returns_none_for_non_github():
+    assert normalize_github_url("https://gitlab.com/foo/bar") is None
+    assert normalize_github_url("") is None
+    assert normalize_github_url(None) is None
+
+
+def test_list_local_repos_excludes_self_via_ssh_origin(tmp_path):
+    """Local repo with SSH origin pointing at this website is dropped."""
+    self_repo = tmp_path / "dads2busy.github.io"
+    self_repo.mkdir()
+    subprocess.run(["git", "init", "-q"], cwd=self_repo, check=True)
+    subprocess.run(["git", "remote", "add", "origin",
+                    "git@github.com:dads2busy/dads2busy.github.io.git"],
+                   cwd=self_repo, check=True)
+    found = list_local_repos([tmp_path])
+    assert found == []
+
+
+def test_list_local_repos_ssh_origin_yields_html_url(tmp_path):
+    """Local repo with SSH origin produces canonical https html_url so merge can dedupe."""
+    repo = tmp_path / "myrepo"
+    repo.mkdir()
+    subprocess.run(["git", "init", "-q"], cwd=repo, check=True)
+    subprocess.run(["git", "remote", "add", "origin",
+                    "git@github.com:dads2busy/myrepo.git"],
+                   cwd=repo, check=True)
+    (repo / "README.md").write_text("# myrepo\n" + "x" * 300)
+    (repo / "main.py").write_text("a")
+    subprocess.run(["git", "add", "."], cwd=repo, check=True)
+    subprocess.run(["git", "-c", "user.email=t@t", "-c", "user.name=t",
+                    "commit", "-q", "-m", "init"], cwd=repo, check=True)
+
+    found = list_local_repos([tmp_path])
+    assert len(found) == 1
+    assert found[0].html_url == "https://github.com/dads2busy/myrepo"
+
+
+def test_list_github_repos_excludes_self():
+    """Self-repo (dads2busy.github.io) is dropped from gh repo list output."""
+    payload = _json.dumps([
+        {
+            "name": "dads2busy.github.io", "description": "self",
+            "primaryLanguage": {"name": "HTML"},
+            "languages": [{"node": {"name": "HTML"}, "size": 100}],
+            "pushedAt": "2026-04-01T10:00:00Z",
+            "isArchived": False, "isFork": False,
+            "defaultBranchRef": {"name": "master"},
+            "url": "https://github.com/dads2busy/dads2busy.github.io",
+            "owner": {"login": "dads2busy"},
+        },
+        {
+            "name": "other", "description": "keep me",
+            "primaryLanguage": {"name": "Python"},
+            "languages": [{"node": {"name": "Python"}, "size": 1000}],
+            "pushedAt": "2026-04-01T10:00:00Z",
+            "isArchived": False, "isFork": False,
+            "defaultBranchRef": {"name": "main"},
+            "url": "https://github.com/dads2busy/other",
+            "owner": {"login": "dads2busy"},
+        },
+    ])
+    repos = list_github_repos(
+        "dads2busy",
+        gh_runner=lambda args: payload,
+        readme_runner=lambda o, n: "x" * 300,
+        commit_count_runner=lambda o, n: 10,
+    )
+    names = [r.name for r in repos]
+    assert names == ["other"]
