@@ -1,0 +1,55 @@
+name: Refresh advisor repo index
+
+on:
+  schedule:
+    - cron: '0 9 * * 1'   # Mondays 09:00 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r scripts/requirements.txt
+
+      - name: Discover repos
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT_PRIVATE_REPOS || secrets.GITHUB_TOKEN }}
+          ADVISOR_LOCAL_ROOTS: ""
+        run: python scripts/repo_discover.py
+
+      - name: Summarize substantive repos
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/repo_summarize.py
+
+      - name: Render repos.md
+        run: python scripts/repo_render.py
+
+      - name: Open PR if changed
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: chore/refresh-advisor
+          delete-branch: true
+          commit-message: "chore(advisor): refresh repo index"
+          title: "chore(advisor): refresh repo index"
+          body: |
+            Weekly auto-refresh of `advisor/repos.md` and `advisor/repos_index.json`.
+
+            Review the diff and merge. If a repo's paragraph reads oddly, that
+            repo's `content_hash` will keep firing it back through Haiku next week
+            until the README stabilizes.
+          add-paths: |
+            advisor/repos.md
+            advisor/repos_index.json
