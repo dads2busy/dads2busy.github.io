@@ -226,3 +226,38 @@ def test_list_github_repos_calls_gh_runner_with_correct_args():
     assert r.html_url == "https://github.com/dads2busy/foo"
     assert r.fork is False
     assert "x" * 200 in r.readme_excerpt
+
+
+from repo_discover_lib import merge_repos
+
+
+def test_merge_repos_dedupes_by_html_url():
+    gh = _meta(name="foo", source="github",
+               html_url="https://github.com/dads2busy/foo", local_path=None)
+    local = _meta(name="foo", source="local", owner=None,
+                  html_url="https://github.com/dads2busy/foo",
+                  local_path="/Users/x/git/foo")
+    merged = merge_repos([gh], [local])
+    assert len(merged) == 1
+    m = merged[0]
+    assert m.source == "github+local"
+    assert m.html_url == "https://github.com/dads2busy/foo"
+    assert m.local_path == "/Users/x/git/foo"
+    assert m.owner == "dads2busy"  # github wins on owner
+
+
+def test_merge_repos_keeps_unique_local():
+    """Local-only repo with no GitHub match stays as-is."""
+    local = _meta(name="orphan", source="local", owner=None,
+                  html_url=None, local_path="/Users/x/git/orphan")
+    merged = merge_repos([], [local])
+    assert len(merged) == 1
+    assert merged[0].source == "local"
+
+
+def test_merge_repos_keeps_unique_github():
+    gh = _meta(name="cloud-only", source="github",
+               html_url="https://github.com/dads2busy/cloud-only")
+    merged = merge_repos([gh], [])
+    assert len(merged) == 1
+    assert merged[0].source == "github"

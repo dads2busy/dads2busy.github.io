@@ -350,3 +350,28 @@ def default_commit_count_runner(owner: str, name: str) -> int:
         )
     except (json.JSONDecodeError, AttributeError, TypeError):
         return 0
+
+
+def merge_repos(github: list[RepoMeta], local: list[RepoMeta]) -> list[RepoMeta]:
+    """Dedupe by html_url. When a local repo matches a GitHub repo,
+    the GitHub record wins on metadata but local_path is preserved and
+    source becomes 'github+local'."""
+    by_url: dict[str, RepoMeta] = {}
+    out: list[RepoMeta] = []
+
+    for r in github:
+        if r.html_url:
+            by_url[r.html_url] = r
+        out.append(r)
+
+    for r in local:
+        if r.html_url and r.html_url in by_url:
+            gh_match = by_url[r.html_url]
+            gh_match.local_path = r.local_path
+            gh_match.source = "github+local"
+            # If github lacked manifest detection, take from local
+            if not gh_match.manifest_files and r.manifest_files:
+                gh_match.manifest_files = r.manifest_files
+        else:
+            out.append(r)
+    return out
