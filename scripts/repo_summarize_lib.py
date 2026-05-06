@@ -51,3 +51,17 @@ URL: {meta.html_url or "(local-only)"}
 README:
 {meta.readme_excerpt}
 """
+
+
+def summarize_repo(meta: RepoMeta, claude_client: Any) -> str:
+    """Call Haiku via injected client. Returns paragraph text or '' on text-block miss."""
+    prompt = build_prompt(meta)
+    resp = claude_client.messages.create(
+        model=MODEL,
+        max_tokens=MAX_TOKENS,
+        messages=[{"role": "user", "content": prompt}],
+    )
+    for block in resp.content:
+        if getattr(block, "type", None) == "text":
+            return block.text.strip()
+    return ""

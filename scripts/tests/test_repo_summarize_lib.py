@@ -63,3 +63,53 @@ def test_build_prompt_includes_archived_flag():
     m = _meta(archived=True)
     prompt = build_prompt(m)
     assert "archived" in prompt.lower()
+
+
+from repo_summarize_lib import summarize_repo
+
+
+class _FakeClient:
+    """Minimal stand-in for anthropic.Anthropic; records the prompt it received."""
+    def __init__(self, response_text: str = "A great repo paragraph."):
+        self.response_text = response_text
+        self.captured_prompt: str | None = None
+        self.messages = self  # mimic client.messages.create
+
+    def create(self, *, model, max_tokens, messages, **kwargs):
+        # Capture the user prompt
+        self.captured_prompt = messages[0]["content"]
+        # Mimic anthropic response shape
+        class Block:
+            def __init__(self, t):
+                self.type = "text"
+                self.text = t
+        class Resp:
+            def __init__(self, t):
+                self.content = [Block(t)]
+        return Resp(self.response_text)
+
+
+def test_summarize_repo_returns_paragraph_text():
+    fake = _FakeClient("Foo is a small Python tool for X.")
+    m = _meta()
+    result = summarize_repo(m, fake)
+    assert result == "Foo is a small Python tool for X."
+
+
+def test_summarize_repo_passes_built_prompt():
+    fake = _FakeClient()
+    m = _meta(readme_excerpt="UNIQUE_README_TOKEN content " * 20)
+    summarize_repo(m, fake)
+    assert "UNIQUE_README_TOKEN" in fake.captured_prompt
+
+
+def test_summarize_repo_uses_haiku_model():
+    fake = _FakeClient()
+    captured = {}
+    orig_create = fake.create
+    def wrapper(**kwargs):
+        captured.update(kwargs)
+        return orig_create(**kwargs)
+    fake.create = wrapper
+    summarize_repo(_meta(), fake)
+    assert captured["model"] == "claude-haiku-4-5-20251001"
