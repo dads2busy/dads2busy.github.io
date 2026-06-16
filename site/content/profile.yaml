@@ -3592,6 +3592,24 @@ cv:
           the network of which FEMA is the center.
         editors: "Ali Farazmand. Marcel-Dekker: New York"
     Research / Technical Reports:
+      - title: "Creating Local-Level Geographic Datasets: A Practical, Illustrated Guide for Sub-County Policy Analysis"
+        authors:
+          - "**Schroeder, Aaron**"
+        date: "2026-06-04"
+        journal: "Mastercard Center for Inclusive Growth"
+        url: "https://dads2busy.github.io/local-level-data-guide/"
+        slug: local_level_data_guide
+        subcategory: Research/Technical Reports
+        abstract: >-
+          A practical, illustrated guide to building local-level geographic datasets for
+          sub-county policy analysis. Using Arlington County, Virginia and its 62 civic
+          associations as a worked example, the guide walks through the boundary problem
+          that plagues sub-county work, the data sources and methods for allocating
+          tract- and block-level measures to custom local geographies, a parcel-based
+          allocation approach, and the limitations analysts should keep in mind. It
+          includes reproducible Python and R implementations of the full pipeline and a
+          bivariate worked example mapping median household income against broadband
+          download speed.
       - title: "An Agentic AI Approach for Estimating the U.S. Classified Intelligence Budget"
         authors:
           - "**Schroeder, Aaron**"
