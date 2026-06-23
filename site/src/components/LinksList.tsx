@@ -6,14 +6,13 @@ export default function LinksList({ category }: LinksListProps) {
   switch (category) {
     case "writing":
       return (
-        <ul className="list-none p-0 text-sm">
-          <li className="mt-2">
-            <a href="/2020/03/harvard_econ">Featured: Integrating Data</a>
-          </li>
-          <li className="mt-2">
-            <a href="/2020/03/hdsr">Featured: Data Science Framework</a>
-          </li>
-        </ul>
+        <div className="text-center">
+          <img
+            src="/images/data_writer.svg"
+            alt="Writing"
+            className="mx-auto max-w-full"
+          />
+        </div>
       );
     case "teaching":
       return (
