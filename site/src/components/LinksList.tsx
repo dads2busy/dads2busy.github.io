@@ -8,7 +8,7 @@ export default function LinksList({ category }: LinksListProps) {
       return (
         <div className="text-center">
           <img
-            src="/images/data_writer.svg"
+            src="/images/data_writer.png"
             alt="Writing"
             className="mx-auto max-w-full"
           />
