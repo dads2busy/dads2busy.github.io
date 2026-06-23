@@ -29,7 +29,7 @@ export default function LinksList({ category }: LinksListProps) {
       return (
         <div className="text-center">
           <img
-            src="/images/data-researcher.png"
+            src="/images/data_researcher.jpg"
             alt="Research"
             className="mx-auto max-w-full"
           />
@@ -49,7 +49,7 @@ export default function LinksList({ category }: LinksListProps) {
       return (
         <div className="text-center">
           <img
-            src="/images/data-researcher.png"
+            src="/images/data_researcher.jpg"
             alt="Data & Software Releases"
             className="mx-auto max-w-full"
           />
