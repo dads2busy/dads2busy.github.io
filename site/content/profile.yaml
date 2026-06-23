@@ -3159,6 +3159,48 @@ cv:
         journal: "Harvard Data Science Review (invited submission, in preparation)"
         slug: hdsr_compressing_pipeline
         subcategory: Journal Publications (refereed)
+      - title:
+          "Network-based Active Learning for Identifying Illicit Actors in Financial
+          Transaction Networks"
+        authors:
+          - Alabsi Aljundi, Amro
+          - Adiga, Abhijin
+          - Barrett, Christopher
+          - Foster, Margaret J.
+          - Klahn, Brian D.
+          - Machi, Dustin
+          - Marathe, Achla
+          - Potter, Philip B.K.
+          - "**Schroeder, Aaron**"
+          - Swarup, Samarth
+          - Vullikanti, Anil
+          - Wilson, Mandy L.
+          - Marathe, Madhav
+        date: "2026-05-25"
+        journal:
+          Proceedings of the 25th International Conference on Autonomous Agents and
+          Multiagent Systems (AAMAS '26)
+        doi: 10.65109/GOCK1684
+        pages: pp. 3561-3563
+        slug: aamas_illicit_actors
+        subcategory: Journal Publications (refereed)
+      - title: "Estimating the cascading global impacts of gas disruptions in Qatar"
+        authors:
+          - Mishra, Ritwick
+          - Gupta, Diksha
+          - Marathe, Achla
+          - Yu, Krista Danielle
+          - "**Schroeder, Aaron**"
+          - Swarup, Samarth
+          - Klahn, Brian
+          - Potter, Phil
+          - Marathe, Madhav
+          - Vullikanti, Anil
+        date: "2026-04-27"
+        journal: "arXiv preprint arXiv:2604.24960"
+        doi: 10.48550/arXiv.2604.24960
+        slug: arxiv_qatar_gas_disruptions
+        subcategory: Journal Publications (refereed)
       - title: "Smart Metadata in Action: The Social Impact Data Commons"
         authors:
           - Joanna Schroeder, Alan Wang
