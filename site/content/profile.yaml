@@ -7,10 +7,17 @@ cv:
   sections:
     Summary:
       - Dr. Schroeder's overarching research focus is the enablement of Evidence-Based Policy-Making and
-        Program Evaluation through the secure liberation, integration and analysis of administrative data.
-      - A particular focus has been the integration of education, health, social service and non-profit
-        administrative data streams to support policy analyses and program evaluations across pre-K services,
-        child care, K-12 and adult education, state workforce training, and U.S. veteran services.
+        Program Evaluation through the secure liberation, integration and analysis of administrative and other available data.
+      - Recent work advances this mission through auditable multi-agent LLM pipelines — applying structured-debate
+        agent architectures and explicit provenance chains to produce policy-grade datasets where authoritative ground
+        truth is partial. Active applications include critical-materials supply-chain dependency networks (STDN),
+        open-source defense budget intelligence (IBES), and federal statistical data production; work supported by
+        NSF (NCSES Green Innovation), the Army Research Institute, and the Social Data Commons infrastructure.
+        Methodological contributions include privacy-preserving local model deployment and NLP-driven compression
+        of the data science pipeline.
+      - Prior to AI-based methods, this work applied data integration and linkage approaches to education, health,
+        social service and non-profit administrative data streams to support policy analyses and program evaluations
+        across pre-K services, child care, K-12 and adult education, state workforce training, and U.S. veteran services.
       - High-profile information integration projects in the Commonwealth of Virginia include the USED-funded
         Statewide Longitudinal Data System, the USHHS-funded Project Child HANDS, and the USDOT-funded design
         and evaluation of the U.S.'s first statewide travel information system, Virginia 511.
