@@ -4350,6 +4350,37 @@ cv:
           the context of “getting things done” in the public sector is changing from a singular organizational
           context to a multiple-organization network context. Managerially, we must respond accordingly.
     Software:
+      - name: sdc-census10to20
+        subcategory: Software
+        date: "2026-06-03"
+        summary: "Python package to redistribute 2010–2019 census data onto 2020 census boundaries"
+        url: https://dads2busy.github.io/Social-Data-Commons/packages/sdc-census10to20/
+        abstract: >-
+          Python port of the R package sdc.census10to20, used by the Social Data Commons
+          pipelines to standardize tract- and block-group-level data across the 2020
+          decennial census boundary changes. Published on PyPI: pip install sdc-census10to20.
+          Source: https://github.com/dads2busy/Social-Data-Commons
+      - name: sdc-redistribute
+        subcategory: Software
+        date: "2026-06-03"
+        summary: "Python package to redistribute values between geographies (direct area-weighted and parcel-weighted)"
+        url: https://dads2busy.github.io/Social-Data-Commons/packages/sdc-redistribute/
+        abstract: >-
+          Direct area-weighted interpolation and parcel-weighted redistribution for moving
+          measures from one geographic vintage or level onto another (e.g. 2010 tracts to
+          2020 block groups). Part of the Social Data Commons toolkit. Published on PyPI:
+          pip install sdc-redistribute. Source: https://github.com/dads2busy/Social-Data-Commons
+      - name: sdc-catchment
+        subcategory: Software
+        date: "2026-06-03"
+        summary: "Python package for floating catchment area spatial accessibility (2SFCA, E2SFCA, and variants)"
+        url: https://dads2busy.github.io/Social-Data-Commons/packages/sdc-catchment/
+        abstract: >-
+          Floating catchment area (FCA) spatial-accessibility metrics (2SFCA, E2SFCA, KD2SFCA,
+          3SFCA, modified-2SFCA, balanced FCA, and commute-based FCA), all expressed as
+          parameter variations of a single catchment_ratio() function. The Python replacement
+          for the R catchment package; part of the Social Data Commons toolkit. Published on
+          PyPI: pip install sdc-catchment. Source: https://github.com/dads2busy/Social-Data-Commons
       - name: STDN Agentic Framework
         subcategory: Software
         date: "2026-04-29"
