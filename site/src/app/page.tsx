@@ -25,6 +25,7 @@ type Profile = {
       Skills: string[];
       Specializations: ProfileSpecialization[];
       "Awards & Honors": ProfileAward[];
+      "Professional Service": ProfileAward[];
     };
   };
 };
@@ -42,6 +43,7 @@ const extras = siteExtrasSchema.parse(
 const summaryParagraphs = profile.cv.sections.Summary;
 const educationEntries = profile.cv.sections.Education;
 const awards = profile.cv.sections["Awards & Honors"];
+const service = profile.cv.sections["Professional Service"];
 const skills = profile.cv.sections.Skills;
 const specializations = profile.cv.sections.Specializations as Array<{ label: string; details: string }>;
 
@@ -162,6 +164,30 @@ export default function Home() {
           style={{ borderColor: "var(--border)" }}
         >
           {awards.map((a, i) => (
+            <li
+              key={i}
+              className="flex items-start justify-between gap-4 px-5 py-3"
+            >
+              <span>{a.label}</span>
+              <span
+                className="shrink-0 font-mono text-xs"
+                style={{ color: "var(--gold)" }}
+              >
+                {a.details}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      {/* ─── Professional Service ───────────────────────────── */}
+      <section>
+        <p className="section-label">Professional Service</p>
+        <ul
+          className="panel divide-y text-sm"
+          style={{ borderColor: "var(--border)" }}
+        >
+          {service.map((a, i) => (
             <li
               key={i}
               className="flex items-start justify-between gap-4 px-5 py-3"

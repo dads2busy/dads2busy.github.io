@@ -4666,14 +4666,17 @@ cv:
         details: "1999"
       - label: Eno Transportation Fellow
         details: "1997"
-      - label: Invited Guest Editor, Administration & Society
-        details: "1997"
       - label: Member, iTHRIV (integrated Translational Health Research Institute of Virginia) Scientific Advisory Board
         details: 2021-2025
       - label: Brookings Institute, Consulting Scholar, Roundtable for Equitable Data Pathways Data Governance Project
         details: "2024"
+    Professional Service:
+      - label: "Reviewer, Data Science Journal, Vol. 24, Issue 3 — Special Issue: 2025 GASP Conference"
+        details: "2026"
       - label: Proposal Reviewer, NSF Methodology, Measurement, and Statistics (MMS) Program
         details: "2022"
+      - label: Invited Guest Editor, Administration & Society
+        details: "1997"
     Specializations:
       - label: Policy & Evaluation
         details: "Methods of data collection · research design · quantitative & qualitative analysis · information policy · privacy law · policy/implementation network analysis"
