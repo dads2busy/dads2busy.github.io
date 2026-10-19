@@ -3641,6 +3641,32 @@ cv:
           the network of which FEMA is the center.
         editors: "Ali Farazmand. Marcel-Dekker: New York"
     Research / Technical Reports:
+      - title: "Auditable by Construction: A Workflow-Level Approach to Trust in LLM Data Pipelines"
+        authors:
+          - "**Schroeder, Aaron**"
+        date: "2026-05-26"
+        journal: "SSRN Working Paper No. 6833238"
+        doi: 10.2139/ssrn.6833238
+        url: "https://ssrn.com/abstract=6833238"
+        slug: ssrn_auditable_by_construction
+        subcategory: Research/Technical Reports
+        abstract: >-
+          The literature on trust in large-language-model (LLM) outputs has clustered
+          around four points of intervention: model-level alignment, input-shaping at
+          prompt time, generation-time decoding constraints, and post-hoc output
+          verification. We argue that a fifth, distinct category, workflow-level trust
+          infrastructure, has been recognized in practice but underspecified in theory.
+          Drawing on two production agentic-AI systems for public-interest data
+          production, we formalize "auditable by construction" as a property of pipeline
+          structure rather than model output, and propose a reference architecture in
+          which typed stage contracts, convergence-based stopping criteria,
+          ontology-anchored normalization, authoritative-data reconciliation, and
+          first-class provenance combine to produce statistical-grade outputs. We
+          demonstrate the approach with case studies of two deployed systems:
+          multi-agent technology supply-chain analysis and multi-agent reconciliation of
+          classified U.S. intelligence budgets. We then map the resulting pattern onto
+          established official-statistics frameworks (Total Survey Error; the Generic
+          Statistical Business Process Model).
       - title: "Creating Local-Level Geographic Datasets: A Practical, Illustrated Guide for Sub-County Policy Analysis"
         authors:
           - "**Schroeder, Aaron**"
