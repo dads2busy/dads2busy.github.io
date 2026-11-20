@@ -25,8 +25,9 @@ with explicit state, contracts, and reasoning traces.
 - **Repos:** `dpi_stdn_agentic`, `dpi_budget_estimation_agentic`,
   `dpi_stdn_development`.
 - **Papers:** MEKH Agentic AI technical report; IBES technical report
-  (BI-2026-3); HDSR invited *Compressing the Data Science Pipeline*
-  (in preparation).
+  (BI-2026-3); *Compressing the Data Science Pipeline: How Much Can
+  Large Language Models Accelerate the Production of Policy-Relevant
+  Datasets?* (HDSR, 2026, doi:10.1162/99608f92.0a503188).
 
 ### Thrust 2 — Trust Infrastructure
 
