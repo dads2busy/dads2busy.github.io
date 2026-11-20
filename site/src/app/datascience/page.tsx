@@ -10,7 +10,16 @@ export default function DataSciencePage() {
           Much of this is discussed in: Keller, S. A., Shipp, S. S., Schroeder,
           A. D., &amp; Korkmaz, G. (2020). Doing Data Science: A Framework and
           Case Study. Harvard Data Science Review. 2(1).
-          DOI=https://doi.org/10.1162/99608f92.2d83f7f5.
+          DOI=
+          <a
+            href="https://doi.org/10.1162/99608f92.2d83f7f5"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline"
+          >
+            https://doi.org/10.1162/99608f92.2d83f7f5
+          </a>
+          .
         </p>
         <img
           src="/images/data-science-framework-overview.png"

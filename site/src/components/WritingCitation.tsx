@@ -26,7 +26,20 @@ export default function WritingCitation({ post }: Props) {
         .{" "}
         {post.journal && <>{post.journal}. </>}
         {post.pages && post.pages.trim() !== "" && <>{post.pages}. </>}
-        {post.DOI && post.DOI.trim() !== "" && <>DOI={post.DOI}. </>}
+        {post.DOI && post.DOI.trim() !== "" && (() => {
+          const doiUrl = /^https?:\/\//i.test(post.DOI.trim())
+            ? post.DOI.trim()
+            : `https://doi.org/${post.DOI.trim()}`;
+          return (
+            <>
+              DOI=
+              <a href={doiUrl} target="_blank" rel="noopener noreferrer" className="underline">
+                {doiUrl}
+              </a>
+              .{" "}
+            </>
+          );
+        })()}
         {post.editors && post.editors.trim() !== "" && <>{post.editors}. </>}
       </p>
     </div>
